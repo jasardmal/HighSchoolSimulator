@@ -23,6 +23,42 @@ image basickolby = "kolbybasic.png"
 image basicmarc = "marcbasic.png"
 
 label start:
+    
+    #Initialize Calendar/Time/Location
+    $ clock = True#make false to hide the calendar
+    $ theweekday = 2#monday, the number of the weekday, this automatically changes but must be initially assigned
+    $ themonth = 8#august, the number of the month, this automatically changes but must be initially assigned
+    $ theday = 24#this automatically changes but must be initially assigned
+    $ theyear = 2015#this automatically changes but must be initially assigned
+    $ dayofyear = 236#you must calculate this properly, this automatically changes
+    $ yearlim = 365#initially define it as 265 or 366, whichever is correct, this gets changed automatically later
+    $ daylim = 31#initially define it as 28, 29, 30, or 31, whichever is correct, this gets changed automatically later
+    $ stringweekday = "Monday"#2, the string of the weekday, this automatically changes but must be initially assigned
+    $ stringmonth = "August"#8, the string of the month, this automatically changes but must be initially assigned
+    $ thephase = 1#early morning, the phase of the day, this automatically changes but must be initially assigned
+    $ stringphase = "Morning"#2, the phase of the day, this automatically changes but must be initially assigned
+    $ location = 2#home, the current location, this automatically changes but must be initially assigned
+    $ stringlocation = "Home"#2, the current location, this automatically changes but must be initially assigned
+    
+    #Initialize Stats
+    $ charismasub = 0
+    $ charisma = 0
+    
+    $ couragesub = 0
+    $ courage = 0
+    
+    $ intelligencesub = 0
+    $ intelligence = 0
+    
+    $ staminasub = 3
+    $ staminasubcurrentlim = 5
+    $ staminasubfuturelim = 5
+    $ stamina = 3
+    
+    $ stresssub = 3
+    $ stress = 3
+    
+    #Start week
 
     pov "I have no clue how I’m going to find any information about what happened at homecoming with Christina and Kolby. Speaking of those two, I don’t see either of them in class today."
     
