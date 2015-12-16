@@ -1,0 +1,55 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 898, in script
+    mc "It's the weekend."
+  File "game/screens.rpy", line 9, in execute
+    screen say:
+  File "game/screens.rpy", line 91, in execute
+    if theweekday == 7:
+  File "game/screens.rpy", line 92, in execute
+    if(clock):
+  File "game/screens.rpy", line 93, in execute
+    $ DayoffCalendar()
+  File "game/screens.rpy", line 93, in <module>
+    $ DayoffCalendar()
+NameError: name 'DayoffCalendar' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 898, in script
+    mc "It's the weekend."
+  File "E:\Computer Science Advanced Studies\Individual Project\renpy-6.99.5-sdk\renpy\ast.py", line 594, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "E:\Computer Science Advanced Studies\Individual Project\renpy-6.99.5-sdk\renpy\exports.py", line 1021, in say
+    who(what, interact=interact)
+  File "E:\Computer Science Advanced Studies\Individual Project\renpy-6.99.5-sdk\renpy\character.py", line 826, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "E:\Computer Science Advanced Studies\Individual Project\renpy-6.99.5-sdk\renpy\character.py", line 688, in do_display
+    **display_args)
+  File "E:\Computer Science Advanced Studies\Individual Project\renpy-6.99.5-sdk\renpy\character.py", line 465, in display_say
+    what_text = show_function(who, what_string)
+  File "E:\Computer Science Advanced Studies\Individual Project\renpy-6.99.5-sdk\renpy\character.py", line 672, in do_show
+    **self.show_args)
+  File "E:\Computer Science Advanced Studies\Individual Project\renpy-6.99.5-sdk\renpy\character.py", line 275, in show_display_say
+    return renpy.display.screen.get_widget(screen, "what", layer)
+  File "E:\Computer Science Advanced Studies\Individual Project\renpy-6.99.5-sdk\renpy\display\screen.py", line 1119, in get_widget
+    screen.update()
+  File "E:\Computer Science Advanced Studies\Individual Project\renpy-6.99.5-sdk\renpy\display\screen.py", line 565, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 9, in execute
+    screen say:
+  File "game/screens.rpy", line 91, in execute
+    if theweekday == 7:
+  File "game/screens.rpy", line 92, in execute
+    if(clock):
+  File "game/screens.rpy", line 93, in execute
+    $ DayoffCalendar()
+  File "game/screens.rpy", line 93, in <module>
+    $ DayoffCalendar()
+NameError: name 'DayoffCalendar' is not defined
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.99.5.602
+High School Simulator 0.0

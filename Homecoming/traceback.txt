@@ -1,0 +1,79 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/screens.rpy", line 321, in execute
+    screen load():
+  File "game/screens.rpy", line 327, in execute
+    use file_picker
+  File "game/screens.rpy", line 254, in execute
+    screen file_picker():
+  File "game/screens.rpy", line 256, in execute
+    frame:
+  File "game/screens.rpy", line 259, in execute
+    has vbox
+  File "game/screens.rpy", line 286, in execute
+    grid columns rows:
+  File "game/screens.rpy", line 292, in execute
+    for i in range(1, columns * rows + 1):
+  File "game/screens.rpy", line 295, in execute
+    button:
+  File "game/screens.rpy", line 299, in execute
+    has hbox
+  File "game/screens.rpy", line 302, in execute
+    add FileScreenshot(i)
+Exception: Unknown transform property: 'scope'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in script
+    $ ui.interact()
+  File "C:\Users\501508\Desktop\GitHub\HighSchoolSimulator\renpy-6.99.5-sdk\renpy\ast.py", line 797, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\501508\Desktop\GitHub\HighSchoolSimulator\renpy-6.99.5-sdk\renpy\python.py", line 1448, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in <module>
+    $ ui.interact()
+  File "C:\Users\501508\Desktop\GitHub\HighSchoolSimulator\renpy-6.99.5-sdk\renpy\ui.py", line 277, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\501508\Desktop\GitHub\HighSchoolSimulator\renpy-6.99.5-sdk\renpy\display\core.py", line 2296, in interact
+    scene_lists.replace_transient()
+  File "C:\Users\501508\Desktop\GitHub\HighSchoolSimulator\renpy-6.99.5-sdk\renpy\display\core.py", line 674, in replace_transient
+    self.remove(layer, tag)
+  File "C:\Users\501508\Desktop\GitHub\HighSchoolSimulator\renpy-6.99.5-sdk\renpy\display\core.py", line 961, in remove
+    self.hide_or_replace(layer, remove_index, "hide")
+  File "C:\Users\501508\Desktop\GitHub\HighSchoolSimulator\renpy-6.99.5-sdk\renpy\display\core.py", line 885, in hide_or_replace
+    d = oldsle.displayable._hide(now - st, now - at, prefix)
+  File "C:\Users\501508\Desktop\GitHub\HighSchoolSimulator\renpy-6.99.5-sdk\renpy\display\screen.py", line 430, in _hide
+    self.update()
+  File "C:\Users\501508\Desktop\GitHub\HighSchoolSimulator\renpy-6.99.5-sdk\renpy\display\screen.py", line 565, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 321, in execute
+    screen load():
+  File "game/screens.rpy", line 327, in execute
+    use file_picker
+  File "game/screens.rpy", line 254, in execute
+    screen file_picker():
+  File "game/screens.rpy", line 256, in execute
+    frame:
+  File "game/screens.rpy", line 259, in execute
+    has vbox
+  File "game/screens.rpy", line 286, in execute
+    grid columns rows:
+  File "game/screens.rpy", line 292, in execute
+    for i in range(1, columns * rows + 1):
+  File "game/screens.rpy", line 295, in execute
+    button:
+  File "game/screens.rpy", line 299, in execute
+    has hbox
+  File "game/screens.rpy", line 302, in execute
+    add FileScreenshot(i)
+  File "C:\Users\501508\Desktop\GitHub\HighSchoolSimulator\renpy-6.99.5-sdk\renpy\sl2\sldisplayables.py", line 545, in sl2add
+    rv = Transform(child=d, **kwargs)
+  File "C:\Users\501508\Desktop\GitHub\HighSchoolSimulator\renpy-6.99.5-sdk\renpy\display\motion.py", line 563, in __init__
+    raise Exception("Unknown transform property: %r" % k)
+Exception: Unknown transform property: 'scope'
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.99.5.602
+Homecoming 0.0
