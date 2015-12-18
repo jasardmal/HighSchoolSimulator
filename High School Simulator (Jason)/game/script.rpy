@@ -40,6 +40,12 @@ label start:
     $ location = 2#home, the current location, this automatically changes but must be initially assigned
     $ stringlocation = "Home"#2, the current location, this automatically changes but must be initially assigned
     
+    #Initialize Inventory
+    $ inventorygeneral = ["testgen1", "testgen2"]
+    $ inventorygifts = ["testgif1", "testgif2"]
+    $ inventoryclothes = ["testclo1", "testclo2"]
+    $ inventorybooks = ["testboo1", "testboo2"]
+    
     #Initialize Stats
     $ charismasub = 0
     $ charisma = 1

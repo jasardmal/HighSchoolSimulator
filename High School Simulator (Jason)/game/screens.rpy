@@ -189,6 +189,7 @@ screen navigation:
         textbutton _("Save Game") action ShowMenu("save")
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Story") action ShowMenu("storyhomecomeinvesthub")
+        textbutton _("Inventory") action ShowMenu("inventory")
         textbutton _("Stats") action ShowMenu("stats")
         textbutton _("Social") action ShowMenu("socialcontacts")
         textbutton _("System") action ShowMenu("system")
@@ -585,6 +586,62 @@ init -2:
     style yesno_label_text:
         text_align 0.5
         layout "subtitle"
+        
+##############################################################################
+# Inventory
+#
+# Screens that allows the user to view inventory at appropriate times and read
+# item descriptions.
+screen inventory:
+    
+    # This ensures that any other menu screen is replaced.
+    tag menu
+    
+    # The background of the game menu.
+    window:
+        style "gm_root"
+        
+    # The various item tabs.
+    frame:
+        
+        style "file_picker_frame"
+
+        has vbox
+
+        hbox:
+            style_group "file_picker_nav"
+
+            textbutton _("General") action FilePage(1) text_min_width 171
+            textbutton _("Gifts") action FilePage(2) text_min_width 171
+            textbutton _("Clothes") action FilePage(3) text_min_width 171
+            textbutton _("Books") action FilePage(4) text_min_width 171
+
+        $ columns = 2
+        $ rows = 5
+        
+        # The selected item description.
+        $ itemdescription = " "
+
+        # Display a grid of item slots.
+        grid columns rows:
+            transpose True
+            xfill True
+            style_group "file_picker"
+
+            # Display ten item slots, numbered 1 - 10.
+            for i in range(1, columns * rows + 1):
+
+                # Each item slot is a button.
+                textbutton _("i") action ShowMenu("save")
+        
+    # The return button.
+    frame:
+        xalign 0.98
+        yalign 0.98
+        
+        has hbox
+
+        textbutton _("Return") action ShowMenu("save")
         
 ##############################################################################
 # Maps

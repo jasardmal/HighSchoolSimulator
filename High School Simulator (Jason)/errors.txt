@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/time.rpy", line 35: invalid syntax
-                    elif store.thephase == 13:
-                        ^
-    
+File "game/screens.rpy", line 635: u'actionFilePage' is not a keyword argument or valid child for the textbutton statement.
+    textbutton _("i") actionFilePage(1)
+                                    ^
 
-Ren'Py Version: Ren'Py 6.99.5.602
+Ren'Py Version: Ren'Py 6.99.7.858
