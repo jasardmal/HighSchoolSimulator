@@ -189,7 +189,7 @@ screen navigation:
         textbutton _("Save Game") action ShowMenu("save")
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Story") action ShowMenu("storyhomecomeinvesthub")
-        textbutton _("Inventory") action ShowMenu("inventory")
+        textbutton _("Inventory") action ShowMenu("inventoryhub")
         textbutton _("Stats") action ShowMenu("stats")
         textbutton _("Social") action ShowMenu("socialcontacts")
         textbutton _("System") action ShowMenu("system")
@@ -592,7 +592,7 @@ init -2:
 #
 # Screens that allows the user to view inventory at appropriate times and read
 # item descriptions.
-screen inventory:
+screen inventoryhub:
     
     # This ensures that any other menu screen is replaced.
     tag menu
@@ -609,6 +609,7 @@ screen inventory:
         has vbox
 
         hbox:
+            
             style_group "file_picker_nav"
 
             textbutton _("General") action FilePage(1) text_min_width 171
@@ -616,11 +617,11 @@ screen inventory:
             textbutton _("Clothes") action FilePage(3) text_min_width 171
             textbutton _("Books") action FilePage(4) text_min_width 171
 
-        $ columns = 2
-        $ rows = 5
-        
         # The selected item description.
         $ itemdescription = " "
+        
+        $ columns = 2
+        $ rows = 5
 
         # Display a grid of item slots.
         grid columns rows:
@@ -632,10 +633,19 @@ screen inventory:
             for i in range(1, columns * rows + 1):
 
                 # Each item slot is a button.
-                textbutton _("i") action ShowMenu("save")
+                button:
+                    
+                    action NullAction()
+                    xfill True
+
+                    has hbox
+                    $ file_name = FileSlotName(i, columns * rows)
+                    
+                    text "[file_name]."
         
     # The return button.
     frame:
+        
         xalign 0.98
         yalign 0.98
         

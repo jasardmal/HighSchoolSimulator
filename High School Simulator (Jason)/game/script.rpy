@@ -41,10 +41,10 @@ label start:
     $ stringlocation = "Home"#2, the current location, this automatically changes but must be initially assigned
     
     #Initialize Inventory
-    $ inventorygeneral = ["testgen1", "testgen2"]
-    $ inventorygifts = ["testgif1", "testgif2"]
-    $ inventoryclothes = ["testclo1", "testclo2"]
-    $ inventorybooks = ["testboo1", "testboo2"]
+    $ inventorygeneral = ["testgen1", "testgen2", "testgen3", "testgen4", "testgen5", "testgen6", "testgen7", "testgen8", "testgen9", "testgen10"]
+    $ inventorygifts = ["testgif1", "testgif2", "testgif3", "testgif4", "testgif5", "testgif6", "testgif7", "testgif8", "testgif9", "testgif10"]
+    $ inventoryclothes = ["testclo1", "testclo2", "testclo3", "testclo4", "testclo5", "testclo6", "testclo7", "testclo8", "testclo9", "testclo10"]
+    $ inventorybooks = ["testboo1", "testboo2", "testboo3", "testboo4", "testboo5", "testboo6", "testboo7", "testboo8", "testboo9", "testboo10"]
     
     #Initialize Stats
     $ charismasub = 0
