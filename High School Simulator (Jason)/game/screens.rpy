@@ -612,37 +612,11 @@ screen inventoryhub:
             
             style_group "file_picker_nav"
 
-            textbutton _("General") action FilePage(1) text_min_width 171
+            textbutton _("General") action ShowMenu("inventorygeneral") text_min_width 171
             textbutton _("Gifts") action FilePage(2) text_min_width 171
             textbutton _("Clothes") action FilePage(3) text_min_width 171
             textbutton _("Books") action FilePage(4) text_min_width 171
-
-        # The selected item description.
-        $ itemdescription = " "
-        
-        $ columns = 2
-        $ rows = 5
-
-        # Display a grid of item slots.
-        grid columns rows:
-            transpose True
-            xfill True
-            style_group "file_picker"
-
-            # Display ten item slots, numbered 1 - 10.
-            for i in range(1, columns * rows + 1):
-
-                # Each item slot is a button.
-                button:
-                    
-                    action NullAction()
-                    xfill True
-
-                    has hbox
-                    $ file_name = FileSlotName(i, columns * rows)
-                    
-                    text "[file_name]."
-        
+            
     # The return button.
     frame:
         
@@ -652,6 +626,152 @@ screen inventoryhub:
         has hbox
 
         textbutton _("Return") action ShowMenu("save")
+
+screen inventorygeneral:
+    
+    # This ensures that any other menu screen is replaced.
+    tag menu
+    
+    # The background of the game menu.
+    window:
+        style "gm_root"
+        
+    # The various item tabs.
+    frame:
+        
+        style "file_picker_frame"
+
+        has vbox
+
+        hbox:
+            
+            style_group "file_picker_nav"
+
+            textbutton _("General") action NullAction() text_min_width 800
+        
+    # The various item slots.
+    frame:
+
+        $ columns = 2
+        $ rows = 5
+        yalign 0.5
+
+        # Display a grid of item slots.
+        grid columns rows:
+            transpose True
+            xfill True
+            style_group "file_picker"
+
+            # Each item slot is a button.
+            button:
+                
+                action ShowMenu("testitem1")
+                xfill True
+                
+                text "1"
+                
+            button:
+                
+                action ShowMenu("testitem1")
+                xfill True
+                
+                text "2"
+                
+            button:
+                
+                action ShowMenu("1a")
+                xfill True
+                
+                text "3"
+            
+            button:
+                
+                action ShowMenu("1a")
+                xfill True
+                
+                text "4"
+            
+            button:
+                
+                action ShowMenu("1a")
+                xfill True
+                
+                text "5"
+            
+            button:
+                
+                action ShowMenu("1a")
+                xfill True
+                
+                text "6"
+            
+            button:
+                
+                action ShowMenu("1a")
+                xfill True
+                
+                text "7"
+            
+            button:
+                
+                action ShowMenu("1a")
+                xfill True
+                
+                text "8"
+            
+            button:
+                
+                action ShowMenu("1a")
+                xfill True
+                
+                text "9"
+                
+            button:
+                
+                action ShowMenu("1a")
+                xfill True
+                
+                text "10"
+                
+    # The return button.
+    frame:
+        
+        xalign 0.98
+        yalign 0.98
+        
+        has hbox
+
+        textbutton _("Return") action ShowMenu("inventoryhub")
+
+screen testitem1:
+    
+    # This ensures that any other menu screen is replaced.
+    tag menu
+    
+    # The background of the game menu.
+    window:
+        style "gm_root"
+        
+    # The item description
+    frame:
+        
+        xalign 0.5
+        yalign 0
+        
+        has hbox
+        
+        text "Test Description1"
+        
+    # The return button.
+    frame:
+        
+        xalign 0.98
+        yalign 0.98
+        
+        has hbox
+
+        textbutton _("Return") action ShowMenu("inventorygeneral")
+
         
 ##############################################################################
 # Maps

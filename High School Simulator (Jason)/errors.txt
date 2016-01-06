@@ -2,8 +2,12 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 609: Line is indented, but the preceding hbox statement does not expect a block. Please check this line's indentation.
-    style_group "gm_nav"
-    ^
+File "game/screens.rpy", line 653: expected 'word' not found.
+    screen 1:
+            ^
 
-Ren'Py Version: Ren'Py 6.99.7.858
+File "game/screens.rpy", line 671: expected 'word' not found.
+    screen 2:
+            ^
+
+Ren'Py Version: Ren'Py 6.99.8.959

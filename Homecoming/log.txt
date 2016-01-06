@@ -1,53 +1,45 @@
-Wed Dec 16 13:05:04 2015
+Wed Jan 06 12:44:59 2016
 Windows-7-6.1.7601-SP1
-Ren'Py 6.99.7.858
+Ren'Py 6.99.8.959
  
 
 Bootstrap to the start of init.init took 0.07s
-Early init took 0.06s
-Loader init took 0.12s
+Early init took 0.01s
+Loader init took 0.03s
 Loading error handling took 0.03s
-Loading script took 0.45s
-Loading persistent took 0.03s
+Loading script took 0.69s
+Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 2.47s
+Running init code took 0.11s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\1049089\\AppData\\Roaming/RenPy/backups\\Homecoming':
-Dump and make backups. took 0.10s
+Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Creating interface object took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.02s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.05s
-Prepare screens took 0.07s
+Save screen analysis took 0.06s
+Prepare screens took 0.04s
 Save pyanalysis. took 0.07s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.00s
-Couldn't import angle renderer:
-Traceback (most recent call last):
-  File "E:\CS AS\renpy-6.99.5-sdk\renpy\display\core.py", line 1641, in make_draw
-    __import__(mod)
-  File "renpy/angle/gltexture.pxd", line 28, in init renpy.angle.gldraw (gen\renpy.angle.gldraw.c:21774)
-    cdef class TextureCore:
-  File "renpy/angle/gltexture.pyx", line 1, in init renpy.angle.gltexture (gen\renpy.angle.gltexture.c:18376)
-    # This file was automatically generated from renpy/gl/gltexture.pyx
-ImportError: No module named gl
-Unknown renderer: angle
+Interface start took 0.01s
 
+primary display bounds: (0, 0, 1680, 1050)
 Windowed mode.
 Screen sizes: virtual=(800, 600) physical=(800, 600) drawable=(800, 600)
 Vendor: 'NVIDIA Corporation'
 Renderer: 'Quadro 600/PCIe/SSE2'
 Version: '4.3.0'
 Display Info: <Info({'blit_sw_CC': False, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 1050, 'current_w': 1680, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
+Fixed-function is blacklisted.
 Extensions:
     
     GL_AMD_multi_draw_indirect
@@ -362,11 +354,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 4.37800002098s
+Total time until interface ready: 1.63999986649s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.017000 seconds.
-- Frame drawn at 0.020000 seconds.
-- Frame drawn at 0.036000 seconds.
-- Frame drawn at 0.053000 seconds.
-- 0.053000 seconds to render 5 frames.
+- Frame drawn at 0.040000 seconds.
+- Frame drawn at 0.040000 seconds.
+- Frame drawn at 0.050000 seconds.
+- Frame drawn at 0.070000 seconds.
+- 0.070000 seconds to render 5 frames.
