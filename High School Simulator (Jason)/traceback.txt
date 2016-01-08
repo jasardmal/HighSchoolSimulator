@@ -7,49 +7,51 @@ While running game code:
     $ ui.interact()
   File "renpy/common/00action_menu.rpy", line 100, in __call__
     raise Exception("%r is not a screen or a label." % orig_screen)
-Exception: '1a' is not a screen or a label.
+Exception: 'iventoryclothes' is not a screen or a label.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "renpy/common/00gamemenu.rpy", line 161, in script
     $ ui.interact()
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 805, in execute
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\ast.py", line 805, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\python.py", line 1461, in py_exec_bytecode
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\python.py", line 1460, in py_exec_bytecode
     exec bytecode in globals, locals
   File "renpy/common/00gamemenu.rpy", line 161, in <module>
     $ ui.interact()
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ui.py", line 277, in interact
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\ui.py", line 277, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\core.py", line 2424, in interact
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\display\core.py", line 2354, in interact
     repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\core.py", line 3080, in interact_core
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\display\core.py", line 2998, in interact_core
     rv = root_widget.event(ev, x, y, 0)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\layout.py", line 906, in event
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\display\layout.py", line 887, in event
     rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\layout.py", line 906, in event
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\display\layout.py", line 887, in event
     rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\layout.py", line 906, in event
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\display\layout.py", line 887, in event
     rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\screen.py", line 638, in event
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\display\screen.py", line 638, in event
     rv = self.child.event(ev, x, y, st)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\layout.py", line 906, in event
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\display\layout.py", line 887, in event
     rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\layout.py", line 188, in event
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\display\layout.py", line 188, in event
     rv = d.event(ev, x - xo, y - yo, st)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\layout.py", line 188, in event
-    rv = d.event(ev, x - xo, y - yo, st)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\behavior.py", line 811, in event
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\display\layout.py", line 887, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\display\layout.py", line 887, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\display\behavior.py", line 790, in event
     return handle_click(self.clicked)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\behavior.py", line 754, in handle_click
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\display\behavior.py", line 733, in handle_click
     rv = run(action)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\behavior.py", line 295, in run
+  File "D:\Computer Science Advanced Studies\Individual Project\renpy-6.99.7-sdk\renpy-6.99.7-sdk\renpy\display\behavior.py", line 295, in run
     return var(*args, **kwargs)
   File "renpy/common/00action_menu.rpy", line 100, in __call__
     raise Exception("%r is not a screen or a label." % orig_screen)
-Exception: '1a' is not a screen or a label.
+Exception: 'iventoryclothes' is not a screen or a label.
 
 Windows-7-6.1.7601-SP1
-Ren'Py 6.99.8.959
+Ren'Py 6.99.7.858
 High School Simulator 0.0
