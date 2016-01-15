@@ -26,7 +26,7 @@ label start:
     
     #Initialize Calendar/Time/Location
     $ clock = True#make false to hide the calendar
-    $ theweekday = 7#monday, the number of the weekday, this automatically changes but must be initially assigned
+    $ theweekday = 2#monday, the number of the weekday, this automatically changes but must be initially assigned
     $ themonth = 8#august, the number of the month, this automatically changes but must be initially assigned
     $ theday = 24#this automatically changes but must be initially assigned
     $ theyear = 2015#this automatically changes but must be initially assigned
@@ -101,6 +101,7 @@ label start:
     
     #REGULAR SCHOOL DAY*********************************************************************************************
     label regularSchoolDay:
+        call screen input_softkeyboard
         $ location = 2
         scene img_black
         mc "It's time for school."
