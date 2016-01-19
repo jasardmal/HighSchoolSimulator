@@ -1,5 +1,5 @@
 ﻿#Main Character
-define mc = Character('You', color="#ffffff")
+define mc = Character('[mcname]', color="#ffffff")
 
 #Students
 define mw = Character('Marc Waller', color="#c8ffc8")
@@ -24,6 +24,12 @@ define t = Character('Teacher', color="#c8ffc8")
 
 label start:
     
+    #Initialize Main Character's Birthday
+    $ mcbirthday = " "
+    
+    #Initialize Main Character's Name
+    $ mcname = " "
+    
     #Initialize Calendar/Time/Location
     $ clock = True#make false to hide the calendar
     $ theweekday = 2#monday, the number of the weekday, this automatically changes but must be initially assigned
@@ -39,12 +45,6 @@ label start:
     $ stringphase = "Morning"#2, the phase of the day, this automatically changes but must be initially assigned
     $ location = 2#home, the current location, this automatically changes but must be initially assigned
     $ stringlocation = "Home"#2, the current location, this automatically changes but must be initially assigned
-    
-    #Initialize Inventory
-    $ inventorygeneral = ["testgen1", "testgen2", "testgen3", "testgen4", "testgen5", "testgen6", "testgen7", "testgen8", "testgen9", "testgen10"]
-    $ inventorygifts = ["testgif1", "testgif2", "testgif3", "testgif4", "testgif5", "testgif6", "testgif7", "testgif8", "testgif9", "testgif10"]
-    $ inventoryclothes = ["testclo1", "testclo2", "testclo3", "testclo4", "testclo5", "testclo6", "testclo7", "testclo8", "testclo9", "testclo10"]
-    $ inventorybooks = ["testboo1", "testboo2", "testboo3", "testboo4", "testboo5", "testboo6", "testboo7", "testboo8", "testboo9", "testboo10"]
     
     #Initialize Stats
     $ charismasub = 0
@@ -66,6 +66,12 @@ label start:
     
     $ money = 10
     
+    #Initialize Inventory
+    $ inventorygeneral = ["testgen1", "testgen2", "testgen3", "testgen4", "testgen5", "testgen6", "testgen7", "testgen8", "testgen9", "testgen10"]
+    $ inventorygifts = ["testgif1", "testgif2", "testgif3", "testgif4", "testgif5", "testgif6", "testgif7", "testgif8", "testgif9", "testgif10"]
+    $ inventoryclothes = ["testclo1", "testclo2", "testclo3", "testclo4", "testclo5", "testclo6", "testclo7", "testclo8", "testclo9", "testclo10"]
+    $ inventorybooks = ["testboo1", "testboo2", "testboo3", "testboo4", "testboo5", "testboo6", "testboo7", "testboo8", "testboo9", "testboo10"]
+    
     #Initialize Social Contacts
     $ hasmetmarc = False
     $ hasmetkolby = False
@@ -80,7 +86,7 @@ label start:
     $ hasmetbecka = False
     
     #Initialize Extra Actions
-    $ afterSchoolExtraAction = True
+    $ afterschoolextraaction = True
     
     #START DECIDER
     label startDecider:
@@ -102,6 +108,7 @@ label start:
     #REGULAR SCHOOL DAY*********************************************************************************************
     label regularSchoolDay:
         call screen input_softkeyboard
+        $ mcname = input_value
         $ location = 2
         scene img_black
         mc "It's time for school."
@@ -455,22 +462,22 @@ label start:
             elif stamina == 2:
                 mc "I have a bit of time before school closes. What should I do?"
                 jump afterSchoolChoice
-            elif stamina == 3 and afterSchoolExtraAction == True:
+            elif stamina == 3 and afterschoolextraaction == True:
                 mc "I have a bit of time before school closes. What should I do?"
                 jump afterSchoolChoice
-            elif stamina == 3 and afterSchoolExtraAction == False:
+            elif stamina == 3 and afterschoolextraaction == False:
                 mc "Looks like the school's closing. Better get out."
                 jump eveningSchool
-            elif stamina == 4 and afterSchoolExtraAction == True:
+            elif stamina == 4 and afterschoolextraaction == True:
                 mc "I have a bit of time before school closes. What should I do?"
                 jump afterSchoolChoice
-            elif stamina == 4 and afterSchoolExtraAction == False:
+            elif stamina == 4 and afterschoolextraaction == False:
                 mc "Looks like the school's closing. Better get out."
                 jump eveningSchool
-            elif stamina == 5 and afterSchoolExtraAction == True:
+            elif stamina == 5 and afterschoolextraaction == True:
                 mc "I have a bit of time before school closes. What should I do?"
                 jump afterSchoolChoice
-            elif stamina == 5 and afterSchoolExtraAction == False:
+            elif stamina == 5 and afterschoolextraaction == False:
                 mc "Looks like the school's closing. Better get out."
                 jump eveningSchool
            
@@ -508,7 +515,7 @@ label start:
                         $ location = 2
                         scene img_black
                         jump homeSchoolRegularSleep
-                    $ afterSchoolExtraAction = False
+                    $ afterschoolextraaction = False
                     jump afterSchool
                 elif stress == 3:
                     $ randHomework = renpy.random.choice([1, 2])
@@ -523,7 +530,7 @@ label start:
                             $ location = 2
                             scene img_black
                             jump homeSchoolRegularSleep
-                        $ afterSchoolExtraAction = False
+                        $ afterschoolextraaction = False
                         jump afterSchool
                     else:
                         mc "I did my homework. >Intelligence increased. >Stress increased. >Stamina decreased."
@@ -536,7 +543,7 @@ label start:
                             $ location = 2
                             scene img_black
                             jump homeSchoolRegularSleep
-                        $ afterSchoolExtraAction = False
+                        $ afterschoolextraaction = False
                         jump afterSchool
                 elif stress == 4:
                     $ randHomework = renpy.random.choice([1, 2, 3, 4])
@@ -551,7 +558,7 @@ label start:
                             $ location = 2
                             scene img_black
                             jump homeSchoolRegularSleep
-                        $ afterSchoolExtraAction = False
+                        $ afterschoolextraaction = False
                         jump afterSchool
                     else:
                         mc "I tried to do my homework but couldn't figure it out... >Intelligence increased. >Stress increased. >Stamina decreased."
@@ -564,7 +571,7 @@ label start:
                             $ location = 2
                             scene img_black
                             jump homeSchoolRegularSleep
-                        $ afterSchoolExtraAction = False
+                        $ afterschoolextraaction = False
                         jump afterSchool
                 elif stress == 5:
                     mc "I tried to do my homework but couldn't figure it out... >Stress increased. >Stamina decreased."
@@ -577,7 +584,7 @@ label start:
                         $ location = 2
                         scene img_black
                         jump homeSchoolRegularSleep
-                    $ afterSchoolExtraAction = False
+                    $ afterschoolextraaction = False
                     jump afterSchool
 
             label afterSchoolExercise:
@@ -592,7 +599,7 @@ label start:
                         $ location = 2
                         scene img_black
                         jump homeSchoolRegularSleep
-                    $ afterSchoolExtraAction = False
+                    $ afterschoolextraaction = False
                     jump afterSchool
                     
                 elif stress == 4:
@@ -608,7 +615,7 @@ label start:
                             $ location = 2
                             scene img_black
                             jump homeSchoolRegularSleep
-                        $ afterSchoolExtraAction = False
+                        $ afterschoolextraaction = False
                         jump afterSchool
                         
                     else:
@@ -621,7 +628,7 @@ label start:
                             $ location = 2
                             scene img_black
                             jump homeSchoolRegularSleep
-                        $ afterSchoolExtraAction = False
+                        $ afterschoolextraaction = False
                         jump afterSchool
                         
                 elif stress == 5:
@@ -634,7 +641,7 @@ label start:
                         $ location = 2
                         scene img_black
                         jump homeSchoolRegularSleep
-                    $ afterSchoolExtraAction = False
+                    $ afterschoolextraaction = False
                     jump afterSchool
                 
         #EVENINGSCHOOL ******************************************************************************************
