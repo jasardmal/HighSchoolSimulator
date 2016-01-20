@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 111: expected statement.
-    mcname = input_value
-           ^
+File "game/skills.rpy", line 6: expected an indented block
+    config.python_callbacks.append(time_callback)
+          ^
+    
 
 Ren'Py Version: Ren'Py 6.99.8.959

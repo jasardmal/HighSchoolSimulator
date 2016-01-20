@@ -1,9 +1,9 @@
 ﻿# ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 #
 #       english.rpy [English Soft Keyboard]
-#                                                                                                       Author   :  Andrea Rubenstein
-#                                                                                                       Created : 2011/10/14
-#                                                                                                       Updated: 2011/10/16
+#       Author   :  Andrea Rubenstein
+#       Created : 2011/10/14
+#       Updated: 2011/10/16
 # ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
    
 init -1 python:
