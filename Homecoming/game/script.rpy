@@ -20,6 +20,7 @@ define dean = Character('Dean', color="#c8ffc8")
 define ran = Character('Other Student', color="#c8ffc8")
 define pov = Character("You", color ="#c8ffc8")
 define mom = Character('Mom', color="#c8ffc8")
+define pa = Character("PA", color ="#c8ffc8")
 
 image basicdanny = "dannybasic.png"
 image basickolby = "kolbybasic.png"
@@ -929,7 +930,7 @@ label start:
 
     pov "Love you too, mom. *click*"
 
-    pov "*Sigh* It’d be nice if mom or dad was home for once..."
+    pov "*Sigh* It’d be nice if my parents were home for once..."
 
     pov "*end scene*"
 
