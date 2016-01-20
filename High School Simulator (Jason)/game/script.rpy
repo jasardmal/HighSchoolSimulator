@@ -1,5 +1,5 @@
 ﻿#Main Character
-define mc = Character('[mcname]', color="#ffffff")
+define mc = DynamicCharacter("mcname", color="#ffffff")
 
 #Students
 define mw = Character('Marc Waller', color="#c8ffc8")
@@ -24,14 +24,14 @@ define t = Character('Teacher', color="#c8ffc8")
 
 label start:
     
+    #Initialize Main Character's Name
+    $ mcname = "???"
+    
     #Initialize Main Character's Birthday
     $ mcbirthday = " "
     
-    #Initialize Main Character's Name
-    $ mcname = " "
-    
     #Initialize Calendar/Time/Location
-    $ clock = True#make false to hide the calendar
+    $ clock = False#make false to hide the calendar
     $ theweekday = 2#monday, the number of the weekday, this automatically changes but must be initially assigned
     $ themonth = 8#august, the number of the month, this automatically changes but must be initially assigned
     $ theday = 24#this automatically changes but must be initially assigned
@@ -66,6 +66,8 @@ label start:
     
     $ money = 10
     
+    #Initialize Skills. Make sure to initialize them as False as they will be skills discovered as the player progresses (Jaden).
+    
     #Initialize Inventory
     $ inventorygeneral = ["testgen1", "testgen2", "testgen3", "testgen4", "testgen5", "testgen6", "testgen7", "testgen8", "testgen9", "testgen10"]
     $ inventorygifts = ["testgif1", "testgif2", "testgif3", "testgif4", "testgif5", "testgif6", "testgif7", "testgif8", "testgif9", "testgif10"]
@@ -87,28 +89,61 @@ label start:
     
     #Initialize Extra Actions
     $ afterschoolextraaction = True
+            
+    #CHARACTER CREATION ******************************************************************************************
+    label nameCreation:
+        scene img_black
+        mc "Who am I?"
+        call screen input_softkeyboard
     
-    #START DECIDER
+        label nameCheck:
+            mc "Is this correct?"
+        
+            menu:
+                
+                "Yes":
+                    $ mcname = input_value
+                    jump birthdayCreation
+                
+                "No":
+                    jump nameCreation
+                    
+        label birthdayCreation:
+            mc "When is my birthday?"
+            call screen input_softkeyboard
+            
+        label birthdayCheck:
+            mc "Is this correct?"
+            
+            menu:
+                    
+                    "Yes":
+                        $ mcbirthday = input_value
+                        jump startDecider
+                    
+                    "No":
+                        jump birthdayCreation
+                    
+    #START DECIDER *********************************************************************************************
     label startDecider:
+        $ clock = True
         if theweekday == 1:
             jump regularWeekendDay
-        if theweekday == 2:
+        elif theweekday == 2:
             jump regularSchoolDay
-        if theweekday == 3:
+        elif theweekday == 3:
             jump regularSchoolDay
-        if theweekday == 4:
+        elif theweekday == 4:
             jump regularSchoolDay
-        if theweekday == 5:
+        elif theweekday == 5:
             jump regularSchoolDay
-        if theweekday == 6:
+        elif theweekday == 6:
             jump regularSchoolDay
-        if theweekday == 7:
+        elif theweekday == 7:
             jump regularWeekendDay
     
-    #REGULAR SCHOOL DAY*********************************************************************************************
+    #REGULAR SCHOOL DAY *********************************************************************************************
     label regularSchoolDay:
-        call screen input_softkeyboard
-        $ mcname = input_value
         $ location = 2
         scene img_black
         mc "It's time for school."
@@ -913,6 +948,5 @@ label start:
         $ location = 2
         scene img_black
         mc "It's the weekend."
-        scene img_1806
         $ thephase = thephase + 1
         jump startDecider

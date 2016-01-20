@@ -26,7 +26,7 @@ init -1 python:
         
     softkey["en"] = {}
     softkey["en"]["alphabet"] = []
-    softkey["en"]["alphabet"].append(["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","y","x","z"])
+    softkey["en"]["alphabet"].append(["a","a","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","y","x","z"])
     softkey["en"]["alphabet"].append(["à","á","â","ã","ä","å","æ","ç","è","é","ê","ë","ì","í","î","ï","ð","ñ","ò","ó","ô","õ","ö","ø","ù","ú","û","ü","ý","þ","ÿ"])
 
     softkey["en"]["symbols"] = []

@@ -606,7 +606,15 @@ screen mapSchool:
         hotspot (700, 0, 100, 100) clicked Jump("homeSchool")
         hotspot (0, 500, 100, 100) clicked Jump("choiceTown")
         hotspot (700, 500, 100, 100) clicked Jump("choicePark")
-        
+
+##############################################################################
+# Skills
+#
+# Screen that allows the user to view their character's skill progression.
+# Refer to line 1090ish for UI reference. Use if statements to show different 
+# text based on if the player has discovered the skill (Use the skill 
+# initialized variables as the conditions. False = ???/True = Skill Name).
+
 ##############################################################################
 # Social Contacts
 #
