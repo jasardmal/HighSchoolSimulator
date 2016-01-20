@@ -16,7 +16,10 @@ define a = Character('Agnes', color="#c8ffc8")
 define i = Character('Ivor', color="#c8ffc8")
 define f = Character('Fredrick', color="#c8ffc8")
 define who = Character('???', color="#c8ffc8")
+define dean = Character('Dean', color="#c8ffc8")
+define ran = Character('Other Student', color="#c8ffc8")
 define pov = Character("You", color ="#c8ffc8")
+define mom = Character('Mom', color="#c8ffc8")
 
 image basicdanny = "dannybasic.png"
 image basickolby = "kolbybasic.png"
@@ -655,4 +658,300 @@ label start:
     #hide basicchristina
     hide basicmarc
     
+    
+    #START DAY
+    
+    
+    pa "*Bell Rings*"
+
+    pa "Welcome to the first day of school at __________ high school! Here, we…."
+
+    pov "That guy, there in the back? That’s me. I just moved here from __________________. This is my first day at __________ High, and I don’t know anyone. This day is gonna be such a drag."
+
+    pa "....... And that is how the Cougars roar! Have a wonderful day, students!"
+
+    pov "Ugh."
+
+    pov "When I moved here, I thought that not really knowing anyone might be nice. My parents are always gone on some trip or another, so I don’t really have any actual interactions. This year, I thought that maybe, just maybe, I could find someone who would actually be my friend." 
+
+    pov "*Desk slams forward*"
+
+    who "Watch yourself! Keep talking, someday you'll say something intelligent!"
+
+    ran "If you weren’t so easy to make fun of, I wouldn’t! You’re just a little baby."
+
+    who "How many times do I have to flush before you go away? *punches other student*"
+
+    pov "*A fight ensues*"
+
+    who "*wipes chin* I told you not to insult me. Idiot."
+
+    pov "Teacher comes in, it’s Mr. Hart(English)"
+         
+    h "Hey! What’s going on? How dare you engage in classroom violence! Don’t you know that fights are against school rules? Both of you, to the dean’s office!"
+
+    pov "*marc and other student leave*"
+
+    h "You! New student! You were the closest and probably saw what happened the best. go to the deans office with them to fill out an incident report!"
+
+    pov "But, wait, no..."
+
+    h "Don’t argue, just do it! Don’t let your experiences be memories! Go to the Dean’s office!"
+
+    pov "*sighs* F-Fine..."
+    
+    h "*grumbling as you leave* Back in my day, when we had to fight over things, we waited until after school...."
+
+
+    #*CHANGE SCENES WOO DEAN'S OFFICE TIME*
+
+
+    dean "Now, you both know better! I can’t believe that it hasn’t even been a day into the school year and you have already begun fighting! Shame on both of you! have you no dignity?!?!"
+
+    who "Sorry, Mr. Dean. It won’t happen again."
+
+    who "*under his breath* Fat lard."
+
+    ran "Excuse me? What did you call me?"
+
+    who "Nothing, I was talking about your mother."
+
+    dean "Both of you! Behave! Have you no decency? You haven’t even left my office! marc, stay here, and let him go."
+
+    who "Fine. But he’s still a fat lard."
+
+    dean "One more word out of you and I will suspend you!"
+
+    who "..."
+
+    pov "*MC walks in*"
+
+    dean "Who are you?"
+
+    pov "I’m a new student. I just moved here a few weeks ago. Mr. Hart told me to come down here because I was closest to the fight, so that I can fill out a report."
+
+    dean "Oh. Well, in that case, let me get one of those for you. *rummages in file cabinet*"
+
+    dean "Fill this out. what did you see?"
+
+    #OPTIONS
+
+    #-Marc Started it
+    #-Marc didnt start it
+    #-idk    -------> blame teacher
+    
+    
+    #MARC STARTED IT
+
+
+    pov "It looked to me like that student was antagonizing the other student. I’m not sure what was said, but one minute I was waiting for class to start, and the next those two were duking it out by my desk." 
+
+    dean "Well, are you sure you didn't see anything else?"
+
+    who "All I know is the two were fighting. I don’t know enough about either of them to tell."
+
+    dean "Well, all right then. Get back to class."
+
+    pov "Yes, sir."
+
+    dean "On your way back out, call Marc back in."
+
+    pov "Which one is Marc?"
+
+    dean "The one who probably started the fight."
+
+    pov "Oh, alright." 
+
+    pov "*Walks out*"
+
+    pov "Marc? The dean wants to see you."
+
+    m "Ugh, finally. I wish this would just be over… I can’t stand it when people insult me and get away with it." 
+
+    pov "*Marc goes to office*"
+
+    pov "*Goes to class*"
+
+    h "Welcome back!"
+
+    pov "*End Scene*"
+
+
+    #MARC DIDN'T START IT
+
+    pov "Well… To be honest, it seemed to me like the one who is still sitting outside was the victim. The other one had made some rude comments about him, and he didn’t like it."
+                                                                                                                                                                                      
+    dean "Is that right? Well, so far, that’s not what I’ve heard. Are you sure?"
+
+    pov "Yes, Sir. I’m Sure."    
+
+    dean "Hmm… Alright. Go back to class… Thank you for your help."
+
+    pov "Yes, sir."
+
+    dean "On your way back out, call Marc back in."
+
+    pov "*to himself* Marc must be the one who is still in the foyer.* Ok."
+
+    pov "*Walks out*"
+
+    pov "Marc? The dean wants to see you."
+
+    m "Ugh, finally. I wish this would just be over… I can’t stand it when people insult me and get away with it." 
+
+    pov "*Marc goes to office*"
+
+    pov "*Goes to class*"
+
+    h "Welcome back!"
+
+    pov "*End Scene*"
+
+
+
+
+    #AFTER BOTH VERSIONS:
+
+    pov "*Bell Rings*"
+
+    h "Alright, Class Dismissed. *slams book closed dramatically.*"
+
+    pov "*To Himself* I should probably get to my next class. It’s no good to dawdle. Looks like my next class is…*shift to picture of the schedule*... History."
+
+    pov "*bell rings*"
+
+    pov "Oh no! I’m late!"
+
+    pov "*enter Class*"
+
+    pov "Sorry I’m late, Mrs. Ong."
+
+    o "The Nerve! In my day, if we were late, we would be paddled! With a wooden spoon! Sit down, before I get any angrier. Now, class. What is the..."
+
+    pov "*brain wandering off*"
+
+
+    o "Mr MC can you tell me what the capital of Texas is?"
+
+    pov "Er… Is it Houston."
+
+    o "Actually, it’s Austin. Now, if you would stop dozing off in class, maybe you would learn something. In my day, we were whipped if we fell asleep in class!" 
+
+    pov "Urgh… yes, Mrs Ong."
+
+    o "Now, class. To start off the year, we will be researching how civilizations in the fertile crescent rose to power. By Friday, I want an essay no longer than 750 words on this subject. If you do not do this assignment, it will severely impact your grade at this, the beginning of the school year! *Bell rings* Dismissed!"
+
+    pov "*In the hallway* *Groan* I can’t believe I got homework on the first day of school. What kind of sick place is this?" 
+
+    who "*shoulder bumps into MC* Hey, freshie, if you can’t take the heat get out of the oven. *Hurries off*"
+
+    pov "What? Whatever… *end scene*"
+
+
+
+
+
+
+
+
+
+
+
+
+    #INSERT ELECTIVES HERE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #END ELECTIVE HERE
+
+
+
+    #*Initiate end of day 1*
+    #*Walking Home*
+
+    m "Hey, wait up!"
+
+    pov "!?"
+
+    m "I wanted to thank you for helping me out. I’ve never seen you before. What’s your name?"
+
+    pov "Uh… No problem… my name is *tells him name*... hey…"
+
+    m "If you ever need anything, let me know. I’ll return the favor." 
+
+    pov "Oh, uh, ok… Thanks..."
+
+    m "Cya round."
+    
+    pov "Um, Ok. Cya." 
+
+
+    "*At home*"
+
+    "*Phone is ringing*"
+
+    #PICK UP THE PHONE
+
+    pov "Hello?"
+
+    mom "Hey honey! How was the first day of school?"
+
+    pov "Oh, it was alright I guess."
+
+    mom "Make any new friends?"
+
+    pov "Erm, Maybe."
+
+    mom "*sigh* Well, that's something. You should try to be friends with more people, like your sister."
+
+    pov "Ok, Mom. I’ll try."
+
+    mom "Don’t try, do! *sigh* Love you, hun."
+
+    pov "Love you too, mom. *click*"
+
+    pov "*Sigh* It’d be nice if mom or dad was home for once..."
+
+    pov "*end scene*"
+
+
+
+    #DONT PICK UP THE PHONE
+
+
+    pov "*groan* Ugh! I wonder who it is. Well, they can wait. I need to sleep... Today was busy..."
+
+    pov "*end scene*"
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     return
