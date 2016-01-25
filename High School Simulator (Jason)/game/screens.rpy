@@ -191,6 +191,7 @@ screen navigation:
         textbutton _("Story") action ShowMenu("storyhomecomeinvesthub")
         textbutton _("Inventory") action ShowMenu("inventoryhub")
         textbutton _("Stats") action ShowMenu("stats")
+        textbutton _("Skills") action ShowMenu("skills")
         textbutton _("Social") action ShowMenu("socialcontacts")
         textbutton _("System") action ShowMenu("system")
 
@@ -614,6 +615,300 @@ screen mapSchool:
 # Refer to line 1090ish for UI reference. Use if statements to show different 
 # text based on if the player has discovered the skill (Use the skill 
 # initialized variables as the conditions. False = ???/True = Skill Name).
+screen skills:
+    
+    # This ensures that any other menu screen is replaced.
+    tag menu
+    
+    # The background of the game menu.
+    window:
+        style "gm_root"
+        
+    # Spanish Label.
+    frame:
+        xalign 0
+        yalign 0
+        
+        if hasdiscoveredspanish == False:
+            text "???"
+        else:
+            text "Spanish"
+        
+    # Spanish Bar.
+    frame:
+        xalign 0
+        yalign 0.05
+        
+        has hbox
+    
+        hbox:
+            bar range 5 value spanishskill xmaximum 400
+            
+    # Spanish displayed as a number.
+    frame:
+        xalign 0.54
+        yalign 0.05
+        
+        has hbox
+            
+        text "[spanishskill]/5"
+    
+        ###############
+    
+    # French Label.
+    frame:
+        xalign 0
+        yalign 0.1
+        
+        if hasdiscoveredfrench == False:
+            text "???"
+        else:
+            text "French"
+        
+    # French Bar.
+    frame:
+        xalign 0
+        yalign 0.15
+        
+        has hbox
+    
+        hbox:
+            bar range 5 value frenchskill xmaximum 400
+            
+    # French displayed as a number.
+    frame:
+        xalign 0.54
+        yalign 0.05
+        
+        has hbox
+            
+        text "[frenchskill]/5"
+
+        ###############
+    
+    # Latin Label.
+    frame:
+        xalign 0
+        yalign 0.2
+        
+        if hasdiscoveredlatin == False:
+            text "???"
+        else:
+            text "Latin"
+        
+    # Latin Bar.
+    frame:
+        xalign 0
+        yalign 0.25
+        
+        has hbox
+    
+        hbox:
+            bar range 5 value latinskill xmaximum 400
+            
+    # Latin displayed as a number.
+    frame:
+        xalign 0.54
+        yalign 0.05
+        
+        has hbox
+            
+        text "[latinskill]/5"
+        
+        
+        ###############
+    
+    # Art Label.
+    frame:
+        xalign 0
+        yalign 0.3
+        
+        if hasdiscoveredart == False:
+            text "???"
+        else:
+            text "Art"
+        
+    # Art Bar.
+    frame:
+        xalign 0
+        yalign 0.35
+        
+        has hbox
+    
+        hbox:
+            bar range 5 value artskill xmaximum 400
+            
+    # Art displayed as a number.
+    frame:
+        xalign 0.54
+        yalign 0.05
+        
+        has hbox
+            
+        text "[artskill]/5"
+        
+        
+        ###############
+    
+    # Music Label.
+    frame:
+        xalign 0
+        yalign 0.4
+        
+        if hasdiscoveredmusic == False:
+            text "???"
+        else:
+            text "Music"
+        
+    # Music Bar.
+    frame:
+        xalign 0
+        yalign 0.45
+        
+        has hbox
+    
+        hbox:
+            bar range 5 value musicskill xmaximum 400
+            
+    # Music displayed as a number.
+    frame:
+        xalign 0.54
+        yalign 0.05
+        
+        has hbox
+            
+        text "[musicskill]/5"
+        
+        
+        ###############
+    
+    # PE Label.
+    frame:
+        xalign 0
+        yalign 0.5
+        
+        if hasdiscoveredpe == False:
+            text "???"
+        else:
+            text "PE"
+        
+    # PE Bar.
+    frame:
+        xalign 0
+        yalign 0.55
+        
+        has hbox
+    
+        hbox:
+            bar range 5 value peskill xmaximum 400
+            
+    # PE displayed as a number.
+    frame:
+        xalign 0.54
+        yalign 0.05
+        
+        has hbox
+            
+        text "[peskill]/5"
+
+
+        ###############
+    
+    # Finance Label.
+    frame:
+        xalign 0
+        yalign 0.6
+        
+        if hasdiscoveredfinance == False:
+            text "???"
+        else:
+            text "Finance"
+        
+    # Finance Bar.
+    frame:
+        xalign 0
+        yalign 0.65
+        
+        has hbox
+    
+        hbox:
+            bar range 5 value financeskill xmaximum 400
+            
+    # Finance displayed as a number.
+    frame:
+        xalign 0.54
+        yalign 0.05
+        
+        has hbox
+            
+        text "[financeskill]/5"
+        
+        
+        ###############
+    
+    # Programming Label.
+    frame:
+        xalign 0
+        yalign 0.7
+        
+        if hasdiscoveredprogramming == False:
+            text "???"
+        else:
+            text "Programming"
+        
+    # Programming Bar.
+    frame:
+        xalign 0
+        yalign 0.75
+        
+        has hbox
+    
+        hbox:
+            bar range 5 value programmingskill xmaximum 400
+            
+    # Programming displayed as a number.
+    frame:
+        xalign 0.54
+        yalign 0.05
+        
+        has hbox
+            
+        text "[programmingskill]/5"
+        
+        
+        ###############
+    
+    # Home Ec Label.
+    frame:
+        xalign 0
+        yalign 0.8
+        
+        if hasdiscoveredhomeec == False:
+            text "???"
+        else:
+            text "Home Ec"
+        
+    # Home Ec Bar.
+    frame:
+        xalign 0
+        yalign 0.85
+        
+        has hbox
+    
+        hbox:
+            bar range 5 value homeecskill xmaximum 400
+            
+    # Home Ec displayed as a number.
+    frame:
+        xalign 0.54
+        yalign 0.05
+        
+        has hbox
+            
+        text "[homeecskill]/5"
+
+
+
 
 ##############################################################################
 # Social Contacts

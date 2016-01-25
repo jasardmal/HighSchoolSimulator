@@ -66,7 +66,42 @@ label start:
     
     $ money = 10
     
-    #Initialize Skills. Make sure to initialize them as False as they will be skills discovered as the player progresses (Jaden).
+    #Initialize Skills. Make sure to initialize them as False as they will be skills discovered as the player progresses (Jaydn).
+    $ spanishskillsub = 0
+    $ spanishskill = 1
+    $ hasdiscoveredspanish = True
+    
+    $ frenchskillsub = 0
+    $ frenchskill = 0
+    $ hasdiscoveredfrench = False
+    
+    $ latinskillsub = 0
+    $ latinskill = 0
+    $ hasdiscoveredlatin = False
+    
+    $ artskillsub = 0
+    $ artskill = 0
+    $ hasdiscoveredart = False
+    
+    $ musicskillsub = 0
+    $ musicskill = 0
+    $ hasdiscoveredmusic = False
+    
+    $ peskillsub = 0
+    $ peskill = 0
+    $ hasdiscoveredpe = False
+    
+    $ financeskillsub = 0
+    $ financeskill = 0
+    $ hasdiscoveredfinance = False
+    
+    $ programmingskillsub = 0
+    $ programmingskill = 0
+    $ hasdiscoveredprogramming = False
+    
+    $ homeecskillsub = 0
+    $ homeecskill = 0
+    $ hasdiscoveredhomeec = False
     
     #Initialize Inventory
     $ inventorygeneral = ["testgen1", "testgen2", "testgen3", "testgen4", "testgen5", "testgen6", "testgen7", "testgen8", "testgen9", "testgen10"]

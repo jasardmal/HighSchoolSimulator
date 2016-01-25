@@ -1,6 +1,6 @@
-init python:
-    def time_callback():#constantly calculate the skills
+#init python:
+#    def time_callback():#constantly calculate the skills
         
-        #Refer to stats.rpy in making the skill progression formula.
+#        #Refer to stats.rpy in making the skill progression formula.
         
-    config.python_callbacks.append(time_callback)
+#    config.python_callbacks.append(time_callback)
