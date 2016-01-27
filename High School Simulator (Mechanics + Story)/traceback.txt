@@ -1,0 +1,27 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/storyscript.rpy", line 51, in script
+    mw "*Under his breath* {w} Fat lard."
+SyntaxError: unexpected EOF while parsing (<none>, line 1)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/storyscript.rpy", line 51, in script
+    mw "*Under his breath* {w} Fat lard."
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 603, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\exports.py", line 1121, in say
+    who(what, interact=interact)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 798, in __call__
+    who = renpy.python.py_eval(who)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\python.py", line 1489, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\python.py", line 512, in py_compile
+    raise e
+SyntaxError: unexpected EOF while parsing (<none>, line 1)
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.99.8.959
+High School Simulator 0.0

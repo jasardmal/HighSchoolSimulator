@@ -1,20 +1,20 @@
-Wed Jan 06 12:44:59 2016
+Wed Jan 27 12:29:00 2016
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.8.959
  
 
-Bootstrap to the start of init.init took 0.07s
-Early init took 0.01s
-Loader init took 0.03s
-Loading error handling took 0.03s
-Loading script took 0.69s
-Loading persistent took 0.01s
+Bootstrap to the start of init.init took 0.06s
+Early init took 0.02s
+Loader init took 0.00s
+Loading error handling took 0.01s
+Loading script took 0.06s
+Loading persistent took 0.02s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.11s
+Running init code took 0.06s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
@@ -22,15 +22,15 @@ Creating interface object took 0.02s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.06s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.07s
-Save bytecode. took 0.03s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.01s
+Interface start took 0.00s
 
 primary display bounds: (0, 0, 1680, 1050)
 Windowed mode.
@@ -354,11 +354,29 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.63999986649s
+Total time until interface ready: 0.68799996376s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.020000 seconds.
 - Frame drawn at 0.040000 seconds.
 - Frame drawn at 0.040000 seconds.
-- Frame drawn at 0.050000 seconds.
-- Frame drawn at 0.070000 seconds.
-- 0.070000 seconds to render 5 frames.
+- Frame drawn at 0.060000 seconds.
+- 0.060000 seconds to render 5 frames.
+Traceback (most recent call last):
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\execution.py", line 388, in run
+    node.execute()
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 603, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\exports.py", line 1121, in say
+    who(what, interact=interact)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 819, in __call__
+    what = what_pattern.replace("[what]", sub(what, translate=translate))
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 801, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\substitutions.py", line 229, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 585, in _vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 605, in get_value
+KeyError: u'insert words here'
