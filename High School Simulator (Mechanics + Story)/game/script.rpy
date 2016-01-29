@@ -29,7 +29,7 @@ define mo = Character('Mrs. Ong', color="#c8ffc8")
 define te = Character('Teacher', color="#c8ffc8")
 
 #Combo Character
-define co = Character('Marc Waller', color="#c8ffc8")
+define co = DynamicCharacter('Marc Waller and Other Student', color="#c8ffc8")
 
 label start:
     

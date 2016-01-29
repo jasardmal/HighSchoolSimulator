@@ -50,36 +50,45 @@
 
         mw "*Under his breath* {w} Fat lard."
 
-        #Other student: Excuse me? What did you call me?
+        s1 "Excuse me? {w} What did you call me?"
 
-        #Marc: Nothing, I was talking about your mother.
+        mw "Nothing, {w} I was talking about your mother."
 
-        #Dean: Both of you! Behave! Have you no decency? You haven’t even left my office! marc, stay here, and let him go.
+        de "Both of you! {w} Behave! {w} Have you no decency? {w} You haven’t even left my office! {w} Marc, {w} stay here, and let him go."
 
-        #Marc: Fine. But he’s still a fat lard.
+        mw "Fine. {w} But he’s still a fat lard."
 
-        #Dean: One more word out of you and I will suspend you!
+        de "One more word out of you and I will suspend you!"
 
-        #Marc:...
+        mw "..."
 
-        #*MC walks in*
+        mc "*walks in*"
 
-        #Dean: Who are you?
+        de "Who are you?"
 
-        #MC: I’m a new student. I just moved here a few weeks ago. Mr. Hart told me to come down here because I was closest to the fight, so that I can fill out a report.
+        mc "I’m a new student. {w} I just moved here a few weeks ago. {w} Mr. Hart told me to come down here because I was closest to the fight, {w} so that I can fill out a report."
 
-        #Dean: Oh. Well, in that case, let me get one of those for you. *rummages in file cabinet*
+        de "Oh. Well, {w} in that case, {w} let me get one of those for you. *rummages in file cabinet*"
+        
+        label firstdayschoolchoice1:
 
-        #Fill this out. what did you see?
+            mc "What did I see?"
 
-        #OPTIONS
+            #OPTIONS
+            
+            menu:
 
-        #-Marc Started it
-        #-Marc didnt start it
-        #-idk    -------> blame teacher
-        #Marc started it:
+                "Marc Started it":
+                    jump firstdayschoolchoice1outcome1
+                
+                "Marc didnt start it":
+                    jump firstdayschoolchoice1outcome2
+                    
+            #-idk    -------> blame teacher
+            #Marc started it:
 
 
+        label firstdayschoolchoice1outcome1:
         #MC: It looked to me like that student was antagonizing the other student. I’m not sure what was said, but one minute I was waiting for class to start, and the next those two were duking it out by my desk. 
 
         #Dean: Well, are you sure you didn't see anything else?
@@ -112,7 +121,7 @@
 
         #*End Scene*
 
-
+        label firstdayschoolchoice1outcome2:
         #MARC DIDN'T START IT
 
         #MC: Well… To be honest, it seemed to me like the one who is still sitting outside was the victim. The other one had made some rude comments about him, and he didn’t like it. 
