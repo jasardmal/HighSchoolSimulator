@@ -338,7 +338,7 @@
 
 ##(Or, if you didn’t, Oh, Uh, Right, Sure.)
 
-#m "Sooo… Shall we? If we stand here any longer, we’ll be late for school."
+#m "Sooo… Shall we? {w}If we stand here any longer, we’ll be late for school."
 
 #mc "Oh! let’s go."
 
@@ -470,13 +470,13 @@
 
 #mc "*agnes leaves* .........Huh."
 
-mc "I guess it’s time for the electives now. Let’s see what Marc is up to."
+#mc "I guess it’s time for the electives now. Let’s see what Marc is up to."
 
 #*Insert Elective here*
 
-m "...And that’s how you disguise your phone number."
+#m "...And that’s how you disguise your phone number."
 
-mc "Oh, cool… What would I use that for?"
+#mc "Oh, cool… What would I use that for?"
 
-m "Probably nothing, but hey, the more you know."
+#m "Probably nothing, but hey, the more you know."
 
