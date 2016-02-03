@@ -5,7 +5,7 @@ define mc = DynamicCharacter("mcname", color="#ffffff")
 define s1 = Character('Other Student', color="#c8ffc8")
 
 #Students
-define mw = DynamicCharacter('Delinquet Student', color="#c8ffc8")
+define mw = DynamicCharacter("mwname", color="#c8ffc8")
 define kf = Character('Kolby Frederickson', color="#c8ffc8")
 define fh = Character('Frederick Hobson', color="#c8ffc8")
 define ik = Character('Ivor Kovosad', color="#c8ffc8")
@@ -29,12 +29,16 @@ define mo = Character('Mrs. Ong', color="#c8ffc8")
 define te = Character('Teacher', color="#c8ffc8")
 
 #Combo Character
-define co = DynamicCharacter('Marc Waller and Other Student', color="#c8ffc8")
+define co = DynamicCharacter("coname", color="#c8ffc8")
 
 label start:
     
-    #Initialize Main Character's Name
+    #Initialize Default Character Names
     $ mcname = "???"
+    $ mwname = "Delinquet Student"
+    $ fhname = "Refined Student"
+    $ coname = "Delinquet Student and Other Student"
+    
     
     #Initialize Main Character's Birthday
     $ mcbirthday = " "
@@ -151,26 +155,27 @@ label start:
                 
                 "Yes":
                     $ mcname = input_value
-                    jump birthdayCreation
+                    #jump birthdayCreation
+                    jump startDecider
                 
                 "No":
                     jump nameCreation
                     
-        label birthdayCreation:
-            mc "When is my birthday?"
-            call screen input_birthdaysoftkeyboard
+#        label birthdayCreation:
+#            mc "When is my birthday?"
+#            call screen input_birthdaysoftkeyboard
             
-        label birthdayCheck:
-            mc "Is this correct?"
+#        label birthdayCheck:
+#            mc "Is this correct?"
             
-            menu:
+#            menu:
                     
-                    "Yes":
-                        $ mcbirthday = input_value
-                        jump startDecider
+#                    "Yes":
+#                        $ mcbirthday = input_value
+#                        jump startDecider
                     
-                    "No":
-                        jump birthdayCreation
+#                    "No":
+#                        jump birthdayCreation
                     
     #START DECIDER *********************************************************************************************
     label startDecider:
@@ -304,7 +309,7 @@ label start:
             if thephase == 10:
                 jump afterSchool
             else:
-                mc ">Going to [stringphase]"
+                mc "*Bell rings*"
                 scene img_1832
                 jump periodChoice
             
@@ -538,29 +543,27 @@ label start:
         label afterSchool:
             mc ">After School"
             scene img_1831
-            if stamina == 1:
+            if isfirstschoolday == True:
+                jump firstSchoolDayEnd
+            elif stamina == 1:
                 mc "I'm REALLY tired. I should head home and sleep."
                 $ thephase = 11
                 $ location = 2
                 scene img_black
                 jump homeSchoolLongSleep
             elif stamina == 2:
-                mc "I have a bit of time before school closes. What should I do?"
                 jump afterSchoolChoice
             elif stamina == 3 and afterschoolextraaction == True:
-                mc "I have a bit of time before school closes. What should I do?"
                 jump afterSchoolChoice
             elif stamina == 3 and afterschoolextraaction == False:
                 mc "Looks like the school's closing. Better get out."
                 jump eveningSchool
             elif stamina == 4 and afterschoolextraaction == True:
-                mc "I have a bit of time before school closes. What should I do?"
                 jump afterSchoolChoice
             elif stamina == 4 and afterschoolextraaction == False:
                 mc "Looks like the school's closing. Better get out."
                 jump eveningSchool
             elif stamina == 5 and afterschoolextraaction == True:
-                mc "I have a bit of time before school closes. What should I do?"
                 jump afterSchoolChoice
             elif stamina == 5 and afterschoolextraaction == False:
                 mc "Looks like the school's closing. Better get out."

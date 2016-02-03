@@ -12,7 +12,7 @@ init -1 python:
 #       KEYS
 ##############################################################################     
     if persistent.lang == "en":
-        INPUT_VALUE_DEFAULT = ""
+        INPUT_VALUE_DEFAULT = "Robert"
         INPUT_LABEL_DEFAULT = "Please input your name:"
     
         softkey_type = [{"alphabet" : "en"}, {"symbols" : "en"}]

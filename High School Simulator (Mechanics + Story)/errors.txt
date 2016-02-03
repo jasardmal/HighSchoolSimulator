@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/storyscript.rpy", line 7: end of line expected.
-    mc "That guy, there in the back?" "That’s me." "I just moved here from Utah. This is my first day at Ketsu High, and I don’t know anyone. This day is gonna be such a drag."
-                                      ^
+File "game/screens.rpy", line 114: expected statement.
+    hbox:
+        ^
 
 Ren'Py Version: Ren'Py 6.99.8.959

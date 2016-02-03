@@ -1,5 +1,5 @@
 init python:
-def time_callback():#constantly calculate the stats
+    def time_callback():#constantly calculate the stats
         
         if (hasattr(store, 'spanishskillsub')):#manages spanish
             if store.spanishskillsub == 5 or store.spanishskillsub > 5:
@@ -127,6 +127,4 @@ def time_callback():#constantly calculate the stats
                 store.homeecskillsub = 0
                 store.homeecskill = store.homeecskill + 1
         
-    #Refer to stats.rpy in making the skill progression formula.
-        
-config.python_callbacks.append(time_callback)
+    config.python_callbacks.append(time_callback)
