@@ -295,23 +295,25 @@
         
         
         
-#        ########################## August 31
+########################### August 31
         
         
         
-##*Alarm Rings*
+##Alarm Rings
 
 #mc "Urgh… My head…"
 
-#mc "*Alarm rings again*"
+##Alarm rings again
 
 #mc "Fine, I’ll get up. Where’s my toothbrush?"
 
-##*Screen shakes cause hes looking for stuff*
+##Screen shakes cause hes looking for stuff
 
-#mc "*OBTAINED TOOTHBRUSH* Aha! Here we go."
+##OBTAINED TOOTHBRUSH
 
-##*KNOCK KNOCK KNOCK*
+#mc "Aha! Here we go."
+
+##KNOCK KNOCK KNOCK
 
 #mc "What? Who’s here? Who even knows I live here?"
 
@@ -323,17 +325,21 @@
 
 #mc "Ok, ok! I just got out of bed! Let me put on some clothes first, jeez!" *puts on clothes*
 
-##*runs out of door*
+##Runs out of door
 
-#mc "*out of breath* Alright, Marc, I’m here. How did you figure out where I live?"
+##Out of breath 
+
+#mc "Alright, Marc, I’m here. How did you figure out where I live?"
 
 #m "You dropped your wallet. Your address was inside."
 
 #mc "......Oh........."
 
-#m " You probably want this back." 
+#m "You probably want this back." 
 
-#m "*hands over wallet*  *OBTAINED WALLET*" 
+##Hands over wallet
+
+#OBTAINED WALLET
 
 #m "Now we’re even."
 
@@ -349,9 +355,9 @@
 
 #mc "Oh! let’s go."
 
-##*go to school ya chump*
+##Go to school ya chump
 
-##*Arrives at school*
+##Arrives at school
 
 #m "Hey, MC. Can I talk to you for a sec?"
 
@@ -367,19 +373,23 @@
 # #         (2) "Oh, ok. Well, let me know if you need anything then. See you in class."
 # #         (3) "‘Kay. Cya Round."
 
-##*Scene Change MATH CLASS*
+##Scene Change MATH CLASS
 
-#mk "Ok Class! Take your seats! One… One… Two… Three… Five… Eight… Thirteen… Twenty one…" *continues mumbling* (LEAVE RESOLUTION OF JOKE UNTIL THE END OF THE YEAR, TELLS STUDENTS THAT IT’S THE FIBONACCI SEQUENCE)
+#mk "Ok Class! Take your seats! One… One… Two… Three… Five… Eight… Thirteen… Twenty one…"
 
-#n "……………" *scribble scribble*
+##Continues mumbling (LEAVE RESOLUTION OF JOKE UNTIL THE END OF THE YEAR, TELLS STUDENTS THAT IT’S THE FIBONACCI SEQUENCE)
+
+#n "……………" 
+
+##Scribble scribble
 
 #mk  "Now, class. I know that you hate homework on the first day, but I want to get you all learned up by the end of the year."
 
-##*collective groans*
+##Collective groans
 
 #mk "I will hand out your assignments on the way out. For now, there is a text book under everyone’s desk. Pull it out and turn to page 394. That is where we will start."
 
-##*MORE GROANS*
+##MORE GROANS
 
 #mk "Today’s topic will be geometry. You know, I really like angles, to a certain degree."
 
@@ -387,29 +397,31 @@
 
 #mc "What was that pun"
 
-#n "*doodles smiley faces*"
+##Doodles smiley faces
 
 #mk "Ms. McNeil, I don’t see you opening up your textbook. Please don’t try to measure my patience."
 
-#n "*quickly sketches frowny face and shows it to Mr. Kelly*"
+##Quickly sketches frowny face and shows it to Mr. Kelly
 
-#mk "….. Okaaaaaay Ms. McNeil, I think you should put away your sketchbook now."
+#mk "... Okaaaaaay Ms. McNeil, I think you should put away your sketchbook now."
 
-#n "*opens eyes really wide, vigorously shakes her head*"
+##Opens eyes really wide, vigorously shakes her head
 
 #mk "I insist."
 
-#n "*eyes tear up a bit, puts sketch book away and begins to sulk.*"
+##Eyes tear up a bit, puts sketch book away and begins to sulk
 
 #mk "That’s better."
 
-##*later in class*
+##Later in class
 
 #mk ".... and that’s how these laws of geometry work. You, know, it’s a shame parallel lines will never meet. They have so much in common."
 
-##*class groans*
+##Class groans
 
-#mk "*bell rings* Alright class, you are dismissed."
+##Bell rings 
+
+#mk "Alright class, you are dismissed."
 
 ##mc 1. (Ask how she’s feeling) *walks up to Natalie before they leave* "hey, are you ok? I couldn’t help but notice that you seemed upset. "  (+affection)
 ##        2. (Question her behavior) "Why didn’t you pay any attention in class? Are you mute?" (-Affection)
@@ -427,13 +439,13 @@
 #mc "My next class is science, it looks like. I’d better get there fast."
 
 
-##*scene change = ENTER SCIENCE*
+##Scene change = ENTER SCIENCE
 
 #mg "Before you sit down, line up at the back of the room. I have some important questions."
 
 #mg "Since this is a science class, we must observe the scientific method. That means collecting questions. Now, my first question is this:…"
 
-##*Fade out*
+##Fade out
 
 #mc "....Now, pick your partners. We will begin our lectures tomorrow, and collect data. Tonight, I want you to take notes on the first chapter of the textbook. Before you leave, let me know who you are sitting with. If you don’t, you will be randomly assigned with a partner. Go!"
 
@@ -445,13 +457,15 @@
 
 #mg "Now, does anyone not have a partner yet?"
 
-#mc "*looks around*  Uh, I guess I don’t have a partner yet…"
+##Looks around*  
+
+#mc "Uh, I guess I don’t have a partner yet…"
 
 #mg "Interesting. Now, could you take a look around the room? Can you tell me what you see?"
 
 #mc "Uhm… Oh." 
 
-#mc "*looks at agnes*" 
+##Looks at agnes 
 
 #mc "Uh, alright. Hi…"
 
@@ -459,7 +473,7 @@
 
 #Mrs. Galvin: " Wonderful. Now, tomorrow’s lecture will be about the chapter in which you are currently engaged in notetaking. Remember, the chapter notes will be due at the end of every week. The first chapter is rather short, so if you do not have them completed, there will be no excuse."
 
-#a "*staring at her phone, headphones in*"
+##Staring at her phone, headphones in*"
 
 #mc "Um, hi. Er, since we are working together and everything, I was wondering…"
 
@@ -475,11 +489,13 @@
 
 #a " Mhm. Now get outta here."
 
-#mc "*agnes leaves* .........Huh."
+##Agnes leaves 
+
+#mc ".........Huh."
 
 #mc "I guess it’s time for the electives now. Let’s see what Marc is up to."
 
-#*Insert Elective here*
+##Insert Elective here*
 
 #m "...And that’s how you disguise your phone number."
 
