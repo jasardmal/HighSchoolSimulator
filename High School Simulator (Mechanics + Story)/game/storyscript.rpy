@@ -317,13 +317,13 @@
 
         mc "What? Who’s here? Who even knows I live here?"
 
-        m "OI! YOU READY FOR SCHOOL?"
+        mw "OI! YOU READY FOR SCHOOL?"
 
         mc "Marc?!?!?!?!?!?! Wha-"
 
-        m "YOU’RE GUNNA BE LATE BRO"
+        mw "YOU’RE GUNNA BE LATE BRO"
 
-        mc "Ok, ok! I just got out of bed! Let me put on some clothes first, jeez!" *puts on clothes*
+        mc "Ok, ok! I just got out of bed! Let me put on some clothes first, jeez!" #*puts on clothes*
 
         #Runs out of door
 
@@ -331,27 +331,27 @@
 
         mc "Alright, Marc, I’m here. How did you figure out where I live?"
 
-        m "You dropped your wallet. Your address was inside."
+        mw "You dropped your wallet. Your address was inside."
 
         mc "......Oh........."
 
-        m "You probably want this back." 
+        mw "You probably want this back." 
 
         #Hands over wallet
 
         #OBTAINED WALLET
 
-        m "Now we’re even."
+        mw "Now we’re even."
 
         mc "Even?"
 
-        m "Yeah, for when you had my back at the dean’s."
+        mw "Yeah, for when you had my back at the dean’s."
 
         mc "Oh, Right."
 
         #(Or, if you didn’t, Oh, Uh, Right, Sure.)
 
-        m "Sooo… Shall we? {w}If we stand here any longer, we’ll be late for school."
+        mw "Sooo… Shall we? {w}If we stand here any longer, we’ll be late for school."
 
         mc "Oh! let’s go."
 
@@ -359,11 +359,11 @@
 
         #Arrives at school
 
-        m "Hey, MC. Can I talk to you for a sec?"
+        mw "Hey, MC. Can I talk to you for a sec?"
 
         mc "Uh, sure Marc. What’s up?"
 
-        m "Since you’re new in town, you probably don’t know nothin ‘bout anything. If you want to get through the year, you’ll need someone to show you around. I can do that for you."
+        mw "Since you’re new in town, you probably don’t know nothin ‘bout anything. If you want to get through the year, you’ll need someone to show you around. I can do that for you."
 
 
         label seconddayschoolchoice1:
@@ -379,13 +379,13 @@
                     
                     
         label seconddayschoolC1O1:
-            m "Alright, meet me after school in the courtyard, ok? See you in class!"
+            mw "Alright, meet me after school in the courtyard, ok? See you in class!"
             jump secondSchoolDay
         label seconddayschoolC1O2:
-            m "Oh, ok. Well, let me know if you need anything then. See you in class."
+            mw "Oh, ok. Well, let me know if you need anything then. See you in class."
             jump secondSchoolDay
         label seconddayschoolC1O3:
-            m "‘Kay. Cya Round."
+            mw "‘Kay. Cya Round."
             jump secondSchoolDayPath2
             
     label secondSchoolDayPath1:        
@@ -453,9 +453,9 @@
         
             menu:
                 
-                "Ask how she's feeling"  #(+affection)
+                "Ask how she's feeling":  #(+affection)
                     jump seconddayschoolC2O1
-                "Question her behavior" #(-Affection)
+                "Question her behavior": #(-Affection)
                     jump seconddayschoolC2O2
                 "Ignore her":
                     jump seconddayschoolC2O3
@@ -509,25 +509,25 @@
 
         mc "Uh, alright. Hi…"
 
-        a "Hi."
+        ar "Hi."
 
-        Mrs. Galvin: " Wonderful. Now, tomorrow’s lecture will be about the chapter in which you are currently engaged in notetaking. Remember, the chapter notes will be due at the end of every week. The first chapter is rather short, so if you do not have them completed, there will be no excuse."
+        mg " Wonderful. Now, tomorrow’s lecture will be about the chapter in which you are currently engaged in notetaking. Remember, the chapter notes will be due at the end of every week. The first chapter is rather short, so if you do not have them completed, there will be no excuse."
 
         #Staring at her phone, headphones in
 
         mc "Um, hi. Er, since we are working together and everything, I was wondering…"
 
-        a "Hmmm?"
+        ar "Hmmm?"
 
         mc " Oh, I was just wondering…"
 
-        a "Agnes. But don’t call me that. I prefer..."
+        ar "Agnes. But don’t call me that. I prefer..."
 
-        a ".... Novahawk."
+        ar ".... Novahawk."
 
         mc " Uh… Right… Novahawk… ok…"
 
-        a " Mhm. Now get outta here."
+        ar " Mhm. Now get outta here."
 
         #Agnes leaves 
 
@@ -537,9 +537,9 @@
 
         #Insert Elective here*
 
-        m "...And that’s how you disguise your phone number."
+        mw "...And that’s how you disguise your phone number."
 
         mc "Oh, cool… What would I use that for?"
 
-        m "Probably nothing, but hey, the more you know."
+        mw "Probably nothing, but hey, the more you know."
 

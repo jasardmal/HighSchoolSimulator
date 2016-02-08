@@ -1,20 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 157, in script
-    jump birthdayCreation
-ScriptError: could not find label 'birthdayCreation'.
+  File "game/storyscript.rpy", line 512, in script
+    a "Hi."
+Exception: Sayer 'a' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 157, in script
-    jump birthdayCreation
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 1519, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\script.py", line 843, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'birthdayCreation'.
+  File "game/storyscript.rpy", line 512, in script
+    a "Hi."
+  File "C:\Users\1049089\Desktop\renpy-6.99.8-sdk\renpy\ast.py", line 583, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\1049089\Desktop\renpy-6.99.8-sdk\renpy\ast.py", line 500, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'a' is not defined.
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.8.959
