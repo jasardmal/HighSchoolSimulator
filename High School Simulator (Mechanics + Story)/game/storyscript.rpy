@@ -295,211 +295,251 @@
         
         
         
-########################### August 31
+    ########################### August 31
+            
+    label secondSchoolDay:        
+            
+        #Alarm Rings
+
+        mc "Urgh… My head…"
+
+        #Alarm rings again
+
+        mc "Fine, I’ll get up. Where’s my toothbrush?"
+
+        #Screen shakes cause hes looking for stuff
+
+        #OBTAINED TOOTHBRUSH
+
+        mc "Aha! Here we go."
+
+        #KNOCK KNOCK KNOCK
+
+        mc "What? Who’s here? Who even knows I live here?"
+
+        m "OI! YOU READY FOR SCHOOL?"
+
+        mc "Marc?!?!?!?!?!?! Wha-"
+
+        m "YOU’RE GUNNA BE LATE BRO"
+
+        mc "Ok, ok! I just got out of bed! Let me put on some clothes first, jeez!" *puts on clothes*
+
+        #Runs out of door
+
+        #Out of breath 
+
+        mc "Alright, Marc, I’m here. How did you figure out where I live?"
+
+        m "You dropped your wallet. Your address was inside."
+
+        mc "......Oh........."
+
+        m "You probably want this back." 
+
+        #Hands over wallet
+
+        #OBTAINED WALLET
+
+        m "Now we’re even."
+
+        mc "Even?"
+
+        m "Yeah, for when you had my back at the dean’s."
+
+        mc "Oh, Right."
+
+        #(Or, if you didn’t, Oh, Uh, Right, Sure.)
+
+        m "Sooo… Shall we? {w}If we stand here any longer, we’ll be late for school."
+
+        mc "Oh! let’s go."
+
+        #Go to school ya chump
+
+        #Arrives at school
+
+        m "Hey, MC. Can I talk to you for a sec?"
+
+        mc "Uh, sure Marc. What’s up?"
+
+        m "Since you’re new in town, you probably don’t know nothin ‘bout anything. If you want to get through the year, you’ll need someone to show you around. I can do that for you."
+
+
+        label seconddayschoolchoice1:
         
+            menu:
+                
+                "You Could? That’d be great!": #(+affection)
+                    jump seconddayschoolC1O1
+                "I think I would rather do it on my own.": #(- affection)
+                    jump seconddayschoolC1O2
+                "Uh, sure....":
+                    jump seconddayschoolC1O3
+                    
+                    
+        label seconddayschoolC1O1:
+            m "Alright, meet me after school in the courtyard, ok? See you in class!"
+            jump secondSchoolDay
+        label seconddayschoolC1O2:
+            m "Oh, ok. Well, let me know if you need anything then. See you in class."
+            jump secondSchoolDay
+        label seconddayschoolC1O3:
+            m "‘Kay. Cya Round."
+            jump secondSchoolDayPath2
+            
+    label secondSchoolDayPath1:        
+                
+        #Scene Change MATH CLASS
+
+        mk "Ok Class! Take your seats! One… One… Two… Three… Five… Eight… Thirteen… Twenty one…"
+
+        #Continues mumbling (LEAVE RESOLUTION OF JOKE UNTIL THE END OF THE YEAR, TELLS STUDENTS THAT IT’S THE FIBONACCI SEQUENCE)
+
+        n "........" 
+
+        n "*Scribble scribble*"
+
+        mk  "Now, class. I know that you hate homework on the first day, but I want to get you all learned up by the end of the year."
+
+        #Collective groans
+
+        mk "I will hand out your assignments on the way out. For now, there is a text book under everyone’s desk. Pull it out and turn to page 394. That is where we will start."
+
+        #MORE GROANS
+
+        mk "Today’s topic will be geometry. You know, I really like angles, to a certain degree."
+
+        mc "............ was that a pun"
+
+        mc "What was that pun"
+
+        n "*Doodles smiley faces*"
+
+        mk "Ms. McNeil, I don’t see you opening up your textbook. Please don’t try to measure my patience."
+
+        n "*Quickly sketches frowny face and shows it to Mr. Kelly*"
+
+        mk "... Okaaaaaay Ms. McNeil, I think you should put away your sketchbook now."
+
+        n "*Opens eyes really wide, vigorously shakes her head*"
+
+        mk "I insist."
+
+        n "*Eyes tear up a bit, puts sketch book away and begins to sulk*"
+
+        mk "That’s better."
+
+        #Later in class
+
+        mk ".... and that’s how these laws of geometry work. You, know, it’s a shame parallel lines will never meet. They have so much in common."
+
+        #Class groans
+
+        #Bell rings 
+
+        mk "Alright class, you are dismissed."
+
+        #mc 1. (Ask how she’s feeling) *walks up to Natalie before they leave* "hey, are you ok? I couldn’t help but notice that you seemed upset. "  (+affection)
+        #        2. (Question her behavior) "Why didn’t you pay any attention in class? Are you mute?" (-Affection)
+        #        3. (Ignore her) 
+
+        #n 
+        #*blushes*
+        #*makes an angry face*
+             # 3.          ………………………………..
+
+        label seconddayschoolchoice2:
         
+            menu:
+                
+                "Ask how she's feeling"  #(+affection)
+                    jump seconddayschoolC2O1
+                "Question her behavior" #(-Affection)
+                    jump seconddayschoolC2O2
+                "Ignore her":
+                    jump seconddayschoolC2O3
+                    
+                    
+        label seconddayschoolC2O1:
+            mc "Hey, are you ok? I couldn’t help but notice that you seemed upset."
+            n "*Blushes"
+            jump secondSchoolDayPath2
+        label seconddayschoolC2O2:
+            mc "Why didn’t you pay any attention in class? Are you mute?"
+            n "*Makes an angry face*"
+            jump secondSchoolDayPath2
+        label seconddayschoolC2O3:
+            jump secondSchoolDayPath2
+            
+    label secondSchoolDayPath2:
         
-##Alarm Rings
+        mc "Huh. That was strange…."
 
-#mc "Urgh… My head…"
+        mc "My next class is science, it looks like. I’d better get there fast."
 
-##Alarm rings again
 
-#mc "Fine, I’ll get up. Where’s my toothbrush?"
+        #Scene change = ENTER SCIENCE
 
-##Screen shakes cause hes looking for stuff
+        mg "Before you sit down, line up at the back of the room. I have some important questions."
 
-##OBTAINED TOOTHBRUSH
+        mg "Since this is a science class, we must observe the scientific method. That means collecting questions. Now, my first question is this:…"
 
-#mc "Aha! Here we go."
+        #Fade out
 
-##KNOCK KNOCK KNOCK
+        mc "....Now, pick your partners. We will begin our lectures tomorrow, and collect data. Tonight, I want you to take notes on the first chapter of the textbook. Before you leave, let me know who you are sitting with. If you don’t, you will be randomly assigned with a partner. Go!"
 
-#mc "What? Who’s here? Who even knows I live here?"
+        mc "Uh… Hey… Anyone want to be my partner?"
 
-#m "OI! YOU READY FOR SCHOOL?"
+        mc "Anyone? Hey, you… No? Alright…"
 
-#mc "Marc?!?!?!?!?!?! Wha-"
+        mc "Urgh… Seems like no one is available…"
 
-#m "YOU’RE GUNNA BE LATE BRO"
+        mg "Now, does anyone not have a partner yet?"
 
-#mc "Ok, ok! I just got out of bed! Let me put on some clothes first, jeez!" *puts on clothes*
+        #Looks around  
 
-##Runs out of door
+        mc "Uh, I guess I don’t have a partner yet…"
 
-##Out of breath 
+        mg "Interesting. Now, could you take a look around the room? Can you tell me what you see?"
 
-#mc "Alright, Marc, I’m here. How did you figure out where I live?"
+        mc "Uhm… Oh." 
 
-#m "You dropped your wallet. Your address was inside."
+        #Looks at agnes 
 
-#mc "......Oh........."
+        mc "Uh, alright. Hi…"
 
-#m "You probably want this back." 
+        a "Hi."
 
-##Hands over wallet
+        Mrs. Galvin: " Wonderful. Now, tomorrow’s lecture will be about the chapter in which you are currently engaged in notetaking. Remember, the chapter notes will be due at the end of every week. The first chapter is rather short, so if you do not have them completed, there will be no excuse."
 
-#OBTAINED WALLET
+        #Staring at her phone, headphones in
 
-#m "Now we’re even."
+        mc "Um, hi. Er, since we are working together and everything, I was wondering…"
 
-#mc "Even?"
+        a "Hmmm?"
 
-#m "Yeah, for when you had my back at the dean’s."
+        mc " Oh, I was just wondering…"
 
-#mc "Oh, Right."
+        a "Agnes. But don’t call me that. I prefer..."
 
-##(Or, if you didn’t, Oh, Uh, Right, Sure.)
+        a ".... Novahawk."
 
-#m "Sooo… Shall we? {w}If we stand here any longer, we’ll be late for school."
+        mc " Uh… Right… Novahawk… ok…"
 
-#mc "Oh! let’s go."
+        a " Mhm. Now get outta here."
 
-##Go to school ya chump
+        #Agnes leaves 
 
-##Arrives at school
+        mc ".........Huh."
 
-#m "Hey, MC. Can I talk to you for a sec?"
+        mc "I guess it’s time for the electives now. Let’s see what Marc is up to."
 
-#mc "Uh, sure Marc. What’s up?"
+        #Insert Elective here*
 
-#m "Since you’re new in town, you probably don’t know nothin ‘bout anything. If you want to get through the year, you’ll need someone to show you around. I can do that for you."
+        m "...And that’s how you disguise your phone number."
 
-##mc 1. "You Could? That’d be great!" (+affection)
-##       2. "I think I would rather do it on my own." (- affection)
-##        3. "Uh, sure...."
-        
-##marc (1) "Alright, meet me after school in the courtyard, ok? See you in class!"
-# #         (2) "Oh, ok. Well, let me know if you need anything then. See you in class."
-# #         (3) "‘Kay. Cya Round."
+        mc "Oh, cool… What would I use that for?"
 
-##Scene Change MATH CLASS
-
-#mk "Ok Class! Take your seats! One… One… Two… Three… Five… Eight… Thirteen… Twenty one…"
-
-##Continues mumbling (LEAVE RESOLUTION OF JOKE UNTIL THE END OF THE YEAR, TELLS STUDENTS THAT IT’S THE FIBONACCI SEQUENCE)
-
-#n "……………" 
-
-##Scribble scribble
-
-#mk  "Now, class. I know that you hate homework on the first day, but I want to get you all learned up by the end of the year."
-
-##Collective groans
-
-#mk "I will hand out your assignments on the way out. For now, there is a text book under everyone’s desk. Pull it out and turn to page 394. That is where we will start."
-
-##MORE GROANS
-
-#mk "Today’s topic will be geometry. You know, I really like angles, to a certain degree."
-
-#mc "............ was that a pun"
-
-#mc "What was that pun"
-
-##Doodles smiley faces
-
-#mk "Ms. McNeil, I don’t see you opening up your textbook. Please don’t try to measure my patience."
-
-##Quickly sketches frowny face and shows it to Mr. Kelly
-
-#mk "... Okaaaaaay Ms. McNeil, I think you should put away your sketchbook now."
-
-##Opens eyes really wide, vigorously shakes her head
-
-#mk "I insist."
-
-##Eyes tear up a bit, puts sketch book away and begins to sulk
-
-#mk "That’s better."
-
-##Later in class
-
-#mk ".... and that’s how these laws of geometry work. You, know, it’s a shame parallel lines will never meet. They have so much in common."
-
-##Class groans
-
-##Bell rings 
-
-#mk "Alright class, you are dismissed."
-
-##mc 1. (Ask how she’s feeling) *walks up to Natalie before they leave* "hey, are you ok? I couldn’t help but notice that you seemed upset. "  (+affection)
-##        2. (Question her behavior) "Why didn’t you pay any attention in class? Are you mute?" (-Affection)
-##        3. (Ignore her) 
-
-##n 
-##*blushes*
-##*makes an angry face*
-#     # 3.          ………………………………..
-
-
-
-#mc "Huh. That was strange…."
-
-#mc "My next class is science, it looks like. I’d better get there fast."
-
-
-##Scene change = ENTER SCIENCE
-
-#mg "Before you sit down, line up at the back of the room. I have some important questions."
-
-#mg "Since this is a science class, we must observe the scientific method. That means collecting questions. Now, my first question is this:…"
-
-##Fade out
-
-#mc "....Now, pick your partners. We will begin our lectures tomorrow, and collect data. Tonight, I want you to take notes on the first chapter of the textbook. Before you leave, let me know who you are sitting with. If you don’t, you will be randomly assigned with a partner. Go!"
-
-#mc "Uh… Hey… Anyone want to be my partner?"
-
-#mc "Anyone? Hey, you… No? Alright…"
-
-#mc "Urgh… Seems like no one is available…"
-
-#mg "Now, does anyone not have a partner yet?"
-
-##Looks around*  
-
-#mc "Uh, I guess I don’t have a partner yet…"
-
-#mg "Interesting. Now, could you take a look around the room? Can you tell me what you see?"
-
-#mc "Uhm… Oh." 
-
-##Looks at agnes 
-
-#mc "Uh, alright. Hi…"
-
-#a "Hi."
-
-#Mrs. Galvin: " Wonderful. Now, tomorrow’s lecture will be about the chapter in which you are currently engaged in notetaking. Remember, the chapter notes will be due at the end of every week. The first chapter is rather short, so if you do not have them completed, there will be no excuse."
-
-##Staring at her phone, headphones in*"
-
-#mc "Um, hi. Er, since we are working together and everything, I was wondering…"
-
-#a "Hmmm?"
-
-#mc " Oh, I was just wondering…"
-
-#a "Agnes. But don’t call me that. I prefer..."
-
-#a ".... Novahawk."
-
-#mc " Uh… Right… Novahawk… ok…"
-
-#a " Mhm. Now get outta here."
-
-##Agnes leaves 
-
-#mc ".........Huh."
-
-#mc "I guess it’s time for the electives now. Let’s see what Marc is up to."
-
-##Insert Elective here*
-
-#m "...And that’s how you disguise your phone number."
-
-#mc "Oh, cool… What would I use that for?"
-
-#m "Probably nothing, but hey, the more you know."
+        m "Probably nothing, but hey, the more you know."
 
