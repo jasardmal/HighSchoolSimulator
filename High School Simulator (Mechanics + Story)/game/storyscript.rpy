@@ -440,15 +440,6 @@
 
         mk "Alright class, you are dismissed."
 
-        #mc 1. (Ask how she’s feeling) *walks up to Natalie before they leave* "hey, are you ok? I couldn’t help but notice that you seemed upset. "  (+affection)
-        #        2. (Question her behavior) "Why didn’t you pay any attention in class? Are you mute?" (-Affection)
-        #        3. (Ignore her) 
-
-        #n 
-        #*blushes*
-        #*makes an angry face*
-             # 3.          ………………………………..
-
         label seconddayschoolchoice2:
         
             menu:
