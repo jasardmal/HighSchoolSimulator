@@ -380,13 +380,13 @@
                     
         label seconddayschoolC1O1:
             mw "Alright, meet me after school in the courtyard, ok? See you in class!"
-            jump secondSchoolDay
+            jump secondSchoolDayPath1
         label seconddayschoolC1O2:
             mw "Oh, ok. Well, let me know if you need anything then. See you in class."
-            jump secondSchoolDay
+            jump secondSchoolDayPath1
         label seconddayschoolC1O3:
             mw "‘Kay. Cya Round."
-            jump secondSchoolDayPath2
+            jump secondSchoolDayPath1
             
     label secondSchoolDayPath1:        
                 
@@ -396,9 +396,9 @@
 
         #Continues mumbling (LEAVE RESOLUTION OF JOKE UNTIL THE END OF THE YEAR, TELLS STUDENTS THAT IT’S THE FIBONACCI SEQUENCE)
 
-        n "........" 
+        nm "........" 
 
-        n "*Scribble scribble*"
+        nm "*Scribble scribble*"
 
         mk  "Now, class. I know that you hate homework on the first day, but I want to get you all learned up by the end of the year."
 
@@ -414,19 +414,19 @@
 
         mc "What was that pun"
 
-        n "*Doodles smiley faces*"
+        nm "*Doodles smiley faces*"
 
         mk "Ms. McNeil, I don’t see you opening up your textbook. Please don’t try to measure my patience."
 
-        n "*Quickly sketches frowny face and shows it to Mr. Kelly*"
+        nm "*Quickly sketches frowny face and shows it to Mr. Kelly*"
 
         mk "... Okaaaaaay Ms. McNeil, I think you should put away your sketchbook now."
 
-        n "*Opens eyes really wide, vigorously shakes her head*"
+        nm "*Opens eyes really wide, vigorously shakes her head*"
 
         mk "I insist."
 
-        n "*Eyes tear up a bit, puts sketch book away and begins to sulk*"
+        nm "*Eyes tear up a bit, puts sketch book away and begins to sulk*"
 
         mk "That’s better."
 
@@ -463,11 +463,11 @@
                     
         label seconddayschoolC2O1:
             mc "Hey, are you ok? I couldn’t help but notice that you seemed upset."
-            n "*Blushes"
+            nm "*Blushes"
             jump secondSchoolDayPath2
         label seconddayschoolC2O2:
             mc "Why didn’t you pay any attention in class? Are you mute?"
-            n "*Makes an angry face*"
+            nm "*Makes an angry face*"
             jump secondSchoolDayPath2
         label seconddayschoolC2O3:
             jump secondSchoolDayPath2
