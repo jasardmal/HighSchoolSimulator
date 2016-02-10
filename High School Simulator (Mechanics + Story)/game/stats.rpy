@@ -66,3 +66,18 @@ init python:
                 store.stress = store.stress + 1
                 
     config.python_callbacks.append(time_callback)
+    
+    def Statswindow():#manages display of phases
+        ui.frame(xfill=False, xminimum = None, yminimum=None, xalign=0.0, yalign = 0.5)
+        ui.vbox()
+        ui.text("Charisma")
+        ui.bar(range=5, value=charisma, xminimum=10)
+        ui.text("Courage")
+        ui.bar(range=5, value=courage, xminimum=10)
+        ui.text("Intelligence")
+        ui.bar(range=5, value=intelligence, xminimum=10)
+        ui.text("Stamina")
+        ui.bar(range=5, value=stamina, xminimum=10)
+        ui.text("Stress")
+        ui.bar(range=5, value=stress, xminimum=10)
+        ui.close()

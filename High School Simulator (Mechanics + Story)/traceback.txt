@@ -1,20 +1,60 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/storyscript.rpy", line 512, in script
-    a "Hi."
-Exception: Sayer 'a' is not defined.
+  File "game/storyscript.rpy", line 4, in script
+    "*Bell Rings*"
+  File "game/screens.rpy", line 9, in execute
+    screen say:
+  File "game/screens.rpy", line 9, in execute
+    screen say:
+  File "game/screens.rpy", line 61, in execute
+    if(clock):
+  File "game/screens.rpy", line 65, in execute
+    $ Statswindow()
+  File "game/screens.rpy", line 65, in <module>
+    $ Statswindow()
+  File "game/stats.rpy", line 76, in Statswindow
+    choice = ui.interact(suppress_overlay=True)
+Exception: ui.interact called with non-empty widget/layer stack. Did you forget a ui.close() somewhere?
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/storyscript.rpy", line 512, in script
-    a "Hi."
-  File "C:\Users\1049089\Desktop\renpy-6.99.8-sdk\renpy\ast.py", line 583, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\1049089\Desktop\renpy-6.99.8-sdk\renpy\ast.py", line 500, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'a' is not defined.
+  File "game/storyscript.rpy", line 4, in script
+    "*Bell Rings*"
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 603, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\exports.py", line 1121, in say
+    who(what, interact=interact)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 828, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 690, in do_display
+    **display_args)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 467, in display_say
+    what_text = show_function(who, what_string)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 674, in do_show
+    **self.show_args)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 275, in show_display_say
+    return renpy.display.screen.get_widget(screen, "what", layer)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\screen.py", line 1137, in get_widget
+    screen.update()
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\screen.py", line 565, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 9, in execute
+    screen say:
+  File "game/screens.rpy", line 9, in execute
+    screen say:
+  File "game/screens.rpy", line 61, in execute
+    if(clock):
+  File "game/screens.rpy", line 65, in execute
+    $ Statswindow()
+  File "game/screens.rpy", line 65, in <module>
+    $ Statswindow()
+  File "game/stats.rpy", line 76, in Statswindow
+    choice = ui.interact(suppress_overlay=True)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ui.py", line 271, in interact
+    raise Exception("ui.interact called with non-empty widget/layer stack. Did you forget a ui.close() somewhere?")
+Exception: ui.interact called with non-empty widget/layer stack. Did you forget a ui.close() somewhere?
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.8.959

@@ -2,16 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/storyscript.rpy", line 326: end of line expected.
-    mc "Ok, ok! I just got out of bed! Let me put on some clothes first, jeez!" *puts on clothes*
-                                                                                ^
-
-File "game/storyscript.rpy", line 456: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Ask how she's feeling"  
-                             ^
-
-File "game/storyscript.rpy", line 514: expected statement.
-    Mrs. Galvin: " Wonderful. Now, tomorrow’s lecture will be about the chapter in which you are currently engaged in notetaking. Remember, the chapter notes will be due at the end of every week. The first chapter is rather short, so if you do not have them completed, there will be no excuse."
-               ^
+File "game/stats.rpy", line 76: invalid syntax
+        $ result = ui.interact()
+         ^
+    
 
 Ren'Py Version: Ren'Py 6.99.8.959

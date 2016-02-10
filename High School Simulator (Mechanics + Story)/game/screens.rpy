@@ -62,6 +62,7 @@ screen say:
         $ Calendar()
         $ Phase()
         $ Location()
+        $ Statswindow()
 
     # Use the quick menu.
     use quick_menu
