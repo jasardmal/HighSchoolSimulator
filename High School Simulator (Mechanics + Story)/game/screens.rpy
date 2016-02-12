@@ -62,6 +62,9 @@ screen say:
         $ Calendar()
         $ Phase()
         $ Location()
+    
+    # If there's a stat system, display it in upper left.
+    if(stats):
         $ Statswindow()
 
     # Use the quick menu.
@@ -80,7 +83,7 @@ screen choice:
     window:
         style "menu_window"
         xalign 0.5
-        yalign 0.5
+        yalign 0.6
 
         vbox:
             style "menu"
@@ -106,6 +109,10 @@ screen choice:
 
         textbutton _("Back") action Rollback()
         textbutton _("Menu") action ShowMenu('save')
+        if stats == False:
+            textbutton _("Stats") action SetVariable("stats", True)
+        else:
+            textbutton _("Stats") action SetVariable("stats", False)
         if thephase == 10 or thephase == 11:
             textbutton _("Map") action ShowMenu("mapSchool")
         else:
@@ -449,6 +456,10 @@ screen quick_menu:
 
         textbutton _("Back") action Rollback()
         textbutton _("Menu") action ShowMenu('save')
+        if stats == False:
+            textbutton _("Stats") action SetVariable("stats", True)
+        else:
+            textbutton _("Stats") action SetVariable("stats", False)
         if thephase == 10 or thephase == 11:
             textbutton _("Map") action ShowMenu("mapSchool")
         else:

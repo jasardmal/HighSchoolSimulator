@@ -45,6 +45,7 @@ label start:
     
     #Initialize Calendar/Time/Location
     $ clock = False#make false to hide the calendar
+    $ stats = False#make false to hide the stats
     $ theweekday = 2#monday, the number of the weekday, this automatically changes but must be initially assigned
     $ themonth = 8#august, the number of the month, this automatically changes but must be initially assigned
     $ theday = 31#this automatically changes but must be initially assigned
@@ -180,9 +181,9 @@ label start:
     #START DECIDER *********************************************************************************************
     label startDecider:
         $ clock = True
-        if isfirstschoolday == True:
-            jump firstSchoolDay
-        elif theweekday == 1:
+        #if isfirstschoolday == True:
+            #jump firstSchoolDay
+        if theweekday == 1:
             jump regularWeekendDay
         elif theweekday == 2:
             jump regularSchoolDay
