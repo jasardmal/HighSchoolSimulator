@@ -1,33 +1,33 @@
-Fri Feb 12 07:08:09 2016
+Wed Feb 17 13:37:28 2016
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.8.959
  
 
-Bootstrap to the start of init.init took 0.08s
-Early init took 0.02s
-Loader init took 0.03s
+Bootstrap to the start of init.init took 0.07s
+Early init took 0.01s
+Loader init took 0.04s
 Loading error handling took 0.02s
-Loading script took 0.26s
-Loading persistent took 0.03s
+Loading script took 0.31s
+Loading persistent took 0.02s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
-Loading analysis data took 0.33s
+Running init code took 0.09s
+Loading analysis data took 0.32s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\501508\\AppData\\Roaming/RenPy/backups\\High School Simulator (Mechanics + Story)':
-Dump and make backups. took 0.05s
+Dump and make backups. took 0.11s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Creating interface object took 0.01s
+Creating interface object took 0.02s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.07s
+Analyze screens took 0.01s
 Save screen analysis took 0.08s
-Prepare screens took 0.09s
-Save pyanalysis. took 1.37s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
@@ -355,11 +355,19 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 2.88899993896s
+Total time until interface ready: 1.54100012779s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.017000 seconds.
 - Frame drawn at 0.020000 seconds.
-- Frame drawn at 0.020000 seconds.
-- Frame drawn at 0.040000 seconds.
-- Frame drawn at 0.050000 seconds.
-- 0.050000 seconds to render 5 frames.
+- Frame drawn at 0.036000 seconds.
+- Frame drawn at 0.053000 seconds.
+- 0.053000 seconds to render 5 frames.
+Traceback (most recent call last):
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\execution.py", line 388, in run
+    node.execute()
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 1519, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\script.py", line 843, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'regularWeekend'.

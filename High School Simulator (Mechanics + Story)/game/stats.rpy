@@ -67,7 +67,7 @@ init python:
                 
     config.python_callbacks.append(time_callback)
     
-    def Statswindow():#manages display of phases
+    def Statswindow():#manages display of stats
         ui.frame(xfill=False, xminimum = None, yminimum=None, xalign=0.0, yalign = 0.0)
         ui.vbox()
         ui.text("Charisma")

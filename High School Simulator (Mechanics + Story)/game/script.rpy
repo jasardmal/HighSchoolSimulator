@@ -46,7 +46,7 @@ label start:
     #Initialize Calendar/Time/Location
     $ clock = False#make false to hide the calendar
     $ stats = False#make false to hide the stats
-    $ theweekday = 2#monday, the number of the weekday, this automatically changes but must be initially assigned
+    $ theweekday = 7#monday, the number of the weekday, this automatically changes but must be initially assigned
     $ themonth = 8#august, the number of the month, this automatically changes but must be initially assigned
     $ theday = 31#this automatically changes but must be initially assigned
     $ theyear = 2015#this automatically changes but must be initially assigned
@@ -184,23 +184,24 @@ label start:
         #if isfirstschoolday == True:
             #jump firstSchoolDay
         if theweekday == 1:
-            jump regularWeekendDay
+            jump regularWeekend
         elif theweekday == 2:
-            jump regularSchoolDay
+            jump regularSchool
         elif theweekday == 3:
-            jump regularSchoolDay
+            jump regularSchool
         elif theweekday == 4:
-            jump regularSchoolDay
+            jump regularSchool
         elif theweekday == 5:
-            jump regularSchoolDay
+            jump regularSchool
         elif theweekday == 6:
-            jump regularSchoolDay
+            jump regularSchool
         elif theweekday == 7:
-            jump regularWeekendDay
+            jump regularWeekend
     
-    #REGULAR SCHOOL DAY *********************************************************************************************
-    label regularSchoolDay:
+    #REGULAR SCHOOL START *********************************************************************************************
+    label regularSchool:
         $ location = 2
+        $ stamina = 3
         scene img_black
         mc "It's time for school."
         scene img_1806
@@ -396,7 +397,7 @@ label start:
                         jump period
                     else:
                         mc "Zzz..."
-                        t "Hey! Wake up and pay attention!"
+                        te "Hey! Wake up and pay attention!"
                         mc "...!"
                         mc "Ugh. How embarassing... >Stress increased."
                         $ stresssub = stresssub + 1
@@ -997,10 +998,124 @@ label start:
                 $ charisma = charisma + 1
                 $ thephase = 1
                     
-    #REGULAR WEEKEND DAY*********************************************************************************************
-    label regularWeekendDay:
+    #REGULAR WEEKEND START (VARIANTS)*********************************************************************************************
+    label regularWeekend:
         $ location = 2
         scene img_black
-        mc "It's the weekend."
+        if stamina == 2:
+            mc "...! {w} Look likes I slept in. It's almost the afternoon."
+            $ thephase = 4
+        elif stamina == 3:
+            mc "...! {w} It's morning."
+            $ thephase = 3
+        elif stamina == 4:
+            mc "...! {w} Looks like the morning is just starting."
+            $ thephase = 2
+        elif stamina == 5:
+            mc "...! {w} I feel well rested. Looks like the sun's just rising."
+            $ thephase = 1
         $ thephase = thephase + 1
-        jump startDecider
+        jump regularWeekendMorning
+    
+    #REGULAR WEEKEND MORNING *********************************************************************************************
+    label regularWeekendMorning:
+            
+        label homeWeekendChoice:
+        
+            menu:
+                
+                mc "What should I do this morning?"
+                
+                "Do homework":
+                    jump homeSchoolHomework
+                
+                "Exercise":
+                    jump homeSchoolExercise
+                
+                "Eat":
+                    jump homeSchoolLongSleep
+        
+            label homeSchoolHomework:
+                if stress == 1 or stress == 2:
+                    mc "I easily did my homework! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
+                    $ intelligencesub = intelligencesub + 2
+                    $ stresssub = stresssub + 2
+                    $ staminasub = staminasub - 1
+                    
+                    jump homeSchoolRegularSleep
+                elif stress == 3:
+                    $ randHomework = renpy.random.choice([1, 2])
+                    if randHomework == 1:
+                        mc "I easily did my homework! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
+                        $ intelligencesub = intelligencesub + 2
+                        $ stresssub = stresssub + 2
+                        $ staminasub = staminasub - 1
+                        
+                        jump homeSchoolRegularSleep
+                    else:
+                        mc "I did my homework. >Intelligence increased. >Stress increased. >Stamina decreased."
+                        $ intelligencesub = intelligencesub + 1
+                        $ stresssub = stresssub + 1
+                        $ staminasub = staminasub - 1
+                        
+                        jump homeSchoolRegularSleep
+                elif stress == 4:
+                    $ randHomework = renpy.random.choice([1, 2, 3, 4])
+                    if randHomework == 1 or randHomework == 2 or randHomework == 3:
+                        mc "I did my homework. >Intelligence increased. >Stress increased. >Stamina decreased."
+                        $ intelligencesub = intelligencesub + 1
+                        $ stresssub = stresssub + 1
+                        $ staminasub = staminasub - 1
+                        
+                        jump homeSchoolRegularSleep
+                    else:
+                        mc "I tried to do my homework but couldn't figure it out... >Intelligence increased. >Stress increased. >Stamina decreased."
+                        $ intelligencesub = intelligencesub + 1
+                        $ stresssub = stresssub + 1
+                        $ staminasub = staminasub - 1
+                        
+                        jump homeSchoolRegularSleep
+                elif stress == 5:
+                    mc "I tried to do my homework but couldn't figure it out... >Stress increased. >Stamina decreased."
+                    $ intelligencesub = intelligencesub + 1
+                    $ stresssub = stresssub + 1
+                    $ staminasub = staminasub - 1
+                    
+                    jump homeSchoolRegularSleep
+            
+            label homeSchoolExercise:
+                label afterSchoolExercise:
+                if stress == 1 or stress == 2 or stress == 3:
+                    mc "I feel stronger. >Endurance increased. >Stress increased. Stamina decreased."
+                    $ staminasubfuturelim = staminasubfuturelim + 0.1
+                    $ stresssub = stresssub + 1
+                    $ staminasub = staminasub - 1
+                    
+                    jump homeSchoolRegularSleep
+                elif stress == 4:
+                    $ randExercise = renpy.random.choice([1, 2])
+                    if randExercise == 1:
+                        mc "I feel stronger. >Endurance increased. >Stress increased. Stamina decreased."
+                        $ staminasubfuturelim = staminasubfuturelim + 0.1
+                        $ stresssub = stresssub + 1
+                        $ staminasub = staminasub - 1
+                        
+                        jump homeSchoolRegularSleep
+                    else:
+                        mc "I'm not feeling too motivated to exercise... >Stress increased. Stamina decreased."
+                        $ stresssub = stresssub + 1
+                        $ staminasub = staminasub - 1
+                        
+                        jump homeSchoolRegularSleep
+                elif stress == 5:
+                    mc "I'm not feeling too motivated to exercise... >Stress increased. Stamina decreased."
+                    $ stresssub = stresssub + 1
+                    $ staminasub = staminasub - 1
+                    
+                    jump homeSchoolRegularSleep
+        
+    #REGULAR WEEKEND AFTERNOON *********************************************************************************************
+    label regularWeekendAfternoon:
+    
+    #REGULAR WEEKEND EVENING *********************************************************************************************
+    label regularWeekendEvening:
