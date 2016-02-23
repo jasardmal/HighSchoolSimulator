@@ -530,7 +530,359 @@
 
 #        mw "...And that’s how you disguise your phone number."
 
-#        mc "Oh, cool… What would I use that for?"
+##        mc "Oh, cool… What would I use that for?"
 
-#        mw "Probably nothing, but hey, the more you know."
+##        mw "Probably nothing, but hey, the more you know."
+
+#        #OPTION ⅓-  Marc shows you around, takes you to where Sarah works
+#        #Player discovers more places, affection with Marc goes up
+
+#        mw ".... And that’s why Marcy’s is cheaper than Jenny’s. Good way to save your money on clothes."
+
+#        mc "Oh ok, thanks for letting me know."
+
+#        mw "So I was thinkin’, there’s this place up by the Cafe that I hang around, got a bunch a’ video games and stuff. Wanna hit it, see if there’s something ya wanna play?" 
+
+#        mc "Er, sure. What kinds of games are there?"
+
+#        mw "Oh ya know, things like fighting games, racing games, shooters. All kinds. It’s right over here, let’s get going."
+
+#        mc "Uh yeah, let’s go..."
+
+#        #*In Arcade*
+
+#        mw "Check out this game, dude!"
+
+#        mc "Erm, alright… What game is this?"
+
+#        mw "It’s the hottest game in the arcade! You HAVE to try it."
+
+#        mc "Oh, okay cool… What do I do?"
+
+#        mw "Well, first, you start by..."
+        
+#        #*minigame tutorial, insert minigame here*
+
+#        mw "... And that’s how you can use the combos to get higher scores."
+
+#       ### mc  "You know, this game is 1) pretty fun! [small increase in affection] 2) pretty lame. 3) not too bad."
+
+#       ### mw 1) That’s awesome! This is my favorite game in the arcade.
+#       ###           2-3) Oh well, to each their own. I really like it myself.
+
+#        mw "Hey are you feeling hungry? My stomach just started to growl."
+
+#        mc "*STOMACH GROWLS, SCREEN SHAKES AS REPRESENTATION* Oh! I’m feeling hungry too. Do you know any good places to eat?"
+        
+#        mw "Actually I do, there’s a place not too far from here that’s super popular with the students at our school. A senior named Fredrick runs the place, and a friend of mine works there."
+
+#        mc "Ok cool, let’s go."
+
+#        #*Outside Cafe*
+
+#        mw "Here’s the place. Roland’s Sweet Honey Cafe."
+
+#        mc "Looks nice."
+
+#        mw "I’m starving, let’s go in and get some food."
+
+#        #*Inside Cafe*
+
+#        mc "There’s a lot of people here." 
+
+#        mw "Yea, almost everyone comes here after school to hang out and unwind."
+
+#        #???(Fred) "Well, if it isn’t the freshie who can’t take a bit of homework."
+
+#        mw "Excuse me Fredrick!?!?!?!"
+
+#        fh "No, not you, your friend here."
+
+#        mc "W-w-what? W-what do you mean?"
+
+#        fh "Forgetful, are we? Just yesterday I caught you complaining about homework on the first day. I told you to grow a pair."
+
+#        mw "*Snickers*"
+
+#        mc "Marc!"
+
+#        mw "Sorry, it is a little funny. You probably shouldn’t complain too much."
+
+#        mc "Y-you’re one to talk!"
+
+#        mw "Yeah, probably. But still, that was FUNNY."
+
+#        bk "Frederick, that’s no way to treat new customers. You know better."
+
+#        fh "Becka!! My apologies. You’re right. It was just that… he was being whiny yesterday and it bothered me, I mean, he hasn’t even been to any higher level classes..."
+
+#        bk "Shush. You were exactly the same way. As were most of the members of our class, if I recall correctly."
+
+#        fh "Well I Ne-..."
+
+#        bk "Now apologize to your customer."
+
+#        fh "*BLUSHING* You do not own this cafe! I do! Argh!" 
+
+#        fh "But, you are right. I must be more… professional. *turns to MC and Marc* As a consolation, your drinks are on the house. You are welcome."
+
+#        bk "Now, that wasn’t so hard was it?"
+
+#        fh "Oh for heaven’s sake!" 
+
+#        #*frederick and becka leave*
+
+#        mw "Huh. Anyway, let’s go sit somewhere."
+
+#        mc "Uh… okay, that sounds good to me."
+
+#        #???(sarah) "Hey Marc! How’s it goin?"
+
+#        mw "Sarah! How’s business today?"
+
+#        sg "Oh, you know, it’s been pretty busy, being the first few days in the school year and all... What can I get for you guys?"
+
+#        mw "I’ll have the usual. Frederick said we get free drinks today."
+
+#        sg "Did he now? Well, alright, I trust you. And who’s this?"
+
+#        mw "This is (MC)! He just moved into town. He’s a freshman, like me. In fact, he lives in our neighborhood!"
+
+#        sg "Oh? And how would you know? Did you follow him home?"
+
+#        mw "... Something like that."
+
+#        mc "Uhh..."
+
+#        mw "Don’t worry about it. What are you gonna order?"
+
+#        mc "Err, what does the chef recommend?"
+
+#        sg "Today we have a special on Caesar Salads. Comes with grilled chicken and garlic bread."
+
+#        mc "Sounds good, I’ll have that."
+
+#        sg "Then I’ll be back in a jiffy."
+
+#        mw "Thanks!"
+
+#        mc "So… How do you and Sarah know each other...?"
+
+#        mw "Oh, me and Sarah? We go way back. Grew up together, almost."
+
+#        mc "Really? That’s cool..."
+
+#        sg "Hey guys! Here are your drinks. I’ll be back in a sec with your food."
+
+#        mw "Thanks! Do you have a minute to sit with us after that?"
+
+#        sg "Oh, no, sorry. Not today. We are up to our elbows in customers, haha."
+
+#        mw "Alright, maybe next time then."
+
+#        sg "See you later!"
+
+#        mw "Hey wait! How is your leg doing?"
+
+#        sg "Oh, well, I’ve been doing better… Healing a broken bone doesn’t happen overnight, you know?"
+
+#        mw "True, true. Well, get better soon! The team needs you."
+
+#        sg "Haha, thanks. I’ll see you around."
+
+#        mc "...I didn’t notice her cast. What happened?"
+
+#        mw "It’s a bit of a nasty story. Let’s just say there was a really, really bad accident." 
+
+#        mc "Oh… Uh, how long has she had the cast?"
+
+#        mw "Too long. The whole summer, and then some. It was really bad." 
+
+#        mw "Thinking about this is depressing. Let’s finish up and get out of here."
+
+#        mc "Uhhh, sure." 
+
+#        #*Dining room noises*
+
+#        mw "That was really good! I always enjoy eating here. Are you done?"
+
+#        mc "Yeah, I think I’m finished. Let’s go."
+
+#        mw "Sweet. I'll see you tomorrow."
+
+#        #*scene transition*
+
+
+
+#       ######## #OPTION 2-  Player walks around on their own, ends up where Sarah works because hungry, Marc is there cracking a joke
+
+#        mc "Well school’s out now, I wonder what I should do… Looks like a bunch of students are going over to that cafe over there, I think I’ll go check it out."
+
+#        #*walks over to the cafe*
+
+#        mc "Roland’s Sweet Honey Cafe… weird name..."
+
+#        #*walks in*
+
+#        #*Inside Cafe*
+
+#        mc "There’s a lot of people here." 
+
+#        #???(Fred) "Well, if it isn’t the freshie who can’t take a bit of homework."
+
+#        mc "W-w-what? W-what do you mean?"
+
+#        fh "Forgetful, are we? Just yesterday I caught you complaining about homework on the first day. I told you to grow a pair."
+
+#        mc "H-hey! G-get out of my face!"
+
+#        fh "Why, you insolent..."
+
+#        bk "Frederick, that’s no way to treat new customers. You know better."
+
+#        fh "Becka!! My apologies. You’re right. It was just that… he was being whiny yesterday and it bothered me, I mean, he hasn’t even been to any higher level classes..."
+
+#        bk "Shush. You were exactly the same way. As were most of the members of our class, if I recall correctly."
+
+#        fh "Well I Ne-..."
+
+#        bk "Now apologize to your customer."
+
+#        fh "*BLUSHING* You do not own this cafe! I do! Argh!" 
+
+#        fh "But, you are right. I must be more… professional. *turns to MC* As a consolation, your drink is on the house. You are welcome."
+
+#        bk "Now, that wasn’t so hard was it?"
+
+#        fh "Oh for heaven’s sake!" 
+
+#        #*frederick and becka leave*
+
+#        mc "Jeez… what’s his problem..."
+
+#        #*scene cut to Marc talking to some girl (Sarah)*
+
+#        mw ".... And that’s how I avoided getting into trouble with the dean."
+
+#        sg "...You aren’t serious."
+
+#        mw "Yes I am! Look, at school tomorrow I’ll have you meet the guy."
+
+#        sg "Uh huh."
+
+#        mw "Well, speak of the devil and he shall appear! He’s right there!"
+
+#        mc "h-huh?! Excuse me? W-what’s going on?"
+
+#        mw "Oh, I was just telling my friend Sarah here how I met you yesterday. So, how’s solo explorin’ going?"
+
+#        mc "G-good, I guess..." 
+
+#        sg "So, what’ll it be? I assume you *are* here to eat."
+        
+#        mw "I’ll have the usual. Oh, by the way, have you met MC? He just moved to town. He even lives in our neighborhood!"
+
+#        sg "Oh? And how would you know? Did you follow him home?"
+
+#        mw "... Something like that."
+
+#        mc "Uhh..."
+
+#        mw "Don’t worry about it. *to MC* What are you gonna order?"
+
+#        mc "Err, what does the chef recommend?"
+
+#        sg "Today we have a special on Caesar Salads. Comes with grilled chicken and garlic bread."
+
+#        mc "Sounds good, I’ll have that." 
+
+#        sg "Then I’ll be back in a jiffy."
+
+#        mw "Thanks!"
+
+#        mc "So… How do you and Sarah know each other...?" 
+
+#        mw "Oh, me and Sarah? We go way back. Grew up together, almost."
+
+#        mc "Really? That’s cool..."
+
+#        sg "Hey guys! Here are your drinks. By the way, Frederick said that you get a free drink, MC. I’ll be back in a sec with your food."
+
+#        mw "Thanks! Do you have a minute to sit with us after that?"
+
+#        sg "Oh, no, sorry. Not today. We are up to our elbows in customers, haha."
+
+#        mw "Alright, maybe next time then."
+
+#        sg "See you later!"
+
+#        mw "Hey wait! How is your leg doing?" 
+
+#        sg "Oh, well, I’ve been doing better… Healing a broken bone doesn’t happen overnight, you know?"
+
+#        mw "True, true. Well, get better soon! The team needs you."
+
+#        sg "Haha, thanks. I’ll see you around."
+
+#        mc "...I didn’t notice her cast. What happened?"
+
+#        mw "It’s a bit of a nasty story. Let’s just say there was a really, really bad accident." 
+
+#        mc "Oh… Uh, how long has she had the cast?"
+
+#        mw "Too long. The whole summer, and then some. It was really bad." 
+
+#        mw "Thinking about this is depressing. Let’s finish up and get out of here."
+
+#        mc "Uhhh, sure." 
+
+#        #*Dining room noises*
+
+#        mw "That was really good! I always enjoy eating here. Are you done?"
+
+#        mc "Yeah, I think I’m finished. Let’s go."
+
+#        mw "Sweet. I'll see you tomorrow."
+
+#        #*Scene Change Home*
+
+#        #RING RING RING RING RING
+
+#        mc "Wow! As soon as I get home, someone else is calling me. Is it going to be like this every night?"
+
+#        mc "I had probably better pick up the call..."
+
+
+#        #mc 1. Pick up 2. Don’t
+
+#        #mc Oh. Look. It’s my sister.
+
+#        #Sister: Hey little bro! How was your first few days of school?
+#        #        mc Oh! Hey, Jackie! It’s been a while.
+#        #        Jackie: Yeah, well, you know, college and all that. How’s my socially awkward padawan learner?
+#        #        mc Urgh, i’m doing fine… Why do you always reference that movie?
+#        #        Jackie: Because it’s *our* favorite, and don’t you forget that. 
+#        #        mc But you know I don’t…
+#        #        Jackie: Shush, yes you do. Anyways, do you have a girlfriend yet?
+#        #        mc What?!?! I literally just got here and…
+#        #        Jackie: No excuses! Get moving, casanova!
+#        #        mc Argh! I don’t even know anyone yet!
+#        #        Jackie: Sure you don’t, Romeo. 
+#        #        mc Okay, fine, i’ve met a grand total of 4 people. None of whom I know very well.
+#        #        Jackie: Any girls?
+#        #        mc ….Two. But…
+#        #        Jackie: Are they pretty?
+#        #        mc ...What? Wait… No, that doesn’t… leave me alone!
+#        #        Jackie: Alright, Valentine. I’ll keep cupid off your back… for now. Don’t be surprised if you find an arrow in your butt later in the year.
+#        #        mc An arrow?
+#        #        Jackie: you know, the arrow of love? Nevermind, loverboy. I’ll talk to you later. Don’t forget to give mom and dad a call every now and then!
+#        #        mc Ok, I’ll do that. Don’t you have college things to do?
+#        #        Jackie: Yeah probably. Oh, and by the way, I looked at your school’s website and it looks like homecoming is coming up soon. So, like I said, get a date. Cupid will watch over you.
+        #        mc ...Uh, Ok…. Sure…
+        #        Jackie: See ya round! *hangs up*
+        #        mc Jeez… That was really something… I’d better get some sleep…
+        #*End Day* 
+
+        #2) mc Egh… It’s probably not important. You know, today was really long. I’m glad I met all these people, though. I hope they will be my friends… *Yawn* Wow, I’m tired. I should really get some sleep. I hope that call wasn’t important...
+
 
