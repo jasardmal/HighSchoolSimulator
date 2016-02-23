@@ -38,11 +38,11 @@ init python:
                     store.stringweekday = "Error"
             
             elif store.theweekday == 1:
-                if store.thephase > 13:
+                if store.thephase > 14:
                     store.theweekday = store.theweekday + 1
                     store.theday = store.theday + 1
                     store.dayofyear = store.dayofyear + 1
-                    store.thephase = store.thephase - 13
+                    store.thephase = store.thephase - 14
                 if store.thephase == 1:
                     store.stringphase = "Early Morning"
                 elif store.thephase == 2:
@@ -69,6 +69,8 @@ init python:
                     store.stringphase = "Evening"
                 elif store.thephase == 13:
                     store.stringphase = "Evening"
+                elif store.thephase == 14:
+                    store.stringphase = "Night"
                 else:
                     store.stringweekday = "Error"
                     

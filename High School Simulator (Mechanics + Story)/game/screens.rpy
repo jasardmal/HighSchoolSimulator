@@ -460,10 +460,18 @@ screen quick_menu:
             textbutton _("Stats") action SetVariable("stats", True)
         else:
             textbutton _("Stats") action SetVariable("stats", False)
-        if thephase == 10 or thephase == 11:
-            textbutton _("Map") action ShowMenu("mapSchool")
+        if theweekday == 1 or theweekday == 7:
+            if thephase == 6:
+                textbutton _("Map") action ShowMenu("mapWeekendAfternoon")
+            elif thephase == 10:
+                textbutton _("Map") action ShowMenu("mapWeekendEvening")
+            else:
+                textbutton _("Map") action NullAction()
         else:
-            textbutton _("Map") action NullAction()
+            if thephase == 10 or thephase == 11:
+               textbutton _("Map") action ShowMenu("mapSchool")
+            else:
+                textbutton _("Map") action NullAction()
         textbutton _("Q.Save") action QuickSave()
         textbutton _("Q.Load") action QuickLoad()
         textbutton _("Skip") action Skip()
@@ -649,6 +657,36 @@ screen mapSchool:
         
         hotspot (0, 0, 100, 100) clicked Jump("eveningSchool")
         hotspot (700, 0, 100, 100) clicked Jump("homeSchool")
+        hotspot (0, 500, 100, 100) clicked Jump("choiceTown")
+        hotspot (700, 500, 100, 100) clicked Jump("choicePark")
+        
+screen mapWeekendAfternoon:
+    
+    # This ensures that any other menu screen is replaced.
+    tag menu
+    
+    imagemap:
+        
+        ground "map"
+        hover "mappng"
+        
+        hotspot (0, 0, 100, 100) clicked Jump("eveningSchool")
+        hotspot (700, 0, 100, 100) clicked Jump("regularWeekendAfternoonHome")
+        hotspot (0, 500, 100, 100) clicked Jump("choiceTown")
+        hotspot (700, 500, 100, 100) clicked Jump("choicePark")
+        
+screen mapWeekendEvening:
+        
+# This ensures that any other menu screen is replaced.
+    tag menu
+    
+    imagemap:
+        
+        ground "map"
+        hover "mappng"
+        
+        hotspot (0, 0, 100, 100) clicked Jump("eveningSchool")
+        hotspot (700, 0, 100, 100) clicked Jump("regularWeekendEveningHome")
         hotspot (0, 500, 100, 100) clicked Jump("choiceTown")
         hotspot (700, 500, 100, 100) clicked Jump("choicePark")
 

@@ -1,21 +1,21 @@
-Wed Feb 17 13:37:28 2016
+Tue Feb 23 07:04:51 2016
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.8.959
  
 
 Bootstrap to the start of init.init took 0.07s
 Early init took 0.01s
-Loader init took 0.04s
+Loader init took 0.02s
 Loading error handling took 0.02s
-Loading script took 0.31s
+Loading script took 0.37s
 Loading persistent took 0.02s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.09s
-Loading analysis data took 0.32s
+Running init code took 0.08s
+Loading analysis data took 0.40s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\501508\\AppData\\Roaming/RenPy/backups\\High School Simulator (Mechanics + Story)':
-Dump and make backups. took 0.11s
+Dump and make backups. took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
@@ -355,19 +355,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.54100012779s
+Total time until interface ready: 1.57499980927s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.017000 seconds.
-- Frame drawn at 0.020000 seconds.
-- Frame drawn at 0.036000 seconds.
-- Frame drawn at 0.053000 seconds.
-- 0.053000 seconds to render 5 frames.
-Traceback (most recent call last):
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\execution.py", line 388, in run
-    node.execute()
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 1519, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\script.py", line 843, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'regularWeekend'.
+- Frame drawn at 0.016000 seconds.
+- Frame drawn at 0.019000 seconds.
+- Frame drawn at 0.035000 seconds.
+- Frame drawn at 0.052000 seconds.
+- 0.052000 seconds to render 5 frames.
