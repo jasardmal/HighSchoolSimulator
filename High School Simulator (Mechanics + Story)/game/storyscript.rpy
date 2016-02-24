@@ -299,21 +299,21 @@
             
 #    label secondSchoolDay:        
             
-#        #Alarm Rings
+#        Alarm Rings
 
 #        mc "Urgh… My head…"
 
-#        #Alarm rings again
+#        Alarm rings again
 
 #        mc "Fine, I’ll get up. Where’s my toothbrush?"
 
-#        #Screen shakes cause hes looking for stuff
+#        Screen shakes cause hes looking for stuff
 
-#        #OBTAINED TOOTHBRUSH
+#        OBTAINED TOOTHBRUSH
 
 #        mc "Aha! Here we go."
 
-#        #KNOCK KNOCK KNOCK
+#        KNOCK KNOCK KNOCK
 
 #        mc "What? Who’s here? Who even knows I live here?"
 
@@ -325,9 +325,9 @@
 
 #        mc "Ok, ok! I just got out of bed! Let me put on some clothes first, jeez!" #*puts on clothes*
 
-#        #Runs out of door
+#        Runs out of door
 
-#        #Out of breath 
+#        Out of breath 
 
 #        mc "Alright, Marc, I’m here. How did you figure out where I live?"
 
@@ -337,9 +337,9 @@
 
 #        mw "You probably want this back." 
 
-#        #Hands over wallet
+#        Hands over wallet
 
-#        #OBTAINED WALLET
+#        OBTAINED WALLET
 
 #        mw "Now we’re even."
 
@@ -349,13 +349,13 @@
 
 #        mc "Oh, Right."
 
-#        #(Or, if you didn’t, Oh, Uh, Right, Sure.)
+#        (Or, if you didn’t, Oh, Uh, Right, Sure.)
 
 #        mw "Sooo… Shall we? {w}If we stand here any longer, we’ll be late for school."
 
 #        mc "Oh! let’s go."
 
-#        #Go to school ya chump
+#        Go to school ya chump
 
 #        #Arrives at school
 
@@ -390,11 +390,11 @@
             
 #    label secondSchoolDayPath1:        
                 
-#        #Scene Change MATH CLASS
+#        Scene Change MATH CLASS
 
 #        mk "Ok Class! Take your seats! One… One… Two… Three… Five… Eight… Thirteen… Twenty one…"
 
-#        #Continues mumbling (LEAVE RESOLUTION OF JOKE UNTIL THE END OF THE YEAR, TELLS STUDENTS THAT IT’S THE FIBONACCI SEQUENCE)
+#        Continues mumbling (LEAVE RESOLUTION OF JOKE UNTIL THE END OF THE YEAR, TELLS STUDENTS THAT IT’S THE FIBONACCI SEQUENCE)
 
 #        nm "........" 
 
@@ -402,7 +402,7 @@
 
 #        mk  "Now, class. I know that you hate homework on the first day, but I want to get you all learned up by the end of the year."
 
-#        #Collective groans
+#        Collective groans
 
 #        mk "I will hand out your assignments on the way out. For now, there is a text book under everyone’s desk. Pull it out and turn to page 394. That is where we will start."
 
@@ -430,13 +430,13 @@
 
 #        mk "That’s better."
 
-#        #Later in class
+#        Later in class
 
 #        mk ".... and that’s how these laws of geometry work. You, know, it’s a shame parallel lines will never meet. They have so much in common."
 
-#        #Class groans
+#        Class groans
 
-#        #Bell rings 
+#        Bell rings 
 
 #        mk "Alright class, you are dismissed."
 
@@ -470,13 +470,13 @@
 #        mc "My next class is science, it looks like. I’d better get there fast."
 
 
-#        #Scene change = ENTER SCIENCE
+#        Scene change = ENTER SCIENCE
 
 #        mg "Before you sit down, line up at the back of the room. I have some important questions."
 
 #        mg "Since this is a science class, we must observe the scientific method. That means collecting questions. Now, my first question is this:…"
 
-#        #Fade out
+#        Fade out
 
 #        mc "....Now, pick your partners. We will begin our lectures tomorrow, and collect data. Tonight, I want you to take notes on the first chapter of the textbook. Before you leave, let me know who you are sitting with. If you don’t, you will be randomly assigned with a partner. Go!"
 
@@ -488,7 +488,7 @@
 
 #        mg "Now, does anyone not have a partner yet?"
 
-#        #Looks around  
+#        Looks around  
 
 #        mc "Uh, I guess I don’t have a partner yet…"
 
@@ -496,7 +496,7 @@
 
 #        mc "Uhm… Oh." 
 
-#        #Looks at agnes 
+#        Looks at agnes 
 
 #        mc "Uh, alright. Hi…"
 
@@ -504,7 +504,7 @@
 
 #        mg " Wonderful. Now, tomorrow’s lecture will be about the chapter in which you are currently engaged in notetaking. Remember, the chapter notes will be due at the end of every week. The first chapter is rather short, so if you do not have them completed, there will be no excuse."
 
-#        #Staring at her phone, headphones in
+#        Staring at her phone, headphones in
 
 #        mc "Um, hi. Er, since we are working together and everything, I was wondering…"
 
@@ -520,19 +520,19 @@
 
 #        ar " Mhm. Now get outta here."
 
-#        #Agnes leaves 
+#        Agnes leaves 
 
 #        mc ".........Huh."
 
 #        mc "I guess it’s time for the electives now. Let’s see what Marc is up to."
 
-        #Insert Elective here*
+#        Insert Elective here*
 
 #        mw "...And that’s how you disguise your phone number."
 
-##        mc "Oh, cool… What would I use that for?"
+#        mc "Oh, cool… What would I use that for?"
 
-##        mw "Probably nothing, but hey, the more you know."
+#        mw "Probably nothing, but hey, the more you know."
 
 #        #OPTION ⅓-  Marc shows you around, takes you to where Sarah works
 #        #Player discovers more places, affection with Marc goes up
@@ -549,7 +549,7 @@
 
 #        mc "Uh yeah, let’s go..."
 
-#        #*In Arcade*
+#        *In Arcade*
 
 #        mw "Check out this game, dude!"
 
@@ -561,7 +561,7 @@
 
 #        mw "Well, first, you start by..."
         
-#        #*minigame tutorial, insert minigame here*
+#        *minigame tutorial, insert minigame here*
 
 #        mw "... And that’s how you can use the combos to get higher scores."
 
@@ -578,7 +578,7 @@
 
 #        mc "Ok cool, let’s go."
 
-#        #*Outside Cafe*
+#        *Outside Cafe*
 
 #        mw "Here’s the place. Roland’s Sweet Honey Cafe."
 
@@ -586,13 +586,13 @@
 
 #        mw "I’m starving, let’s go in and get some food."
 
-#        #*Inside Cafe*
+#        *Inside Cafe*
 
 #        mc "There’s a lot of people here." 
 
 #        mw "Yea, almost everyone comes here after school to hang out and unwind."
 
-#        #???(Fred) "Well, if it isn’t the freshie who can’t take a bit of homework."
+#        ???(Fred) "Well, if it isn’t the freshie who can’t take a bit of homework."
 
 #        mw "Excuse me Fredrick!?!?!?!"
 
@@ -630,13 +630,13 @@
 
 #        fh "Oh for heaven’s sake!" 
 
-#        #*frederick and becka leave*
+#        *frederick and becka leave*
 
 #        mw "Huh. Anyway, let’s go sit somewhere."
 
 #        mc "Uh… okay, that sounds good to me."
 
-#        #???(sarah) "Hey Marc! How’s it goin?"
+#        ???(sarah) "Hey Marc! How’s it goin?"
 
 #        mw "Sarah! How’s business today?"
 
@@ -702,7 +702,7 @@
 
 #        mc "Uhhh, sure." 
 
-#        #*Dining room noises*
+#        *Dining room noises*
 
 #        mw "That was really good! I always enjoy eating here. Are you done?"
 
@@ -710,7 +710,7 @@
 
 #        mw "Sweet. I'll see you tomorrow."
 
-#        #*scene transition*
+#        *scene transition*
 
 
 
@@ -718,17 +718,17 @@
 
 #        mc "Well school’s out now, I wonder what I should do… Looks like a bunch of students are going over to that cafe over there, I think I’ll go check it out."
 
-#        #*walks over to the cafe*
+#        *walks over to the cafe*
 
 #        mc "Roland’s Sweet Honey Cafe… weird name..."
 
-#        #*walks in*
+#        *walks in*
 
-#        #*Inside Cafe*
+#        *Inside Cafe*
 
 #        mc "There’s a lot of people here." 
 
-#        #???(Fred) "Well, if it isn’t the freshie who can’t take a bit of homework."
+#        ???(Fred) "Well, if it isn’t the freshie who can’t take a bit of homework."
 
 #        mc "W-w-what? W-what do you mean?"
 
@@ -756,11 +756,11 @@
 
 #        fh "Oh for heaven’s sake!" 
 
-#        #*frederick and becka leave*
+#        *frederick and becka leave*
 
 #        mc "Jeez… what’s his problem..."
 
-#        #*scene cut to Marc talking to some girl (Sarah)*
+#        *scene cut to Marc talking to some girl (Sarah)*
 
 #        mw ".... And that’s how I avoided getting into trouble with the dean."
 
@@ -836,53 +836,53 @@
 
 #        mc "Uhhh, sure." 
 
-#        #*Dining room noises*
-
+#        *Dining room noises*
+  
 #        mw "That was really good! I always enjoy eating here. Are you done?"
 
 #        mc "Yeah, I think I’m finished. Let’s go."
 
 #        mw "Sweet. I'll see you tomorrow."
 
-#        #*Scene Change Home*
+#        *Scene Change Home*
 
-#        #RING RING RING RING RING
+#        RING RING RING RING RING
 
 #        mc "Wow! As soon as I get home, someone else is calling me. Is it going to be like this every night?"
 
 #        mc "I had probably better pick up the call..."
 
 
-#        #mc 1. Pick up 2. Don’t
+#        mc 1. Pick up 2. Don’t
 
-#        #mc Oh. Look. It’s my sister.
+#        mc Oh. Look. It’s my sister.
 
-#        #Sister: Hey little bro! How was your first few days of school?
-#        #        mc Oh! Hey, Jackie! It’s been a while.
-#        #        Jackie: Yeah, well, you know, college and all that. How’s my socially awkward padawan learner?
-#        #        mc Urgh, i’m doing fine… Why do you always reference that movie?
-#        #        Jackie: Because it’s *our* favorite, and don’t you forget that. 
-#        #        mc But you know I don’t…
-#        #        Jackie: Shush, yes you do. Anyways, do you have a girlfriend yet?
-#        #        mc What?!?! I literally just got here and…
-#        #        Jackie: No excuses! Get moving, casanova!
-#        #        mc Argh! I don’t even know anyone yet!
-#        #        Jackie: Sure you don’t, Romeo. 
-#        #        mc Okay, fine, i’ve met a grand total of 4 people. None of whom I know very well.
-#        #        Jackie: Any girls?
-#        #        mc ….Two. But…
-#        #        Jackie: Are they pretty?
-#        #        mc ...What? Wait… No, that doesn’t… leave me alone!
-#        #        Jackie: Alright, Valentine. I’ll keep cupid off your back… for now. Don’t be surprised if you find an arrow in your butt later in the year.
-#        #        mc An arrow?
-#        #        Jackie: you know, the arrow of love? Nevermind, loverboy. I’ll talk to you later. Don’t forget to give mom and dad a call every now and then!
-#        #        mc Ok, I’ll do that. Don’t you have college things to do?
-#        #        Jackie: Yeah probably. Oh, and by the way, I looked at your school’s website and it looks like homecoming is coming up soon. So, like I said, get a date. Cupid will watch over you.
-        #        mc ...Uh, Ok…. Sure…
-        #        Jackie: See ya round! *hangs up*
-        #        mc Jeez… That was really something… I’d better get some sleep…
-        #*End Day* 
+#        Jackie "Hey little bro! How was your first few days of school?"
+#        mc "Oh! Hey, Jackie! It’s been a while."
+#        Jackie "Yeah, well, you know, college and all that. How’s my socially awkward padawan learner?"
+#        mc "Urgh, I’m doing fine… Why do you always reference that movie?"
+#        Jackie "Because it’s *our* favorite, and don’t you forget that." 
+#        mc "But you know I don’t..."
+#        Jackie "Shush, yes you do. Anyways, do you have a girlfriend yet?"
+#        mc "What?!?! I literally just got here and..."
+#        Jackie "No excuses! Get moving, casanova!"
+#        mc "Argh! I don’t even know anyone yet!"
+#        Jackie "Sure you don’t, Romeo." 
+#        mc "Okay, fine, I’ve met a grand total of 4 people. None of whom I know very well."
+#        Jackie: Any girls?
+#        mc "...Two. But..."
+#        Jackie "Are they pretty?"
+#        mc "...What? Wait… No, that doesn’t… leave me alone!"
+#        Jackie "Alright, Valentine. I’ll keep cupid off your back... for now. Don’t be surprised if you find an arrow in your butt later in the year."
+#        mc "An arrow?"
+#        Jackie "You know, the arrow of love? Nevermind, loverboy. I’ll talk to you later. Don’t forget to give mom and dad a call every now and then!"
+#        mc "Ok, I’ll do that. Don’t you have college things to do?"
+#        Jackie "Yeah probably. Oh, and by the way, I looked at your school’s website and it looks like homecoming is coming up soon. So, like I said, get a date. Cupid will watch over you."
+#        mc "...Uh, Ok... Sure..."
+#        Jackie "See ya round! *hangs up*"
+#        mc "Jeez... That was really something... I’d better get some sleep..."
+#        *End Day* 
 
-        #2) mc Egh… It’s probably not important. You know, today was really long. I’m glad I met all these people, though. I hope they will be my friends… *Yawn* Wow, I’m tired. I should really get some sleep. I hope that call wasn’t important...
+#       2) mc "Egh... It’s probably not important. You know, today was really long. I’m glad I met all these people, though. I hope they will be my friends... *Yawn* Wow, I’m tired. I should really get some sleep. I hope that call wasn’t important..."
 
 
