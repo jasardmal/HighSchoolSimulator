@@ -202,6 +202,7 @@ label start:
     label regularSchool:
         $ location = 2
         $ stamina = 3
+        $ stress = 3
         scene img_black
         mc "It's time for school."
         scene img_1806
@@ -595,7 +596,7 @@ label start:
         
             label afterSchoolHomework:
                 if stress == 1 or stress == 2:
-                    mc "I easily did my homework! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
+                    mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                     $ intelligencesub = intelligencesub + 2
                     $ stresssub = stresssub + 2
                     $ staminasub = staminasub - 1
@@ -610,7 +611,7 @@ label start:
                 elif stress == 3:
                     $ randHomework = renpy.random.choice([1, 2])
                     if randHomework == 1:
-                        mc "I easily did my homework! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
+                        mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 2
                         $ stresssub = stresssub + 2
                         $ staminasub = staminasub - 1
@@ -623,7 +624,7 @@ label start:
                         $ afterschoolextraaction = False
                         jump afterSchool
                     else:
-                        mc "I did my homework. >Intelligence increased. >Stress increased. >Stamina decreased."
+                        mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 1
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
@@ -638,7 +639,7 @@ label start:
                 elif stress == 4:
                     $ randHomework = renpy.random.choice([1, 2, 3, 4])
                     if randHomework == 1 or randHomework == 2 or randHomework == 3:
-                        mc "I did my homework. >Intelligence increased. >Stress increased. >Stamina decreased."
+                        mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 1
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
@@ -651,7 +652,7 @@ label start:
                         $ afterschoolextraaction = False
                         jump afterSchool
                     else:
-                        mc "I tried to do my homework but couldn't figure it out... >Intelligence increased. >Stress increased. >Stamina decreased."
+                        mc "I tried to study but couldn't focus... >Intelligence increased. >Stress increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 1
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
@@ -664,7 +665,7 @@ label start:
                         $ afterschoolextraaction = False
                         jump afterSchool
                 elif stress == 5:
-                    mc "I tried to do my homework but couldn't figure it out... >Stress increased. >Stamina decreased."
+                    mc "I tried to study but couldn't focus... >Stress increased. >Stamina decreased."
                     $ intelligencesub = intelligencesub + 1
                     $ stresssub = stresssub + 1
                     $ staminasub = staminasub - 1
@@ -766,7 +767,7 @@ label start:
         
             label homeSchoolHomework:
                 if stress == 1 or stress == 2:
-                    mc "I easily did my homework! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
+                    mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                     $ intelligencesub = intelligencesub + 2
                     $ stresssub = stresssub + 2
                     $ staminasub = staminasub - 1
@@ -775,14 +776,14 @@ label start:
                 elif stress == 3:
                     $ randHomework = renpy.random.choice([1, 2])
                     if randHomework == 1:
-                        mc "I easily did my homework! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
+                        mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 2
                         $ stresssub = stresssub + 2
                         $ staminasub = staminasub - 1
                         mc "I'm really tired. I should sleep now."
                         jump homeSchoolRegularSleep
                     else:
-                        mc "I did my homework. >Intelligence increased. >Stress increased. >Stamina decreased."
+                        mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 1
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
@@ -791,21 +792,21 @@ label start:
                 elif stress == 4:
                     $ randHomework = renpy.random.choice([1, 2, 3, 4])
                     if randHomework == 1 or randHomework == 2 or randHomework == 3:
-                        mc "I did my homework. >Intelligence increased. >Stress increased. >Stamina decreased."
+                        mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 1
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
                         mc "I'm really tired. I should sleep now."
                         jump homeSchoolRegularSleep
                     else:
-                        mc "I tried to do my homework but couldn't figure it out... >Intelligence increased. >Stress increased. >Stamina decreased."
+                        mc "I tried to study but couldn't focus... >Intelligence increased. >Stress increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 1
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
                         mc "I'm really tired. I should sleep now."
                         jump homeSchoolRegularSleep
                 elif stress == 5:
-                    mc "I tried to do my homework but couldn't figure it out... >Stress increased. >Stamina decreased."
+                    mc "I tried to study but couldn't focus... >Stress increased. >Stamina decreased."
                     $ intelligencesub = intelligencesub + 1
                     $ stresssub = stresssub + 1
                     $ staminasub = staminasub - 1
@@ -1021,9 +1022,19 @@ label start:
     label regularWeekendMorning:
         
         if thephase == 6:
-            while True:
-                $ thephase = 6
-                mc "Looks like it's the afternoon. I wonder if I should head out or stay home (Check Map)."
+            
+            menu:
+                
+                mc "Looks like it's the afternoon. I wonder if I should head out or stay home."
+                
+                "Home":
+                    jump regularWeekendAfternoonHome
+                    
+                "Park":
+                    jump choicePark
+                    
+                "Town":
+                    jump choiceTown
             
         label homeWeekendMorningChoice:
         
@@ -1031,7 +1042,7 @@ label start:
                 
                 mc "What should I do this morning?"
                 
-                "Do homework":
+                "Study":
                     jump regularWeekendMorningHomework
                 
                 "Exercise":
@@ -1042,7 +1053,7 @@ label start:
         
             label regularWeekendMorningHomework:
                 if stress == 1 or stress == 2:
-                    mc "I easily did my homework! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
+                    mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                     $ intelligencesub = intelligencesub + 2
                     $ stresssub = stresssub + 2
                     $ staminasub = staminasub - 1
@@ -1051,14 +1062,14 @@ label start:
                 elif stress == 3:
                     $ randHomework = renpy.random.choice([1, 2])
                     if randHomework == 1:
-                        mc "I easily did my homework! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
+                        mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 2
                         $ stresssub = stresssub + 2
                         $ staminasub = staminasub - 1
                         $ thephase = thephase + 1
                         jump regularWeekendMorning
                     else:
-                        mc "I did my homework. >Intelligence increased. >Stress increased. >Stamina decreased."
+                        mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 1
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
@@ -1067,22 +1078,20 @@ label start:
                 elif stress == 4:
                     $ randHomework = renpy.random.choice([1, 2, 3, 4])
                     if randHomework == 1 or randHomework == 2 or randHomework == 3:
-                        mc "I did my homework. >Intelligence increased. >Stress increased. >Stamina decreased."
+                        mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 1
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
                         $ thephase = thephase + 1
                         jump regularWeekendMorning
                     else:
-                        mc "I tried to do my homework but couldn't figure it out... >Intelligence increased. >Stress increased. >Stamina decreased."
-                        $ intelligencesub = intelligencesub + 1
+                        mc "I tried to study but couldn't focus... >Intelligence increased. >Stress increased. >Stamina decreased."
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
                         $ thephase = thephase + 1
                         jump regularWeekendMorning
                 elif stress == 5:
-                    mc "I tried to do my homework but couldn't figure it out... >Stress increased. >Stamina decreased."
-                    $ intelligencesub = intelligencesub + 1
+                    mc "I tried to study but couldn't focus... >Stress increased. >Stamina decreased."
                     $ stresssub = stresssub + 1
                     $ staminasub = staminasub - 1
                     $ thephase = thephase + 1
@@ -1129,9 +1138,19 @@ label start:
     label regularWeekendAfternoonHome:
         
         if thephase == 10:
-            while True:
-                $ thephase = 10
-                mc "Looks like it's the evening. I wonder if I should head out or stay home (Check Map)."
+            
+            menu:
+                
+                mc "Looks like it's the evening. I wonder if I should head out or stay home."
+                
+                "Home":
+                    jump regularWeekendEveningHome
+                    
+                "Park":
+                    jump choicePark
+                    
+                "Town":
+                    jump choiceTown
             
         label homeWeekendAfternoonChoice:
         
@@ -1139,7 +1158,7 @@ label start:
                 
                 mc "What should I do this afternoon?"
                 
-                "Do homework":
+                "Study":
                     jump regularWeekendAfternoonHomework
                 
                 "Exercise":
@@ -1150,7 +1169,7 @@ label start:
         
             label regularWeekendAfternoonHomework:
                 if stress == 1 or stress == 2:
-                    mc "I easily did my homework! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
+                    mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                     $ intelligencesub = intelligencesub + 2
                     $ stresssub = stresssub + 2
                     $ staminasub = staminasub - 1
@@ -1159,14 +1178,14 @@ label start:
                 elif stress == 3:
                     $ randHomework = renpy.random.choice([1, 2])
                     if randHomework == 1:
-                        mc "I easily did my homework! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
+                        mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 2
                         $ stresssub = stresssub + 2
                         $ staminasub = staminasub - 1
                         $ thephase = thephase + 1
                         jump regularWeekendMorning
                     else:
-                        mc "I did my homework. >Intelligence increased. >Stress increased. >Stamina decreased."
+                        mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 1
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
@@ -1175,22 +1194,20 @@ label start:
                 elif stress == 4:
                     $ randHomework = renpy.random.choice([1, 2, 3, 4])
                     if randHomework == 1 or randHomework == 2 or randHomework == 3:
-                        mc "I did my homework. >Intelligence increased. >Stress increased. >Stamina decreased."
+                        mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 1
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
                         $ thephase = thephase + 1
                         jump regularWeekendAfternoonHome
                     else:
-                        mc "I tried to do my homework but couldn't figure it out... >Intelligence increased. >Stress increased. >Stamina decreased."
-                        $ intelligencesub = intelligencesub + 1
+                        mc "I tried to study but couldn't focus... >Intelligence increased. >Stress increased. >Stamina decreased."
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
                         $ thephase = thephase + 1
                         jump regularWeekendAfternoonHome
                 elif stress == 5:
-                    mc "I tried to do my homework but couldn't figure it out... >Stress increased. >Stamina decreased."
-                    $ intelligencesub = intelligencesub + 1
+                    mc "I tried to study but couldn't focus... >Stress increased. >Stamina decreased."
                     $ stresssub = stresssub + 1
                     $ staminasub = staminasub - 1
                     $ thephase = thephase + 1
@@ -1236,17 +1253,16 @@ label start:
     label regularWeekendEveningHome:
         
         if thephase == 14:
-            while True:
-                $ thephase = 10
-                mc "Looks like it's the evening. I wonder if I should head out or stay home (Check Map)."
-    
-            label homeWeekendEveningChoice:
+            mc "Wow! Look at the time. I should get some sleep."
+            jump regularWeekendSleep
+        
+        label homeWeekendEveningChoice:
         
             menu:
                 
                 mc "What should I do this evening?"
                 
-                "Do homework":
+                "Study":
                     jump regularWeekendEveningHomework
                 
                 "Exercise":
@@ -1255,86 +1271,91 @@ label start:
                 "Eat":
                     jump regularWeekendEveningEat
         
-            label regularWeekendEveningHomework:
-                if stress == 1 or stress == 2:
-                    mc "I easily did my homework! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
+        label regularWeekendEveningHomework:
+            if stress == 1 or stress == 2:
+                mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
+                $ intelligencesub = intelligencesub + 2
+                $ stresssub = stresssub + 2
+                $ staminasub = staminasub - 1
+                $ thephase = thephase + 1
+                jump regularWeekendEveningHome
+            elif stress == 3:
+                $ randHomework = renpy.random.choice([1, 2])
+                if randHomework == 1:
+                    mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                     $ intelligencesub = intelligencesub + 2
                     $ stresssub = stresssub + 2
                     $ staminasub = staminasub - 1
                     $ thephase = thephase + 1
                     jump regularWeekendEveningHome
-                elif stress == 3:
-                    $ randHomework = renpy.random.choice([1, 2])
-                    if randHomework == 1:
-                        mc "I easily did my homework! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
-                        $ intelligencesub = intelligencesub + 2
-                        $ stresssub = stresssub + 2
-                        $ staminasub = staminasub - 1
-                        $ thephase = thephase + 1
-                        jump regularWeekendEveningHome
-                    else:
-                        mc "I did my homework. >Intelligence increased. >Stress increased. >Stamina decreased."
-                        $ intelligencesub = intelligencesub + 1
-                        $ stresssub = stresssub + 1
-                        $ staminasub = staminasub - 1
-                        $ thephase = thephase + 1
-                        jump regularWeekendEveningHome
-                elif stress == 4:
-                    $ randHomework = renpy.random.choice([1, 2, 3, 4])
-                    if randHomework == 1 or randHomework == 2 or randHomework == 3:
-                        mc "I did my homework. >Intelligence increased. >Stress increased. >Stamina decreased."
-                        $ intelligencesub = intelligencesub + 1
-                        $ stresssub = stresssub + 1
-                        $ staminasub = staminasub - 1
-                        $ thephase = thephase + 1
-                        jump regularWeekendEveningHome
-                    else:
-                        mc "I tried to do my homework but couldn't figure it out... >Intelligence increased. >Stress increased. >Stamina decreased."
-                        $ intelligencesub = intelligencesub + 1
-                        $ stresssub = stresssub + 1
-                        $ staminasub = staminasub - 1
-                        $ thephase = thephase + 1
-                        jump regularWeekendEveningHome
-                elif stress == 5:
-                    mc "I tried to do my homework but couldn't figure it out... >Stress increased. >Stamina decreased."
+                else:
+                    mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
                     $ intelligencesub = intelligencesub + 1
                     $ stresssub = stresssub + 1
                     $ staminasub = staminasub - 1
                     $ thephase = thephase + 1
                     jump regularWeekendEveningHome
-            
-            label regularWeekendEveningExercise:
-                if stress == 1 or stress == 2 or stress == 3:
+            elif stress == 4:
+                $ randHomework = renpy.random.choice([1, 2, 3, 4])
+                if randHomework == 1 or randHomework == 2 or randHomework == 3:
+                    mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
+                    $ intelligencesub = intelligencesub + 1
+                    $ stresssub = stresssub + 1
+                    $ staminasub = staminasub - 1
+                    $ thephase = thephase + 1
+                    jump regularWeekendEveningHome
+                else:
+                    mc "I tried to study but couldn't focus... >Intelligence increased. >Stress increased. >Stamina decreased."
+                    $ stresssub = stresssub + 1
+                    $ staminasub = staminasub - 1
+                    $ thephase = thephase + 1
+                    jump regularWeekendEveningHome
+            elif stress == 5:
+                mc "I tried to study but couldn't focus... >Stress increased. >Stamina decreased."
+                $ stresssub = stresssub + 1
+                $ staminasub = staminasub - 1
+                $ thephase = thephase + 1
+                jump regularWeekendEveningHome
+        
+        label regularWeekendEveningExercise:
+            if stress == 1 or stress == 2 or stress == 3:
+                mc "I feel stronger. >Endurance increased. >Stress increased. Stamina decreased."
+                $ staminasubfuturelim = staminasubfuturelim + 0.1
+                $ stresssub = stresssub + 1
+                $ staminasub = staminasub - 1
+                $ thephase = thephase + 1
+                jump regularWeekendEveningHome
+            elif stress == 4:
+                $ randExercise = renpy.random.choice([1, 2])
+                if randExercise == 1:
                     mc "I feel stronger. >Endurance increased. >Stress increased. Stamina decreased."
                     $ staminasubfuturelim = staminasubfuturelim + 0.1
                     $ stresssub = stresssub + 1
                     $ staminasub = staminasub - 1
                     $ thephase = thephase + 1
                     jump regularWeekendEveningHome
-                elif stress == 4:
-                    $ randExercise = renpy.random.choice([1, 2])
-                    if randExercise == 1:
-                        mc "I feel stronger. >Endurance increased. >Stress increased. Stamina decreased."
-                        $ staminasubfuturelim = staminasubfuturelim + 0.1
-                        $ stresssub = stresssub + 1
-                        $ staminasub = staminasub - 1
-                        $ thephase = thephase + 1
-                        jump regularWeekendEveningHome
-                    else:
-                        mc "I'm not feeling too motivated to exercise... >Stress increased. Stamina decreased."
-                        $ stresssub = stresssub + 1
-                        $ staminasub = staminasub - 1
-                        $ thephase = thephase + 1
-                        jump regularWeekendEveningHome
-                elif stress == 5:
+                else:
                     mc "I'm not feeling too motivated to exercise... >Stress increased. Stamina decreased."
                     $ stresssub = stresssub + 1
                     $ staminasub = staminasub - 1
                     $ thephase = thephase + 1
                     jump regularWeekendEveningHome
-                    
-            label regularWeekendEveningEat:
-                mc "That was good. >Stress decreased. >Stamina increased."
-                $ stresssub = stresssub - 1
-                $ staminasub = staminasub + 1
+            elif stress == 5:
+                mc "I'm not feeling too motivated to exercise... >Stress increased. Stamina decreased."
+                $ stresssub = stresssub + 1
+                $ staminasub = staminasub - 1
+                $ thephase = thephase + 1
                 jump regularWeekendEveningHome
+                
+        label regularWeekendEveningEat:
+            mc "That was good. >Stress decreased. >Stamina increased."
+            $ stresssub = stresssub - 1
+            $ staminasub = staminasub + 1
+            jump regularWeekendEveningHome
+            
+        label regularWeekendSleep:
+            mc "Zzz..."
+            $ staminasubcurrentlim = staminasubfuturelim
+            $ thephase = 14 + 1
+            scene img_black
+            jump startDecider

@@ -65,7 +65,7 @@ screen say:
     
     # If there's a stat system, display it in upper left.
     if(stats):
-        $ Statswindow()
+        $ statsWindow()
 
     # Use the quick menu.
     use quick_menu
@@ -101,6 +101,7 @@ screen choice:
 
                 else:
                     text caption style "menu_caption"
+    
     hbox:
         style_group "quick"
 
@@ -113,10 +114,6 @@ screen choice:
             textbutton _("Stats") action SetVariable("stats", True)
         else:
             textbutton _("Stats") action SetVariable("stats", False)
-        if thephase == 10 or thephase == 11:
-            textbutton _("Map") action ShowMenu("mapSchool")
-        else:
-            textbutton _("Map") action NullAction()
         textbutton _("Q.Save") action QuickSave()
         textbutton _("Q.Load") action QuickLoad()
         textbutton _("Skip") action Skip()
@@ -460,18 +457,6 @@ screen quick_menu:
             textbutton _("Stats") action SetVariable("stats", True)
         else:
             textbutton _("Stats") action SetVariable("stats", False)
-        if theweekday == 1 or theweekday == 7:
-            if thephase == 6:
-                textbutton _("Map") action ShowMenu("mapWeekendAfternoon")
-            elif thephase == 10:
-                textbutton _("Map") action ShowMenu("mapWeekendEvening")
-            else:
-                textbutton _("Map") action NullAction()
-        else:
-            if thephase == 10 or thephase == 11:
-               textbutton _("Map") action ShowMenu("mapSchool")
-            else:
-                textbutton _("Map") action NullAction()
         textbutton _("Q.Save") action QuickSave()
         textbutton _("Q.Load") action QuickLoad()
         textbutton _("Skip") action Skip()

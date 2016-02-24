@@ -1,20 +1,67 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 199, in script
-    jump regularWeekend
-ScriptError: could not find label 'regularWeekend'.
+  File "game/script.rpy", line 150, in script
+    mc "Who am I?"
+  File "game/screens.rpy", line 9, in execute
+    screen say:
+  File "game/screens.rpy", line 9, in execute
+    screen say:
+  File "game/screens.rpy", line 71, in execute
+    use quick_menu
+  File "game/screens.rpy", line 445, in execute
+    screen quick_menu:
+  File "game/screens.rpy", line 445, in execute
+    screen quick_menu:
+  File "game/screens.rpy", line 451, in execute
+    hbox:
+  File "game/screens.rpy", line 463, in execute
+    if theweekday == 1 or theweekday == 7:
+  File "game/screens.rpy", line 464, in execute
+    if thephase == 6 or thephrase == 10:
+NameError: name 'thephrase' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 199, in script
-    jump regularWeekend
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 1519, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\script.py", line 843, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'regularWeekend'.
+  File "game/script.rpy", line 150, in script
+    mc "Who am I?"
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 603, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\exports.py", line 1121, in say
+    who(what, interact=interact)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 828, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 690, in do_display
+    **display_args)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 467, in display_say
+    what_text = show_function(who, what_string)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 674, in do_show
+    **self.show_args)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 275, in show_display_say
+    return renpy.display.screen.get_widget(screen, "what", layer)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\screen.py", line 1137, in get_widget
+    screen.update()
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\screen.py", line 565, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 9, in execute
+    screen say:
+  File "game/screens.rpy", line 9, in execute
+    screen say:
+  File "game/screens.rpy", line 71, in execute
+    use quick_menu
+  File "game/screens.rpy", line 445, in execute
+    screen quick_menu:
+  File "game/screens.rpy", line 445, in execute
+    screen quick_menu:
+  File "game/screens.rpy", line 451, in execute
+    hbox:
+  File "game/screens.rpy", line 463, in execute
+    if theweekday == 1 or theweekday == 7:
+  File "game/screens.rpy", line 464, in execute
+    if thephase == 6 or thephrase == 10:
+  File "<screen language>", line 464, in <module>
+NameError: name 'thephrase' is not defined
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.8.959

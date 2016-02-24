@@ -2,36 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 184: expected statement.
-    isfirstschoolday == True:
-                            ^
-
-File "game/script.rpy", line 186: expected statement.
-    elif theweekday == 1:
-                    ^
-
-File "game/script.rpy", line 188: expected statement.
-    elif theweekday == 2:
-                    ^
-
-File "game/script.rpy", line 190: expected statement.
-    elif theweekday == 3:
-                    ^
-
-File "game/script.rpy", line 192: expected statement.
-    elif theweekday == 4:
-                    ^
-
-File "game/script.rpy", line 194: expected statement.
-    elif theweekday == 5:
-                    ^
-
-File "game/script.rpy", line 196: expected statement.
-    elif theweekday == 6:
-                    ^
-
-File "game/script.rpy", line 198: expected statement.
-    elif theweekday == 7:
-                    ^
+File "game/screens.rpy", line 516: Line is indented, but the preceding vbox statement does not expect a block. Please check this line's indentation.
+    textbutton _("School") action NullAction()
+    ^
 
 Ren'Py Version: Ren'Py 6.99.8.959
