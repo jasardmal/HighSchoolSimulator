@@ -213,7 +213,7 @@ label start:
             mc ">Going to school."
             $ location = 1
             $ thephase = 2
-            scene img_1831
+            scene img_1831 with Dissolve(1.0)
             jump beforeSchoolChoice
                 
         label beforeSchoolChoice:
@@ -313,7 +313,7 @@ label start:
                 jump afterSchool
             else:
                 mc "*Bell rings*"
-                scene img_1832
+                scene img_1832 with Dissolve(1.0)
                 jump periodChoice
             
         label periodChoice:
@@ -335,7 +335,7 @@ label start:
                         $ stresssub = stresssub + 3
                         $ staminasub = staminasub - 1
                         $ thephase = thephase + 1
-                        scene img_1831
+                        scene img_1831 with Dissolve(1.0)
                         jump period
                     elif stress == 2:
                         $ randLecture = renpy.random.choice([1, 2])
@@ -345,7 +345,7 @@ label start:
                             $ stresssub = stresssub + 3
                             $ staminasub = staminasub - 1
                             $ thephase = thephase + 1
-                            scene img_1831
+                            scene img_1831 with Dissolve(1.0)
                             jump period
                         else:
                             mc "I listened to the lecture. >Intelligence increased. >Stress increased. >Stamina decreased."
@@ -353,7 +353,7 @@ label start:
                             $ stresssub = stresssub + 1
                             $ staminasub = staminasub - 1
                             $ thephase = thephase + 1
-                            scene img_1831
+                            scene img_1831 with Dissolve(1.0)
                             jump period
                     elif stress == 3:
                         mc "I listened to the lecture. >Intelligence increased. >Stress increased. >Stamina decreased."
@@ -361,7 +361,7 @@ label start:
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
                         $ thephase = thephase + 1
-                        scene img_1831
+                        scene img_1831 with Dissolve(1.0)
                         jump period
                     elif stress == 4:
                         $ randLecture = renpy.random.choice([1, 2])
@@ -371,21 +371,21 @@ label start:
                             $ stresssub = stresssub + 1
                             $ staminasub = staminasub - 1
                             $ thephase = thephase + 1
-                            scene img_1831
+                            scene img_1831 with Dissolve(1.0)
                             jump period
                         else:
                             mc "I tried to listen to the lecture but couldn't focus... >Stress increased. >Stamina decreased."
                             $ stresssub = stresssub + 1
                             $ staminasub = staminasub - 1
                             $ thephase = thephase + 1
-                            scene img_1831
+                            scene img_1831 with Dissolve(1.0)
                             jump period
                     elif stress == 5:
                         mc "I tried to listen to the lecture but couldn't focus... >Stress increased. >Stamina decreased."
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
                         $ thephase = thephase + 1
-                        scene img_1831
+                        scene img_1831 with Dissolve(1.0)
                         jump period
                     
                 label periodSleep:
@@ -394,7 +394,7 @@ label start:
                         mc "Zzz..."
                         mc "I feel somewhat rested."
                         $ thephase = thephase + 1
-                        scene img_1831
+                        scene img_1831 with Dissolve(1.0)
                         jump period
                     else:
                         mc "Zzz..."
@@ -403,14 +403,14 @@ label start:
                         mc "Ugh. How embarassing... >Stress increased."
                         $ stresssub = stresssub + 1
                         $ thephase = thephase + 1
-                        scene img_1831
+                        scene img_1831 with Dissolve(1.0)
                         jump period
                     
                     
         #LUNCHSCHOOL *********************************************************************************************
         label lunchSchool:
             mc ">Going to lunch room."
-            scene img_1831
+            scene img_1831 with Dissolve(1.0)
             jump lunchSchoolMealChoice
             
         label lunchSchoolMealChoice:
@@ -545,14 +545,14 @@ label start:
         #AFTERSCHOOL ******************************************************************************************
         label afterSchool:
             mc ">After School"
-            scene img_1831
+            scene img_1831 with Dissolve(1.0)
             if isfirstschoolday == True:
                 jump firstSchoolDayEnd
             elif stamina == 1:
                 mc "I'm REALLY tired. I should head home and sleep."
                 $ thephase = 11
                 $ location = 2
-                scene img_black
+                scene img_black with Dissolve(1.0)
                 jump homeSchoolLongSleep
             elif stamina == 2:
                 jump afterSchoolChoice
@@ -591,7 +591,7 @@ label start:
                 mc "Charisma increased"
                 $ charismasub = charismasub + 1
                 $ thephase = 11
-                scene img_1822
+                scene img_1822 with Dissolve(1.0)
                 jump afterSchool
         
             label afterSchoolHomework:
@@ -604,7 +604,7 @@ label start:
                         mc "I'm really tired. I should head home and sleep."
                         $ thephase = 11
                         $ location = 2
-                        scene img_black
+                        scene img_black with Dissolve(1.0)
                         jump homeSchoolRegularSleep
                     $ afterschoolextraaction = False
                     jump afterSchool
@@ -619,7 +619,7 @@ label start:
                             mc "I'm really tired. I should head home and sleep."
                             $ thephase = 11
                             $ location = 2
-                            scene img_black
+                            scene img_black with Dissolve(1.0)
                             jump homeSchoolRegularSleep
                         $ afterschoolextraaction = False
                         jump afterSchool
@@ -632,7 +632,7 @@ label start:
                             mc "I'm really tired. I should head home and sleep."
                             $ thephase = 11
                             $ location = 2
-                            scene img_black
+                            scene img_black with Dissolve(1.0)
                             jump homeSchoolRegularSleep
                         $ afterschoolextraaction = False
                         jump afterSchool
@@ -647,7 +647,7 @@ label start:
                             mc "I'm really tired. I should head home and sleep."
                             $ thephase = 11
                             $ location = 2
-                            scene img_black
+                            scene img_black with Dissolve(1.0)
                             jump homeSchoolRegularSleep
                         $ afterschoolextraaction = False
                         jump afterSchool
@@ -660,7 +660,7 @@ label start:
                             mc "I'm really tired. I should head home and sleep."
                             $ thephase = 11
                             $ location = 2
-                            scene img_black
+                            scene img_black with Dissolve(1.0)
                             jump homeSchoolRegularSleep
                         $ afterschoolextraaction = False
                         jump afterSchool
@@ -673,7 +673,7 @@ label start:
                         mc "I'm really tired. I should head home and sleep."
                         $ thephase = 11
                         $ location = 2
-                        scene img_black
+                        scene img_black with Dissolve(1.0)
                         jump homeSchoolRegularSleep
                     $ afterschoolextraaction = False
                     jump afterSchool
@@ -688,7 +688,7 @@ label start:
                         mc "I'm really tired. I should head home and sleep."
                         $ thephase = 11
                         $ location = 2
-                        scene img_black
+                        scene img_black with Dissolve(1.0)
                         jump homeSchoolRegularSleep
                     $ afterschoolextraaction = False
                     jump afterSchool
@@ -704,7 +704,7 @@ label start:
                             mc "I'm really tired. I should head home and sleep."
                             $ thephase = 11
                             $ location = 2
-                            scene img_black
+                            scene img_black with Dissolve(1.0)
                             jump homeSchoolRegularSleep
                         $ afterschoolextraaction = False
                         jump afterSchool
@@ -717,7 +717,7 @@ label start:
                             mc "I'm really tired. I should head home and sleep."
                             $ thephase = 11
                             $ location = 2
-                            scene img_black
+                            scene img_black with Dissolve(1.0)
                             jump homeSchoolRegularSleep
                         $ afterschoolextraaction = False
                         jump afterSchool
@@ -730,7 +730,7 @@ label start:
                         mc "I'm really tired. I should head home and sleep."
                         $ thephase = 11
                         $ location = 2
-                        scene img_black
+                        scene img_black with Dissolve(1.0)
                         jump homeSchoolRegularSleep
                     $ afterschoolextraaction = False
                     jump afterSchool
@@ -739,15 +739,15 @@ label start:
         while True:
             label eveningSchool:
                 $ thephase = 11
-                scene img_1822
+                scene img_1822 with Dissolve(1.0)
                 mc "It's getting pretty late. I wonder where I should go now? (Check Map)"
                 
         #HOMESCHOOL *********************************************************************************************
         label homeSchool:
             mc ">Going home."
-            scene img_1806
+            scene img_1806 with Dissolve(1.0)
             $location = 2
-            scene img_black
+            scene img_black with Dissolve(1.0)
             jump homeSchoolChoice
             
         label homeSchoolChoice:
@@ -850,21 +850,21 @@ label start:
                 $ stress = stress - 1
                 $ staminasubcurrentlim = staminasubfuturelim
                 $ thephase = 11 + 1
-                scene img_black
+                scene img_black with Dissolve(1.0)
                 jump startDecider
             
             label homeSchoolRegularSleep:
                 mc "Zzz..."
                 $ staminasubcurrentlim = staminasubfuturelim
                 $ thephase = 11 + 1
-                scene img_black
+                scene img_black with Dissolve(1.0)
                 jump startDecider
                 
         #TOWNSCHOOL **************************************************************************************************
         label choiceTown:
             mc ">Town"
             $location = 3
-            scene img_1720
+            scene img_1720 with Dissolve(1.0)
             jump storeChoice
                 
         label storeChoice:
@@ -958,7 +958,7 @@ label start:
         label choicePark:
             mc "Going to Park"
             $location = 4
-            scene img_2428
+            scene img_2428 with Dissolve(1.0)
             jump parkChoice
                 
         label parkChoice:
@@ -1002,7 +1002,7 @@ label start:
     #REGULAR WEEKEND START (VARIANTS)*********************************************************************************************
     label regularWeekend:
         $ location = 2
-        scene img_black
+        scene img_black with Dissolve(1.0)
         if stamina == 2:
             mc "...! {w} Look likes I slept in. It's almost the afternoon."
             $ thephase = 4
