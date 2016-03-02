@@ -82,10 +82,10 @@ label start:
     
     $ staminasubcurrentlim = 5
     $ staminasubfuturelim = 5
-    $ staminasub = 3
+    $ staminasub = 0
     $ stamina = 3
     
-    $ stresssub = 3
+    $ stresssub = 5
     $ stress = 3
     
     $ money = 10
@@ -148,7 +148,7 @@ label start:
             
     #CHARACTER CREATION ******************************************************************************************
     label nameCreation:
-        scene img_black with Dissolve(1.0)
+        scene img_black
         mc "Who am I?"
         call screen input_charactersoftkeyboard
     
@@ -208,7 +208,7 @@ label start:
             $ stamina = 3
             $ stress = 3
             $ isendofweekend = False
-        scene img_black with Dissolve(1.0)
+        scene img_black
         mc "It's time for school."
         scene img_1806 with Dissolve(1.0)
         jump beforeSchool
@@ -741,11 +741,22 @@ label start:
                     jump afterSchool
                 
         #EVENINGSCHOOL ******************************************************************************************
-        while True:
-            label eveningSchool:
-                $ thephase = 11
-                scene img_1822 with Dissolve(1.0)
-                mc "It's getting pretty late. I wonder where I should go now? (Check Map)"
+        label eveningSchool:
+        
+            scene img_1806 with Dissolve(1.0)
+            
+            menu:
+                
+                mc "Looks like it's the evening. I wonder where I should go now."
+                
+                "Home":
+                    jump homeSchool
+                    
+                "Park":
+                    jump choicePark
+                    
+                "Town":
+                    jump choiceTown
                 
         #HOMESCHOOL *********************************************************************************************
         label homeSchool:
@@ -1014,8 +1025,11 @@ label start:
     label regularWeekend:
         $ location = 2
         scene img_black with Dissolve(1.0)
-        if stamina == 2:
-            mc "...! {w} Look likes I slept in. It's almost the afternoon."
+        if stamina == 1:
+            mc "...! {w} Oh no! I slept the entire day away. It's almost evening."
+            $ thephase = 5
+        elif stamina == 2:
+            mc "...! {w} Look likes I slept in. It's the afternoon."
             $ thephase = 4
         elif stamina == 3:
             mc "...! {w} It's morning."
@@ -1032,7 +1046,7 @@ label start:
     #REGULAR WEEKEND MORNING *********************************************************************************************
     label regularWeekendMorning:
         
-        if thephase == 6:
+        if thephase == 4:
             
             menu:
                 
@@ -1148,7 +1162,7 @@ label start:
     #REGULAR WEEKEND AFTERNOON HOME *********************************************************************************************
     label regularWeekendAfternoonHome:
         
-        if thephase == 10:
+        if thephase == 6:
             
             menu:
                 
@@ -1370,8 +1384,8 @@ label start:
                 $ staminasub = staminasubcurrentlim
             elif staminasubfuturelim % 1 == 0:
                 $ staminasub = staminasubfuturelim
-            $ thephase = 14 + 1
+            $ thephase = 8 + 1
             if theweekday == 2:
                 $ isendofweekend == True
-            scene img_black with Dissolve(1.0)
+            scene img_black
             jump startDecider

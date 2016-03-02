@@ -71,10 +71,10 @@ init python:
                 store.stamina = 1
                 
         if (hasattr(store, 'staminasub')):#manages stamina sublevels.
-            if store.staminasub == 0 or store.staminasub < 0:
+            if store.staminasub < 0:
                 store.staminasub = store.staminasubcurrentlim
                 store.stamina = store.stamina - 1
-            elif store.staminasub == store.staminasubcurrentlim or store.staminasub > store.staminasubcurrentlim:
+            elif store.staminasub > store.staminasubcurrentlim:
                 store.staminasub = 0
                 store.stamina = store.stamina + 1
                 
@@ -85,10 +85,10 @@ init python:
                 store.stress = 1
                 
         if (hasattr(store, 'stresssub')):#manages stress sublevels.
-            if store.stresssub == 5 or store.stresssub > 5:
+            if store.stresssub > 5:
                 store.stresssub = 0
                 store.stress = store.stress + 1
-            elif store.stresssub == 0 or store.stresssub < 0:
+            elif store.stresssub < 0:
                 store.stressub = 5
                 store.stress = store.stress - 1
                 

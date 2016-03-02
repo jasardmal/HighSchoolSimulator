@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 82, in script
-    $ staminasub = 3
-  File "game/stats.rpy", line 65, in time_callback
-    elif store.staminasub == store.staminasubcurrentlim or store.staminasub > 5:
-AttributeError: 'StoreModule' object has no attribute 'staminasubcurrentlim'
+  File "game/script.rpy", line 87, in script
+    $ stresssub = 5
+  File "game/stats.rpy", line 90, in time_callback
+    store.stress = store.stress + 1
+AttributeError: 'StoreModule' object has no attribute 'stress'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 82, in script
-    $ staminasub = 3
+  File "game/script.rpy", line 87, in script
+    $ stresssub = 5
   File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 810, in execute
     i()
-  File "game/stats.rpy", line 65, in time_callback
-    elif store.staminasub == store.staminasubcurrentlim or store.staminasub > 5:
-AttributeError: 'StoreModule' object has no attribute 'staminasubcurrentlim'
+  File "game/stats.rpy", line 90, in time_callback
+    store.stress = store.stress + 1
+AttributeError: 'StoreModule' object has no attribute 'stress'
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.8.959

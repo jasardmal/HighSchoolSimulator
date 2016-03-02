@@ -1558,7 +1558,7 @@ screen stats:
         has hbox
     
         hbox:
-            bar range 5 value stamina xmaximum 400
+            bar range 5 value staminasub xmaximum 400
             
     # Stamina displayed as a number.
     frame:
@@ -1584,7 +1584,7 @@ screen stats:
         has hbox
     
         hbox:
-            bar range 5 value stress xmaximum 400
+            bar range 5 value stresssub xmaximum 400
             
     # Stress displayed as a number.
     frame:

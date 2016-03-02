@@ -3,11 +3,11 @@ init python:
         
         if (hasattr(store, 'thephase')):#manages phases
             if store.theweekday == 7:
-                if store.thephase > 14:
+                if store.thephase > 8:
                     store.theweekday = store.theweekday + 1
                     store.theday = store.theday + 1
                     store.dayofyear = store.dayofyear + 1
-                    store.thephase = store.thephase - 14
+                    store.thephase = store.thephase - 8
                 if store.thephase == 1:
                     store.stringphase = "Early Morning"
                 elif store.thephase == 2:
@@ -15,36 +15,24 @@ init python:
                 elif store.thephase == 3:
                     store.stringphase = "Morning"
                 elif store.thephase == 4:
-                    store.stringphase = "Morning"
+                    store.stringphase = "Afternoon"
                 elif store.thephase == 5:
-                    store.stringphase = "Morning"
+                    store.stringphase = "Afternoon"
                 elif store.thephase == 6:
-                    store.stringphase = "Afternoon"
+                    store.stringphase = "Evening"
                 elif store.thephase == 7:
-                    store.stringphase = "Afternoon"
+                    store.stringphase = "Evening"
                 elif store.thephase == 8:
-                    store.stringphase = "Afternoon"
-                elif store.thephase == 9:
-                    store.stringphase = "Afternoon"
-                elif store.thephase == 10:
-                    store.stringphase = "Evening"
-                elif store.thephase == 11:
-                    store.stringphase = "Evening"
-                elif store.thephase == 12:
-                    store.stringphase = "Evening"
-                elif store.thephase == 13:
-                    store.stringphase = "Evening"
-                elif store.thephase == 14:
                     store.stringphase = "Night"
                 else:
                     store.stringweekday = "Error"
             
             elif store.theweekday == 1:
-                if store.thephase > 14:
+                if store.thephase > 8:
                     store.theweekday = store.theweekday + 1
                     store.theday = store.theday + 1
                     store.dayofyear = store.dayofyear + 1
-                    store.thephase = store.thephase - 14
+                    store.thephase = store.thephase - 8
                 if store.thephase == 1:
                     store.stringphase = "Early Morning"
                 elif store.thephase == 2:
@@ -52,26 +40,14 @@ init python:
                 elif store.thephase == 3:
                     store.stringphase = "Morning"
                 elif store.thephase == 4:
-                    store.stringphase = "Morning"
+                    store.stringphase = "Afternoon"
                 elif store.thephase == 5:
-                    store.stringphase = "Morning"
+                    store.stringphase = "Afternoon"
                 elif store.thephase == 6:
-                    store.stringphase = "Afternoon"
+                    store.stringphase = "Evening"
                 elif store.thephase == 7:
-                    store.stringphase = "Afternoon"
+                    store.stringphase = "Evening"
                 elif store.thephase == 8:
-                    store.stringphase = "Afternoon"
-                elif store.thephase == 9:
-                    store.stringphase = "Afternoon"
-                elif store.thephase == 10:
-                    store.stringphase = "Evening"
-                elif store.thephase == 11:
-                    store.stringphase = "Evening"
-                elif store.thephase == 12:
-                    store.stringphase = "Evening"
-                elif store.thephase == 13:
-                    store.stringphase = "Evening"
-                elif store.thephase == 14:
                     store.stringphase = "Night"
                 else:
                     store.stringweekday = "Error"
