@@ -1567,7 +1567,7 @@ screen stats:
         
         has hbox
             
-        text "[stamina]/5"
+        text "[staminasub]/[staminasubcurrentlim]"
             
     # Stress Label.
     frame:
@@ -1593,7 +1593,7 @@ screen stats:
         
         has hbox
             
-        text "[stress]/5"
+        text "[stresssub]/5"
     
     # The return button.
     frame:

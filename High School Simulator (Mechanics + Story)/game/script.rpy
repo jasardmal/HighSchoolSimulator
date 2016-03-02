@@ -63,6 +63,7 @@ label start:
     #Initialize Special Day/Event Flags.
     
     $ isfirstschoolday = False
+    $ isafterschool = True
     $ isendofweekend = False
     
     #Initialize Stats
@@ -143,9 +144,6 @@ label start:
     $ hasmetcynthia = False
     $ hasmetnatalie = False
     $ hasmetbecka = False
-    
-    #Initialize Extra Actions
-    $ afterschoolextraaction = True
             
     #CHARACTER CREATION ******************************************************************************************
     label nameCreation:
@@ -562,19 +560,19 @@ label start:
                 jump homeSchoolLongSleep
             elif stamina == 2:
                 jump afterSchoolChoice
-            elif stamina == 3 and afterschoolextraaction == True:
+            elif stamina == 3 and isafterschool == True:
                 jump afterSchoolChoice
-            elif stamina == 3 and afterschoolextraaction == False:
+            elif stamina == 3 and isafterschool == False:
                 mc "Looks like the school's closing. Better get out."
                 jump eveningSchool
-            elif stamina == 4 and afterschoolextraaction == True:
+            elif stamina == 4 and isafterschool == True:
                 jump afterSchoolChoice
-            elif stamina == 4 and afterschoolextraaction == False:
+            elif stamina == 4 and isafterschool == False:
                 mc "Looks like the school's closing. Better get out."
                 jump eveningSchool
-            elif stamina == 5 and afterschoolextraaction == True:
+            elif stamina == 5 and isafterschool == True:
                 jump afterSchoolChoice
-            elif stamina == 5 and afterschoolextraaction == False:
+            elif stamina == 5 and isafterschool == False:
                 mc "Looks like the school's closing. Better get out."
                 jump eveningSchool
            
@@ -612,7 +610,7 @@ label start:
                         $ location = 2
                         scene img_black with Dissolve(1.0)
                         jump homeSchoolRegularSleep
-                    $ afterschoolextraaction = False
+                    $ isafterschool = False
                     jump afterSchool
                 elif stress == 3:
                     $ randHomework = renpy.random.choice([1, 2])
@@ -627,7 +625,7 @@ label start:
                             $ location = 2
                             scene img_black with Dissolve(1.0)
                             jump homeSchoolRegularSleep
-                        $ afterschoolextraaction = False
+                        $ isafterschool = False
                         jump afterSchool
                     else:
                         mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
@@ -640,7 +638,7 @@ label start:
                             $ location = 2
                             scene img_black with Dissolve(1.0)
                             jump homeSchoolRegularSleep
-                        $ afterschoolextraaction = False
+                        $ isafterschool = False
                         jump afterSchool
                 elif stress == 4:
                     $ randHomework = renpy.random.choice([1, 2, 3, 4])
@@ -655,7 +653,7 @@ label start:
                             $ location = 2
                             scene img_black with Dissolve(1.0)
                             jump homeSchoolRegularSleep
-                        $ afterschoolextraaction = False
+                        $ isafterschool = False
                         jump afterSchool
                     else:
                         mc "I tried to study but couldn't focus... >Intelligence increased. >Stress increased. >Stamina decreased."
@@ -668,7 +666,7 @@ label start:
                             $ location = 2
                             scene img_black with Dissolve(1.0)
                             jump homeSchoolRegularSleep
-                        $ afterschoolextraaction = False
+                        $ isafterschool = False
                         jump afterSchool
                 elif stress == 5:
                     mc "I tried to study but couldn't focus... >Stress increased. >Stamina decreased."
@@ -681,7 +679,7 @@ label start:
                         $ location = 2
                         scene img_black with Dissolve(1.0)
                         jump homeSchoolRegularSleep
-                    $ afterschoolextraaction = False
+                    $ isafterschool = False
                     jump afterSchool
 
             label afterSchoolExercise:
@@ -696,7 +694,7 @@ label start:
                         $ location = 2
                         scene img_black with Dissolve(1.0)
                         jump homeSchoolRegularSleep
-                    $ afterschoolextraaction = False
+                    $ isafterschool = False
                     jump afterSchool
                     
                 elif stress == 4:
@@ -712,7 +710,7 @@ label start:
                             $ location = 2
                             scene img_black with Dissolve(1.0)
                             jump homeSchoolRegularSleep
-                        $ afterschoolextraaction = False
+                        $ isafterschool = False
                         jump afterSchool
                         
                     else:
@@ -725,7 +723,7 @@ label start:
                             $ location = 2
                             scene img_black with Dissolve(1.0)
                             jump homeSchoolRegularSleep
-                        $ afterschoolextraaction = False
+                        $ isafterschool = False
                         jump afterSchool
                         
                 elif stress == 5:
@@ -738,7 +736,7 @@ label start:
                         $ location = 2
                         scene img_black with Dissolve(1.0)
                         jump homeSchoolRegularSleep
-                    $ afterschoolextraaction = False
+                    $ isafterschool = False
                     jump afterSchool
                 
         #EVENINGSCHOOL ******************************************************************************************
@@ -854,14 +852,20 @@ label start:
                 mc "ZZZ... Stamina level increased/Stress level decreased"
                 $ stamina = stamina + 1
                 $ stress = stress - 1
-                $ staminasubcurrentlim = staminasubfuturelim
+                if staminasubfuturelim % 1 > 0:
+                    $ staminasub = staminasubcurrentlim
+                elif staminasubfuturelim % 1 == 0:
+                    $ staminasub = staminasubfuturelim
                 $ thephase = 11 + 1
                 scene img_black with Dissolve(1.0)
                 jump startDecider
             
             label homeSchoolRegularSleep:
                 mc "Zzz..."
-                $ staminasubcurrentlim = staminasubfuturelim
+                if staminasubfuturelim % 1 > 0:
+                    $ staminasub = staminasubcurrentlim
+                elif staminasubfuturelim % 1 == 0:
+                    $ staminasub = staminasubfuturelim
                 $ thephase = 11 + 1
                 scene img_black with Dissolve(1.0)
                 jump startDecider
@@ -1361,7 +1365,10 @@ label start:
             
         label regularWeekendSleep:
             mc "Zzz..."
-            $ staminasubcurrentlim = staminasubfuturelim
+            if staminasubfuturelim % 1 > 0:
+                $ staminasub = staminasubcurrentlim
+            elif staminasubfuturelim % 1 == 0:
+                $ staminasub = staminasubfuturelim
             $ thephase = 14 + 1
             if theweekday == 2:
                 $ isendofweekend == True

@@ -62,6 +62,9 @@ init python:
             if store.staminasub == 0 or store.staminasub < 0:
                 store.staminasub = store.staminasubcurrentlim
                 store.stamina = store.stamina - 1
+            elif store.staminasub == staminacurrentlim or store.staminasub > staminasubcurrentlim:
+                store.staminasub = 0
+                store.stamina = store.stamina + 1
                 
         if (hasattr(store, 'stress')):#manages stress.
             if store.stress > 5:
@@ -73,6 +76,9 @@ init python:
             if store.stresssub == 5 or store.stresssub > 5:
                 store.stresssub = 0
                 store.stress = store.stress + 1
+            elif store.stresssub == 0 or store.stresssub < 0:
+                store.stressub = 5
+                store.stress = store.stress - 1
                 
     config.python_callbacks.append(time_callback)
     
