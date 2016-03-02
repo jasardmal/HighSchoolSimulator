@@ -67,21 +67,21 @@ label start:
     $ isendofweekend = False
     
     #Initialize Stats
-    $ charismasub = 0
     $ charismasubmax = 10
-    $ charisma = 1
+    $ charismasub = 0
+    $ charisma = 0
     
-    $ couragesub = 0
     $ couragesubmax = 10
-    $ courage = 1
+    $ couragesub = 0
+    $ courage = 0
     
-    $ intelligencesub = 0
     $ intelligencesubmax = 10
-    $ intelligence = 1
+    $ intelligencesub = 0
+    $ intelligence = 0
     
-    $ staminasub = 3
     $ staminasubcurrentlim = 5
     $ staminasubfuturelim = 5
+    $ staminasub = 3
     $ stamina = 3
     
     $ stresssub = 3

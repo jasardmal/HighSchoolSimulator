@@ -16,6 +16,10 @@ init python:
                 store.charisma = store.charisma + 1
             elif store.charismasub == 80 or store.charismasub > 80:
                 store.charismasub = 0
+                store.charismasubmax = 160
+                store.charisma = store.charisma + 1
+            elif store.charismasub == 160 or store.charismasub > 160:
+                store.charismasub = 0
                 store.charisma = store.charisma + 1
                 
         if (hasattr(store, 'couragesub')):#manages courage
@@ -32,6 +36,10 @@ init python:
                 store.couragesubmax = 80
                 store.courage = store.courage + 1
             elif store.couragesub == 80 or store.couragesub > 80:
+                store.couragesub = 0
+                store.couragesubmax = 160
+                store.courage = store.courage + 1
+            elif store.couragesub == 160 or store.couragesub > 160:
                 store.couragesub = 0
                 store.courage = store.courage + 1
                 
@@ -50,6 +58,10 @@ init python:
                 store.intelligence = store.intelligence + 1
             elif store.intelligencesub == 80 or store.intelligencesub > 80:
                 store.intelligencesub = 0
+                store.intelligencesubmax = 160
+                store.intelligence = store.intelligence + 1
+            elif store.intelligencesub == 160 or store.intelligencesub > 160:
+                store.intelligencesub = 0
                 store.intelligence = store.intelligence + 1
                 
         if (hasattr(store, 'stamina')):#manages stamina.
@@ -62,7 +74,7 @@ init python:
             if store.staminasub == 0 or store.staminasub < 0:
                 store.staminasub = store.staminasubcurrentlim
                 store.stamina = store.stamina - 1
-            elif store.staminasub == staminacurrentlim or store.staminasub > staminasubcurrentlim:
+            elif store.staminasub == store.staminasubcurrentlim or store.staminasub > store.staminasubcurrentlim:
                 store.staminasub = 0
                 store.stamina = store.stamina + 1
                 
