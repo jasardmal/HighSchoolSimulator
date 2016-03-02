@@ -855,30 +855,54 @@
 #        mc Oh. Look. It’s my sister.
 
 #        Jackie "Hey little bro! How was your first few days of school?"
+
 #        mc "Oh! Hey, Jackie! It’s been a while."
+
 #        Jackie "Yeah, well, you know, college and all that. How’s my socially awkward padawan learner?"
+
 #        mc "Urgh, I’m doing fine… Why do you always reference that movie?"
-#        Jackie "Because it’s *our* favorite, and don’t you forget that." 
+
+#        Jackie "Because it’s *our* favorite, and don’t you forget that."
+
 #        mc "But you know I don’t..."
+
 #        Jackie "Shush, yes you do. Anyways, do you have a girlfriend yet?"
+
 #        mc "What?!?! I literally just got here and..."
+
 #        Jackie "No excuses! Get moving, casanova!"
+
 #        mc "Argh! I don’t even know anyone yet!"
+
 #        Jackie "Sure you don’t, Romeo." 
+
 #        mc "Okay, fine, I’ve met a grand total of 4 people. None of whom I know very well."
+
 #        Jackie: Any girls?
+
 #        mc "...Two. But..."
+
 #        Jackie "Are they pretty?"
+
 #        mc "...What? Wait… No, that doesn’t… leave me alone!"
+
 #        Jackie "Alright, Valentine. I’ll keep cupid off your back... for now. Don’t be surprised if you find an arrow in your butt later in the year."
+
 #        mc "An arrow?"
+
 #        Jackie "You know, the arrow of love? Nevermind, loverboy. I’ll talk to you later. Don’t forget to give mom and dad a call every now and then!"
+
 #        mc "Ok, I’ll do that. Don’t you have college things to do?"
+
 #        Jackie "Yeah probably. Oh, and by the way, I looked at your school’s website and it looks like homecoming is coming up soon. So, like I said, get a date. Cupid will watch over you."
+
 #        mc "...Uh, Ok... Sure..."
+
 #        Jackie "See ya round! *hangs up*"
+
 #        mc "Jeez... That was really something... I’d better get some sleep..."
-#        *End Day* 
+
+#       *End Day* 
 
 #       2) mc "Egh... It’s probably not important. You know, today was really long. I’m glad I met all these people, though. I hope they will be my friends... *Yawn* Wow, I’m tired. I should really get some sleep. I hope that call wasn’t important..."
 
