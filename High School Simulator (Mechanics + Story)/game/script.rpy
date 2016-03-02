@@ -46,9 +46,9 @@ label start:
     #Initialize Calendar/Time/Location
     $ clock = False#make false to hide the calendar
     $ stats = False#make false to hide the stats
-    $ theweekday = 7#monday, the number of the weekday, this automatically changes but must be initially assigned
+    $ theweekday = 2#monday, the number of the weekday, this automatically changes but must be initially assigned
     $ themonth = 8#august, the number of the month, this automatically changes but must be initially assigned
-    $ theday = 31#this automatically changes but must be initially assigned
+    $ theday = 24#this automatically changes but must be initially assigned
     $ theyear = 2015#this automatically changes but must be initially assigned
     $ dayofyear = 243#you must calculate this properly, this automatically changes
     $ yearlim = 365#initially define it as 365 or 366, whichever is correct, this gets changed automatically later
@@ -62,16 +62,20 @@ label start:
     
     #Initialize Special Day/Event Flags.
     
-    $ isfirstschoolday = True;
+    $ isfirstschoolday = False
+    $ isendofweekend = False
     
     #Initialize Stats
     $ charismasub = 0
+    $ charismasubmax = 10
     $ charisma = 1
     
     $ couragesub = 0
+    $ couragesubmax = 10
     $ courage = 1
     
     $ intelligencesub = 0
+    $ intelligencesubmax = 10
     $ intelligence = 1
     
     $ staminasub = 3
@@ -201,8 +205,10 @@ label start:
     #REGULAR SCHOOL START *********************************************************************************************
     label regularSchool:
         $ location = 2
-        $ stamina = 3
-        $ stress = 3
+        if isendofweekend == True:
+            $ stamina = 3
+            $ stress = 3
+            $ isendofweekend = False
         scene img_black
         mc "It's time for school."
         scene img_1806
@@ -1357,5 +1363,7 @@ label start:
             mc "Zzz..."
             $ staminasubcurrentlim = staminasubfuturelim
             $ thephase = 14 + 1
+            if theweekday == 2:
+                $ isendofweekend == True
             scene img_black
             jump startDecider

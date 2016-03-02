@@ -2,8 +2,12 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 516: Line is indented, but the preceding vbox statement does not expect a block. Please check this line's indentation.
-    textbutton _("School") action NullAction()
-    ^
+File "game/script.rpy", line 211: expected statement.
+    isendofweekend = False
+                   ^
+
+File "game/script.rpy", line 1367: expected statement.
+    isendofweekend == True
+                          ^
 
 Ren'Py Version: Ren'Py 6.99.8.959

@@ -1480,16 +1480,16 @@ screen stats:
         has hbox
     
         hbox:
-            bar range 5 value charisma xmaximum 400
+            bar range charismasubmax value charismasub xmaximum 400
             
     # Charisma displayed as a number.
     frame:
-        xalign 0.54
+        xalign 0.55
         yalign 0.05
         
         has hbox
             
-        text "[charisma]/5"
+        text "[charismasub]/[charismasubmax]"
             
     # Courage Label.
     frame:
@@ -1506,16 +1506,16 @@ screen stats:
         has hbox
     
         hbox:
-            bar range 5 value courage xmaximum 400
+            bar range couragesubmax value couragesub xmaximum 400
             
     # Courage displayed as a number.
     frame:
-        xalign 0.54
+        xalign 0.55
         yalign 0.15
         
         has hbox
             
-        text "[courage]/5"
+        text "[couragesub]/[couragesubmax]"
             
     # Intelligence Label.
     frame:
@@ -1532,16 +1532,16 @@ screen stats:
         has hbox
     
         hbox:
-            bar range 5 value intelligence xmaximum 400
+            bar range intelligencesubmax value intelligencesub xmaximum 400
             
     # Intelligence displayed as a number.
     frame:
-        xalign 0.54
+        xalign 0.55
         yalign 0.25
         
         has hbox
             
-        text "[intelligence]/5"
+        text "[intelligencesub]/[intelligencesubmax]"
             
     # Stamina Label.
     frame:
@@ -1604,21 +1604,21 @@ screen stats:
 
         textbutton _("Return") action ShowMenu("save")
         
-    # Money Label.
-    frame:
-        xalign 0
-        yalign 0.5
+#    # Money Label.
+#    frame:
+#        xalign 0
+#        yalign 0.5
         
-        text "Money"
+#        text "Money"
     
-    # Money.
-    frame:
-        xalign 0
-        yalign 0.55
+#    # Money.
+#    frame:
+#        xalign 0
+#        yalign 0.55
         
-        has hbox
+#        has hbox
         
-        text "$[money]"
+#        text "$[money]"
         
 
 ##############################################################################

@@ -2,44 +2,53 @@ init python:
     def time_callback():#constantly calculate the stats
         
         if (hasattr(store, 'charismasub')):#manages charisma
-            if store.charismasub == 5 or store.charismasub > 5:
+            if store.charismasub == 10 or store.charismasub > 10:
                 store.charismasub = 0
+                store.charismasubmax = 20
                 store.charisma = store.charisma + 1
-            elif store.charismasub == 15 or store.charismasub > 15:
+            elif store.charismasub == 20 or store.charismasub > 20:
                 store.charismasub = 0
+                store.charismasubmax = 40
                 store.charisma = store.charisma + 1
-            elif store.charismasub == 25 or store.charismasub > 25:
+            elif store.charismasub == 40 or store.charismasub > 40:
                 store.charismasub = 0
+                store.charismasubmax = 80
                 store.charisma = store.charisma + 1
-            elif store.charismasub == 35 or store.charismasub > 35:
+            elif store.charismasub == 80 or store.charismasub > 80:
                 store.charismasub = 0
                 store.charisma = store.charisma + 1
                 
         if (hasattr(store, 'couragesub')):#manages courage
-            if store.couragesub == 5 or store.couragesub > 5:
+            if store.couragesub == 10 or store.couragesub > 10:
                 store.couragesub = 0
+                store.couragesubmax = 20
                 store.courage = store.courage + 1
-            elif store.couragesub == 15 or store.couragesub > 15:
+            elif store.couragesub == 20 or store.couragesub > 20:
                 store.couragesub = 0
+                store.couragesubmax = 40
                 store.courage = store.courage + 1
-            elif store.couragesub == 25 or store.couragesub > 25:
+            elif store.couragesub == 40 or store.couragesub > 40:
                 store.couragesub = 0
+                store.couragesubmax = 80
                 store.courage = store.courage + 1
-            elif store.couragesub == 35 or store.couragesub > 35:
+            elif store.couragesub == 80 or store.couragesub > 80:
                 store.couragesub = 0
                 store.courage = store.courage + 1
                 
         if (hasattr(store, 'intelligencesub')):#manages intelligence
-            if store.intelligencesub == 5 or store.intelligencesub > 5:
+            if store.intelligencesub == 10 or store.intelligencesub > 10:
                 store.intelligencesub = 0
+                store.intelligencesubmax = 20
                 store.intelligence = store.intelligence + 1
-            elif store.intelligencesub == 15 or store.intelligencesub > 15:
+            elif store.intelligencesub == 20 or store.intelligencesub > 20:
                 store.intelligencesub = 0
+                store.intelligencesubmax = 40
                 store.intelligence = store.intelligence + 1
-            elif store.intelligencesub == 25 or store.intelligencesub > 25:
+            elif store.intelligencesub == 40 or store.intelligencesub > 40:
                 store.intelligencesub = 0
+                store.intelligencesubmax = 80
                 store.intelligence = store.intelligence + 1
-            elif store.intelligencesub == 35 or store.intelligencesub > 35:
+            elif store.intelligencesub == 80 or store.intelligencesub > 80:
                 store.intelligencesub = 0
                 store.intelligence = store.intelligence + 1
                 
