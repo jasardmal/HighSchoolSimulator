@@ -1,6 +1,6 @@
 #    label firstSchoolDay:
         
-#        scene img_1832
+#        scene img_1832 with Dissolve(1.0)
 #        "*Bell Rings*"
 #        $ thephase = 3;
 
@@ -52,7 +52,7 @@
 #        #CHANGE SCENES WOO DEAN'S OFFICE TIME
 
 #        #MC Standing outside door about to walk in
-#        scene img_1831
+#        scene img_1831 with Dissolve(1.0)
 
 #        de "Now, {w} you both know better! {w} I can’t believe that it hasn’t even been a day into the school year and you have already begun fighting! {w} Shame on both of you! {w}
 #            Have you no dignity?!?!"
@@ -166,7 +166,7 @@
 
 #        label firstSchoolPath:
 #        #AFTER BOTH VERSIONS:
-#        scene img_1832
+#        scene img_1832 with Dissolve(1.0)
         
 #        mh "Welcome back!"
 
@@ -177,7 +177,7 @@
 #        mh "Alright, {w} Class Dismissed."
         
 #        #To Himself
-#        scene img_1831
+#        scene img_1831 with Dissolve(1.0)
 
 #        mc "I should probably get to my next class. {w} It’s no good to dawdle. Looks like my next class is… {w}"
             
@@ -191,7 +191,7 @@
 #        mc "Oh no! {w} I’m late!"
 
 #        #Enter Class
-#        scene img_1832
+#        scene img_1832 with Dissolve(1.0)
 
 #        mc "Sorry I’m late, Mrs. Ong."
 
@@ -216,7 +216,7 @@
 #        mo "Dismissed!"
         
 #        #In the hallway
-#        scene img_1831
+#        scene img_1831 with Dissolve(1.0)
         
 #        #Groan
 
@@ -235,7 +235,7 @@
 #        #Initiate end of day 1
 #        label firstSchoolDayEnd:
             
-#            scene img_1801
+#            scene img_1801 with Dissolve(1.0)
         
 #            mc ">Walking Home"
 

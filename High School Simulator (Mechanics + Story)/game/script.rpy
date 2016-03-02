@@ -147,7 +147,7 @@ label start:
             
     #CHARACTER CREATION ******************************************************************************************
     label nameCreation:
-        scene img_black
+        scene img_black with Dissolve(1.0)
         mc "Who am I?"
         call screen input_charactersoftkeyboard
     
@@ -207,9 +207,9 @@ label start:
             $ stamina = 3
             $ stress = 3
             $ isendofweekend = False
-        scene img_black
+        scene img_black with Dissolve(1.0)
         mc "It's time for school."
-        scene img_1806
+        scene img_1806 with Dissolve(1.0)
         jump beforeSchool
     
         #BEFORESCHOOL ******************************************************************************************
@@ -1372,5 +1372,5 @@ label start:
             $ thephase = 14 + 1
             if theweekday == 2:
                 $ isendofweekend == True
-            scene img_black
+            scene img_black with Dissolve(1.0)
             jump startDecider
