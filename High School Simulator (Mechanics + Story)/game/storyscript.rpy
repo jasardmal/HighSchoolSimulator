@@ -243,17 +243,17 @@
 
 #            mc "!?"
 
-#            #Marc: I wanted to thank you for helping me out. I’ve never seen you before. What’s your name?
+#            #mw "I wanted to thank you for helping me out. I’ve never seen you before. What’s your name?"
 
-#            #MC: Uh… No problem… my name is *tells him name*... hey…
+#            #mc "Uh… No problem… my name is *tells him name*... hey..."
 
-#            #Marc: If you ever need anything, let me know. I’ll return the favor. 
+#            #mw "If you ever need anything, let me know. I’ll return the favor." 
 
-#            #MC: Oh, uh, ok… Thanks… 
+#            #mc "Oh, uh, ok… Thanks..."
 
-#            #Marc: Cya round.
-#            #MC: Um, Ok. Cya. 
+#            #mw "Cya round."
 
+#            #mc "Um, Ok. Cya." 
 
 #            #*At home*
 
@@ -261,34 +261,31 @@
 
 #            #Pick up the Phone
 
-#            #MC: Hello?
+#            #mc "Hello?"
 
-#            #Mom: Hey honey! How was the first day of school?
+#            #Mom "Hey honey! How was the first day of school?"
 
-#            #MC: Oh, it was alright I guess.
+#            #mc "Oh, it was alright I guess."
 
-#            #Mom: Make any new friends?
+#            #Mom "Make any new friends?"
 
-#            #MC: Erm, Maybe.
+#            #mc "Erm, Maybe."
 
-#            #Mom: *sigh* Well, that's something. You should try to be friends with more people, like your sister.
+#            #Mom "*sigh* Well, that's something. You should try to be friends with more people, like your sister."
 
-#            #MC: Ok, Mom. I’ll try.
+#            #mc "Ok, Mom. I’ll try."
 
-#            #Mom: Don’t try, do! *sigh* Love you, hun.
+#            #Mom "Don’t try, do! *sigh* Love you, hun."
 
-#            #MC: Love you too, mom. *click*
+#            #mc "Love you too, mom. *click*"
 
-#    #        #*Sigh* It’d be nice if mom or dad was home for once...
+#            #mc "*Sigh* It’d be nice if mom or dad was home for once..."
 
-#    #        #*end scene*
+#            #*end scene*
 
+#            #Dont Pick Up the Phone
 
-
-#    ##        #Dont Pick Up the Phone
-
-
-#    ##        MC: *groan* Ugh! I wonder who it is. Well, they can wait. I need to sleep… Today was busy…
+#            mc "*groan* Ugh! I wonder who it is. Well, they can wait. I need to sleep… Today was busy..."
 
 #            # *end scene*
         
