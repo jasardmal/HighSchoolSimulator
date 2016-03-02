@@ -237,7 +237,7 @@
             
 #            scene img_1801 with Dissolve(1.0)
         
-#            mc ">Walking Home"
+#            mc "Walking Home"
 
 #            mw "Hey, wait up!"
 
@@ -263,19 +263,19 @@
 
 #            #mc "Hello?"
 
-#            #Mom "Hey honey! How was the first day of school?"
+#            #mom "Hey honey! How was the first day of school?"
 
 #            #mc "Oh, it was alright I guess."
 
-#            #Mom "Make any new friends?"
+#            #mom "Make any new friends?"
 
 #            #mc "Erm, Maybe."
 
-#            #Mom "*sigh* Well, that's something. You should try to be friends with more people, like your sister."
+#            #mom "*sigh* Well, that's something. You should try to be friends with more people, like your sister."
 
 #            #mc "Ok, Mom. I’ll try."
 
-#            #Mom "Don’t try, do! *sigh* Love you, hun."
+#            #mom "Don’t try, do! *sigh* Love you, hun."
 
 #            #mc "Love you too, mom. *click*"
 

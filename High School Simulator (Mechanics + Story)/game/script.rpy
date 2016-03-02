@@ -16,6 +16,7 @@ define ar = Character('Agnes Rocco', color="#c8ffc8")
 define cl = Character('Cynthia Lucas', color="#c8ffc8")
 define nm = Character('Natalie Mcneil', color="#c8ffc8")
 define bk = Character('Becka Krakowski', color="#c8ffc8")
+define mom = Character('Mom', color="#c8ffc8")
 
 #School Staff
 define de = Character('Dean', color="#c8ffc8")
