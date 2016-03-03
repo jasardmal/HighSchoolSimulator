@@ -67,8 +67,8 @@ init python:
         if (hasattr(store, 'stamina')):#manages stamina.
             if store.stamina > 5:
                 store.stamina = 5
-            elif store.stamina < 1:
-                store.stamina = 1
+            elif store.stamina < 0:
+                store.stamina = 0
                 
         if (hasattr(store, 'staminasub')):#manages stamina sublevels.
             if store.staminasub < 0:
@@ -81,8 +81,8 @@ init python:
         if (hasattr(store, 'stress')):#manages stress.
             if store.stress > 5:
                 store.stress = 5
-            elif store.stress < 1:
-                store.stress = 1
+            elif store.stress < 0:
+                store.stress = 0
                 
         if (hasattr(store, 'stresssub')):#manages stress sublevels.
             if store.stresssub > 5:
@@ -98,13 +98,13 @@ init python:
         ui.frame(xfill=False, xminimum = None, yminimum=None, xalign=0.0, yalign = 0.0)
         ui.vbox()
         ui.text("Charisma")
-        ui.bar(range=5, value=charisma, xmaximum=150)
+        ui.bar(range=6, value=charisma, xmaximum=150)
         ui.text("Courage")
-        ui.bar(range=5, value=courage, xmaximum=150)
+        ui.bar(range=6, value=courage, xmaximum=150)
         ui.text("Intelligence")
-        ui.bar(range=5, value=intelligence, xmaximum=150)
+        ui.bar(range=6, value=intelligence, xmaximum=150)
         ui.text("Stamina")
-        ui.bar(range=5, value=stamina, xmaximum=150)
+        ui.bar(range=6, value=stamina, xmaximum=150)
         ui.text("Stress")
-        ui.bar(range=5, value=stress, xmaximum=150)
+        ui.bar(range=6, value=stress, xmaximum=150)
         ui.close()

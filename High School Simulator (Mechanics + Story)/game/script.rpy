@@ -243,15 +243,15 @@ label start:
                 jump period
         
             label beforeSchoolStudy:
-                if stress == 1 or stress == 2:
+                if stress == 0 or stress == 1:
                     mc "I studied and understood a lot! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                     $ intelligencesub = intelligencesub + 2
                     $ stresssub = stresssub + 2
                     $ staminasub = staminasub - 1
                     $ thephase = 3
                     jump period
-                elif stress == 3:
-                    $ randStudy = renpy.random.choice([1, 2, 3, 4])
+                elif stress == 2 or stress == 3:
+                    $ randStudy = renpy.random.choice([1, 2])
                     if randStudy == 1:
                         mc "I studied and understood a lot! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 2
@@ -266,19 +266,13 @@ label start:
                         $ staminasub = staminasub - 1
                         $ thephase = 3
                         jump period
-                elif stress == 4:
-                    mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
-                    $ intelligencesub = intelligencesub + 1
-                    $ stresssub = stresssub + 1
-                    $ staminasub = staminasub - 1
-                    $ thephase = 3
-                    jump period
-                elif stress == 5:
+                elif stress == 4 or stress == 5:
                     mc "I tried to study but couldn't focus... >Stress increased. >Stamina decreased."
                     $ stresssub = stresssub + 1
                     $ staminasub = staminasub - 1
                     $ thephase = 3
                     jump period
+
 
             label beforeSchoolExercise:
                 if stress == 1 or stress == 2 or stress == 3:
@@ -480,16 +474,16 @@ label start:
                     jump period
             
                 label lunchSchoolStudy:
-                    if stress == 1 or stress == 2:
+                    if stress == 0 or stress == 1:
                         mc "I studied and understood a lot! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 2
                         $ stresssub = stresssub + 2
                         $ staminasub = staminasub - 1
                         $ thephase = 7
                         jump period
-                    elif stress == 3:
+                    elif stress == 2 or stress == 3:
                         $ randStudy = renpy.random.choice([1, 2, 3, 4])
-                        if randStudy == 1:
+                        if randStudy == 1 or randStudy == 2:
                             mc "I studied and understood a lot! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                             $ intelligencesub = intelligencesub + 2
                             $ stresssub = stresssub + 2
@@ -503,19 +497,13 @@ label start:
                             $ staminasub = staminasub - 1
                             $ thephase = 7
                             jump period
-                    elif stress == 4:
-                        mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
-                        $ intelligencesub = intelligencesub + 1
-                        $ stresssub = stresssub + 1
-                        $ staminasub = staminasub - 1
-                        $ thephase = 7
-                        jump period
-                    elif stress == 5:
+                    elif stress == 4 or stress == 5:
                         mc "I tried to study but couldn't focus... >Stress increased. >Stamina decreased."
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
                         $ thephase = 7
                         jump period
+
                     
                 label lunchSchoolExercise:
                     if stress == 1 or stress == 2 or stress == 3:
@@ -553,19 +541,14 @@ label start:
             scene img_1831 with Dissolve(1.0)
             if isfirstschoolday == True:
                 jump firstSchoolDayEnd
-            elif stamina == 1:
+            elif stamina == 0 or stamina == 1:
                 mc "I'm REALLY tired. I should head home and sleep."
                 $ thephase = 11
                 $ location = 2
                 scene img_black with Dissolve(1.0)
                 jump homeSchoolLongSleep
-            elif stamina == 2:
+            elif stamina == 2 or stamina == 3:
                 jump afterSchoolChoice
-            elif stamina == 3 and isafterschool == True:
-                jump afterSchoolChoice
-            elif stamina == 3 and isafterschool == False:
-                mc "Looks like the school's closing. Better get out."
-                jump eveningSchool
             elif stamina == 4 and isafterschool == True:
                 jump afterSchoolChoice
             elif stamina == 4 and isafterschool == False:
@@ -600,12 +583,12 @@ label start:
                 jump afterSchool
         
             label afterSchoolHomework:
-                if stress == 1 or stress == 2:
+                if stress == 0 or stress == 1:
                     mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                     $ intelligencesub = intelligencesub + 2
                     $ stresssub = stresssub + 2
                     $ staminasub = staminasub - 1
-                    if stamina == 2:
+                    if stamina == 2 or stamina == 3:
                         mc "I'm really tired. I should head home and sleep."
                         $ thephase = 11
                         $ location = 2
@@ -613,14 +596,14 @@ label start:
                         jump homeSchoolRegularSleep
                     $ isafterschool = False
                     jump afterSchool
-                elif stress == 3:
+                elif stress == 2 or stress == 3:
                     $ randHomework = renpy.random.choice([1, 2])
                     if randHomework == 1:
                         mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
                         $ intelligencesub = intelligencesub + 2
                         $ stresssub = stresssub + 2
                         $ staminasub = staminasub - 1
-                        if stamina == 2:
+                        if stamina == 2 or stamina == 3:
                             mc "I'm really tired. I should head home and sleep."
                             $ thephase = 11
                             $ location = 2
@@ -633,7 +616,7 @@ label start:
                         $ intelligencesub = intelligencesub + 1
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
-                        if stamina == 2:
+                        if stamina == 2 or stamina == 3:
                             mc "I'm really tired. I should head home and sleep."
                             $ thephase = 11
                             $ location = 2
@@ -641,7 +624,7 @@ label start:
                             jump homeSchoolRegularSleep
                         $ isafterschool = False
                         jump afterSchool
-                elif stress == 4:
+                elif stress == 4 or stress == 5:
                     $ randHomework = renpy.random.choice([1, 2, 3, 4])
                     if randHomework == 1 or randHomework == 2 or randHomework == 3:
                         mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
