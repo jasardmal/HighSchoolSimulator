@@ -1,293 +1,293 @@
-#    label firstSchoolDay:
+    label firstSchoolDay:
         
-#        scene img_1832 with Dissolve(1.0)
-#        "*Bell Rings*"
-#        $ thephase = 3;
+        scene img_1832 with Dissolve(1.0)
+        "*Bell Rings*"
+        $ thephase = 3;
 
-#        pa "Welcome to the first day of school at Ketsu High School! Here, we…."
+        pa "Welcome to the first day of school at Ketsu High School! Here, we…."
 
-#        mc "That guy, there in the back? {w} That’s me. {w} I just moved here from Utah. {w} This is my first day at Ketsu High, and I don’t know anyone. {w} This day is gonna be such a drag."
+        mc "That guy, there in the back? {w} That’s me. {w} I just moved here from Utah. {w} This is my first day at Ketsu High, and I don’t know anyone. {w} This day is gonna be such a drag."
 
-#        pa "....... And that is how the Cougars roar! Have a wonderful day, students!"
+        pa "....... And that is how the Cougars roar! Have a wonderful day, students!"
 
-#        mc "Ugh. {w} When I moved here, I thought that not really knowing anyone might be nice. {w} My parents are always gone on some trip or another, {w} so I don’t really have any actual 
-#            interactions. {w} This year, I thought that maybe, {w} just maybe, {w} I could find someone who would actually be my friend."
+        mc "Ugh. {w} When I moved here, I thought that not really knowing anyone might be nice. {w} My parents are always gone on some trip or another, {w} so I don’t really have any actual 
+            interactions. {w} This year, I thought that maybe, {w} just maybe, {w} I could find someone who would actually be my friend."
 
-#        #Desk Slams Forward
+        #Desk Slams Forward
 
-#        mw "Watch yourself! {w} Keep talking, {w} someday you'll say something intelligent!"
+        mw "Watch yourself! {w} Keep talking, {w} someday you'll say something intelligent!"
 
-#        s1 "If you weren’t so easy to make fun of, {w} I wouldn’t! {w} You’re just a little baby."
+        s1 "If you weren’t so easy to make fun of, {w} I wouldn’t! {w} You’re just a little baby."
 
-#        mw "How many times do I have to flush before you go away?"
+        mw "How many times do I have to flush before you go away?"
 
-#        #Punches other student
+        #Punches other student
         
-#        #Fight Ensues
+        #Fight Ensues
         
-#        #Wipes Chin
+        #Wipes Chin
 
-#        mw "I told you not to insult me. {w} Idiot."
+        mw "I told you not to insult me. {w} Idiot."
 
-#        #Teacher comes in
+        #Teacher comes in
         
-#        mh "Hey! {w} What’s going on? {w} How dare you engage in classroom violence! {w} Don’t you know that fights are against school rules? {w} Both of you, {w} to the dean’s office!"
+        mh "Hey! {w} What’s going on? {w} How dare you engage in classroom violence! {w} Don’t you know that fights are against school rules? {w} Both of you, {w} to the dean’s office!"
 
-#        #Marc and other student leave
+        #Marc and other student leave
 
-#        "You! New student! You were the closest and probably saw what happened the best. go to the deans office with them to fill out an incident report!"
+        "You! New student! You were the closest and probably saw what happened the best. go to the deans office with them to fill out an incident report!"
 
-#        mc "But, wait, {w} no…."
+        mc "But, wait, {w} no…."
 
-#        mh "Don’t argue, {w} just do it! {w} Don’t let your experiences be memories! {w} Go to the Dean’s office!"
+        mh "Don’t argue, {w} just do it! {w} Don’t let your experiences be memories! {w} Go to the Dean’s office!"
         
-#        #Sighs
+        #Sighs
 
-#        mc "F-Fine..."
+        mc "F-Fine..."
         
-#        #Grumbling as you leave
+        #Grumbling as you leave
         
-#        mh "Back in my day, {w} when we had to fight over things, {w} we waited until after school...."
+        mh "Back in my day, {w} when we had to fight over things, {w} we waited until after school...."
 
-#        #CHANGE SCENES WOO DEAN'S OFFICE TIME
+        #CHANGE SCENES WOO DEAN'S OFFICE TIME
 
-#        #MC Standing outside door about to walk in
-#        scene img_1831 with Dissolve(1.0)
+        #MC Standing outside door about to walk in
+        scene img_1831 with Dissolve(1.0)
 
-#        de "Now, {w} you both know better! {w} I can’t believe that it hasn’t even been a day into the school year and you have already begun fighting! {w} Shame on both of you! {w}
-#            Have you no dignity?!?!"
+        de "Now, {w} you both know better! {w} I can’t believe that it hasn’t even been a day into the school year and you have already begun fighting! {w} Shame on both of you! {w}
+            Have you no dignity?!?!"
 
-#        co "Sorry, Mr Dean. It won’t happen again."
+        co "Sorry, Mr Dean. It won’t happen again."
         
-#        #Under his breath
+        #Under his breath
 
-#        mw "Fat lard."
+        mw "Fat lard."
 
-#        s1 "Excuse me? {w} What did you call me?"
+        s1 "Excuse me? {w} What did you call me?"
 
-#        mw "Nothing, {w} I was talking about your mother."
+        mw "Nothing, {w} I was talking about your mother."
 
-#        de "Both of you! {w} Behave! {w} Have you no decency? {w} You haven’t even left my office! {w} Marc, {w} stay here, and let him go."
+        de "Both of you! {w} Behave! {w} Have you no decency? {w} You haven’t even left my office! {w} Marc, {w} stay here, and let him go."
         
-#        $mwname = "Marc"
+        $mwname = "Marc"
 
-#        mw "Fine. {w} But he’s still a fat lard."
+        mw "Fine. {w} But he’s still a fat lard."
 
-#        de "One more word out of you and I will suspend you!"
+        de "One more word out of you and I will suspend you!"
 
-#        mw "..."
+        mw "..."
 
-#        #Walks in
+        #Walks in
 
-#        de "Who are you?"
+        de "Who are you?"
 
-#        mc "I’m a new student. {w} I just moved here a few weeks ago. {w} Mr. Hart told me to come down here because I was closest to the fight, {w} so that I can fill out a report."
+        mc "I’m a new student. {w} I just moved here a few weeks ago. {w} Mr. Hart told me to come down here because I was closest to the fight, {w} so that I can fill out a report."
 
-#        de "Oh. Well, {w} in that case, {w} let me get one of those for you."
+        de "Oh. Well, {w} in that case, {w} let me get one of those for you."
         
-#        #Rummages through cabinet file
+        #Rummages through cabinet file
         
-#        label firstdayschoolchoice1:
+        label firstdayschoolchoice1:
 
-#            mc "What did I see?"
+            mc "What did I see?"
 
-#            #OPTIONS
+            #OPTIONS
             
-#            menu:
+            menu:
 
-#                "Marc started it":
-#                    jump firstSchoolC1O1
+                "Marc started it":
+                    jump firstSchoolC1O1
                 
-#                "Marc didn't start it":
-#                    jump firstSchoolC1O2
+                "Marc didn't start it":
+                    jump firstSchoolC1O2
 
 
-#        label firstSchoolC1O1:
-#            #MARC STARTED IT
-#            mc "It looked to me like that student was antagonizing the other student. {w} I’m not sure what was said, {w} but one minute I was waiting for class to start, {w} 
-#                and the next those two were duking it out by my desk."
+        label firstSchoolC1O1:
+            #MARC STARTED IT
+            mc "It looked to me like that student was antagonizing the other student. {w} I’m not sure what was said, {w} but one minute I was waiting for class to start, {w} 
+                and the next those two were duking it out by my desk."
 
-#            de "Well, {w} are you sure you didn't see anything else?"
+            de "Well, {w} are you sure you didn't see anything else?"
 
-#            mc "All I know is the two were fighting. {w} I don’t know enough about either of them to tell."
+            mc "All I know is the two were fighting. {w} I don’t know enough about either of them to tell."
 
-#            de "Well, {w} all right then. {w} Get back to class."
+            de "Well, {w} all right then. {w} Get back to class."
 
-#            mc "Yes, sir."
+            mc "Yes, sir."
 
-#            de "On your way back out, {w} call Marc back in."
+            de "On your way back out, {w} call Marc back in."
 
-#            mc "Which one is Marc?"
+            mc "Which one is Marc?"
 
-#            de "The one who probably started the fight."
+            de "The one who probably started the fight."
 
-#            mc "Oh, alright."
+            mc "Oh, alright."
 
-#            #Walks out
+            #Walks out
 
-#            mc "Marc? {w} The dean wants to see you."
+            mc "Marc? {w} The dean wants to see you."
 
-#            mw "Ugh, {w} finally. {w} I wish this would just be over… {w} I can’t stand it when people insult me and get away with it."
+            mw "Ugh, {w} finally. {w} I wish this would just be over… {w} I can’t stand it when people insult me and get away with it."
 
-#            #Marc goes to office
+            #Marc goes to office
 
-#            #Goes to class
-#            jump firstSchoolPath
+            #Goes to class
+            jump firstSchoolPath
 
-#        label firstSchoolC1O2:
-#            #MARC DIDN'T START IT
+        label firstSchoolC1O2:
+            #MARC DIDN'T START IT
 
-#            mc "Well… {w} To be honest, {w} it seemed to me like the one who is still sitting outside was the victim. {w} The other one had made some rude comments about him, {w} and he didn’t like it."
+            mc "Well… {w} To be honest, {w} it seemed to me like the one who is still sitting outside was the victim. {w} The other one had made some rude comments about him, {w} and he didn’t like it."
             
-#            de "Is that right? {w} Well, {w} so far, {w} that’s not what I’ve heard. Are you sure?"
+            de "Is that right? {w} Well, {w} so far, {w} that’s not what I’ve heard. Are you sure?"
 
-#            mc "Yes, Sir. {w} I’m sure."
+            mc "Yes, Sir. {w} I’m sure."
 
-#            de "Hmm… {w} Alright. Go back to class… {w} Thank you for your help."
+            de "Hmm… {w} Alright. Go back to class… {w} Thank you for your help."
 
-#            mc "Yes, sir."
+            mc "Yes, sir."
 
-#            de "On your way back out, {w} call Marc back in."
+            de "On your way back out, {w} call Marc back in."
             
-#            #To himself
+            #To himself
 
-#            mc "Marc must be the one who is still in the foyer. {w} Ok."
+            mc "Marc must be the one who is still in the foyer. {w} Ok."
 
-#            #Walks out
+            #Walks out
 
-#            mc "Marc? {w} The dean wants to see you."
+            mc "Marc? {w} The dean wants to see you."
 
-#            mw "Ugh, {w} finally. {w} I wish this would just be over… {w} I can’t stand it when people insult me and get away with it."
+            mw "Ugh, {w} finally. {w} I wish this would just be over… {w} I can’t stand it when people insult me and get away with it."
 
-#            #Marc goes to office
+            #Marc goes to office
 
-#            #Goes to class
-#            jump firstSchoolPath
+            #Goes to class
+            jump firstSchoolPath
 
-#        label firstSchoolPath:
-#        #AFTER BOTH VERSIONS:
-#        scene img_1832 with Dissolve(1.0)
+        label firstSchoolPath:
+        #AFTER BOTH VERSIONS:
+        scene img_1832 with Dissolve(1.0)
         
-#        mh "Welcome back!"
+        mh "Welcome back!"
 
-#        #Bell Rings
+        #Bell Rings
 
-#        #Slams book closed dramatically
+        #Slams book closed dramatically
         
-#        mh "Alright, {w} Class Dismissed."
+        mh "Alright, {w} Class Dismissed."
         
-#        #To Himself
-#        scene img_1831 with Dissolve(1.0)
+        #To Himself
+        scene img_1831 with Dissolve(1.0)
 
-#        mc "I should probably get to my next class. {w} It’s no good to dawdle. Looks like my next class is… {w}"
+        mc "I should probably get to my next class. {w} It’s no good to dawdle. Looks like my next class is… {w}"
             
-#        #Shift to picture of the schedule
+        #Shift to picture of the schedule
             
-#        mc "... History."
+        mc "... History."
 
-#        "Bell rings*"
-#        $ thephase = 4
+        "Bell rings*"
+        $ thephase = 4
 
-#        mc "Oh no! {w} I’m late!"
+        mc "Oh no! {w} I’m late!"
 
-#        #Enter Class
-#        scene img_1832 with Dissolve(1.0)
+        #Enter Class
+        scene img_1832 with Dissolve(1.0)
 
-#        mc "Sorry I’m late, Mrs. Ong."
+        mc "Sorry I’m late, Mrs. Ong."
 
-#        mo "The Nerve! {w} In my day, {w} if we were late, {w} we would be paddled! {w} With a wooden spoon! {w} Sit down, before I get any angrier. {w} Now, class. {w} What is the…"
+        mo "The Nerve! {w} In my day, {w} if we were late, {w} we would be paddled! {w} With a wooden spoon! {w} Sit down, before I get any angrier. {w} Now, class. {w} What is the…"
 
-#        #Brain wandering off*
+        #Brain wandering off*
 
-#        mo "Mr. [mcname], {w} can you tell me what the capital of Texas is?"
+        mo "Mr. [mcname], {w} can you tell me what the capital of Texas is?"
 
-#        mc "Er… {w} Is it Houston?"
+        mc "Er… {w} Is it Houston?"
 
-#        mo "Actually, {w} it’s Austin. {w} Now, {w} if you would stop dozing off in class, {w} maybe you would learn something. {w} In my day, {w} we were whipped if we fell asleep in class!"
+        mo "Actually, {w} it’s Austin. {w} Now, {w} if you would stop dozing off in class, {w} maybe you would learn something. {w} In my day, {w} we were whipped if we fell asleep in class!"
 
-#        mc "Urgh… yes, Mrs. Ong."
+        mc "Urgh… yes, Mrs. Ong."
 
-#        mo "Now, class. {w} To start off the year, {w} we will be researching how civilizations in the fertile crescent rose to power. {w} By Friday, {w} 
-#            I want an essay no longer than 750 words on this subject. {w} If you do not do this assignment, {w} it will severely impact your grade at this, {w} 
-#            the beginning of the school year!"
+        mo "Now, class. {w} To start off the year, {w} we will be researching how civilizations in the fertile crescent rose to power. {w} By Friday, {w} 
+            I want an essay no longer than 750 words on this subject. {w} If you do not do this assignment, {w} it will severely impact your grade at this, {w} 
+            the beginning of the school year!"
             
-#        "*Bell rings*" 
+        "*Bell rings*" 
                       
-#        mo "Dismissed!"
+        mo "Dismissed!"
         
-#        #In the hallway
-#        scene img_1831 with Dissolve(1.0)
+        #In the hallway
+        scene img_1831 with Dissolve(1.0)
         
-#        #Groan
+        #Groan
 
-#        mc "I can’t believe I got homework on the first day of school. {w} What kind of sick place is this?"
+        mc "I can’t believe I got homework on the first day of school. {w} What kind of sick place is this?"
         
-#        #Shoulder bumps into MC
+        #Shoulder bumps into MC
 
-#        fh "Hey, freshie, {w} if you can’t take the heat get out of the oven."
+        fh "Hey, freshie, {w} if you can’t take the heat get out of the oven."
         
-#        #Hurries off"
+        #Hurries off"
 
-#        mc "What? {w} Whatever…"
-#        $ thephase = 5
-#        jump period
+        mc "What? {w} Whatever…"
+        $ thephase = 5
+        jump period
         
-#        #Initiate end of day 1
-#        label firstSchoolDayEnd:
+        #Initiate end of day 1
+        label firstSchoolDayEnd:
             
-#            scene img_1801 with Dissolve(1.0)
+            scene img_1801 with Dissolve(1.0)
         
-#            mc "Walking Home"
+            mc "Walking Home"
 
-#            mw "Hey, wait up!"
+            mw "Hey, wait up!"
 
-#            mc "!?"
+            mc "!?"
 
-#            #mw "I wanted to thank you for helping me out. I’ve never seen you before. What’s your name?"
+            mw "I wanted to thank you for helping me out. I’ve never seen you before. What’s your name?"
 
-#            #mc "Uh… No problem… my name is *tells him name*... hey..."
+            mc "Uh… No problem… my name is *tells him name*... hey..."
 
-#            #mw "If you ever need anything, let me know. I’ll return the favor." 
+            mw "If you ever need anything, let me know. I’ll return the favor." 
 
-#            #mc "Oh, uh, ok… Thanks..."
+            mc "Oh, uh, ok… Thanks..."
 
-#            #mw "Cya round."
+            mw "Cya round."
 
-#            #mc "Um, Ok. Cya." 
+            mc "Um, Ok. Cya." 
 
-#            #*At home*
+            #*At home*
 
-#            #*Phone is ringing*
+            #*Phone is ringing*
 
-#            #Pick up the Phone
+            #Pick up the Phone
 
-#            #mc "Hello?"
+            mc "Hello?"
 
-#            #mom "Hey honey! How was the first day of school?"
+            mom "Hey honey! How was the first day of school?"
 
-#            #mc "Oh, it was alright I guess."
+            mc "Oh, it was alright I guess."
 
-#            #mom "Make any new friends?"
+            mom "Make any new friends?"
 
-#            #mc "Erm, Maybe."
+            mc "Erm, Maybe."
 
-#            #mom "*sigh* Well, that's something. You should try to be friends with more people, like your sister."
+            mom "*sigh* Well, that's something. You should try to be friends with more people, like your sister."
 
-#            #mc "Ok, Mom. I’ll try."
+            mc "Ok, Mom. I’ll try."
 
-#            #mom "Don’t try, do! *sigh* Love you, hun."
+            mom "Don’t try, do! *sigh* Love you, hun."
 
-#            #mc "Love you too, mom. *click*"
+            mc "Love you too, mom. *click*"
 
-#            #mc "*Sigh* It’d be nice if mom or dad was home for once..."
+            mc "*Sigh* It’d be nice if mom or dad was home for once..."
 
-#            #*end scene*
+            #*end scene*
 
-#            #Dont Pick Up the Phone
+            #Dont Pick Up the Phone
 
-#            mc "*groan* Ugh! I wonder who it is. Well, they can wait. I need to sleep… Today was busy..."
+            mc "*groan* Ugh! I wonder who it is. Well, they can wait. I need to sleep… Today was busy..."
 
-#            # *end scene*
+            # *end scene*
         
         
         

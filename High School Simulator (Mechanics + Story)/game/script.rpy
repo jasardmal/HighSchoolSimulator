@@ -49,7 +49,7 @@ label start:
     $ stats = False#make false to hide the stats
     $ theweekday = 2#monday, the number of the weekday, this automatically changes but must be initially assigned
     $ themonth = 8#august, the number of the month, this automatically changes but must be initially assigned
-    $ theday = 24#this automatically changes but must be initially assigned
+    $ theday = 31#this automatically changes but must be initially assigned
     $ theyear = 2015#this automatically changes but must be initially assigned
     $ dayofyear = 243#you must calculate this properly, this automatically changes
     $ yearlim = 365#initially define it as 365 or 366, whichever is correct, this gets changed automatically later
@@ -63,7 +63,7 @@ label start:
     
     #Initialize Special Day/Event Flags.
     
-    $ isfirstschoolday = False
+    $ isfirstschoolday = True
     $ isafterschool = True
     $ isendofweekend = False
     
@@ -1193,29 +1193,29 @@ label start:
                     $ stresssub = stresssub + 2
                     $ staminasub = staminasub - 1
                     $ thephase = thephase + 1
-                    jump regularWeekendMorning
-                elif stress == 2 or stress == 3:
-                    $ randHomework = renpy.random.choice([1, 2])
-                    if randHomework == 1:
-                        mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
-                        $ intelligencesub = intelligencesub + 2
-                        $ stresssub = stresssub + 2
-                        $ staminasub = staminasub - 1
-                        $ thephase = thephase + 1
-                        jump regularWeekendMorning
-                    else:
-                        mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
-                        $ intelligencesub = intelligencesub + 1
-                        $ stresssub = stresssub + 1
-                        $ staminasub = staminasub - 1
-                        $ thephase = thephase + 1
-                        jump regularWeekendMorning
-                elif stress == 4 or stress == 5:
-                    mc "I tried to study but couldn't focus... >Intelligence increased. >Stress increased. >Stamina decreased."
+                    jump regularWeekendEveningHome
+            elif stress == 2 or stress == 3:
+                $ randHomework = renpy.random.choice([1, 2])
+                if randHomework == 1:
+                    mc "I easily studied! >Intelligence greatly increased. >Stress greatly increased. >Stamina decreased."
+                    $ intelligencesub = intelligencesub + 2
+                    $ stresssub = stresssub + 2
+                    $ staminasub = staminasub - 1
+                    $ thephase = thephase + 1
+                    jump regularWeekendEveningHome
+                else:
+                    mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
+                    $ intelligencesub = intelligencesub + 1
                     $ stresssub = stresssub + 1
                     $ staminasub = staminasub - 1
                     $ thephase = thephase + 1
-                    jump regularWeekendMorning
+                    jump regularWeekendEveningHome
+            elif stress == 4 or stress == 5:
+                mc "I tried to study but couldn't focus... >Intelligence increased. >Stress increased. >Stamina decreased."
+                $ stresssub = stresssub + 1
+                $ staminasub = staminasub - 1
+                $ thephase = thephase + 1
+                jump regularWeekendEveningHome
         
         label regularWeekendEveningExercise:
             if stress == 1 or stress == 2 or stress == 3:

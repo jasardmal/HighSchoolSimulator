@@ -71,8 +71,8 @@ init python:
                 store.stamina = 0
                 
         if (hasattr(store, 'staminasub')):#manages stamina sublevels.
-            if store.staminasub < 0:
-                store.staminasub = store.staminasubcurrentlim
+            if store.staminasub < 0 and store.stamina == 0:
+                store.staminasub = 0
                 store.stamina = store.stamina - 1
             elif store.staminasub > store.staminasubcurrentlim:
                 store.staminasub = 0
