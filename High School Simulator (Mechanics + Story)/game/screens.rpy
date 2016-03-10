@@ -107,19 +107,20 @@ screen choice:
 
         xalign 1.0
         yalign 1.0
-
-        textbutton _("Back") action Rollback()
-        textbutton _("Menu") action ShowMenu('save')
-        if stats == False:
-            textbutton _("Stats") action SetVariable("stats", True)
-        else:
-            textbutton _("Stats") action SetVariable("stats", False)
-        textbutton _("Q.Save") action QuickSave()
-        textbutton _("Q.Load") action QuickLoad()
-        textbutton _("Skip") action Skip()
-        textbutton _("F.Skip") action Skip(fast=True, confirm=True)
-        textbutton _("Auto") action Preference("auto-forward", "toggle")
-        textbutton _("Prefs") action ShowMenu('preferences')
+        
+        if ischaractercreation == False:
+            textbutton _("Back") action Rollback()
+            textbutton _("Menu") action ShowMenu('save')
+            if stats == False:
+                textbutton _("Stats") action SetVariable("stats", True)
+            else:
+                textbutton _("Stats") action SetVariable("stats", False)
+            textbutton _("Q.Save") action QuickSave()
+            textbutton _("Q.Load") action QuickLoad()
+            textbutton _("Skip") action Skip()
+            textbutton _("F.Skip") action Skip(fast=True, confirm=True)
+            textbutton _("Auto") action Preference("auto-forward", "toggle")
+            textbutton _("Prefs") action ShowMenu('preferences')
 
 init -2:
     $ config.narrator_menu = True
@@ -225,11 +226,11 @@ screen navigation:
         textbutton _("Return") action Return()
         textbutton _("Save Game") action ShowMenu("save")
         textbutton _("Load Game") action ShowMenu("load")
-        textbutton _("Story") action ShowMenu("storyhomecomeinvesthub")
-        textbutton _("Inventory") action ShowMenu("inventoryhub")
-        textbutton _("Stats") action ShowMenu("stats")
-        textbutton _("Skills") action ShowMenu("skills")
+        #textbutton _("Story") action ShowMenu("storyhomecomeinvesthub")
+        #textbutton _("Inventory") action ShowMenu("inventoryhub")
         textbutton _("Social") action ShowMenu("socialcontacts")
+        textbutton _("Stats") action ShowMenu("stats")
+        #textbutton _("Skills") action ShowMenu("skills")
         textbutton _("System") action ShowMenu("system")
 
 ##############################################################################
@@ -451,18 +452,19 @@ screen quick_menu:
         xalign 1.0
         yalign 1.0
 
-        textbutton _("Back") action Rollback()
-        textbutton _("Menu") action ShowMenu('save')
-        if stats == False:
-            textbutton _("Stats") action SetVariable("stats", True)
-        else:
-            textbutton _("Stats") action SetVariable("stats", False)
-        textbutton _("Q.Save") action QuickSave()
-        textbutton _("Q.Load") action QuickLoad()
-        textbutton _("Skip") action Skip()
-        textbutton _("F.Skip") action Skip(fast=True, confirm=True)
-        textbutton _("Auto") action Preference("auto-forward", "toggle")
-        textbutton _("Prefs") action ShowMenu('preferences')
+        if ischaractercreation == False:
+            textbutton _("Back") action Rollback()
+            textbutton _("Menu") action ShowMenu('save')
+            if stats == False:
+                textbutton _("Stats") action SetVariable("stats", True)
+            else:
+                textbutton _("Stats") action SetVariable("stats", False)
+            textbutton _("Q.Save") action QuickSave()
+            textbutton _("Q.Load") action QuickLoad()
+            textbutton _("Skip") action Skip()
+            textbutton _("F.Skip") action Skip(fast=True, confirm=True)
+            textbutton _("Auto") action Preference("auto-forward", "toggle")
+            textbutton _("Prefs") action ShowMenu('preferences')
 
 init -2:
     style quick_button:
@@ -1626,73 +1628,73 @@ screen stats:
 #
 # Screen that shows the user info related to the homecoming Investigative Arc
 # on a day-by-day basis.
-screen storyhomecomeinvesthub:
+#screen storyhomecomeinvesthub:
 
-    # This ensures that any other menu screen is replaced.
-    tag menu
+#    # This ensures that any other menu screen is replaced.
+#    tag menu
     
-    # The background of the game menu.
-    window:
-        style "gm_root"
+#    # The background of the game menu.
+#    window:
+#        style "gm_root"
         
-    # The story arc header.
-    frame:
-        xalign 0.5
-        yalign 0
+#    # The story arc header.
+#    frame:
+#        xalign 0.5
+#        yalign 0
         
-        has hbox
+#        has hbox
         
-        text "Homecoming Investigative Arc"
+#        text "Homecoming Investigative Arc"
         
-    # The 1st day.
-    frame:
-        style_group "gm_nav"
-        xalign 0.5
-        yalign 0.05
+#    # The 1st day.
+#    frame:
+#        style_group "gm_nav"
+#        xalign 0.5
+#        yalign 0.05
         
-        has hbox
+#        has hbox
 
-        textbutton _("Day 1") action NullAction() text_min_width 300
+#        textbutton _("Day 1") action NullAction() text_min_width 300
         
-    # The 2nd day.
-    frame:
-        style_group "gm_nav"
-        xalign 0.5
-        yalign 0.1
+#    # The 2nd day.
+#    frame:
+#        style_group "gm_nav"
+#        xalign 0.5
+#        yalign 0.1
         
-        has hbox
+#        has hbox
 
-        textbutton _("Day 2") action ShowMenu("save") text_min_width 300
+#        textbutton _("Day 2") action ShowMenu("save") text_min_width 300
         
-    # The 3rd day.
-    frame:
-        style_group "gm_nav"
-        xalign 0.5
-        yalign 0.15
+#    # The 3rd day.
+#    frame:
+#        style_group "gm_nav"
+#        xalign 0.5
+#        yalign 0.15
         
-        has hbox
+#        has hbox
 
-        textbutton _("Day 3") action ShowMenu("save") text_min_width 300
+#        textbutton _("Day 3") action ShowMenu("save") text_min_width 300
         
-    # The 4th day.
-    frame:
-        style_group "gm_nav"
-        xalign 0.5
-        yalign 0.2
+#    # The 4th day.
+#    frame:
+#        style_group "gm_nav"
+#        xalign 0.5
+#        yalign 0.2
         
-        has hbox
+#        has hbox
 
-        textbutton _("Day 4") action ShowMenu("save") text_min_width 300
+#        textbutton _("Day 4") action ShowMenu("save") text_min_width 300
     
     
-    # The return button.
-    frame:
-        xalign 0.98
-        yalign 0.98
+#    # The return button.
+#    frame:
+#        xalign 0.98
+#        yalign 0.98
         
-        has hbox
+#        has hbox
 
-        textbutton _("Return") action ShowMenu("save")
+#        textbutton _("Return") action ShowMenu("save")
         
     
         

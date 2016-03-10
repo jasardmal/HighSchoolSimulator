@@ -47,7 +47,7 @@ label start:
     #Initialize Calendar/Time/Location
     $ clock = False#make false to hide the calendar
     $ stats = False#make false to hide the stats
-    $ theweekday = 2#monday, the number of the weekday, this automatically changes but must be initially assigned
+    $ theweekday = 7#monday, the number of the weekday, this automatically changes but must be initially assigned
     $ themonth = 8#august, the number of the month, this automatically changes but must be initially assigned
     $ theday = 31#this automatically changes but must be initially assigned
     $ theyear = 2015#this automatically changes but must be initially assigned
@@ -63,6 +63,7 @@ label start:
     
     #Initialize Special Day/Event Flags.
     
+    $ ischaractercreation = True
     $ isfirstschoolday = True
     $ isafterschool = True
     $ isendofweekend = False
@@ -83,10 +84,10 @@ label start:
     $ staminasubcurrentlim = 5
     $ staminasubfuturelim = 5
     $ staminasub = 0
-    $ stamina = 3
+    $ stamina = 0
     
-    $ stresssub = 5
-    $ stress = 3
+    $ stresssub = 0
+    $ stress = 0
     
     $ money = 10
     
@@ -159,6 +160,7 @@ label start:
                 
                 "Yes":
                     $ mcname = input_value
+                    $ ischaractercreation = False
                     #jump birthdayCreation
                     jump startDecider
                 
@@ -936,29 +938,29 @@ label start:
     label regularWeekend:
         $ location = 2
         scene img_black with Dissolve(1.0)
-        if stamina == 1:
-            mc "...! {w} Oh no! I slept the entire day away. It's almost evening."
+        if stamina == 0 or stamina == 1:
             $ thephase = 5
+            mc "...! {w} Oh no! I slept the entire day away. It's almost evening."
             $ thephase = 5 + 1
             jump regularWeekendAfternoonHome
         elif stamina == 2:
-            mc "...! {w} Look likes I slept in. It's well into the afternoon."
             $ thephase = 4
+            mc "...! {w} Look likes I slept in. It's well into the afternoon."
             $ thephase = 4 + 1
             jump regularWeekendAfternoonHome
         elif stamina == 3:
-            mc "...! {w} Looks like the morning is ending soon. It's almost the afternoon."
             $ thephase = 3
+            mc "...! {w} Looks like the morning is ending soon. It's almost the afternoon."
             $ thephase = 3 + 1
             jump regularWeekendMorning
         elif stamina == 4:
-            mc "...! {w} Looks like the morning is just starting."
             $ thephase = 2
+            mc "...! {w} Looks like the morning is just starting."
             $ thephase = 2 + 1
             jump regularWeekendMorning
         elif stamina == 5:
-            mc "...! {w} I feel well rested. Looks like the sun's just rising."
             $ thephase = 1
+            mc "...! {w} I feel well rested. Looks like the sun's just rising."
             $ thephase = 1 + 1
             jump regularWeekendMorning
             
@@ -1061,6 +1063,7 @@ label start:
                 mc "That was good. >Stress decreased. >Stamina increased."
                 $ stresssub = stresssub - 1
                 $ staminasub = staminasub + 1
+                $ thephase = thephase + 1
                 jump regularWeekendMorning
                 
         
@@ -1162,12 +1165,13 @@ label start:
                 mc "That was good. >Stress decreased. >Stamina increased."
                 $ stresssub = stresssub - 1
                 $ staminasub = staminasub + 1
+                $ thephase = thephase + 1
                 jump regularWeekendAfternoonHome
     
     #REGULAR WEEKEND EVENING HOME *********************************************************************************************
     label regularWeekendEveningHome:
         
-        if thephase == 14:
+        if thephase == 8:
             mc "Wow! Look at the time. I should get some sleep."
             jump regularWeekendSleep
         
@@ -1251,6 +1255,7 @@ label start:
             mc "That was good. >Stress decreased. >Stamina increased."
             $ stresssub = stresssub - 1
             $ staminasub = staminasub + 1
+            $ thephase = thephase + 1
             jump regularWeekendEveningHome
             
         label regularWeekendSleep:
