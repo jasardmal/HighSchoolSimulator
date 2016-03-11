@@ -182,7 +182,6 @@ label start:
                     
 #                    "No":
 #                        jump birthdayCreation
-                    
     #START DECIDER *********************************************************************************************
     label startDecider:
         $ clock = True
@@ -210,7 +209,7 @@ label start:
             $ stamina = 3
             $ stress = 3
             $ isendofweekend = False
-        scene img_black
+        scene img_black with Dissolve(1.0)
         mc "It's time for school."
         scene img_1806 with Dissolve(1.0)
         jump beforeSchool
@@ -399,10 +398,20 @@ label start:
                     jump lunchSchoolSkip
                 
                 "$1 Bag of Chips":
-                    jump lunchSchoolMin
+                    if money <= 0:
+                        mc "I don't have enough money. I guess I'll starve."
+                        jump lunchSchoolSkip
+                    else:
+                        $ money = money - 1
+                        jump lunchSchoolMin
                 
                 "$2 Sandwich":
-                    jump lunchSchoolAvg
+                    if money <= 1:
+                        mc "I don't have enough money. I guess I'll starve."
+                        jump lunchSchoolSkip
+                    else:
+                        $ money = money - 2
+                        jump lunchSchoolAvg
                     
 #                "$3 Combo Meal":
 #                    jump lunchSchoolMax
@@ -682,10 +691,12 @@ label start:
                     jump homeSchool
                     
                 "Park":
-                    jump choicePark
+                    mc "The park's still under construction. I guess I'll head home."
+                    jump homeSchool
                     
                 "Town":
-                    jump choiceTown
+                    mc "The town's still under construction. I guess I'll head home."
+                    jump homeSchool
                 
         #HOMESCHOOL *********************************************************************************************
         label homeSchool:
@@ -978,10 +989,12 @@ label start:
                     jump regularWeekendAfternoonHome
                     
                 "Park":
-                    jump choicePark
+                    mc "The park's still under construction. I guess I'll stay home."
+                    jump regularWeekendAfternoonHome
                     
                 "Town":
-                    jump choiceTown
+                    mc "The town's still under construction. I guess I'll stay home."
+                    jump regularWeekendAfternoonHome
             
         label homeWeekendMorningChoice:
         
@@ -1080,10 +1093,12 @@ label start:
                     jump regularWeekendEveningHome
                     
                 "Park":
-                    jump choicePark
+                    mc "The park's still under construction. I guess I'll stay home."
+                    jump regularWeekendEveningHome
                     
                 "Town":
-                    jump choiceTown
+                    mc "The town's still under construction. I guess I'll stay home."
+                    jump regularWeekendEveningHome
             
         label homeWeekendAfternoonChoice:
         
@@ -1266,6 +1281,6 @@ label start:
                 $ staminasub = staminasubfuturelim
             $ thephase = 8 + 1
             if theweekday == 2:
-                $ isendofweekend == True
+                $ isendofweekend = True
             scene img_black
             jump startDecider

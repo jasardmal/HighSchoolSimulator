@@ -228,7 +228,7 @@ screen navigation:
         textbutton _("Load Game") action ShowMenu("load")
         #textbutton _("Story") action ShowMenu("storyhomecomeinvesthub")
         #textbutton _("Inventory") action ShowMenu("inventoryhub")
-        textbutton _("Social") action ShowMenu("socialcontacts")
+        #textbutton _("Social") action ShowMenu("socialcontacts")
         textbutton _("Stats") action ShowMenu("stats")
         #textbutton _("Skills") action ShowMenu("skills")
         textbutton _("System") action ShowMenu("system")
@@ -1596,6 +1596,22 @@ screen stats:
         has hbox
             
         text "[stresssub]/5"
+        
+    # Money Label.
+    frame:
+        xalign 0
+        yalign 0.5
+        
+        text "Money"
+    
+    # Money displayed as a number.
+    frame:
+        xalign 0
+        yalign 0.56
+        
+        has hbox
+            
+        text "$[money]"
     
     # The return button.
     frame:

@@ -298,6 +298,8 @@
                 #*End scene*
                 
                 $ thephase = 11 + 1
+                $ isfirstschoolday = False
+                jump startDecider
                 
             #Dont Pick Up the Phone
             label firstdayschoolC2O2:
@@ -306,6 +308,8 @@
                 #*End scene*
                 
                 $ thephase = 11 + 1
+                $ isfirstschoolday = False
+                jump startDecider
                 
                 
         
