@@ -35,7 +35,7 @@
 
         #Marc and other student leave
 
-        "You! New student! You were the closest and probably saw what happened the best. go to the deans office with them to fill out an incident report!"
+        mh "You! {w} New student! {w} You were the closest and probably saw what happened the best. {w} Go to the deans office with them to fill out an incident report!"
 
         mc "But, wait, {w} no…."
 
@@ -185,7 +185,7 @@
             
         mc "... History."
 
-        "Bell rings*"
+        "*Bell rings*"
         $ thephase = 4
 
         mc "Oh no! {w} I’m late!"
@@ -237,57 +237,77 @@
             
             scene img_1801 with Dissolve(1.0)
         
-            mc "Walking Home"
+            mc ">Walking Home"
 
-            mw "Hey, wait up!"
+            mw "Hey, {w} wait up!"
 
             mc "!?"
 
-            mw "I wanted to thank you for helping me out. I’ve never seen you before. What’s your name?"
+            mw "I wanted to thank you for helping me out. {w} I’ve never seen you before. {w} What’s your name?"
 
-            mc "Uh… No problem… my name is *tells him name*... hey..."
+            mc "Uh… {w} No problem… {w} my name is [mcname]... {w} hey..."
 
-            mw "If you ever need anything, let me know. I’ll return the favor." 
+            mw "If you ever need anything, {w} let me know. {w} I’ll return the favor." 
 
-            mc "Oh, uh, ok… Thanks..."
+            mc "Oh, uh, {w} ok… {w} Thanks..."
 
             mw "Cya round."
 
             mc "Um, Ok. Cya." 
 
             #*At home*
-
-            #*Phone is ringing*
+            scene img_black with Dissolve(1.0)
+            $ location = 2
+            $ thephase = 11
+            
+            label firstdayschoolchoice2:
+                
+                mc "*Phone is ringing*"
+                
+                menu:
+                    
+                    "Pick up the phone":
+                        jump firstdayschoolC2O1
+                    
+                    "Don't pick up the phone":
+                        jump firstdayschoolC2O2
 
             #Pick up the Phone
+            label firstdayschoolC2O1:
 
-            mc "Hello?"
+                mc "Hello?"
 
-            mom "Hey honey! How was the first day of school?"
+                mom "Hey honey! {w} How was the first day of school?"
 
-            mc "Oh, it was alright I guess."
+                mc "Oh, {w} it was alright I guess."
 
-            mom "Make any new friends?"
+                mom "Make any new friends?"
 
-            mc "Erm, Maybe."
+                mc "Erm, {w} Maybe."
 
-            mom "*sigh* Well, that's something. You should try to be friends with more people, like your sister."
+                mom "Well, {w} that's something. {w} You should try to be friends with more people, like your sister."
 
-            mc "Ok, Mom. I’ll try."
+                mc "Ok, Mom. {w} I’ll try."
 
-            mom "Don’t try, do! *sigh* Love you, hun."
+                mom "Don’t try, {w} do! {w} *Sigh* {w} Love you, hun."
 
-            mc "Love you too, mom. *click*"
+                mc "Love you too, Mom. {w} *Click*"
 
-            mc "*Sigh* It’d be nice if mom or dad was home for once..."
-
-            #*end scene*
-
+                mc "It’d be nice if Mom or Dad was home for once..."
+                
+                #*End scene*
+                
+                $ thephase = 11 + 1
+                
             #Dont Pick Up the Phone
+            label firstdayschoolC2O2:
+                mc "Ugh! {w} I wonder who it is. {w} Well, {w} they can wait. {w} I need to sleep… {w} Today was busy..."
 
-            mc "*groan* Ugh! I wonder who it is. Well, they can wait. I need to sleep… Today was busy..."
-
-            # *end scene*
+                #*End scene*
+                
+                $ thephase = 11 + 1
+                
+                
         
         
         

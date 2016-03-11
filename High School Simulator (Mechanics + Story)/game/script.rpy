@@ -47,7 +47,7 @@ label start:
     #Initialize Calendar/Time/Location
     $ clock = False#make false to hide the calendar
     $ stats = False#make false to hide the stats
-    $ theweekday = 7#monday, the number of the weekday, this automatically changes but must be initially assigned
+    $ theweekday = 2#monday, the number of the weekday, this automatically changes but must be initially assigned
     $ themonth = 8#august, the number of the month, this automatically changes but must be initially assigned
     $ theday = 31#this automatically changes but must be initially assigned
     $ theyear = 2015#this automatically changes but must be initially assigned
@@ -84,10 +84,10 @@ label start:
     $ staminasubcurrentlim = 5
     $ staminasubfuturelim = 5
     $ staminasub = 0
-    $ stamina = 0
+    $ stamina = 3
     
     $ stresssub = 0
-    $ stress = 0
+    $ stress = 3
     
     $ money = 10
     
@@ -186,8 +186,8 @@ label start:
     #START DECIDER *********************************************************************************************
     label startDecider:
         $ clock = True
-        #if isfirstschoolday == True:
-            #jump firstSchoolDay
+        if isfirstschoolday == True:
+            jump firstSchoolDay
         if theweekday == 1:
             jump regularWeekend
         elif theweekday == 2:
@@ -404,8 +404,8 @@ label start:
                 "$2 Sandwich":
                     jump lunchSchoolAvg
                     
-                "$3 Combo Meal":
-                    jump lunchSchoolMax
+#                "$3 Combo Meal":
+#                    jump lunchSchoolMax
                     
             label lunchSchoolSkip:
                 mc "... >stomach growls. >Stress greatly increased. >Stamina greatly decreased."
@@ -423,11 +423,11 @@ label start:
                 $ staminasub = staminasub + 1
                 jump lunchSchoolActionChoice
                 
-            label lunchSchoolMax:
-                mc "That was delicious! >Stress greatly decreased. >Stamina greatly increased."
-                $ stresssub = stresssub - 2
-                $ staminasub = staminasub + 2
-                jump lunchSchoolActionChoice
+#            label lunchSchoolMax:
+#                mc "That was delicious! >Stress greatly decreased. >Stamina greatly increased."
+#                $ stresssub = stresssub - 2
+#                $ staminasub = staminasub + 2
+#                jump lunchSchoolActionChoice
                 
             label lunchSchoolActionChoice:
                     
