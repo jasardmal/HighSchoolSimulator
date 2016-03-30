@@ -34,6 +34,9 @@ define co = DynamicCharacter("coname", color="#c8ffc8")
 
 label start:
     
+    #Start placeholder music
+    play music "SweetSuccess.mp3"
+    
     #Initialize Default Character Names
     $ mcname = "???"
     $ mwname = "Delinquet Student"
