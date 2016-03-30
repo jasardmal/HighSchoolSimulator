@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 87, in script
-    $ stresssub = 5
-  File "game/stats.rpy", line 90, in time_callback
-    store.stress = store.stress + 1
-AttributeError: 'StoreModule' object has no attribute 'stress'
+  File "game/storyscript.rpy", line 61, in script
+    show dean at 0
+TypeError: 'int' object is not callable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 87, in script
-    $ stresssub = 5
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 810, in execute
-    i()
-  File "game/stats.rpy", line 90, in time_callback
-    store.stress = store.stress + 1
-AttributeError: 'StoreModule' object has no attribute 'stress'
+  File "game/storyscript.rpy", line 61, in script
+    show dean at 0
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 1064, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 1036, in show_imspec
+    atl=atl)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\exports.py", line 633, in show
+    img = i(img)
+TypeError: 'int' object is not callable
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.8.959

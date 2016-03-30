@@ -65,6 +65,7 @@ label start:
     
     $ ischaractercreation = True
     $ isfirstschoolday = True
+    $ issecondschoolday = False
     $ isafterschool = True
     $ isendofweekend = False
     
@@ -187,6 +188,8 @@ label start:
         $ clock = True
         if isfirstschoolday == True:
             jump firstSchoolDay
+        if issecondschoolday == True:
+            jump secondSchoolDay
         if theweekday == 1:
             jump regularWeekend
         elif theweekday == 2:

@@ -15,11 +15,14 @@
 
         #Desk Slams Forward
 
-        mw "Watch yourself! {w} Keep talking, {w} someday you'll say something intelligent!"
+        show marcw
+        mw "Watch yourself! {w} Keep talking and maybe, {w} someday you'll say something intelligent!"
+        hide marcw
 
         s1 "If you weren’t so easy to make fun of, {w} I wouldn’t! {w} You’re just a little baby."
 
-        mw "How many times do I have to flush before you go away?"
+        show marcw
+        mw "Says the brat who's about to cry like one!"
 
         #Punches other student
         
@@ -28,6 +31,7 @@
         #Wipes Chin
 
         mw "I told you not to insult me. {w} Idiot."
+        hide marcw
 
         #Teacher comes in
         
@@ -39,7 +43,7 @@
 
         mc "But, wait, {w} no…."
 
-        mh "Don’t argue, {w} just do it! {w} Don’t let your experiences be memories! {w} Go to the Dean’s office!"
+        mh "Don’t argue, {w} just do it! {w} Don’t keep what you know to yourself! {w} Go to the Dean’s office!"
         
         #Sighs
 
@@ -54,35 +58,53 @@
         #MC Standing outside door about to walk in
         scene img_1831 with Dissolve(1.0)
 
+        show dean
         de "Now, {w} you both know better! {w} I can’t believe that it hasn’t even been a day into the school year and you have already begun fighting! {w} Shame on both of you! {w}
             Have you no dignity?!?!"
+        hide dean
 
+        show marcw
         co "Sorry, Mr Dean. It won’t happen again."
+        hide marcw
         
         #Under his breath
 
+        show marcw
         mw "Fat lard."
-
+        hide marcw
+        
         s1 "Excuse me? {w} What did you call me?"
 
+        show marcw
         mw "Nothing, {w} I was talking about your mother."
+        hide marcw
 
-        de "Both of you! {w} Behave! {w} Have you no decency? {w} You haven’t even left my office! {w} Marc, {w} stay here, and let him go."
+        show dean
+        de "Both of you! {w} Behave! {w} Do you have ANY deceny? {w} You haven’t even left my office! {w} Marc, {w} stay here, and let him go."
+        hide dean
         
         $mwname = "Marc"
 
+        show marcw
         mw "Fine. {w} But he’s still a fat lard."
+        hide marcw
 
+        show dean
         de "One more word out of you and I will suspend you!"
-
+        hide dean
+        
+        show marcw
         mw "..."
-
+        hide marcw
+        
         #Walks in
 
+        show dean
         de "Who are you?"
-
+        
         mc "I’m a new student. {w} I just moved here a few weeks ago. {w} Mr. Hart told me to come down here because I was closest to the fight, {w} so that I can fill out a report."
 
+        show dean
         de "Oh. Well, {w} in that case, {w} let me get one of those for you."
         
         #Rummages through cabinet file
@@ -104,31 +126,34 @@
 
         label firstSchoolC1O1:
             #MARC STARTED IT
-            mc "It looked to me like that student was antagonizing the other student. {w} I’m not sure what was said, {w} but one minute I was waiting for class to start, {w} 
+            mc "It looked to me like that student (Marc) was antagonizing the other student. {w} I’m not sure what was said, {w} but one minute I was waiting for class to start, {w} 
                 and the next those two were duking it out by my desk."
 
             de "Well, {w} are you sure you didn't see anything else?"
-
+        
             mc "All I know is the two were fighting. {w} I don’t know enough about either of them to tell."
-
+            
             de "Well, {w} all right then. {w} Get back to class."
-
+            
             mc "Yes, sir."
 
             de "On your way back out, {w} call Marc back in."
-
+            
             mc "Which one is Marc?"
 
             de "The one who probably started the fight."
+            hide dean
 
             mc "Oh, alright."
 
             #Walks out
 
             mc "Marc? {w} The dean wants to see you."
-
+            
+            show marcw
             mw "Ugh, {w} finally. {w} I wish this would just be over… {w} I can’t stand it when people insult me and get away with it."
-
+            hide marcw
+            
             #Marc goes to office
 
             #Goes to class
@@ -140,14 +165,15 @@
             mc "Well… {w} To be honest, {w} it seemed to me like the one who is still sitting outside was the victim. {w} The other one had made some rude comments about him, {w} and he didn’t like it."
             
             de "Is that right? {w} Well, {w} so far, {w} that’s not what I’ve heard. Are you sure?"
-
+            
             mc "Yes, Sir. {w} I’m sure."
-
+            
             de "Hmm… {w} Alright. Go back to class… {w} Thank you for your help."
-
+            
             mc "Yes, sir."
-
+            
             de "On your way back out, {w} call Marc back in."
+            hide dean
             
             #To himself
 
@@ -157,7 +183,9 @@
 
             mc "Marc? {w} The dean wants to see you."
 
+            show marcw
             mw "Ugh, {w} finally. {w} I wish this would just be over… {w} I can’t stand it when people insult me and get away with it."
+            hide marcw
 
             #Marc goes to office
 
@@ -224,7 +252,10 @@
         
         #Shoulder bumps into MC
 
-        fh "Hey, freshie, {w} if you can’t take the heat get out of the oven."
+        show frederickh:
+            xalign 0.5 yalign 0.01
+        fh "Hey, freshie, {w} if you can’t take the heat get out of the kitchen."
+        hide frederickh
         
         #Hurries off"
 
@@ -239,6 +270,7 @@
         
             mc ">Walking Home"
 
+            show marcw
             mw "Hey, {w} wait up!"
 
             mc "!?"
@@ -253,7 +285,7 @@
 
             mw "Cya round."
 
-            mc "Um, Ok. Cya." 
+            mc "Um, Ok. See ya." 
 
             #*At home*
             scene img_black with Dissolve(1.0)
@@ -299,6 +331,7 @@
                 
                 $ thephase = 11 + 1
                 $ isfirstschoolday = False
+                $ issecondschoolday = True
                 jump startDecider
                 
             #Dont Pick Up the Phone
@@ -309,16 +342,10 @@
                 
                 $ thephase = 11 + 1
                 $ isfirstschoolday = False
+                $ issecondschoolday = True
                 jump startDecider
-                
-                
-        
-        
-        
-        
-#    ########################### August 31
             
-#    label secondSchoolDay:        
+    label secondSchoolDay:        
             
 #        Alarm Rings
 

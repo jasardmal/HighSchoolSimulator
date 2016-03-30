@@ -7,6 +7,7 @@ game/cache/pyanalysis.rpyb matches ** ([u'all']).
 game/cache/screens.rpyb matches ** ([u'all']).
 game/comic_sans.ttf matches ** ([u'all']).
 game/images/ matches ** ([u'all']).
+game/images/frederickh.jpg matches ** ([u'all']).
 game/images/img_1653.JPG matches ** ([u'all']).
 game/images/img_1660.JPG matches ** ([u'all']).
 game/images/img_1716.JPG matches ** ([u'all']).
@@ -38,8 +39,7 @@ game/images/img_2909.JPG matches ** ([u'all']).
 game/images/img_2911.JPG matches ** ([u'all']).
 game/images/img_black.jpg matches ** ([u'all']).
 game/images/map.jpg matches ** ([u'all']).
-game/images/map.png matches ** ([u'all']).
-game/images/mappng.png matches ** ([u'all']).
+game/images/marcw.png matches ** ([u'all']).
 game/images/sporty_girl_leg_break.png matches ** ([u'all']).
 game/inventory.rpy matches ** ([u'all']).
 game/inventory.rpyc matches ** ([u'all']).
