@@ -118,9 +118,11 @@
             menu:
 
                 "Marc started it":
+                    $ toldonmarc = True
                     jump firstSchoolC1O1
                 
                 "Marc didn't start it":
+                    $ toldonmarc = False
                     jump firstSchoolC1O2
 
 
@@ -304,7 +306,7 @@
                     "Don't pick up the phone":
                         jump firstdayschoolC2O2
 
-            #Pick up the Phone
+            #Pick up the phone
             label firstdayschoolC2O1:
 
                 mc "Hello?"
@@ -334,7 +336,7 @@
                 $ issecondschoolday = True
                 jump startDecider
                 
-            #Dont Pick Up the Phone
+            #Don't pick up the phone
             label firstdayschoolC2O2:
                 mc "Ugh! {w} I wonder who it is. {w} Well, {w} they can wait. {w} I need to sleep… {w} Today was busy..."
 
@@ -345,74 +347,85 @@
                 $ issecondschoolday = True
                 jump startDecider
             
-    label secondSchoolDay:        
+    label secondSchoolDay:
+        
+        scene img_black with Dissolve(1.0)
             
-#        Alarm Rings
+        #*Alarm rings*
 
-#        mc "Urgh… My head…"
+        mc "Urgh… {w} My head…"
 
-#        Alarm rings again
+        #Alarm rings again
 
-#        mc "Fine, I’ll get up. Where’s my toothbrush?"
+        mc "Fine, {w} I’ll get up. {w} Where’s my toothbrush?"
 
-#        Screen shakes cause hes looking for stuff
+        #*Screen shakes because he's looking for stuff*
 
-#        OBTAINED TOOTHBRUSH
+        #OBTAINED TOOTHBRUSH
 
-#        mc "Aha! Here we go."
+        mc "Aha! Here we go."
 
-#        KNOCK KNOCK KNOCK
+        #*KNOCK KNOCK KNOCK*
 
-#        mc "What? Who’s here? Who even knows I live here?"
+        mc "What? {w} Who’s here? {w} Who even knows I live here?"
+        
+        show marcw
+        mw "OI! {w} YOU READY FOR SCHOOL?"
 
-#        mw "OI! YOU READY FOR SCHOOL?"
+        mc "Marc?!?!?!?!?!?! {w} Wha-"
 
-#        mc "Marc?!?!?!?!?!?! Wha-"
+        mw "YOU’RE GUNNA BE LATE BRO!"
+        hide marcw
 
-#        mw "YOU’RE GUNNA BE LATE BRO"
+        mc "Ok, ok! {w} I just got out of bed! {w} Let me put on some clothes first, jeez!"
+        
+        #*Puts on clothes*
 
-#        mc "Ok, ok! I just got out of bed! Let me put on some clothes first, jeez!" #*puts on clothes*
+        #*Runs out of door*
 
-#        Runs out of door
+        #*Out of breath*
+        
+        scene img_1801 with Dissolve(1.0)
 
-#        Out of breath 
+        mc "Alright, Marc, {w} I’m here. {w} How did you figure out where I live?"
 
-#        mc "Alright, Marc, I’m here. How did you figure out where I live?"
+        show marcw
+        mw "You dropped your wallet. {w} Your address was inside."
 
-#        mw "You dropped your wallet. Your address was inside."
+        mc "......Oh......"
 
-#        mc "......Oh........."
+        mw "You probably want this back." 
 
-#        mw "You probably want this back." 
+        #*Hands over wallet*
 
-#        Hands over wallet
+        #*OBTAINED WALLET*
 
-#        OBTAINED WALLET
+        mw "Now we’re even."
 
-#        mw "Now we’re even."
+        mc "Even?"
 
-#        mc "Even?"
+        mw "Yeah, {w} for when you had my back at the dean’s."
+        
+        if toldonmarc == False:
+            
+            mc "Oh, {w} Right."
+            
+        else:
+            
+            mc "Oh, Uh, {w} Right, {w} Sure."
 
-#        mw "Yeah, for when you had my back at the dean’s."
+        mw "Sooo… Shall we? {w} If we stand here any longer, we’ll be late for school."
 
-#        mc "Oh, Right."
+        mc "Oh! {w} Let’s go."
 
-#        (Or, if you didn’t, Oh, Uh, Right, Sure.)
+        #Arrives at school
+        scene img_1831 with Dissolve(1.0)
 
-#        mw "Sooo… Shall we? {w}If we stand here any longer, we’ll be late for school."
+        mw "Hey, {w} [mcname]. {w} Can I talk to you for a sec?"
 
-#        mc "Oh! let’s go."
+        mc "Uh, {w} sure Marc. {w} What’s up?"
 
-#        Go to school ya chump
-
-#        #Arrives at school
-
-#        mw "Hey, MC. Can I talk to you for a sec?"
-
-#        mc "Uh, sure Marc. What’s up?"
-
-#        mw "Since you’re new in town, you probably don’t know nothin ‘bout anything. If you want to get through the year, you’ll need someone to show you around. I can do that for you."
-
+        mw "Since you’re new in town, {w} you probably don’t know nothin ‘bout anything. {w} If you want to get through the year, {w} you’ll need someone to show you around. {w} I can do that for you."
 
 #        label seconddayschoolchoice1:
         

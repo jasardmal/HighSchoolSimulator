@@ -65,7 +65,6 @@ label start:
     $ stringlocation = "School"#1, the current location, this automatically changes but must be initially assigned
     
     #Initialize Special Day/Event Flags.
-    
     $ ischaractercreation = True
     $ isfirstschoolday = True
     $ issecondschoolday = False
