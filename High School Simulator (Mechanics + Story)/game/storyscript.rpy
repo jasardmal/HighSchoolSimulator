@@ -287,7 +287,11 @@
 
             mw "Cya round."
 
-            mc "Um, Ok. See ya." 
+            mc "Um, Ok. See ya."
+            
+            $ hasmetmarc = True
+            
+            ">You can now view Marc's profile."
 
             #*At home*
             scene img_black with Dissolve(1.0)

@@ -228,7 +228,7 @@ screen navigation:
         textbutton _("Load Game") action ShowMenu("load")
         #textbutton _("Story") action ShowMenu("storyhomecomeinvesthub")
         #textbutton _("Inventory") action ShowMenu("inventoryhub")
-        #textbutton _("Social") action ShowMenu("socialcontacts")
+        textbutton _("Social") action ShowMenu("socialcontacts")
         textbutton _("Stats") action ShowMenu("stats")
         #textbutton _("Skills") action ShowMenu("skills")
         textbutton _("System") action ShowMenu("system")
@@ -1078,22 +1078,59 @@ screen marc:
     window:
         style "gm_root"
 
-    # Marc's social progression level displayed as a bar.
+    # Marc's social progression rank displayed as a bar.
     frame:
+        xalign 0.0
+        yalign 0.75
+        
+        has hbox
+        
+        text "Rank"
+        
+    frame:
+        xalign 0.0
+        yalign 0.8
         
         has hbox
         
         hbox:
-            bar range 10 value 1 xmaximum 400
+            bar range 10 value marcrank xmaximum 400
             
-    # Marc's social progression level displayed as a number.
+    # Marc's social progression rank displayed as a number.
     frame:
         xalign 0.55
-        yalign 0
+        yalign 0.8
         
         has hbox
             
-        text "1/10"
+        text "[marcrank]/10"
+    
+    # Marc's social progression displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.9
+        
+        has hbox
+        
+        text "Progression"
+        
+    frame:
+        xalign 0.0
+        yalign 0.95
+        
+        has hbox
+        
+        hbox:
+            bar range 10 value marcprogression xmaximum 400
+            
+    # Marc's social progression displayed as a number.
+    frame:
+        xalign 0.55
+        yalign 0.95
+        
+        has hbox
+            
+        text "[marcprogression]/10"
     
     # The return button.
     frame:

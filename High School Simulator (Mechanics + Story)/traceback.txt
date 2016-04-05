@@ -1,26 +1,70 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/storyscript.rpy", line 408, in script
-    if toldonmarc == True:
-  File "game/storyscript.rpy", line 408, in <module>
-    if toldonmarc == True:
-NameError: name 'toldonmarc' is not defined
+  File "renpy/common/00gamemenu.rpy", line 161, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 161, in <module>
+    $ ui.interact()
+  File "game/screens.rpy", line 1072, in execute
+    screen marc:
+  File "game/screens.rpy", line 1072, in execute
+    screen marc:
+  File "game/screens.rpy", line 1127, in execute
+    frame:
+  File "game/screens.rpy", line 1131, in execute
+    has hbox
+  File "game/screens.rpy", line 1133, in execute
+    text "[marcprogression]/10"
+KeyError: 'marcprogression'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/storyscript.rpy", line 408, in script
-    if toldonmarc == True:
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 1647, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\python.py", line 1490, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\python.py", line 1485, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/storyscript.rpy", line 408, in <module>
-    if toldonmarc == True:
-NameError: name 'toldonmarc' is not defined
+  File "renpy/common/00gamemenu.rpy", line 161, in script
+    $ ui.interact()
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 805, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\python.py", line 1461, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/00gamemenu.rpy", line 161, in <module>
+    $ ui.interact()
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ui.py", line 277, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\core.py", line 2436, in interact
+    scene_lists.replace_transient()
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\core.py", line 727, in replace_transient
+    self.remove(layer, tag)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\core.py", line 1014, in remove
+    self.hide_or_replace(layer, remove_index, "hide")
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\core.py", line 938, in hide_or_replace
+    d = oldsle.displayable._hide(now - st, now - at, prefix)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\screen.py", line 430, in _hide
+    self.update()
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\display\screen.py", line 565, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 1072, in execute
+    screen marc:
+  File "game/screens.rpy", line 1072, in execute
+    screen marc:
+  File "game/screens.rpy", line 1127, in execute
+    frame:
+  File "game/screens.rpy", line 1131, in execute
+    has hbox
+  File "game/screens.rpy", line 1133, in execute
+    text "[marcprogression]/10"
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\text\text.py", line 1315, in __init__
+    self.set_text(text, scope, substitute)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\text\text.py", line 1382, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\substitutions.py", line 229, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 585, in _vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 605, in get_value
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\substitutions.py", line 192, in __getitem__
+    raise KeyError(key)
+KeyError: 'marcprogression'
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.8.959

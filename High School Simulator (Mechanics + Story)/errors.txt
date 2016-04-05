@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/storyscript.rpy", line 64: expected statement.
-    renpy.get_placement(marcw, xoffset=0)
-                                         ^
+File "game/screens.rpy", line 1090: The hbox statement does not take a layout.
+    has hbox
+       ^
 
 Ren'Py Version: Ren'Py 6.99.8.959
