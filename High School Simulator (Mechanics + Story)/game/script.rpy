@@ -2,7 +2,6 @@
 define mc = DynamicCharacter("mcname", color="#ffffff")
 
 #Generic Students
-#So generic
 define s1 = Character('Other Student', color="#c8ffc8")
 
 #Students
