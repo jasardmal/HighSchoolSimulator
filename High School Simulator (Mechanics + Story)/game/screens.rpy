@@ -1077,11 +1077,20 @@ screen marc:
     # The background of the game menu.
     window:
         style "gm_root"
+        add "marcwprofile" xalign 0.8 yalign 1.0
+        
+    frame:
+        xalign 0.5
+        yalign 0.0
+        
+        has hbox
+        
+        text "Marc Waller"
 
     # Marc's social progression rank displayed as a bar.
     frame:
         xalign 0.0
-        yalign 0.75
+        yalign 0.8
         
         has hbox
         
@@ -1089,7 +1098,7 @@ screen marc:
         
     frame:
         xalign 0.0
-        yalign 0.8
+        yalign 0.85
         
         has hbox
         
@@ -1099,7 +1108,7 @@ screen marc:
     # Marc's social progression rank displayed as a number.
     frame:
         xalign 0.55
-        yalign 0.8
+        yalign 0.85
         
         has hbox
             
@@ -1108,7 +1117,7 @@ screen marc:
     # Marc's social progression displayed as a bar.
     frame:
         xalign 0.0
-        yalign 0.9
+        yalign 0.95
         
         has hbox
         
@@ -1116,7 +1125,7 @@ screen marc:
         
     frame:
         xalign 0.0
-        yalign 0.95
+        yalign 1.0
         
         has hbox
         
@@ -1126,7 +1135,7 @@ screen marc:
     # Marc's social progression displayed as a number.
     frame:
         xalign 0.55
-        yalign 0.95
+        yalign 1.0
         
         has hbox
             

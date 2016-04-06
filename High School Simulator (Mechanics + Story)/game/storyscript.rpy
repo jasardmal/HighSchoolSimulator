@@ -255,7 +255,7 @@
         #Shoulder bumps into MC
 
         show frederickh:
-            xalign 0.5 yalign 0.01
+            xalign 0.5 yalign 0.0
         fh "Hey, freshie, {w} if you can’t take the heat get out of the kitchen."
         hide frederickh
         

@@ -2,7 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1090: The hbox statement does not take a layout.
+File "game/screens.rpy", line 1082: The has statement may not be given after a child has been supplied.
     has hbox
        ^
 

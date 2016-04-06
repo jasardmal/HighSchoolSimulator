@@ -140,7 +140,7 @@ label start:
     
     #Initialize Social Contacts
     $ hasmetmarc = False
-    $ marcrank = 0
+    $ marcrank = 1
     $ marcprogression = 0
     
     $ hasmetkolby = False
