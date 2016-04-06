@@ -424,109 +424,114 @@
 
         #Arrives at school
         scene img_1831 with Dissolve(1.0)
-
+        $ thephase = 2
+        
+        show marcw
         mw "Hey, {w} [mcname]. {w} Can I talk to you for a sec?"
-
+        
         mc "Uh, {w} sure Marc. {w} What’s up?"
 
         mw "Since you’re new in town, {w} you probably don’t know nothin ‘bout anything. {w} If you want to get through the year, {w} you’ll need someone to show you around. {w} I can do that for you."
 
-#        label seconddayschoolchoice1:
+        label seconddayschoolchoice1:
         
-#            menu:
+            menu:
                 
-#                "You Could? That’d be great!": #(+affection)
-#                    jump seconddayschoolC1O1
-#                "I think I would rather do it on my own.": #(- affection)
-#                    jump seconddayschoolC1O2
-#                "Uh, sure....":
-#                    jump seconddayschoolC1O3
+                "You Could? That’d be great!": #(+affection)
+                    $ marcprogression = marcprogression + 1
+                    jump seconddayschoolC1O1
+                "I think I would rather do it on my own.": #(- affection)
+                    $ marcprogression = marcprogression - 1
+                    jump seconddayschoolC1O2
+                "Uh, sure....":
+                    jump seconddayschoolC1O3
                     
                     
-#        label seconddayschoolC1O1:
-#            mw "Alright, meet me after school in the courtyard, ok? See you in class!"
-#            jump secondSchoolDayPath1
-#        label seconddayschoolC1O2:
-#            mw "Oh, ok. Well, let me know if you need anything then. See you in class."
-#            jump secondSchoolDayPath1
-#        label seconddayschoolC1O3:
-#            mw "‘Kay. Cya Round."
-#            jump secondSchoolDayPath1
+        label seconddayschoolC1O1:
+            mw "Alright, {w} meet me after school in the courtyard, ok? {w} See you in class!"
+            jump secondSchoolDayPath1
+        label seconddayschoolC1O2:
+            mw "Oh, {w} ok. {w} Well, {w} let me know if you need anything then. {w} See you in class."
+            jump secondSchoolDayPath1
+        label seconddayschoolC1O3:
+            mw "‘Kay. {w} Cya Round."
+            jump secondSchoolDayPath1
             
-#    label secondSchoolDayPath1:        
+    label secondSchoolDayPath1:
+        scene img_1832 with Dissolve(1.0)
+        $ thephase = 5
                 
-#        Scene Change MATH CLASS
+        mk "Ok Class! {w} Take your seats! {w} One… {w} One… {w} Two… {w} Three… {w} Five… {w} Eight… {w} Thirteen… {w} Twenty one…"
 
-#        mk "Ok Class! Take your seats! One… One… Two… Three… Five… Eight… Thirteen… Twenty one…"
+        #Continues mumbling (LEAVE RESOLUTION OF JOKE UNTIL THE END OF THE YEAR, TELLS STUDENTS THAT IT’S THE FIBONACCI SEQUENCE)
 
-#        Continues mumbling (LEAVE RESOLUTION OF JOKE UNTIL THE END OF THE YEAR, TELLS STUDENTS THAT IT’S THE FIBONACCI SEQUENCE)
+        nm "........" 
 
-#        nm "........" 
+        nm "*Scribble scribble*"
 
-#        nm "*Scribble scribble*"
+        mk  "Now, class. {w} I know that you hate homework on the first day, {w} but I want to get you all learned up by the end of the year."
 
-#        mk  "Now, class. I know that you hate homework on the first day, but I want to get you all learned up by the end of the year."
+        #Collective groans
 
-#        Collective groans
+        mk "I will hand out your assignments on the way out. {w} For now, {w} there is a text book under everyone’s desk. {w} Pull it out and turn to page 394. {w} That is where we will start."
 
-#        mk "I will hand out your assignments on the way out. For now, there is a text book under everyone’s desk. Pull it out and turn to page 394. That is where we will start."
+        #MORE GROANS
 
-#        #MORE GROANS
+        mk "Today’s topic will be geometry. {w} You know, {w} I really like angles, {w} to a certain degree."
 
-#        mk "Today’s topic will be geometry. You know, I really like angles, to a certain degree."
+        mc "............ Was that a pun?"
 
-#        mc "............ was that a pun"
+        mc "What was that pun?"
 
-#        mc "What was that pun"
+        nm "*Doodles smiley faces*"
 
-#        nm "*Doodles smiley faces*"
+        mk "Ms. McNeil, {w} I don’t see you opening up your textbook. {w} Please don’t try to measure my patience."
 
-#        mk "Ms. McNeil, I don’t see you opening up your textbook. Please don’t try to measure my patience."
+        nm "*Quickly sketches frowny face and shows it to Mr. Kelly*"
 
-#        nm "*Quickly sketches frowny face and shows it to Mr. Kelly*"
+        mk "... Okaaaaaay Ms. McNeil, {w} I think you should put away your sketchbook now."
 
-#        mk "... Okaaaaaay Ms. McNeil, I think you should put away your sketchbook now."
+        nm "*Opens eyes really wide, vigorously shakes her head*"
 
-#        nm "*Opens eyes really wide, vigorously shakes her head*"
+        mk "I insist."
 
-#        mk "I insist."
+        nm "*Eyes tear up a bit, puts sketch book away and begins to sulk*"
 
-#        nm "*Eyes tear up a bit, puts sketch book away and begins to sulk*"
+        mk "That’s better."
 
-#        mk "That’s better."
+        #Later in class
+        scene img_1832 with Dissolve(1.0)
 
-#        Later in class
+        mk ".... and that’s how these laws of geometry work. {w} You know, {w} it’s a shame parallel lines will never meet. {w} They have so much in common."
 
-#        mk ".... and that’s how these laws of geometry work. You, know, it’s a shame parallel lines will never meet. They have so much in common."
+        #Class groans
 
-#        Class groans
+        "*Bell rings*" 
 
-#        Bell rings 
+        mk "Alright class, {w} you are dismissed."
 
-#        mk "Alright class, you are dismissed."
-
-#        label seconddayschoolchoice2:
+        label seconddayschoolchoice2:
         
-#            menu:
+            menu:
                 
-#                "Ask how she's feeling":  #(+affection)
-#                    jump seconddayschoolC2O1
-#                "Question her behavior": #(-Affection)
-#                    jump seconddayschoolC2O2
-#                "Ignore her":
-#                    jump seconddayschoolC2O3
+                "Ask how Natalie's feeling":  #(+affection)
+                    jump seconddayschoolC2O1
+                "Question Natalie's behavior": #(-Affection)
+                    jump seconddayschoolC2O2
+                "Ignore Natalie":
+                    jump seconddayschoolC2O3
                     
                     
-#        label seconddayschoolC2O1:
-#            mc "Hey, are you ok? I couldn’t help but notice that you seemed upset."
-#            nm "*Blushes"
-#            jump secondSchoolDayPath2
-#        label seconddayschoolC2O2:
-#            mc "Why didn’t you pay any attention in class? Are you mute?"
-#            nm "*Makes an angry face*"
-#            jump secondSchoolDayPath2
-#        label seconddayschoolC2O3:
-#            jump secondSchoolDayPath2
+        label seconddayschoolC2O1:
+            mc "Hey, {w} are you ok? {w} I couldn’t help but notice that you seemed upset."
+            nm "*Blushes"
+            jump secondSchoolDayPath2
+        label seconddayschoolC2O2:
+            mc "Why didn’t you pay any attention in class? {w} Are you mute?"
+            nm "*Makes an angry face*"
+            jump secondSchoolDayPath2
+        label seconddayschoolC2O3:
+            jump secondSchoolDayPath2
             
 #    label secondSchoolDayPath2:
         
