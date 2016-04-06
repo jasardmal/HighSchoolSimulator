@@ -971,3 +971,444 @@
 #       2) mc "Egh... It’s probably not important. You know, today was really long. I’m glad I met all these people, though. I hope they will be my friends... *Yawn* Wow, I’m tired. I should really get some sleep. I hope that call wasn’t important..."
 
 
+
+###########################Homecoming#############################################################################
+
+
+#*Cynthia gives Danny relationship advice, telling him to just *ask that girl* out, thinking that that girl is herself. She is shocked when it is in fact not.*
+
+
+#CL: Heyy Dannyyy, what’s hangin, bangin?
+
+#DR: O-oh, hey Cynthia. It’s hangin.
+
+#CL: That’s pretty sweet, sugar. You know, Homecoming is coming up soon. If there’s a girl you like, don’t you think that it’s about time for you to ask her out? *leans in too close*
+
+#DR: O-oh yeah, probably. I should do that.
+
+#CL: Yeah, you should! I’ll see you around, darling.
+
+#DR: A-alright. See you around!
+
+#*CL leaves*
+
+#MC: Oh, homecoming is coming up soon…. I wonder if Marc and Sarah are going to go….
+
+#*bumps into DR*
+
+#MC: Oh! Sorry. That was my fault.
+
+#DR: No, it’s fine. Don’t worry about it.
+
+#MC: Oh, alright. What is your name?
+
+#DR: My name is Danny. How about you?
+
+#MC: Oh, my name is __________. Who was that with you?
+
+#DR: Oh, her? That was Cynthia. She’s a cheerleader.
+
+#MC: That’s cool. She seemed like she wanted something.
+
+#DR: Huh? Nah, we’re just friends.
+
+#MC: Ah, ok. Well, see you around.
+
+#DR: Yep, see you.
+
+#*Danny Leaves*
+
+#MC: He’s totally clueless… Whatever. It’s not my business. Hmm… Looks like I have an A day today. That means… English and History. I should find Marc, and see what he’s up to. Where could he be? If I don’t find him soon, we could be late!
+
+#Check the field(+add stress, +affection w/marc)
+#Go to class
+
+
+
+#OPTION 1:
+
+#MC: I should probably check the field. Maybe he’s there!
+
+#*switch background to a sports-y field*
+
+#*MC and Marc both appear on the screen*
+
+#MW: Oh, hey MC. What’s up?
+
+#MC: Well, class is about to start… I didn’t see you on the way to school, so I thought I’d find you.
+
+#MW: What, are you following me?
+
+#MC: Y-you’re one to talk!
+
+#MW: Touché. Well, let’s get to class. I wouldn’t want to be too late.
+
+#----
+
+#*MC and Marc walk into class*
+
+#MH: Hey! You two, why are you both coming into class late?
+
+#MC: Uhh…..
+
+#MW: There was an accident on the freeway.
+
+#MH: There isn’t a freeway nearby!
+
+#MW: Oh, right, I mean the, uh, the intersection on uh 3rd and 5th.
+
+#Mr. Hart: There isn’t even an intersection there!
+
+#MW:  6th. I meant 6th.
+
+#MH: Whatever! I’ll hold you to your word. If you are lying, I suppose it doesn’t matter. Just get to your seats.
+
+#MW: *under breath* …. next time I’ll remember to not come at all.
+
+#MC: *also under the breath* Jeez, Marc, chill.
+
+#MW: Nah.
+
+#MH: Now, class, before we begin, I want you to listen very carefully…
+#______________
+
+
+#Option 2
+
+#*gets to class*
+#MC: *searches the room* Huh… I guess Marc hasn’t gotten to class yet…
+
+#MH: Everyone! Please take your seats. I will take attendance quickly so we can get right to work. MC?
+
+#MC: Here.
+
+#MH: Felicia? Aaron? Thomas? Quade? Emmalie? Gregory? Selina? Hm… Marc? He’s not here. MC, do you know where he is?
+
+#MC: N-no, I don’t. Sorry.
+
+#MH: It’s fine. Well, let's begin.
+
+#*DOOR OPENS LOUDLY* 
+
+#MW:... And that’s why turtles are cooler than tortoises. I’ll catch you later.
+
+#Voice: Peace.
+
+#MH: Marc Waller, who was that?
+
+#MW: Nobody important.
+
+#MH: Well, I dare say it is! What were you doing?
+
+#MW: Talkin’.
+
+#MH: Yes, I know that. About what?
+
+#MW: Stuff.
+
+#MH: *Sigh* Fine, go sit down. 
+
+#MW: Sir, yes sir.
+
+#MH: Now, before we begin, I want you to listen very carefully…
+
+#-------------------------------------------------------
+
+#MH: Good work today, class. We will continue our reading of A Midsummer Night’s Dream  when we meet next. Class dismissed!
+
+#MW: Sooooooooooooooooooooooooooooooo, MCCCCCCCCCCCCCCCCC. Are you going to ask anyone out to homecoming?
+
+#MC: Well, I mean, I wasn’t thinking about it…
+
+#MW: But everyone is going! *author's note: I’ve never been to a homecoming Q.Q*
+
+#C’meon dude, ask someone out.
+
+#MC: Well, who are you going with?
+
+#MW: Well, since couples tickets are cheaper, Sarah and I are going together. As friends.
+
+#MC: *makes finger air quotes* “Friends”. Right. Ok.
+
+#MW: Are you trying to tell me something?
+
+#MC: No, I’m not saying anything. “friends”. Uh-huh.
+
+#MW: Pft, what do you know. You don’t even have a date.
+
+#MC: You should be my date, then.
+
+#MW: *blushes* No, it’s just cheaper to go together... As friends.
+
+#MC: I’m not doing the whole “friends” conversation again. You’re dating me.
+
+#MW: I AM NOT 
+
+#MC: You are too
+
+#MW: STOP
+
+#MC: Ok, ok, calm down a bit
+
+#MW: It’s not my fault, you kept egging me on
+
+#MC: Yeah I know. I’ll see you around. Maybe I’ll even see you at homecoming *wink wink*
+
+#MW: GAH
+
+#_______________________________________________
+
+#*HALLWAY*
+
+
+#MC: You know, maybe going to homecoming would be fun… 
+
+#DR: H-hey, u-uh Agnes?
+
+#AR : Novahawk. Yes?
+
+#DR: W-would you, you know, maybe like to…
+
+#AR: Well, spit it out already!
+
+#DR: Uh, maybe, you would want to, er, go to, uh, homecoming with me?
+
+#AR: Sure.
+
+#DR: O-oh really? Fantastic! I-I’ll call you… wait, but I need your number first… Can I have your phone number?
+
+#AR: Yeah… Give me your phone. 
+
+#DR: O-ok… Here.
+
+#AR: There you go. I’ll see you around. 
+
+#DR: S-sounds good. I’ll talk to you later.
+#*THEY LEAVE*
+
+#MC: That… that was awkward.
+
+#CL: W-WHAT! HE WAS SUPPOSED TO ASK MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE! W-what a jerk!
+
+#MC: I’m sure he has good intentions… do you even know if he likes you?
+
+#CL: Yes, he does! He just likes to play hard-to-get. There is no doubt in my mind that he loves me!
+
+#MC: …. Right… Hard-to-get…
+
+#CL: S-shush! He does, I’m telling you! Maybe he doesn’t know it yet, but he does! I need to go and think!
+
+#MC: Great, I’ll talk to you later. 
+
+#______________________________________________
+
+#*Lunch*
+
+#MW: Hey who you are going to homecoming with?
+
+#MC: I.. uh… I’m not even sure if I’m going yet.
+
+
+#MW: Well, you better figure out who you are going with because I got you a ticket.
+
+#*MC Obtains Homecoming Ticket*
+
+#MC: Wait…. Uh … but … 
+
+#MW: Don’t worry you won’t have to pay me back. This is all on me.
+
+#MC: Oh… but …
+
+#MW: Don’t worry about it! Homecoming will be fun, you won’t want to miss it!
+
+#SG: Wait… Mark, I thought we were going together?
+
+#MW: We ARE going together! But now we are bringing MC with us!
+
+#SG: Oh… Uh, awesome… It’ll be fun!
+
+#MW: I know right! Hey, I gotta go take care of something at my locker before lunch ends. I’ll cya later!
+
+#SG + MC: ...See ya…
+
+#SG: Did you know he was going to do that?
+
+#MC: What? No! I wasn’t even sure yet, but I guess I’m going now…
+
+#SG: Ha, yeah, I guess so. I really thought… Nevermind. Whatever. I have to go. 
+
+#MC: Um, alright. Bye.
+
+#SG: ...........
+
+#*end scene*
+
+#*Next day*
+
+#*in his house*
+
+#MC: Well, tonight is homecoming I guess. I suppose I had better get ready… 
+
+#*Phone rings*
+
+#MC: Hello?
+
+#Jackie: Heyy, bro! Are you going to Homecoming?
+
+#MC: Oh, uh, y-
+
+#Jackie: Well, you had better be! Otherwise I would have gotten you that expensive tuxedo for nothing.
+
+#MC: Wait, what Tuxedo?
+
+#Jackie: Haven’t you gotten it yet? *Authors’ note: Jackie and Marc are in cahoots* You should have gotten it a few days ago!
+
+#MC: Well, I-
+
+#Jackie: Go outside and check right now! It should be in a nice, tall package!
+
+#MC: Um, alright…
+
+#Jackie: Is it there?
+
+#*Giant package on the front door step*
+
+#MC: Oh, wow, there it is.
+
+#Jackie: Wonderful! Try it on! It should fit you perfectly. 
+
+#MC: Uh, okay then. I’ll do that. Any other secret packages I should be looking for?
+
+#Jackie: Not right now! Don’t worry, though, the future holds great things.
+
+#MC: ...Thanks. 
+
+#Jackie: No problem! Remember, have fun!
+
+#MC: ...Yeah, Thanks…
+
+#Jackie: Bye Bye, now!
+
+#MC: ...Bye…
+
+#*jackie hangs up*
+
+#MC: Ugh. It’s like this was planned, or something…
+
+#*Knocking on door*
+
+#MW: Hey! MC! Are you ready yet?
+
+#MC: ...Marc? Hold on, I just got my tuxedo…
+
+#MW: Tuxedo!? Wow, Mr. Fancy. Dressin’ in a tux.
+
+#MC: Please don’t. My sister got it for me.
+
+#MW: Oh, ok. Sounds like your sister expected you to have a date.
+
+#MC: Maybe she does. She’ll be awfully disappointed then.
+
+#MW: Haha I bet. Well, hurry up and get dressed, we need to leave soon.
+
+#MC: Don’t you need to go get Sarah or something?
+
+#MW: OH! Yeah. I’ll be back in a few.
+
+#MC:...Bye.
+
+#MC: ....
+
+#MC: I can’t believe he forgot his date…
+
+#*Scene shift to outside the house*
+
+#MC: Where are they? I’d better just go.
+
+#MW: Hey! Wait Up!
+
+#SG: Wait, Marc, not so fast…
+
+#MW: Huh? 
+
+#SG: …
+
+#MW: Ookay. Well, the gang’s all here. Now lets go to homecoming!
+
+#SG: You look very nice today, MC.
+
+#MC: Oh, uh, thanks Sarah.
+
+#SG: *Nods*
+
+#MW: You DO look spiffy. Hopefully walking there won’t dirty it up any. 
+
+#MC: Haha, yeah, that would suck.
+
+#*A limo pulls up beside them, and the chauffeur gets out and opens the door for the three to get in.*
+
+#Chauffeur: Sirs, Madam. I will take you to homecoming.
+
+#MC: I think you have the wrong address…
+
+#Chauffeur: I assure you, I do not have the wrong address. I was hired by one Jackie (Whatever the mc’s last name is).
+
+#MC: Oh. I see. Well, alright then… I guess we won’t have to walk after all. 
+
+#MW: Nice! Now your tux won’t get dirty.
+
+
+#MC: ….Yeah. It won’t.
+
+#SG: Well, quit sitting around and get in the car. Homecoming won’t wait for your sarcasm.
+
+#MC: Sorry, sorry. After you two.
+
+#*End Scene*
+
+#*New Scene* 
+
+#*At homecoming*
+
+#MW: … And that’s why a bow tie is more useful than a long tie.
+
+#SG: Mark, please. Not everyone thinks 
+
+#Dean: Welcome, everyone! Congratulations on surviving school so far. We haven’t done you in yet! 
+
+#*Nervous murmuring from the crowd*
+
+#Dean: Aww, don’t be like that! We are here to have fun! Before we begin, I have one important announcement to make…
+
+#MW: Hey! Dude! Over here!
+
+#MC: Wha…?
+
+#MW: There you are! When we walked in here, you got lost in the crowd! It’s all good though, I found you.
+
+#MC: Um, yeah, thanks haha.
+
+#MW: Anyways, now that you are here, maybe you could find a date after all. I’ve seen a bunch of girls who don’t have dates!
+
+#MC: How would you even know? Just looking doesn’t seem like enough to judge.
+
+#MW: Oh, trust me, I know about these sort of things.
+
+#SG: *HUff* Yeah, sure.
+
+#MW: What? What’s wrong?
+
+#SG: Oh, nothing, don’t worry about it.
+
+#MW: Well, all right then. Anyways, go and have fun. That’s what we are here for.
+
+#MC: Sounds good. I’ll let you two get to dancing, then.
+
+#MW: Ha! I don’t dance. But I appreciate the gesture.
+
+#SG: You aren’t going to dance with me?
+
+#MW: Oh, uh, sure I am…
+
+
+
