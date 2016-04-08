@@ -1120,7 +1120,7 @@
 
 #mc "Well, I mean, I wasn’t thinking about it..."
 
-#mw "But everyone is going! *author's note: I’ve never been to a homecoming Q.Q*"
+#mw "But everyone is going!"
 
 #mw "C’meon dude, ask someone out."
 
@@ -1132,7 +1132,7 @@
 
 #mw "Are you trying to tell me something?"
 
-#mc "No, I’m not saying anything. “friends”. Uh-huh."
+#mc "No, I’m not saying anything. “Friends”. Uh-huh."
 
 #mw "Pft, what do you know. You don’t even have a date."
 
@@ -1159,7 +1159,6 @@
 #_______________________________________________
 
 #*HALLWAY*
-
 
 #mc "You know, maybe going to homecoming would be fun..." 
 
@@ -1373,11 +1372,11 @@
 
 #sg "Mark, please. Not everyone thinks"
 
-#Dean: Welcome, everyone! Congratulations on surviving school so far. We haven’t done you in yet! 
+#de: Welcome, everyone! Congratulations on surviving school so far. We haven’t done you in yet! 
 
 #*Nervous murmuring from the crowd*
 
-#Dean: Aww, don’t be like that! We are here to have fun! Before we begin, I have one important announcement to make…
+#de Aww, don’t be like that! We are here to have fun! Before we begin, I have one important announcement to make…
 
 #mw "Hey! Dude! Over here!"
 
