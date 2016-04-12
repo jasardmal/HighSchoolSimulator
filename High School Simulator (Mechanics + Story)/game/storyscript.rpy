@@ -935,51 +935,51 @@
 
 #        mc Oh. Look. It’s my sister.
 
-#        Jackie "Hey little bro! How was your first few days of school?"
+#        sis  "Hey little bro! How was your first few days of school?"
 
 #        mc "Oh! Hey, Jackie! It’s been a while."
 
-#        Jackie "Yeah, well, you know, college and all that. How’s my socially awkward padawan learner?"
+#        sis  "Yeah, well, you know, college and all that. How’s my socially awkward padawan learner?"
 
 #        mc "Urgh, I’m doing fine… Why do you always reference that movie?"
 
-#        Jackie "Because it’s *our* favorite, and don’t you forget that."
+#        sis  "Because it’s *our* favorite, and don’t you forget that."
 
 #        mc "But you know I don’t..."
 
-#        Jackie "Shush, yes you do. Anyways, do you have a girlfriend yet?"
+#        sis  "Shush, yes you do. Anyways, do you have a girlfriend yet?"
 
 #        mc "What?!?! I literally just got here and..."
 
-#        Jackie "No excuses! Get moving, casanova!"
+#        sis  "No excuses! Get moving, casanova!"
 
 #        mc "Argh! I don’t even know anyone yet!"
 
-#        Jackie "Sure you don’t, Romeo." 
+#        sis  "Sure you don’t, Romeo." 
 
 #        mc "Okay, fine, I’ve met a grand total of 4 people. None of whom I know very well."
 
-#        Jackie: Any girls?
+#        sis "Any girls?
 
 #        mc "...Two. But..."
 
-#        Jackie "Are they pretty?"
+#        sis  "Are they pretty?"
 
 #        mc "...What? Wait… No, that doesn’t… leave me alone!"
 
-#        Jackie "Alright, Valentine. I’ll keep cupid off your back... for now. Don’t be surprised if you find an arrow in your butt later in the year."
+#        sis  "Alright, Valentine. I’ll keep cupid off your back... for now. Don’t be surprised if you find an arrow in your butt later in the year."
 
 #        mc "An arrow?"
 
-#        Jackie "You know, the arrow of love? Nevermind, loverboy. I’ll talk to you later. Don’t forget to give mom and dad a call every now and then!"
+#        sis  "You know, the arrow of love? Nevermind, loverboy. I’ll talk to you later. Don’t forget to give mom and dad a call every now and then!"
 
 #        mc "Ok, I’ll do that. Don’t you have college things to do?"
 
-#        Jackie "Yeah probably. Oh, and by the way, I looked at your school’s website and it looks like homecoming is coming up soon. So, like I said, get a date. Cupid will watch over you."
+#        sis  "Yeah probably. Oh, and by the way, I looked at your school’s website and it looks like homecoming is coming up soon. So, like I said, get a date. Cupid will watch over you."
 
 #        mc "...Uh, Ok... Sure..."
 
-#        Jackie "See ya round! *hangs up*"
+#        sis  "See ya round! *hangs up*"
 
 #        mc "Jeez... That was really something... I’d better get some sleep..."
 
@@ -1093,6 +1093,7 @@
 #Option 2
 
 #*gets to class*
+
 #mc "*searches the room* Huh… I guess Marc hasn’t gotten to class yet..."
 
 #mh "Everyone! Please take your seats. I will take attendance quickly so we can get right to work. MC?"
@@ -1137,7 +1138,7 @@
 
 #mc "Well, I mean, I wasn’t thinking about it..."
 
-#mw "But everyone is going! *author's note: I’ve never been to a homecoming Q.Q*"
+#mw "But everyone is going!"
 
 #mw "C’meon dude, ask someone out."
 
@@ -1149,7 +1150,7 @@
 
 #mw "Are you trying to tell me something?"
 
-#mc "No, I’m not saying anything. “friends”. Uh-huh."
+#mc "No, I’m not saying anything. “Friends”. Uh-huh."
 
 #mw "Pft, what do you know. You don’t even have a date."
 
@@ -1176,7 +1177,6 @@
 #_______________________________________________
 
 #*HALLWAY*
-
 
 #mc "You know, maybe going to homecoming would be fun..." 
 
@@ -1246,7 +1246,7 @@
 
 #mw "I know right! Hey, I gotta go take care of something at my locker before lunch ends. I’ll cya later!"
 
-#sg + mc "...See ya..."
+#coname "...See ya..."
 
 #sg "Did you know he was going to do that?"
 
@@ -1270,41 +1270,41 @@
 
 #mc "Hello?"
 
-#Jackie: "Heyy, bro! Are you going to Homecoming?"
+#sis "Heyy, bro! Are you going to Homecoming?"
 
 #mc "Oh, uh, y-"
 
-#Jackie: Well, you had better be! Otherwise I would have gotten you that expensive tuxedo for nothing.
+#sis "Well, you had better be! Otherwise I would have gotten you that expensive tuxedo for nothing.
 
 #mc "Wait, what Tuxedo?"
 
-#Jackie: Haven’t you gotten it yet? *Authors’ note: Jackie and Marc are in cahoots* You should have gotten it a few days ago!
+#sis "Haven’t you gotten it yet? *Authors’ note: Jackie and Marc are in cahoots* You should have gotten it a few days ago!
 
 #mc "Well, I-"
 
-#Jackie: Go outside and check right now! It should be in a nice, tall package!
+#sis "Go outside and check right now! It should be in a nice, tall package!
 
 #mc "Um, alright..."
 
-#Jackie: Is it there?
+#sis "Is it there?
 
 #*Giant package on the front door step*
 
 #mc "Oh, wow, there it is."
 
-#Jackie: Wonderful! Try it on! It should fit you perfectly. 
+#sis "Wonderful! Try it on! It should fit you perfectly. 
 
 #mc "Uh, okay then. I’ll do that. Any other secret packages I should be looking for?"
 
-#Jackie: Not right now! Don’t worry, though, the future holds great things.
+#sis "Not right now! Don’t worry, though, the future holds great things.
 
 #mc "...Thanks." 
 
-#Jackie: No problem! Remember, have fun!
+#sis "No problem! Remember, have fun!
 
 #mc "...Yeah, Thanks..."
 
-#Jackie: Bye Bye, now!
+#sis "Bye Bye, now!
 
 #mc "...Bye..."
 
@@ -1390,11 +1390,11 @@
 
 #sg "Mark, please. Not everyone thinks"
 
-#Dean: Welcome, everyone! Congratulations on surviving school so far. We haven’t done you in yet! 
+#de "Welcome, everyone! Congratulations on surviving school so far. We haven’t done you in yet!" 
 
 #*Nervous murmuring from the crowd*
 
-#Dean: Aww, don’t be like that! We are here to have fun! Before we begin, I have one important announcement to make…
+#de "Aww, don’t be like that! We are here to have fun! Before we begin, I have one important announcement to make..."
 
 #mw "Hey! Dude! Over here!"
 
