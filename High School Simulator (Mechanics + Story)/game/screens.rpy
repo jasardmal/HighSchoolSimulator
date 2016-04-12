@@ -1158,23 +1158,68 @@ screen kolby:
     # The background of the game menu.
     window:
         style "gm_root"
-
-    # Kolby's social progression level displayed as a bar.
+        
     frame:
+        xalign 0.5
+        yalign 0.0
+        
+        has hbox
+        
+        text "Kolby Frederickson"
+
+    # Kolby's social progression rank displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.8
+        
+        has hbox
+        
+        text "Rank"
+        
+    frame:
+        xalign 0.0
+        yalign 0.85
         
         has hbox
         
         hbox:
-            bar range 10 value 1 xmaximum 400
+            bar range 10 value kolbyrank xmaximum 400
             
-    # Kolby's social progression level displayed as a number.
+    # Kolby's social progression rank displayed as a number.
     frame:
         xalign 0.55
-        yalign 0
+        yalign 0.85
         
         has hbox
             
-        text "1/10"
+        text "[kolbyrank]/10"
+    
+    # Kolby's social progression displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.95
+        
+        has hbox
+        
+        text "Progression"
+        
+    frame:
+        xalign 0.0
+        yalign 1.0
+        
+        has hbox
+        
+        hbox:
+            bar range 10 value kolbyprogression xmaximum 400
+            
+    # Kolby's social progression displayed as a number.
+    frame:
+        xalign 0.55
+        yalign 1.0
+        
+        has hbox
+            
+        text "[kolbyprogression]/10"
     
     # The return button.
     frame:
@@ -1193,24 +1238,70 @@ screen frederick:
     # The background of the game menu.
     window:
         style "gm_root"
-
-    # Frederick's social progression level displayed as a bar.
+        add "frederickhprofile" xalign 0.8 yalign 1.0
+        
     frame:
+        xalign 0.5
+        yalign 0.0
+        
+        has hbox
+        
+        text "Frederick Hobson"
+
+    # Frederick's social progression rank displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.8
+        
+        has hbox
+        
+        text "Rank"
+        
+    frame:
+        xalign 0.0
+        yalign 0.85
         
         has hbox
         
         hbox:
-            bar range 10 value 1 xmaximum 400
+            bar range 10 value frederickrank xmaximum 400
             
-    # Frederick's social progression level displayed as a number.
+    # Frederick's social progression rank displayed as a number.
     frame:
         xalign 0.55
-        yalign 0
+        yalign 0.85
         
         has hbox
             
-        text "1/10"
+        text "[frederickrank]/10"
+    
+    # Frederick's social progression displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.95
         
+        has hbox
+        
+        text "Progression"
+        
+    frame:
+        xalign 0.0
+        yalign 1.0
+        
+        has hbox
+        
+        hbox:
+            bar range 10 value frederickprogression xmaximum 400
+            
+    # Frederick's social progression displayed as a number.
+    frame:
+        xalign 0.55
+        yalign 1.0
+        
+        has hbox
+            
+        text "[frederickprogression]/10"
+    
     # The return button.
     frame:
         xalign 0.98
@@ -1228,23 +1319,68 @@ screen ivor:
     # The background of the game menu.
     window:
         style "gm_root"
-
-    # Ivor's social progression level displayed as a bar.
+        
     frame:
+        xalign 0.5
+        yalign 0.0
+        
+        has hbox
+        
+        text "Ivor Kovosad"
+
+    # Ivor's social progression rank displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.8
+        
+        has hbox
+        
+        text "Rank"
+        
+    frame:
+        xalign 0.0
+        yalign 0.85
         
         has hbox
         
         hbox:
-            bar range 10 value 1 xmaximum 400
+            bar range 10 value ivorrank xmaximum 400
             
-    # Ivor's's social progression level displayed as a number.
+    # Ivor's social progression rank displayed as a number.
     frame:
         xalign 0.55
-        yalign 0
+        yalign 0.85
         
         has hbox
             
-        text "1/10"
+        text "[ivorrank]/10"
+    
+    # Ivor's social progression displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.95
+        
+        has hbox
+        
+        text "Progression"
+        
+    frame:
+        xalign 0.0
+        yalign 1.0
+        
+        has hbox
+        
+        hbox:
+            bar range 10 value ivorprogression xmaximum 400
+            
+    # Ivor's social progression displayed as a number.
+    frame:
+        xalign 0.55
+        yalign 1.0
+        
+        has hbox
+            
+        text "[ivorprogression]/10"
     
     # The return button.
     frame:
@@ -1263,23 +1399,69 @@ screen danny:
     # The background of the game menu.
     window:
         style "gm_root"
-
-    # Danny's social progression level displayed as a bar.
+        add "dannyrprofile" xalign 0.8 yalign 1.0
+        
     frame:
+        xalign 0.5
+        yalign 0.0
+        
+        has hbox
+        
+        text "Danny Reuter"
+
+    # Danny's social progression rank displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.8
+        
+        has hbox
+        
+        text "Rank"
+        
+    frame:
+        xalign 0.0
+        yalign 0.85
         
         has hbox
         
         hbox:
-            bar range 10 value 1 xmaximum 400
+            bar range 10 value dannyrank xmaximum 400
             
-    # Danny's social progression level displayed as a number.
+    # Danny's social progression rank displayed as a number.
     frame:
         xalign 0.55
-        yalign 0
+        yalign 0.85
         
         has hbox
             
-        text "1/10"
+        text "[dannyrank]/10"
+    
+    # Danny's social progression displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.95
+        
+        has hbox
+        
+        text "Progression"
+        
+    frame:
+        xalign 0.0
+        yalign 1.0
+        
+        has hbox
+        
+        hbox:
+            bar range 10 value dannyprogression xmaximum 400
+            
+    # Danny's social progression displayed as a number.
+    frame:
+        xalign 0.55
+        yalign 1.0
+        
+        has hbox
+            
+        text "[dannyprogression]/10"
     
     # The return button.
     frame:
@@ -1298,23 +1480,69 @@ screen sarah:
     # The background of the game menu.
     window:
         style "gm_root"
-
-    # Sarah's social progression level displayed as a bar.
+        add "sarahgprofile" xalign 0.8 yalign 1.0
+        
     frame:
+        xalign 0.5
+        yalign 0.0
+        
+        has hbox
+        
+        text "Sarah Granger"
+
+    # Marc's social progression rank displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.8
+        
+        has hbox
+        
+        text "Rank"
+        
+    frame:
+        xalign 0.0
+        yalign 0.85
         
         has hbox
         
         hbox:
-            bar range 10 value 1 xmaximum 400
+            bar range 10 value sarahrank xmaximum 400
             
-    # Sarah's social progression level displayed as a number.
+    # Sarah's social progression rank displayed as a number.
     frame:
         xalign 0.55
-        yalign 0
+        yalign 0.85
         
         has hbox
             
-        text "1/10"
+        text "[sarahrank]/10"
+    
+    # Sarah's social progression displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.95
+        
+        has hbox
+        
+        text "Progression"
+        
+    frame:
+        xalign 0.0
+        yalign 1.0
+        
+        has hbox
+        
+        hbox:
+            bar range 10 value sarahprogression xmaximum 400
+            
+    # Sarah's social progression displayed as a number.
+    frame:
+        xalign 0.55
+        yalign 1.0
+        
+        has hbox
+            
+        text "[sarahprogression]/10"
     
     # The return button.
     frame:
@@ -1333,24 +1561,69 @@ screen christina:
     # The background of the game menu.
     window:
         style "gm_root"
-
-    # Christina's social progression level displayed as a bar.
+        
     frame:
+        xalign 0.5
+        yalign 0.0
+        
+        has hbox
+        
+        text "Christina Shulz"
+
+    # Christina's social progression rank displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.8
+        
+        has hbox
+        
+        text "Rank"
+        
+    frame:
+        xalign 0.0
+        yalign 0.85
         
         has hbox
         
         hbox:
-            bar range 10 value 1 xmaximum 400
+            bar range 10 value christinarank xmaximum 400
             
-    # Christina's social progression level displayed as a number.
+    # Christina's social progression rank displayed as a number.
     frame:
         xalign 0.55
-        yalign 0
+        yalign 0.85
         
         has hbox
             
-        text "1/10"
+        text "[christinarank]/10"
+    
+    # Christina's social progression displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.95
         
+        has hbox
+        
+        text "Progression"
+        
+    frame:
+        xalign 0.0
+        yalign 1.0
+        
+        has hbox
+        
+        hbox:
+            bar range 10 value christinaprogression xmaximum 400
+            
+    # Christina's social progression displayed as a number.
+    frame:
+        xalign 0.55
+        yalign 1.0
+        
+        has hbox
+            
+        text "[christinaprogression]/10"
+    
     # The return button.
     frame:
         xalign 0.98
@@ -1360,7 +1633,7 @@ screen christina:
 
         textbutton _("Return") action ShowMenu("socialcontacts")
     
-screen agens:
+screen agnes:
     
     # This ensures that any other menu screen is replaced.
     tag menu
@@ -1368,24 +1641,69 @@ screen agens:
     # The background of the game menu.
     window:
         style "gm_root"
-
-    # Agnes's social progression level displayed as a bar.
+        
     frame:
+        xalign 0.5
+        yalign 0.0
+        
+        has hbox
+        
+        text "Agnes Rocco"
+
+    # Agnes's social progression rank displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.8
+        
+        has hbox
+        
+        text "Rank"
+        
+    frame:
+        xalign 0.0
+        yalign 0.85
         
         has hbox
         
         hbox:
-            bar range 10 value 1 xmaximum 400
+            bar range 10 value agnesrank xmaximum 400
             
-    # Agnes's social progression level displayed as a number.
+    # Agnes's social progression rank displayed as a number.
     frame:
         xalign 0.55
-        yalign 0
+        yalign 0.85
         
         has hbox
             
-        text "1/10"
+        text "[agnesrank]/10"
+    
+    # Agnes's social progression displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.95
         
+        has hbox
+        
+        text "Progression"
+        
+    frame:
+        xalign 0.0
+        yalign 1.0
+        
+        has hbox
+        
+        hbox:
+            bar range 10 value agnesprogression xmaximum 400
+            
+    # Agnes's social progression displayed as a number.
+    frame:
+        xalign 0.55
+        yalign 1.0
+        
+        has hbox
+            
+        text "[agnesprogression]/10"
+    
     # The return button.
     frame:
         xalign 0.98
@@ -1403,24 +1721,69 @@ screen cynthia:
     # The background of the game menu.
     window:
         style "gm_root"
-
-    # Cynthia's social progression level displayed as a bar.
+        
     frame:
+        xalign 0.5
+        yalign 0.0
+        
+        has hbox
+        
+        text "Cynthia Shulz"
+
+    # Cynthia's social progression rank displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.8
+        
+        has hbox
+        
+        text "Rank"
+        
+    frame:
+        xalign 0.0
+        yalign 0.85
         
         has hbox
         
         hbox:
-            bar range 10 value 1 xmaximum 400
+            bar range 10 value cynthiarank xmaximum 400
             
-    # Cynthia's social progression level displayed as a number.
+    # Cynthia's social progression rank displayed as a number.
     frame:
         xalign 0.55
-        yalign 0
+        yalign 0.85
         
         has hbox
             
-        text "1/10"
+        text "[cynthiarank]/10"
+    
+    # Cynthia's social progression displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.95
         
+        has hbox
+        
+        text "Progression"
+        
+    frame:
+        xalign 0.0
+        yalign 1.0
+        
+        has hbox
+        
+        hbox:
+            bar range 10 value cynthiaprogression xmaximum 400
+            
+    # Cynthia's social progression displayed as a number.
+    frame:
+        xalign 0.55
+        yalign 1.0
+        
+        has hbox
+            
+        text "[cynthiaprogression]/10"
+    
     # The return button.
     frame:
         xalign 0.98
@@ -1465,7 +1828,7 @@ screen natalie:
         hbox:
             bar range 10 value natalierank xmaximum 400
             
-    # Marc's social progression rank displayed as a number.
+    # Natalie's social progression rank displayed as a number.
     frame:
         xalign 0.55
         yalign 0.85
@@ -1474,7 +1837,7 @@ screen natalie:
             
         text "[natalierank]/10"
     
-    # Marc's social progression displayed as a bar.
+    # Natalie's social progression displayed as a bar.
     frame:
         xalign 0.0
         yalign 0.95
@@ -1492,7 +1855,7 @@ screen natalie:
         hbox:
             bar range 10 value natalieprogression xmaximum 400
             
-    # Marc's social progression displayed as a number.
+    # Natalie's social progression displayed as a number.
     frame:
         xalign 0.55
         yalign 1.0
@@ -1518,24 +1881,69 @@ screen becka:
     # The background of the game menu.
     window:
         style "gm_root"
-
-    # Becka's social progression level displayed as a bar.
+        
     frame:
+        xalign 0.5
+        yalign 0.0
+        
+        has hbox
+        
+        text "Becka Krakowski"
+
+    # Becka's social progression rank displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.8
+        
+        has hbox
+        
+        text "Rank"
+        
+    frame:
+        xalign 0.0
+        yalign 0.85
         
         has hbox
         
         hbox:
-            bar range 10 value 1 xmaximum 400
+            bar range 10 value beckarank xmaximum 400
             
-    # Becka's social progression level displayed as a number.
+    # Becka's social progression rank displayed as a number.
     frame:
         xalign 0.55
-        yalign 0
+        yalign 0.85
         
         has hbox
             
-        text "1/10"
+        text "[beckarank]/10"
+    
+    # Becka's social progression displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.95
         
+        has hbox
+        
+        text "Progression"
+        
+    frame:
+        xalign 0.0
+        yalign 1.0
+        
+        has hbox
+        
+        hbox:
+            bar range 10 value beckaprogression xmaximum 400
+            
+    # Becka's social progression displayed as a number.
+    frame:
+        xalign 0.55
+        yalign 1.0
+        
+        has hbox
+            
+        text "[beckaprogression]/10"
+    
     # The return button.
     frame:
         xalign 0.98
