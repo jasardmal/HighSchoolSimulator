@@ -83,7 +83,7 @@
         de "Both of you! {w} Behave! {w} Do you have ANY deceny? {w} You haven’t even left my office! {w} Marc, {w} stay here, and let him go."
         hide dean
         
-        $mwname = "Marc"
+        $ mwname = "Marc"
 
         show marcw
         mw "Fine. {w} But he’s still a fat lard."
@@ -486,6 +486,8 @@
         nm "*Doodles smiley faces*"
 
         mk "Ms. McNeil, {w} I don’t see you opening up your textbook. {w} Please don’t try to measure my patience."
+        
+        $ nmname = "Natalie Mcneil"
 
         nm "*Quickly sketches frowny face and shows it to Mr. Kelly*"
 
@@ -496,6 +498,10 @@
         mk "I insist."
 
         nm "*Eyes tear up a bit, puts sketch book away and begins to sulk*"
+        
+        $ hasmetnatalie = True
+        
+        ">You can now view Natalie's profile."
 
         mk "That’s better."
 
@@ -515,8 +521,10 @@
             menu:
                 
                 "Ask how Natalie's feeling":  #(+affection)
+                    $ natalieprogression = natalieprogression + 1
                     jump seconddayschoolC2O1
                 "Question Natalie's behavior": #(-Affection)
+                    $ natalieprogression = natalieprogression - 1
                     jump seconddayschoolC2O2
                 "Ignore Natalie":
                     jump seconddayschoolC2O3

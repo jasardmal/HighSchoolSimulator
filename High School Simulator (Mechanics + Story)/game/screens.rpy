@@ -1438,24 +1438,69 @@ screen natalie:
     # The background of the game menu.
     window:
         style "gm_root"
-
-    # Natalie's social progression level displayed as a bar.
+        
     frame:
+        xalign 0.5
+        yalign 0.0
+        
+        has hbox
+        
+        text "Natalie Mcneil"
+
+    # Natalie's social progression rank displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.8
+        
+        has hbox
+        
+        text "Rank"
+        
+    frame:
+        xalign 0.0
+        yalign 0.85
         
         has hbox
         
         hbox:
-            bar range 10 value 1 xmaximum 400
+            bar range 10 value natalierank xmaximum 400
             
-    # Natalie's social progression level displayed as a number.
+    # Marc's social progression rank displayed as a number.
     frame:
         xalign 0.55
-        yalign 0
+        yalign 0.85
         
         has hbox
             
-        text "1/10"
+        text "[natalierank]/10"
+    
+    # Marc's social progression displayed as a bar.
+    frame:
+        xalign 0.0
+        yalign 0.95
         
+        has hbox
+        
+        text "Progression"
+        
+    frame:
+        xalign 0.0
+        yalign 1.0
+        
+        has hbox
+        
+        hbox:
+            bar range 10 value natalieprogression xmaximum 400
+            
+    # Marc's social progression displayed as a number.
+    frame:
+        xalign 0.55
+        yalign 1.0
+        
+        has hbox
+            
+        text "[natalieprogression]/10"
+    
     # The return button.
     frame:
         xalign 0.98

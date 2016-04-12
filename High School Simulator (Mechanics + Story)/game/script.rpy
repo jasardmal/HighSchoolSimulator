@@ -7,14 +7,14 @@ define s1 = Character('Other Student', color="#c8ffc8")
 #Students
 define mw = DynamicCharacter("mwname", color="#c8ffc8")
 define kf = Character('Kolby Frederickson', color="#c8ffc8")
-define fh = Character('Frederick Hobson', color="#c8ffc8")
+define fh = DynamicCharacter("fhname", color="#c8ffc8")
 define ik = Character('Ivor Kovosad', color="#c8ffc8")
 define dr = Character('Danny Reuter', color="#c8ffc8")
 define sg = Character('Sarah Granger', color="#c8ffc8")
 define cs = Character('Christina Shulz', color="#c8ffc8")
 define ar = Character('Agnes Rocco', color="#c8ffc8")
 define cl = Character('Cynthia Lucas', color="#c8ffc8")
-define nm = Character('Natalie Mcneil', color="#c8ffc8")
+define nm = DynamicCharacter("nmname", color="#c8ffc8")
 define bk = Character('Becka Krakowski', color="#c8ffc8")
 define mom = Character('Mom', color="#c8ffc8")
 
@@ -41,6 +41,7 @@ label start:
     $ mcname = "???"
     $ mwname = "Delinquet Student"
     $ fhname = "Refined Student"
+    $ nmname = "Silent Student"
     $ coname = "Delinquet Student and Other Student"
     
     
@@ -143,15 +144,44 @@ label start:
     $ marcprogression = 5
     
     $ hasmetkolby = False
+    $ kolbyrank = 1
+    $ kolbyprogression = 5
+    
     $ hasmetfrederick = False
+    $ frederickrank = 1
+    $ frederickprogression = 5
+    
     $ hasmetivor = False
+    $ ivorrank = 1
+    $ ivorprogression = 5
+    
     $ hasmetdanny = False
+    $ dannyrank = 1
+    $ dannyprogression = 5
+    
     $ hasmetsarah = False
+    $ sarahrank = 1
+    $ sarahprogression = 5
+    
     $ hasmetchristina = False
+    $ christinarank = 1
+    $ christinaprogression = 5
+    
     $ hasmetagnes = False
+    $ agnesrank = 1
+    $ angesprogression = 5
+    
     $ hasmetcynthia = False
+    $ cynthiarank = 1
+    $ cynthiaprogression = 5
+    
     $ hasmetnatalie = False
+    $ natalierank = 1
+    $ natalieprogression = 5
+    
     $ hasmetbecka = False
+    $ beckarank = 1
+    $ beckaprogression = 5
             
     #CHARACTER CREATION ******************************************************************************************
     label nameCreation:
