@@ -1641,6 +1641,7 @@ screen agnes:
     # The background of the game menu.
     window:
         style "gm_root"
+        add "agnesrprofile" xalign 0.8 yalign 1.0
         
     frame:
         xalign 0.5
@@ -1648,7 +1649,7 @@ screen agnes:
         
         has hbox
         
-        text "Agnes Rocco"
+        text "Agnes Rocco (Novahawk)"
 
     # Agnes's social progression rank displayed as a bar.
     frame:

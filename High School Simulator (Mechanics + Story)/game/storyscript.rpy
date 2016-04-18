@@ -532,77 +532,92 @@
                     
         label seconddayschoolC2O1:
             mc "Hey, {w} are you ok? {w} I couldn’t help but notice that you seemed upset."
-            nm "*Blushes"
-            jump secondSchoolDayPath2
+            nm "*Blushes*"
+            $ thephase = thephase + 1
+            jump lunchSchool
         label seconddayschoolC2O2:
             mc "Why didn’t you pay any attention in class? {w} Are you mute?"
             nm "*Makes an angry face*"
-            jump secondSchoolDayPath2
+            $ thephase = thephase + 1
+            jump lunchSchool
         label seconddayschoolC2O3:
-            jump secondSchoolDayPath2
+            $ thephase = thephase + 1
+            jump lunchSchool
             
-#    label secondSchoolDayPath2:
+    label secondSchoolDayPath2:
         
-#        mc "Huh. That was strange…."
+        mc "Huh. {w} That was strange…."
 
-#        mc "My next class is science, it looks like. I’d better get there fast."
+        mc "My next class is science, it looks like. {w} I’d better get there fast."
 
+        scene img_1832 with Dissolve(1.0)
+        
+        $ thephase = thephase + 1
 
-#        Scene change = ENTER SCIENCE
+        mg "Before you sit down, {w} line up at the back of the room. {w} I have some important questions."
 
-#        mg "Before you sit down, line up at the back of the room. I have some important questions."
+        mg "Since this is a science class, {w} we must observe the scientific method. {w} That means collecting questions. {w} Now, my first question is this:…"
 
-#        mg "Since this is a science class, we must observe the scientific method. That means collecting questions. Now, my first question is this:…"
+        #Fade out
 
-#        Fade out
+        mg "....Now, {w} pick your partners. {w} We will begin our lectures tomorrow, and collect data. {w} Tonight, {w} I want you to take notes on the first chapter of the textbook."
+            
+        mg "Before you leave, {w} let me know who you are sitting with. {w} If you don’t, {w} you will be randomly assigned with a partner. Go!"
 
-#        mc "....Now, pick your partners. We will begin our lectures tomorrow, and collect data. Tonight, I want you to take notes on the first chapter of the textbook. Before you leave, let me know who you are sitting with. If you don’t, you will be randomly assigned with a partner. Go!"
+        mc "Uh… {w} Hey… {w} Anyone want to be my partner?"
 
-#        mc "Uh… Hey… Anyone want to be my partner?"
+        mc "Anyone? {w} Hey, you… {w} No? {w} Alright…"
 
-#        mc "Anyone? Hey, you… No? Alright…"
+        mc "Urgh… {w} Seems like no one is available…"
 
-#        mc "Urgh… Seems like no one is available…"
+        mg "Now, {w} does anyone not have a partner yet?"
 
-#        mg "Now, does anyone not have a partner yet?"
+        #Looks around  
 
-#        Looks around  
+        mc "Uh, {w} I guess I don’t have a partner yet…"
 
-#        mc "Uh, I guess I don’t have a partner yet…"
+        mg "Interesting. {w} Now, could you take a look around the room? {w} Can you tell me what you see?"
 
-#        mg "Interesting. Now, could you take a look around the room? Can you tell me what you see?"
+        mc "Uhm… {w} Oh."
+        
+        #Looks at Agnes
+        show agnesr
+         
+        mc "Uh, {w} alright. {w} Hi…"
+        
+        ar "Hi."
+        hide agnesr
 
-#        mc "Uhm… Oh." 
+        mg " Wonderful. {w} Now, {w} tomorrow’s lecture will be about the chapter in which you are currently engaged in notetaking. {w} Remember, the chapter notes will be due at the end of every week. {w}
+             The first chapter is rather short, {w} so if you do not have them completed, {w} there will be no excuse."
 
-#        Looks at agnes 
+        #Staring at her phone, headphones in
+        show agnesr
 
-#        mc "Uh, alright. Hi…"
+        mc "Um, {w} hi. {w} Er, {w} since we are working together and everything, {w} I was wondering…"
 
-#        ar "Hi."
+        ar "Hmmm?"
 
-#        mg " Wonderful. Now, tomorrow’s lecture will be about the chapter in which you are currently engaged in notetaking. Remember, the chapter notes will be due at the end of every week. The first chapter is rather short, so if you do not have them completed, there will be no excuse."
+        mc " Oh, {w} I was just wondering…"
 
-#        Staring at her phone, headphones in
+        ar "Agnes. {w} But don’t call me that. {w} I prefer..."
 
-#        mc "Um, hi. Er, since we are working together and everything, I was wondering…"
+        ar ".... {w} Novahawk."
 
-#        ar "Hmmm?"
+        mc "Uh… Right… {w} Novahawk… {w} ok…"
 
-#        mc " Oh, I was just wondering…"
+        ar "Mhm. {w} Now get outta here."
 
-#        ar "Agnes. But don’t call me that. I prefer..."
+        #Agnes leaves
+        hide agnesr
+        
+        ">You can now view Agnes's profile."
+        
+        $ hasmetagnes = True
 
-#        ar ".... Novahawk."
+        mc ".........Huh."
 
-#        mc " Uh… Right… Novahawk… ok…"
-
-#        ar " Mhm. Now get outta here."
-
-#        Agnes leaves 
-
-#        mc ".........Huh."
-
-#        mc "I guess it’s time for the electives now. Let’s see what Marc is up to."
+        mc "I guess it’s time for the electives now. {w} Let’s see what Marc is up to."
 
 #        Insert Elective here*
 
