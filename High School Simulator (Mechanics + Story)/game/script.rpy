@@ -503,8 +503,11 @@ label start:
                         $ intelligencesub = intelligencesub + 2
                         $ stresssub = stresssub + 2
                         $ staminasub = staminasub - 1
-                        $ thephase = 7
-                        jump period
+                        if issecondschoolday:
+                            jump secondSchoolDayPath2
+                        else:
+                            $ thephase = 7
+                            jump period
                     elif stress == 2 or stress == 3:
                         $ randStudy = renpy.random.choice([1, 2, 3, 4])
                         if randStudy == 1 or randStudy == 2:
@@ -512,21 +515,30 @@ label start:
                             $ intelligencesub = intelligencesub + 2
                             $ stresssub = stresssub + 2
                             $ staminasub = staminasub - 1
-                            $ thephase = 7
-                            jump period
+                            if issecondschoolday:
+                                jump secondSchoolDayPath2
+                            else:
+                                $ thephase = 7
+                                jump period
                         else:
                             mc "I studied. >Intelligence increased. >Stress increased. >Stamina decreased."
                             $ intelligencesub = intelligencesub + 1
                             $ stresssub = stresssub + 1
                             $ staminasub = staminasub - 1
-                            $ thephase = 7
-                            jump period
+                            if issecondschoolday:
+                                jump secondSchoolDayPath2
+                            else:
+                                $ thephase = 7
+                                jump period
                     elif stress == 4 or stress == 5:
                         mc "I tried to study but couldn't focus... >Stress increased. >Stamina decreased."
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
-                        $ thephase = 7
-                        jump period
+                        if issecondschoolday:
+                            jump secondSchoolDayPath2
+                        else:
+                            $ thephase = 7
+                            jump period
 
                     
                 label lunchSchoolExercise:
@@ -535,8 +547,11 @@ label start:
                         $ staminasubfuturelim = staminasubfuturelim + 0.1
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
-                        $ thephase = 7
-                        jump period
+                        if issecondschoolday:
+                            jump secondSchoolDayPath2
+                        else:
+                            $ thephase = 7
+                            jump period
                     elif stress == 3 or stress == 4:
                         $ randExercise = renpy.random.choice([1, 2])
                         if randExercise == 1:
@@ -544,20 +559,29 @@ label start:
                             $ staminasubfuturelim = staminasubfuturelim + 0.1
                             $ stresssub = stresssub + 1
                             $ staminasub = staminasub - 1
-                            $ thephase = 7
-                            jump period
+                            if issecondschoolday:
+                                jump secondSchoolDayPath2
+                            else:
+                                $ thephase = 7
+                                jump period
                         else:
                             mc "I'm not feeling too motivated to exercise... >Stress increased. Stamina decreased."
                             $ stresssub = stresssub + 1
                             $ staminasub = staminasub - 1
-                            $ thephase = 7
-                            jump period
+                            if issecondschoolday:
+                                jump secondSchoolDayPath2
+                            else:
+                                $ thephase = 7
+                                jump period
                     elif stress == 5:
                         mc "I'm not feeling too motivated to exercise... >Stress increased. Stamina decreased."
                         $ stresssub = stresssub + 1
                         $ staminasub = staminasub - 1
-                        $ thephase = 7
-                        jump period
+                        if issecondschoolday:
+                            jump secondSchoolDayPath2
+                        else:
+                            $ thephase = 7
+                            jump period
                 
         #AFTERSCHOOL ******************************************************************************************
         label afterSchool:
