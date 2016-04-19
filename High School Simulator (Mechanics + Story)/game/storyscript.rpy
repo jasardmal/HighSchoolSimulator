@@ -611,89 +611,115 @@
         #Agnes leaves
         hide agnesr
         
+        $ hasmetagnes = True
+        
         ">You can now view Agnes's profile."
         
-        $ hasmetagnes = True
+        scene img_1831 with Dissolve(1.0)
 
         mc ".........Huh."
 
         mc "I guess it’s time for the electives now. {w} Let’s see what Marc is up to."
 
-#        Insert Elective here*
-
-#        mw "...And that’s how you disguise your phone number."
-
-#        mc "Oh, cool… What would I use that for?"
-
-#        mw "Probably nothing, but hey, the more you know."
-
-#        #OPTION ⅓-  Marc shows you around, takes you to where Sarah works
-#        #Player discovers more places, affection with Marc goes up
-
-#        mw ".... And that’s why Marcy’s is cheaper than Jenny’s. Good way to save your money on clothes."
-
-#        mc "Oh ok, thanks for letting me know."
-
-#        mw "So I was thinkin’, there’s this place up by the Cafe that I hang around, got a bunch a’ video games and stuff. Wanna hit it, see if there’s something ya wanna play?" 
-
-#        mc "Er, sure. What kinds of games are there?"
-
-#        mw "Oh ya know, things like fighting games, racing games, shooters. All kinds. It’s right over here, let’s get going."
-
-#        mc "Uh yeah, let’s go..."
-
-#        *In Arcade*
-
-#        mw "Check out this game, dude!"
-
-#        mc "Erm, alright… What game is this?"
-
-#        mw "It’s the hottest game in the arcade! You HAVE to try it."
-
-#        mc "Oh, okay cool… What do I do?"
-
-#        mw "Well, first, you start by..."
+        #Insert Elective here*
+        scene img_1832 with Dissolve(1.0)
         
-#        *minigame tutorial, insert minigame here*
+        $ thephase = thephase + 1
 
-#        mw "... And that’s how you can use the combos to get higher scores."
+        show marcw
+        mw "...And that’s how you disguise your phone number."
 
-#       ### mc  "You know, this game is 1) pretty fun! [small increase in affection] 2) pretty lame. 3) not too bad."
+        mc "Oh, {w} cool… {w} What would I use that for?"
 
-#       ### mw 1) That’s awesome! This is my favorite game in the arcade.
-#       ###           2-3) Oh well, to each their own. I really like it myself.
-
-#        mw "Hey are you feeling hungry? My stomach just started to growl."
-
-#        mc "*STOMACH GROWLS, SCREEN SHAKES AS REPRESENTATION* Oh! I’m feeling hungry too. Do you know any good places to eat?"
+        mw "Probably nothing, {w} but hey, {w} the more you know."
+        hide marcw
         
-#        mw "Actually I do, there’s a place not too far from here that’s super popular with the students at our school. A senior named Fredrick runs the place, and a friend of mine works there."
+        scene img_1831 with Dissolve(1.0)
+        
+        $ thephase = thephase + 1
+        
+        jump period 
 
-#        mc "Ok cool, let’s go."
+        #OPTION ⅓-  Marc shows you around, takes you to where Sarah works
+        #Player discovers more places, affection with Marc goes up
+        label secondSchoolDayPath3:
+            
+            show marcw
+            
+            mw "Ready for me to show you around town?"
+            
+            mc "Uh, {w} yeah, {w} I guess."
+            
+            scene img_2908 with Dissolve (1.0)
+        
+            if marcprogression >= 5:
+                
+                show marcw
 
-#        *Outside Cafe*
+                mw ".... And that’s why Marcy’s is cheaper than Jenny’s. Good way to save your money on clothes."
 
-#        mw "Here’s the place. Roland’s Sweet Honey Cafe."
+                mc "Oh ok, thanks for letting me know."
 
-#        mc "Looks nice."
+                mw "So I was thinkin’, there’s this place up by the Cafe that I hang around, got a bunch a’ video games and stuff. Wanna hit it, see if there’s something ya wanna play?" 
 
-#        mw "I’m starving, let’s go in and get some food."
+                mc "Er, sure. What kinds of games are there?"
 
-#        *Inside Cafe*
+                mw "Oh ya know, things like fighting games, racing games, shooters. All kinds. It’s right over here, let’s get going."
 
-#        mc "There’s a lot of people here." 
+                mc "Uh yeah, let’s go..."
 
-#        mw "Yea, almost everyone comes here after school to hang out and unwind."
+                #*In Arcade*
 
-#        ???(Fred) "Well, if it isn’t the freshie who can’t take a bit of homework."
+                mw "Check out this game, dude!"
 
-#        mw "Excuse me Fredrick!?!?!?!"
+                mc "Erm, alright… What game is this?"
 
-#        fh "No, not you, your friend here."
+                mw "It’s the hottest game in the arcade! You HAVE to try it."
 
-#        mc "W-w-what? W-what do you mean?"
+                mc "Oh, okay cool… What do I do?"
 
-#        fh "Forgetful, are we? Just yesterday I caught you complaining about homework on the first day. I told you to grow a pair."
+                mw "Well, first, you start by..."
+                
+                #*minigame tutorial, insert minigame here*
+
+                mw "... And that’s how you can use the combos to get higher scores."
+
+               ### mc  "You know, this game is 1) pretty fun! [small increase in affection] 2) pretty lame. 3) not too bad."
+
+               ### mw 1) That’s awesome! This is my favorite game in the arcade.
+               ###           2-3) Oh well, to each their own. I really like it myself.
+
+                mw "Hey are you feeling hungry? My stomach just started to growl."
+
+                mc "*STOMACH GROWLS, SCREEN SHAKES AS REPRESENTATION* Oh! I’m feeling hungry too. Do you know any good places to eat?"
+                
+                mw "Actually I do, there’s a place not too far from here that’s super popular with the students at our school. A senior named Fredrick runs the place, and a friend of mine works there."
+
+                mc "Ok cool, let’s go."
+
+                #*Outside Cafe*
+
+                mw "Here’s the place. Roland’s Sweet Honey Cafe."
+
+                mc "Looks nice."
+
+                mw "I’m starving, let’s go in and get some food."
+
+                #*Inside Cafe*
+
+                mc "There’s a lot of people here." 
+
+                mw "Yea, almost everyone comes here after school to hang out and unwind."
+
+                #???(Fred) "Well, if it isn’t the freshie who can’t take a bit of homework."
+
+                mw "Excuse me Fredrick!?!?!?!"
+
+                fh "No, not you, your friend here."
+
+                mc "W-w-what? W-what do you mean?"
+
+                fh "Forgetful, are we? Just yesterday I caught you complaining about homework on the first day. I told you to grow a pair."
 
 #        mw "*Snickers*"
 

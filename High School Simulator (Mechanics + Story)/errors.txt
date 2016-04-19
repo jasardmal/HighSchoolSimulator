@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1082: The has statement may not be given after a child has been supplied.
-    has hbox
-       ^
+File "game/storyscript.rpy", line 840: if statement expects a non-empty block.
+    if marcprogression >= 5:
+                            ^
 
 Ren'Py Version: Ren'Py 6.99.8.959

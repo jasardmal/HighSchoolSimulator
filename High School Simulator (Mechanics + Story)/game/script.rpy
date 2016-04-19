@@ -169,7 +169,7 @@ label start:
     
     $ hasmetagnes = False
     $ agnesrank = 1
-    $ angesprogression = 5
+    $ agnesprogression = 5
     
     $ hasmetcynthia = False
     $ cynthiarank = 1
@@ -348,7 +348,10 @@ label start:
             if thephase == 6:
                 jump lunchSchool
             if thephase == 10:
-                jump afterSchool
+                if issecondschoolday:
+                    jump secondSchoolDayPath3
+                else:
+                    jump afterSchool
             else:
                 mc "*Bell rings*"
                 scene img_1832 with Dissolve(1.0)
@@ -443,13 +446,13 @@ label start:
                         $ money = money - 1
                         jump lunchSchoolMin
                 
-                "$2 Sandwich":
-                    if money <= 1:
-                        mc "I don't have enough money. I guess I'll starve."
-                        jump lunchSchoolSkip
-                    else:
-                        $ money = money - 2
-                        jump lunchSchoolAvg
+#                "$2 Sandwich":
+#                    if money <= 1:
+#                        mc "I don't have enough money. I guess I'll starve."
+#                        jump lunchSchoolSkip
+#                    else:
+#                        $ money = money - 2
+#                        jump lunchSchoolAvg
                     
 #                "$3 Combo Meal":
 #                    jump lunchSchoolMax
