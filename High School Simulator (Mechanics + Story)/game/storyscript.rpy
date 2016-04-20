@@ -425,6 +425,7 @@
         #Arrives at school
         scene img_1831 with Dissolve(1.0)
         $ thephase = 2
+        $ location = 1
         
         show marcw
         mw "Hey, {w} [mcname]. {w} Can I talk to you for a sec?"
@@ -449,15 +450,21 @@
                     
         label seconddayschoolC1O1:
             mw "Alright, {w} meet me after school in the courtyard, ok? {w} See you in class!"
-            jump secondSchoolDayPath1
+            $ thephase = thephase + 1
+            jump period
         label seconddayschoolC1O2:
             mw "Oh, {w} ok. {w} Well, {w} let me know if you need anything then. {w} See you in class."
-            jump secondSchoolDayPath1
+            $ thephase = thephase + 1
+            jump period
         label seconddayschoolC1O3:
             mw "‘Kay. {w} Cya Round."
-            jump secondSchoolDayPath1
+            $ thephase = thephase + 1
+            jump period
             
     label secondSchoolDayPath1:
+        
+        "*Bell rings*"
+        
         scene img_1832 with Dissolve(1.0)
         $ thephase = 5
                 
@@ -598,7 +605,7 @@
 
         ar "Hmmm?"
 
-        mc " Oh, {w} I was just wondering…"
+        mc "Oh, {w} I was just wondering…"
 
         ar "Agnes. {w} But don’t call me that. {w} I prefer..."
 
@@ -644,23 +651,27 @@
         #Player discovers more places, affection with Marc goes up
         label secondSchoolDayPath3:
             
-            show marcw
-            
-            mw "Ready for me to show you around town?"
-            
-            mc "Uh, {w} yeah, {w} I guess."
-            
-            scene img_2908 with Dissolve (1.0)
-        
             if marcprogression >= 5:
+            
+                show marcw
+                
+                mw "Ready for me to show you around town?"
+                
+                mc "Uh, {w} yeah, {w} I guess."
+                
+                scene img_2908 with Dissolve (1.0)
+                
+                ">You spend the day letting Marc show you around town."
+                
+                $ marcprogression = marcprogression + 1
                 
                 show marcw
 
-                mw ".... And that’s why Marcy’s is cheaper than Jenny’s. Good way to save your money on clothes."
+                mw ".... And that’s why Marcy’s is cheaper than Jenny’s. {w} Good way to save your money on clothes."
 
-                mc "Oh ok, thanks for letting me know."
+                mc "Oh ok, {w} thanks for letting me know."
 
-                mw "So I was thinkin’, there’s this place up by the Cafe that I hang around, got a bunch a’ video games and stuff. Wanna hit it, see if there’s something ya wanna play?" 
+                mw "So I was thinkin’, {w} there’s this place up by the Cafe that I hang around, {w} got a bunch a’ video games and stuff. {w} Wanna hit it, see if there’s something ya wanna play?" 
 
                 mc "Er, sure. What kinds of games are there?"
 
@@ -831,137 +842,137 @@
 
 #        *scene transition*
 
+            else:
 
+               ######## #OPTION 2-  Player walks around on their own, ends up where Sarah works because hungry, Marc is there cracking a joke
 
-#       ######## #OPTION 2-  Player walks around on their own, ends up where Sarah works because hungry, Marc is there cracking a joke
+                mc "Well school’s out now, I wonder what I should do… Looks like a bunch of students are going over to that cafe over there, I think I’ll go check it out."
 
-#        mc "Well school’s out now, I wonder what I should do… Looks like a bunch of students are going over to that cafe over there, I think I’ll go check it out."
+        #        *walks over to the cafe*
 
-#        *walks over to the cafe*
+        #        mc "Roland’s Sweet Honey Cafe… weird name..."
 
-#        mc "Roland’s Sweet Honey Cafe… weird name..."
+        #        *walks in*
 
-#        *walks in*
+        #        *Inside Cafe*
 
-#        *Inside Cafe*
+        #        mc "There’s a lot of people here." 
 
-#        mc "There’s a lot of people here." 
+        #        ???(Fred) "Well, if it isn’t the freshie who can’t take a bit of homework."
 
-#        ???(Fred) "Well, if it isn’t the freshie who can’t take a bit of homework."
+        #        mc "W-w-what? W-what do you mean?"
 
-#        mc "W-w-what? W-what do you mean?"
+        #        fh "Forgetful, are we? Just yesterday I caught you complaining about homework on the first day. I told you to grow a pair."
 
-#        fh "Forgetful, are we? Just yesterday I caught you complaining about homework on the first day. I told you to grow a pair."
+        #        mc "H-hey! G-get out of my face!"
 
-#        mc "H-hey! G-get out of my face!"
+        #        fh "Why, you insolent..."
 
-#        fh "Why, you insolent..."
+        #        bk "Frederick, that’s no way to treat new customers. You know better."
 
-#        bk "Frederick, that’s no way to treat new customers. You know better."
+        #        fh "Becka!! My apologies. You’re right. It was just that… he was being whiny yesterday and it bothered me, I mean, he hasn’t even been to any higher level classes..."
 
-#        fh "Becka!! My apologies. You’re right. It was just that… he was being whiny yesterday and it bothered me, I mean, he hasn’t even been to any higher level classes..."
+        #        bk "Shush. You were exactly the same way. As were most of the members of our class, if I recall correctly."
 
-#        bk "Shush. You were exactly the same way. As were most of the members of our class, if I recall correctly."
+        #        fh "Well I Ne-..."
 
-#        fh "Well I Ne-..."
+        #        bk "Now apologize to your customer."
 
-#        bk "Now apologize to your customer."
+        #        fh "*BLUSHING* You do not own this cafe! I do! Argh!" 
 
-#        fh "*BLUSHING* You do not own this cafe! I do! Argh!" 
+        #        fh "But, you are right. I must be more… professional. *turns to MC* As a consolation, your drink is on the house. You are welcome."
 
-#        fh "But, you are right. I must be more… professional. *turns to MC* As a consolation, your drink is on the house. You are welcome."
+        #        bk "Now, that wasn’t so hard was it?"
 
-#        bk "Now, that wasn’t so hard was it?"
+        #        fh "Oh for heaven’s sake!" 
 
-#        fh "Oh for heaven’s sake!" 
+        #        *frederick and becka leave*
 
-#        *frederick and becka leave*
+        #        mc "Jeez… what’s his problem..."
 
-#        mc "Jeez… what’s his problem..."
+        #        *scene cut to Marc talking to some girl (Sarah)*
 
-#        *scene cut to Marc talking to some girl (Sarah)*
+        #        mw ".... And that’s how I avoided getting into trouble with the dean."
 
-#        mw ".... And that’s how I avoided getting into trouble with the dean."
+        #        sg "...You aren’t serious."
 
-#        sg "...You aren’t serious."
+        #        mw "Yes I am! Look, at school tomorrow I’ll have you meet the guy."
 
-#        mw "Yes I am! Look, at school tomorrow I’ll have you meet the guy."
+        #        sg "Uh huh."
 
-#        sg "Uh huh."
+        #        mw "Well, speak of the devil and he shall appear! He’s right there!"
 
-#        mw "Well, speak of the devil and he shall appear! He’s right there!"
+        #        mc "h-huh?! Excuse me? W-what’s going on?"
 
-#        mc "h-huh?! Excuse me? W-what’s going on?"
+        #        mw "Oh, I was just telling my friend Sarah here how I met you yesterday. So, how’s solo explorin’ going?"
 
-#        mw "Oh, I was just telling my friend Sarah here how I met you yesterday. So, how’s solo explorin’ going?"
+        #        mc "G-good, I guess..." 
 
-#        mc "G-good, I guess..." 
+        #        sg "So, what’ll it be? I assume you *are* here to eat."
+                
+        #        mw "I’ll have the usual. Oh, by the way, have you met MC? He just moved to town. He even lives in our neighborhood!"
 
-#        sg "So, what’ll it be? I assume you *are* here to eat."
-        
-#        mw "I’ll have the usual. Oh, by the way, have you met MC? He just moved to town. He even lives in our neighborhood!"
+        #        sg "Oh? And how would you know? Did you follow him home?"
 
-#        sg "Oh? And how would you know? Did you follow him home?"
+        #        mw "... Something like that."
 
-#        mw "... Something like that."
+        #        mc "Uhh..."
 
-#        mc "Uhh..."
+        #        mw "Don’t worry about it. *to MC* What are you gonna order?"
 
-#        mw "Don’t worry about it. *to MC* What are you gonna order?"
+        #        mc "Err, what does the chef recommend?"
 
-#        mc "Err, what does the chef recommend?"
+        #        sg "Today we have a special on Caesar Salads. Comes with grilled chicken and garlic bread."
 
-#        sg "Today we have a special on Caesar Salads. Comes with grilled chicken and garlic bread."
+        #        mc "Sounds good, I’ll have that." 
 
-#        mc "Sounds good, I’ll have that." 
+        #        sg "Then I’ll be back in a jiffy."
 
-#        sg "Then I’ll be back in a jiffy."
+        #        mw "Thanks!"
 
-#        mw "Thanks!"
+        #        mc "So… How do you and Sarah know each other...?" 
 
-#        mc "So… How do you and Sarah know each other...?" 
+        #        mw "Oh, me and Sarah? We go way back. Grew up together, almost."
 
-#        mw "Oh, me and Sarah? We go way back. Grew up together, almost."
+        #        mc "Really? That’s cool..."
 
-#        mc "Really? That’s cool..."
+        #        sg "Hey guys! Here are your drinks. By the way, Frederick said that you get a free drink, MC. I’ll be back in a sec with your food."
 
-#        sg "Hey guys! Here are your drinks. By the way, Frederick said that you get a free drink, MC. I’ll be back in a sec with your food."
+        #        mw "Thanks! Do you have a minute to sit with us after that?"
 
-#        mw "Thanks! Do you have a minute to sit with us after that?"
+        #        sg "Oh, no, sorry. Not today. We are up to our elbows in customers, haha."
 
-#        sg "Oh, no, sorry. Not today. We are up to our elbows in customers, haha."
+        #        mw "Alright, maybe next time then."
 
-#        mw "Alright, maybe next time then."
+        #        sg "See you later!"
 
-#        sg "See you later!"
+        #        mw "Hey wait! How is your leg doing?" 
 
-#        mw "Hey wait! How is your leg doing?" 
+        #        sg "Oh, well, I’ve been doing better… Healing a broken bone doesn’t happen overnight, you know?"
 
-#        sg "Oh, well, I’ve been doing better… Healing a broken bone doesn’t happen overnight, you know?"
+        #        mw "True, true. Well, get better soon! The team needs you."
 
-#        mw "True, true. Well, get better soon! The team needs you."
+        #        sg "Haha, thanks. I’ll see you around."
 
-#        sg "Haha, thanks. I’ll see you around."
+        #        mc "...I didn’t notice her cast. What happened?"
 
-#        mc "...I didn’t notice her cast. What happened?"
+        #        mw "It’s a bit of a nasty story. Let’s just say there was a really, really bad accident." 
 
-#        mw "It’s a bit of a nasty story. Let’s just say there was a really, really bad accident." 
+        #        mc "Oh… Uh, how long has she had the cast?"
 
-#        mc "Oh… Uh, how long has she had the cast?"
+        #        mw "Too long. The whole summer, and then some. It was really bad." 
 
-#        mw "Too long. The whole summer, and then some. It was really bad." 
+        #        mw "Thinking about this is depressing. Let’s finish up and get out of here."
 
-#        mw "Thinking about this is depressing. Let’s finish up and get out of here."
+        #        mc "Uhhh, sure." 
 
-#        mc "Uhhh, sure." 
+        #        *Dining room noises*
+          
+        #        mw "That was really good! I always enjoy eating here. Are you done?"
 
-#        *Dining room noises*
-  
-#        mw "That was really good! I always enjoy eating here. Are you done?"
+        #        mc "Yeah, I think I’m finished. Let’s go."
 
-#        mc "Yeah, I think I’m finished. Let’s go."
-
-#        mw "Sweet. I'll see you tomorrow."
+        #        mw "Sweet. I'll see you tomorrow."
 
 #        *Scene Change Home*
 

@@ -345,6 +345,9 @@ label start:
                 
         #PERIOD *********************************************************************************************
         label period:
+            if thephase == 5:
+                if issecondschoolday:
+                    jump secondSchoolDayPath1
             if thephase == 6:
                 jump lunchSchool
             if thephase == 10:
