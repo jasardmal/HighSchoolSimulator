@@ -2300,7 +2300,7 @@
         sg "Is something wrong _______?"
 
         #Choice: Nothing
-        #        Tell them about what Kolby said.
+        #Tell them about what Kolby said.
 
         #Nothing
         mc "It’s fine, let’s go talk to Christina."
