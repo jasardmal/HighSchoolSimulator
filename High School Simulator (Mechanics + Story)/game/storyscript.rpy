@@ -4,7 +4,7 @@
         "*Bell Rings*"
         $ thephase = 3;
 
-        pa "Welcome to the first day of school at Ketsu High School! Here, we…."
+        pa "Welcome to the first day of school at Ketsu High School! Here, we...."
 
         mc "That guy, there in the back? {w} That’s me. {w} I just moved here from Utah. {w} This is my first day at Ketsu High, and I don’t know anyone. {w} This day is gonna be such a drag."
 
@@ -41,7 +41,7 @@
 
         mh "You! {w} New student! {w} You were the closest and probably saw what happened the best. {w} Go to the deans office with them to fill out an incident report!"
 
-        mc "But, wait, {w} no…."
+        mc "But, wait, {w} no...."
 
         mh "Don’t argue, {w} just do it! {w} Don’t keep what you know to yourself! {w} Go to the Dean’s office!"
         
@@ -153,7 +153,7 @@
             mc "Marc? {w} The dean wants to see you."
             
             show marcw
-            mw "Ugh, {w} finally. {w} I wish this would just be over… {w} I can’t stand it when people insult me and get away with it."
+            mw "Ugh, {w} finally. {w} I wish this would just be over... {w} I can’t stand it when people insult me and get away with it."
             hide marcw
             
             #Marc goes to office
@@ -164,13 +164,13 @@
         label firstSchoolC1O2:
             #MARC DIDN'T START IT
 
-            mc "Well… {w} To be honest, {w} it seemed to me like the one who is still sitting outside was the victim. {w} The other one had made some rude comments about him, {w} and he didn’t like it."
+            mc "Well... {w} To be honest, {w} it seemed to me like the one who is still sitting outside was the victim. {w} The other one had made some rude comments about him, {w} and he didn’t like it."
             
             de "Is that right? {w} Well, {w} so far, {w} that’s not what I’ve heard. Are you sure?"
             
             mc "Yes, Sir. {w} I’m sure."
             
-            de "Hmm… {w} Alright. Go back to class… {w} Thank you for your help."
+            de "Hmm... {w} Alright. Go back to class... {w} Thank you for your help."
             
             mc "Yes, sir."
             
@@ -186,7 +186,7 @@
             mc "Marc? {w} The dean wants to see you."
 
             show marcw
-            mw "Ugh, {w} finally. {w} I wish this would just be over… {w} I can’t stand it when people insult me and get away with it."
+            mw "Ugh, {w} finally. {w} I wish this would just be over... {w} I can’t stand it when people insult me and get away with it."
             hide marcw
 
             #Marc goes to office
@@ -209,7 +209,7 @@
         #To Himself
         scene img_1831 with Dissolve(1.0)
 
-        mc "I should probably get to my next class. {w} It’s no good to dawdle. Looks like my next class is… {w}"
+        mc "I should probably get to my next class. {w} It’s no good to dawdle. Looks like my next class is... {w}"
             
         #Shift to picture of the schedule
             
@@ -225,17 +225,17 @@
 
         mc "Sorry I’m late, Mrs. Ong."
 
-        mo "The Nerve! {w} In my day, {w} if we were late, {w} we would be paddled! {w} With a wooden spoon! {w} Sit down, before I get any angrier. {w} Now, class. {w} What is the…"
+        mo "The Nerve! {w} In my day, {w} if we were late, {w} we would be paddled! {w} With a wooden spoon! {w} Sit down, before I get any angrier. {w} Now, class. {w} What is the..."
 
         #Brain wandering off*
 
         mo "Mr. [mcname], {w} can you tell me what the capital of Texas is?"
 
-        mc "Er… {w} Is it Houston?"
+        mc "Er... {w} Is it Houston?"
 
         mo "Actually, {w} it’s Austin. {w} Now, {w} if you would stop dozing off in class, {w} maybe you would learn something. {w} In my day, {w} we were whipped if we fell asleep in class!"
 
-        mc "Urgh… yes, Mrs. Ong."
+        mc "Urgh... yes, Mrs. Ong."
 
         mo "Now, class. {w} To start off the year, {w} we will be researching how civilizations in the fertile crescent rose to power. {w} By Friday, {w} 
             I want an essay no longer than 750 words on this subject. {w} If you do not do this assignment, {w} it will severely impact your grade at this, {w} 
@@ -261,7 +261,7 @@
         
         #Hurries off"
 
-        mc "What? {w} Whatever…"
+        mc "What? {w} Whatever..."
         $ thephase = 5
         jump period
         
@@ -279,11 +279,11 @@
 
             mw "I wanted to thank you for helping me out. {w} I’ve never seen you before. {w} What’s your name?"
 
-            mc "Uh… {w} No problem… {w} my name is [mcname]... {w} hey..."
+            mc "Uh... {w} No problem... {w} my name is [mcname]... {w} hey..."
 
             mw "If you ever need anything, {w} let me know. {w} I’ll return the favor." 
 
-            mc "Oh, uh, {w} ok… {w} Thanks..."
+            mc "Oh, uh, {w} ok... {w} Thanks..."
 
             mw "Cya round."
 
@@ -342,7 +342,7 @@
                 
             #Don't pick up the phone
             label firstdayschoolC2O2:
-                mc "Ugh! {w} I wonder who it is. {w} Well, {w} they can wait. {w} I need to sleep… {w} Today was busy..."
+                mc "Ugh! {w} I wonder who it is. {w} Well, {w} they can wait. {w} I need to sleep... {w} Today was busy..."
 
                 #*End scene*
                 
@@ -357,7 +357,7 @@
             
         #*Alarm rings*
 
-        mc "Urgh… {w} My head…"
+        mc "Urgh... {w} My head..."
 
         #Alarm rings again
 
@@ -418,14 +418,13 @@
             
             mc "Oh, Uh, {w} Right, {w} Sure."
 
-        mw "Sooo… Shall we? {w} If we stand here any longer, we’ll be late for school."
+        mw "Sooo... Shall we? {w} If we stand here any longer, we’ll be late for school."
 
         mc "Oh! {w} Let’s go."
 
         #Arrives at school
         scene img_1831 with Dissolve(1.0)
         $ thephase = 2
-        $ location = 1
         
         show marcw
         mw "Hey, {w} [mcname]. {w} Can I talk to you for a sec?"
@@ -450,25 +449,19 @@
                     
         label seconddayschoolC1O1:
             mw "Alright, {w} meet me after school in the courtyard, ok? {w} See you in class!"
-            $ thephase = thephase + 1
-            jump period
+            jump secondSchoolDayPath1
         label seconddayschoolC1O2:
             mw "Oh, {w} ok. {w} Well, {w} let me know if you need anything then. {w} See you in class."
-            $ thephase = thephase + 1
-            jump period
+            jump secondSchoolDayPath1
         label seconddayschoolC1O3:
             mw "‘Kay. {w} Cya Round."
-            $ thephase = thephase + 1
-            jump period
+            jump secondSchoolDayPath1
             
     label secondSchoolDayPath1:
-        
-        "*Bell rings*"
-        
         scene img_1832 with Dissolve(1.0)
         $ thephase = 5
                 
-        mk "Ok Class! {w} Take your seats! {w} One… {w} One… {w} Two… {w} Three… {w} Five… {w} Eight… {w} Thirteen… {w} Twenty one…"
+        mk "Ok Class! {w} Take your seats! {w} One... {w} One... {w} Two... {w} Three... {w} Five... {w} Eight... {w} Thirteen... {w} Twenty one..."
 
         #Continues mumbling (LEAVE RESOLUTION OF JOKE UNTIL THE END OF THE YEAR, TELLS STUDENTS THAT IT’S THE FIBONACCI SEQUENCE)
 
@@ -539,944 +532,1798 @@
                     
         label seconddayschoolC2O1:
             mc "Hey, {w} are you ok? {w} I couldn’t help but notice that you seemed upset."
-            nm "*Blushes*"
-            $ thephase = thephase + 1
-            jump lunchSchool
+            nm "*Blushes"
+            jump secondSchoolDayPath2
         label seconddayschoolC2O2:
             mc "Why didn’t you pay any attention in class? {w} Are you mute?"
             nm "*Makes an angry face*"
-            $ thephase = thephase + 1
-            jump lunchSchool
+            jump secondSchoolDayPath2
         label seconddayschoolC2O3:
-            $ thephase = thephase + 1
-            jump lunchSchool
+            jump secondSchoolDayPath2
             
     label secondSchoolDayPath2:
-        
-        mc "Huh. {w} That was strange…."
+    
+        mc "Huh. That was strange...."
 
-        mc "My next class is science, it looks like. {w} I’d better get there fast."
+        mc "My next class is science, it looks like. I’d better get there fast."
 
-        scene img_1832 with Dissolve(1.0)
-        
-        $ thephase = thephase + 1
 
-        mg "Before you sit down, {w} line up at the back of the room. {w} I have some important questions."
+        #Scene change = ENTER SCIENCE
 
-        mg "Since this is a science class, {w} we must observe the scientific method. {w} That means collecting questions. {w} Now, my first question is this:…"
+        mg "Before you sit down, line up at the back of the room. I have some important questions."
+
+        mg "Since this is a science class, we must observe the scientific method. That means collecting questions. Now, my first question is this:..."
 
         #Fade out
 
-        mg "....Now, {w} pick your partners. {w} We will begin our lectures tomorrow, and collect data. {w} Tonight, {w} I want you to take notes on the first chapter of the textbook."
-            
-        mg "Before you leave, {w} let me know who you are sitting with. {w} If you don’t, {w} you will be randomly assigned with a partner. Go!"
+        mc "....Now, pick your partners. We will begin our lectures tomorrow, and collect data. Tonight, I want you to take notes on the first chapter of the textbook. Before you leave, let me know who you are sitting with. If you don’t, you will be randomly assigned with a partner. Go!"
 
-        mc "Uh… {w} Hey… {w} Anyone want to be my partner?"
+        mc "Uh... Hey... Anyone want to be my partner?"
 
-        mc "Anyone? {w} Hey, you… {w} No? {w} Alright…"
+        mc "Anyone? Hey, you... No? Alright..."
 
-        mc "Urgh… {w} Seems like no one is available…"
+        mc "Urgh... Seems like no one is available..."
 
-        mg "Now, {w} does anyone not have a partner yet?"
+        mg "Now, does anyone not have a partner yet?"
 
         #Looks around  
 
-        mc "Uh, {w} I guess I don’t have a partner yet…"
+        mc "Uh, I guess I don’t have a partner yet..."
 
-        mg "Interesting. {w} Now, could you take a look around the room? {w} Can you tell me what you see?"
+        mg "Interesting. Now, could you take a look around the room? Can you tell me what you see?"
 
-        mc "Uhm… {w} Oh."
-        
-        #Looks at Agnes
-        show agnesr
-         
-        mc "Uh, {w} alright. {w} Hi…"
-        
+        mc "Uhm... Oh." 
+
+        #Looks at agnes 
+
+        mc "Uh, alright. Hi..."
+
         ar "Hi."
-        hide agnesr
 
-        mg " Wonderful. {w} Now, {w} tomorrow’s lecture will be about the chapter in which you are currently engaged in notetaking. {w} Remember, the chapter notes will be due at the end of every week. {w}
-             The first chapter is rather short, {w} so if you do not have them completed, {w} there will be no excuse."
+        mg " Wonderful. Now, tomorrow’s lecture will be about the chapter in which you are currently engaged in notetaking. Remember, the chapter notes will be due at the end of every week. The first chapter is rather short, so if you do not have them completed, there will be no excuse."
 
         #Staring at her phone, headphones in
-        show agnesr
 
-        mc "Um, {w} hi. {w} Er, {w} since we are working together and everything, {w} I was wondering…"
+        mc "Um, hi. Er, since we are working together and everything, I was wondering..."
 
         ar "Hmmm?"
 
-        mc "Oh, {w} I was just wondering…"
+        mc " Oh, I was just wondering..."
 
-        ar "Agnes. {w} But don’t call me that. {w} I prefer..."
+        ar "Agnes. But don’t call me that. I prefer..."
 
-        ar ".... {w} Novahawk."
+        ar ".... Novahawk."
 
-        mc "Uh… Right… {w} Novahawk… {w} ok…"
+        mc " Uh... Right... Novahawk... ok..."
 
-        ar "Mhm. {w} Now get outta here."
+        ar " Mhm. Now get outta here."
 
-        #Agnes leaves
-        hide agnesr
-        
-        $ hasmetagnes = True
-        
-        ">You can now view Agnes's profile."
-        
-        scene img_1831 with Dissolve(1.0)
+        #Agnes leaves 
 
         mc ".........Huh."
 
-        mc "I guess it’s time for the electives now. {w} Let’s see what Marc is up to."
+        mc "I guess it’s time for the electives now. Let’s see what Marc is up to."
 
-        #Insert Elective here*
-        scene img_1832 with Dissolve(1.0)
-        
-        $ thephase = thephase + 1
+        #*Insert Elective here*
 
-        show marcw
         mw "...And that’s how you disguise your phone number."
 
-        mc "Oh, {w} cool… {w} What would I use that for?"
+        mc "Oh, cool... What would I use that for?"
 
-        mw "Probably nothing, {w} but hey, {w} the more you know."
-        hide marcw
-        
-        scene img_1831 with Dissolve(1.0)
-        
-        $ thephase = thephase + 1
-        
-        jump period 
+        mw "Probably nothing, but hey, the more you know."
 
-        #OPTION ⅓-  Marc shows you around, takes you to where Sarah works
-        #Player discovers more places, affection with Marc goes up
-        label secondSchoolDayPath3:
+    label secondDaySchoolChoice3:
+        
+        menu:
             
-            if marcprogression >= 5:
-            
-                show marcw
-                
-                mw "Ready for me to show you around town?"
-                
-                mc "Uh, {w} yeah, {w} I guess."
-                
-                scene img_2908 with Dissolve (1.0)
-                
-                ">You spend the day letting Marc show you around town."
-                
+            "Choose Marc.":
                 $ marcprogression = marcprogression + 1
-                
-                show marcw
+                jump secondDaySchoolC3O1
+            "Go alone.":
+                jump secondDaySchoolC3O2
+            
 
-                mw ".... And that’s why Marcy’s is cheaper than Jenny’s. {w} Good way to save your money on clothes."
+        label secondDaySchoolC3O1:
 
-                mc "Oh ok, {w} thanks for letting me know."
 
-                mw "So I was thinkin’, {w} there’s this place up by the Cafe that I hang around, {w} got a bunch a’ video games and stuff. {w} Wanna hit it, see if there’s something ya wanna play?" 
+        mw ".... And that’s why Marcy’s is cheaper than Jenny’s. Good way to save your money on clothes."
 
-                mc "Er, sure. What kinds of games are there?"
+        mc "Oh ok, thanks for letting me know."
 
-                mw "Oh ya know, things like fighting games, racing games, shooters. All kinds. It’s right over here, let’s get going."
+        mw "So I was thinkin’, there’s this place up by the Cafe that I hang around, got a bunch a’ video games and stuff. Wanna hit it, see if there’s something ya wanna play?" 
 
-                mc "Uh yeah, let’s go..."
+        mc "Er, sure. What kinds of games are there?"
 
-                #*In Arcade*
+        mw "Oh ya know, things like fighting games, racing games, shooters. All kinds. It’s right over here, let’s get going."
 
-                mw "Check out this game, dude!"
+        mc "Uh yeah, let’s go..."
 
-                mc "Erm, alright… What game is this?"
+        #*In Arcade*
 
-                mw "It’s the hottest game in the arcade! You HAVE to try it."
+        mw "Check out this game, dude!"
 
-                mc "Oh, okay cool… What do I do?"
+        mc "Erm, alright... What game is this?"
 
-                mw "Well, first, you start by..."
-                
-                #*minigame tutorial, insert minigame here*
+        mw "It’s the hottest game in the arcade! You HAVE to try it."
 
-                mw "... And that’s how you can use the combos to get higher scores."
+        mc "Oh, okay cool... What do I do?"
 
-               ### mc  "You know, this game is 1) pretty fun! [small increase in affection] 2) pretty lame. 3) not too bad."
+        mw "Well, first, you start by..."
 
-               ### mw 1) That’s awesome! This is my favorite game in the arcade.
-               ###           2-3) Oh well, to each their own. I really like it myself.
+        mw "... And that’s how you can use the combos to get higher scores."
 
-                mw "Hey are you feeling hungry? My stomach just started to growl."
+        mc "You know, this game is 1) pretty fun!"
 
-                mc "*STOMACH GROWLS, SCREEN SHAKES AS REPRESENTATION* Oh! I’m feeling hungry too. Do you know any good places to eat?"
-                
-                mw "Actually I do, there’s a place not too far from here that’s super popular with the students at our school. A senior named Fredrick runs the place, and a friend of mine works there."
+        mw "That’s awesome! This is my favorite game in the arcade."
 
-                mc "Ok cool, let’s go."
+        mw "Hey are you feeling hungry? My stomach just started to growl."
 
-                #*Outside Cafe*
+        mc "*STOMACH GROWLS, SCREEN SHAKES AS REPRESENTATION* Oh! I’m feeling hungry too. Do you know any good places to eat?"
+        
+        mw "Actually I do, there’s a place not too far from here that’s super popular with the students at our school. A senior named Fredrick runs the place, and a friend of mine works there."
 
-                mw "Here’s the place. Roland’s Sweet Honey Cafe."
+        mc "Ok cool, let’s go."
 
-                mc "Looks nice."
+        #*Outside Cafe*
 
-                mw "I’m starving, let’s go in and get some food."
+        mw "Here’s the place. Roland’s Sweet Honey Cafe."
 
-                #*Inside Cafe*
+        mc "Looks nice."
 
-                mc "There’s a lot of people here." 
+        mw "I’m starving, let’s go in and get some food."
 
-                mw "Yea, almost everyone comes here after school to hang out and unwind."
+        #*Inside Cafe*
 
-                #???(Fred) "Well, if it isn’t the freshie who can’t take a bit of homework."
+        mc "There’s a lot of people here." 
 
-                mw "Excuse me Fredrick!?!?!?!"
+        mw "Yea, almost everyone comes here after school to hang out and unwind."
 
-                fh "No, not you, your friend here."
+        s1 "Well, if it isn’t the freshie who can’t take a bit of homework."
 
-                mc "W-w-what? W-what do you mean?"
+        mw "Excuse me Fredrick!?!?!?!"
 
-                fh "Forgetful, are we? Just yesterday I caught you complaining about homework on the first day. I told you to grow a pair."
+        fh "No, not you, your friend here."
 
-#        mw "*Snickers*"
+        mc "W-w-what? W-what do you mean?"
 
-#        mc "Marc!"
+        fh "Forgetful, are we? Just yesterday I caught you complaining about homework on the first day. I told you to grow a pair."
 
-#        mw "Sorry, it is a little funny. You probably shouldn’t complain too much."
+        mw "*Snickers*"
 
-#        mc "Y-you’re one to talk!"
+        mc "Marc!"
 
-#        mw "Yeah, probably. But still, that was FUNNY."
+        mw "Sorry, it is a little funny. You probably shouldn’t complain too much."
 
-#        bk "Frederick, that’s no way to treat new customers. You know better."
+        mc "Y-you’re one to talk!"
 
-#        fh "Becka!! My apologies. You’re right. It was just that… he was being whiny yesterday and it bothered me, I mean, he hasn’t even been to any higher level classes..."
+        mw "Yeah, probably. But still, that was FUNNY."
 
-#        bk "Shush. You were exactly the same way. As were most of the members of our class, if I recall correctly."
+        bk "Frederick, that’s no way to treat new customers. You know better."
 
-#        fh "Well I Ne-..."
+        fh "Becka!! My apologies. You’re right. It was just that... he was being whiny yesterday and it bothered me, I mean, he hasn’t even been to any higher level classes..."
 
-#        bk "Now apologize to your customer."
+        bk "Shush. You were exactly the same way. As were most of the members of our class, if I recall correctly."
 
-#        fh "*BLUSHING* You do not own this cafe! I do! Argh!" 
+        fh "Well I Ne-..."
 
-#        fh "But, you are right. I must be more… professional. *turns to MC and Marc* As a consolation, your drinks are on the house. You are welcome."
+        bk "Now apologize to your customer."
 
-#        bk "Now, that wasn’t so hard was it?"
+        fh "*BLUSHING* You do not own this cafe! I do! Argh!" 
 
-#        fh "Oh for heaven’s sake!" 
+        fh "But, you are right. I must be more... professional. *turns to MC and Marc* As a consolation, your drinks are on the house. You are welcome."
 
-#        *frederick and becka leave*
+        bk "Now, that wasn’t so hard was it?"
 
-#        mw "Huh. Anyway, let’s go sit somewhere."
+        fh "Oh for heaven’s sake!" 
 
-#        mc "Uh… okay, that sounds good to me."
+        #*frederick and becka leave*
 
-#        ???(sarah) "Hey Marc! How’s it goin?"
+        mw "Huh. Anyway, let’s go sit somewhere."
 
-#        mw "Sarah! How’s business today?"
+        mc "Uh... okay, that sounds good to me."
 
-#        sg "Oh, you know, it’s been pretty busy, being the first few days in the school year and all... What can I get for you guys?"
+        s1 "Hey Marc! How’s it goin?"
 
-#        mw "I’ll have the usual. Frederick said we get free drinks today."
+        mw "Sarah! How’s business today?"
 
-#        sg "Did he now? Well, alright, I trust you. And who’s this?"
+        sg "Oh, you know, it’s been pretty busy, being the first few days in the school year and all... What can I get for you guys?"
 
-#        mw "This is (MC)! He just moved into town. He’s a freshman, like me. In fact, he lives in our neighborhood!"
+        mw "I’ll have the usual. Frederick said we get free drinks today."
 
-#        sg "Oh? And how would you know? Did you follow him home?"
+        sg "Did he now? Well, alright, I trust you. And who’s this?"
 
-#        mw "... Something like that."
+        mw "This is (MC)! He just moved into town. He’s a freshman, like me. In fact, he lives in our neighborhood!"
 
-#        mc "Uhh..."
+        sg "Oh? And how would you know? Did you follow him home?"
 
-#        mw "Don’t worry about it. What are you gonna order?"
+        mw "... Something like that."
 
-#        mc "Err, what does the chef recommend?"
+        mc "Uhh..."
 
-#        sg "Today we have a special on Caesar Salads. Comes with grilled chicken and garlic bread."
+        mw "Don’t worry about it. What are you gonna order?"
 
-#        mc "Sounds good, I’ll have that."
+        mc "Err, what does the chef recommend?"
 
-#        sg "Then I’ll be back in a jiffy."
+        sg "Today we have a special on Caesar Salads. Comes with grilled chicken and garlic bread."
 
-#        mw "Thanks!"
+        mc "Sounds good, I’ll have that."
 
-#        mc "So… How do you and Sarah know each other...?"
+        sg "Then I’ll be back in a jiffy."
 
-#        mw "Oh, me and Sarah? We go way back. Grew up together, almost."
+        mw "Thanks!"
 
-#        mc "Really? That’s cool..."
+        mc "So... How do you and Sarah know each other...?"
 
-#        sg "Hey guys! Here are your drinks. I’ll be back in a sec with your food."
+        mw "Oh, me and Sarah? We go way back. Grew up together, almost."
 
-#        mw "Thanks! Do you have a minute to sit with us after that?"
+        mc "Really? That’s cool..."
 
-#        sg "Oh, no, sorry. Not today. We are up to our elbows in customers, haha."
+        sg "Hey guys! Here are your drinks. I’ll be back in a sec with your food."
 
-#        mw "Alright, maybe next time then."
+        mw "Thanks! Do you have a minute to sit with us after that?"
 
-#        sg "See you later!"
+        sg "Oh, no, sorry. Not today. We are up to our elbows in customers, haha."
 
-#        mw "Hey wait! How is your leg doing?"
+        mw "Alright, maybe next time then."
 
-#        sg "Oh, well, I’ve been doing better… Healing a broken bone doesn’t happen overnight, you know?"
+        sg "See you later!"
 
-#        mw "True, true. Well, get better soon! The team needs you."
+        mw "Hey wait! How is your leg doing?"
 
-#        sg "Haha, thanks. I’ll see you around."
+        sg "Oh, well, I’ve been doing better... Healing a broken bone doesn’t happen overnight, you know?"
 
-#        mc "...I didn’t notice her cast. What happened?"
+        mw "True, true. Well, get better soon! The team needs you."
 
-#        mw "It’s a bit of a nasty story. Let’s just say there was a really, really bad accident." 
+        sg "Haha, thanks. I’ll see you around."
 
-#        mc "Oh… Uh, how long has she had the cast?"
+        mc "...I didn’t notice her cast. What happened?"
 
-#        mw "Too long. The whole summer, and then some. It was really bad." 
+        mw "It’s a bit of a nasty story. Let’s just say there was a really, really bad accident." 
 
-#        mw "Thinking about this is depressing. Let’s finish up and get out of here."
+        mc "Oh... Uh, how long has she had the cast?"
 
-#        mc "Uhhh, sure." 
+        mw "Too long. The whole summer, and then some. It was really bad." 
 
-#        *Dining room noises*
+        mw "Thinking about this is depressing. Let’s finish up and get out of here."
 
-#        mw "That was really good! I always enjoy eating here. Are you done?"
+        mc "Uhhh, sure." 
 
-#        mc "Yeah, I think I’m finished. Let’s go."
+        #*Dining room noises*
 
-#        mw "Sweet. I'll see you tomorrow."
+        mw "That was really good! I always enjoy eating here. Are you done?"
 
-#        *scene transition*
+        mc "Yeah, I think I’m finished. Let’s go."
 
-            else:
+        mw "Sweet. I'll see you tomorrow."
 
-               ######## #OPTION 2-  Player walks around on their own, ends up where Sarah works because hungry, Marc is there cracking a joke
+        #*scene transition*
 
-                mc "Well school’s out now, I wonder what I should do… Looks like a bunch of students are going over to that cafe over there, I think I’ll go check it out."
+        jump secondDaySchoolPath3
 
-        #        *walks over to the cafe*
 
-        #        mc "Roland’s Sweet Honey Cafe… weird name..."
+        label secondDaySchoolC3O2:
 
-        #        *walks in*
+        mc "Well school’s out now, I wonder what I should do... Looks like a bunch of students are going over to that cafe over there, I think I’ll go check it out."
 
-        #        *Inside Cafe*
+        #*walks over to the cafe*
 
-        #        mc "There’s a lot of people here." 
+        mc "Roland’s Sweet Honey Cafe... weird name..."
 
-        #        ???(Fred) "Well, if it isn’t the freshie who can’t take a bit of homework."
+        #*walks in*
 
-        #        mc "W-w-what? W-what do you mean?"
+        #*Inside Cafe*
 
-        #        fh "Forgetful, are we? Just yesterday I caught you complaining about homework on the first day. I told you to grow a pair."
+        mc "There’s a lot of people here." 
 
-        #        mc "H-hey! G-get out of my face!"
+        s1 "Well, if it isn’t the freshie who can’t take a bit of homework."
 
-        #        fh "Why, you insolent..."
+        mc "W-w-what? W-what do you mean?"
 
-        #        bk "Frederick, that’s no way to treat new customers. You know better."
+        fh "Forgetful, are we? Just yesterday I caught you complaining about homework on the first day. I told you to grow a pair."
 
-        #        fh "Becka!! My apologies. You’re right. It was just that… he was being whiny yesterday and it bothered me, I mean, he hasn’t even been to any higher level classes..."
+        mc "H-hey! G-get out of my face!"
 
-        #        bk "Shush. You were exactly the same way. As were most of the members of our class, if I recall correctly."
+        fh "Why, you insolent..."
 
-        #        fh "Well I Ne-..."
+        bk "Frederick, that’s no way to treat new customers. You know better."
 
-        #        bk "Now apologize to your customer."
+        fh "Becka!! My apologies. You’re right. It was just that... he was being whiny yesterday and it bothered me, I mean, he hasn’t even been to any higher level classes..."
 
-        #        fh "*BLUSHING* You do not own this cafe! I do! Argh!" 
+        bk "Shush. You were exactly the same way. As were most of the members of our class, if I recall correctly."
 
-        #        fh "But, you are right. I must be more… professional. *turns to MC* As a consolation, your drink is on the house. You are welcome."
+        fh "Well I Ne-..."
 
-        #        bk "Now, that wasn’t so hard was it?"
+        bk "Now apologize to your customer."
 
-        #        fh "Oh for heaven’s sake!" 
+        fh "*BLUSHING* You do not own this cafe! I do! Argh!" 
 
-        #        *frederick and becka leave*
+        fh "But, you are right. I must be more... professional. *turns to MC* As a consolation, your drink is on the house. You are welcome."
 
-        #        mc "Jeez… what’s his problem..."
+        bk "Now, that wasn’t so hard was it?"
 
-        #        *scene cut to Marc talking to some girl (Sarah)*
+        fh "Oh for heaven’s sake!" 
 
-        #        mw ".... And that’s how I avoided getting into trouble with the dean."
+        #*frederick and becka leave*
 
-        #        sg "...You aren’t serious."
+        mc "Jeez... what’s his problem..."
 
-        #        mw "Yes I am! Look, at school tomorrow I’ll have you meet the guy."
+        #*scene cut to Marc talking to some girl (Sarah)*
 
-        #        sg "Uh huh."
+        mw ".... And that’s how I avoided getting into trouble with the dean."
 
-        #        mw "Well, speak of the devil and he shall appear! He’s right there!"
+        sg "...You aren’t serious."
 
-        #        mc "h-huh?! Excuse me? W-what’s going on?"
+        mw "Yes I am! Look, at school tomorrow I’ll have you meet the guy."
 
-        #        mw "Oh, I was just telling my friend Sarah here how I met you yesterday. So, how’s solo explorin’ going?"
+        sg "Uh huh."
 
-        #        mc "G-good, I guess..." 
+        mw "Well, speak of the devil and he shall appear! He’s right there!"
 
-        #        sg "So, what’ll it be? I assume you *are* here to eat."
-                
-        #        mw "I’ll have the usual. Oh, by the way, have you met MC? He just moved to town. He even lives in our neighborhood!"
+        mc "h-huh?! Excuse me? W-what’s going on?"
 
-        #        sg "Oh? And how would you know? Did you follow him home?"
+        mw "Oh, I was just telling my friend Sarah here how I met you yesterday. So, how’s solo explorin’ going?"
 
-        #        mw "... Something like that."
+        mc "G-good, I guess..." 
 
-        #        mc "Uhh..."
+        sg "So, what’ll it be? I assume you *are* here to eat."
+        
+        mw "I’ll have the usual. Oh, by the way, have you met MC? He just moved to town. He even lives in our neighborhood!"
 
-        #        mw "Don’t worry about it. *to MC* What are you gonna order?"
+        sg "Oh? And how would you know? Did you follow him home?"
 
-        #        mc "Err, what does the chef recommend?"
+        mw "... Something like that."
 
-        #        sg "Today we have a special on Caesar Salads. Comes with grilled chicken and garlic bread."
+        mc "Uhh..."
 
-        #        mc "Sounds good, I’ll have that." 
+        mw "Don’t worry about it. *to MC* What are you gonna order?"
 
-        #        sg "Then I’ll be back in a jiffy."
+        mc "Err, what does the chef recommend?"
 
-        #        mw "Thanks!"
+        sg "Today we have a special on Caesar Salads. Comes with grilled chicken and garlic bread."
 
-        #        mc "So… How do you and Sarah know each other...?" 
+        mc "Sounds good, I’ll have that." 
 
-        #        mw "Oh, me and Sarah? We go way back. Grew up together, almost."
+        sg "Then I’ll be back in a jiffy."
 
-        #        mc "Really? That’s cool..."
+        mw "Thanks!"
 
-        #        sg "Hey guys! Here are your drinks. By the way, Frederick said that you get a free drink, MC. I’ll be back in a sec with your food."
+        mc "So... How do you and Sarah know each other...?" 
 
-        #        mw "Thanks! Do you have a minute to sit with us after that?"
+        mw "Oh, me and Sarah? We go way back. Grew up together, almost."
 
-        #        sg "Oh, no, sorry. Not today. We are up to our elbows in customers, haha."
+        mc "Really? That’s cool..."
 
-        #        mw "Alright, maybe next time then."
+        sg "Hey guys! Here are your drinks. By the way, Frederick said that you get a free drink, MC. I’ll be back in a sec with your food."
 
-        #        sg "See you later!"
+        mw "Thanks! Do you have a minute to sit with us after that?"
 
-        #        mw "Hey wait! How is your leg doing?" 
+        sg "Oh, no, sorry. Not today. We are up to our elbows in customers, haha."
 
-        #        sg "Oh, well, I’ve been doing better… Healing a broken bone doesn’t happen overnight, you know?"
+        mw "Alright, maybe next time then."
 
-        #        mw "True, true. Well, get better soon! The team needs you."
+        sg "See you later!"
 
-        #        sg "Haha, thanks. I’ll see you around."
+        mw "Hey wait! How is your leg doing?" 
 
-        #        mc "...I didn’t notice her cast. What happened?"
+        sg "Oh, well, I’ve been doing better... Healing a broken bone doesn’t happen overnight, you know?"
 
-        #        mw "It’s a bit of a nasty story. Let’s just say there was a really, really bad accident." 
+        mw "True, true. Well, get better soon! The team needs you."
 
-        #        mc "Oh… Uh, how long has she had the cast?"
+        sg "Haha, thanks. I’ll see you around."
 
-        #        mw "Too long. The whole summer, and then some. It was really bad." 
+        mc "...I didn’t notice her cast. What happened?"
 
-        #        mw "Thinking about this is depressing. Let’s finish up and get out of here."
+        mw "It’s a bit of a nasty story. Let’s just say there was a really, really bad accident." 
 
-        #        mc "Uhhh, sure." 
+        mc "Oh... Uh, how long has she had the cast?"
 
-        #        *Dining room noises*
-          
-        #        mw "That was really good! I always enjoy eating here. Are you done?"
+        mw "Too long. The whole summer, and then some. It was really bad." 
 
-        #        mc "Yeah, I think I’m finished. Let’s go."
+        mw "Thinking about this is depressing. Let’s finish up and get out of here."
 
-        #        mw "Sweet. I'll see you tomorrow."
+        mc "Uhhh, sure." 
 
-#        *Scene Change Home*
+        jump secondDaySchoolPath3
 
-#        RING RING RING RING RING
 
-#        mc "Wow! As soon as I get home, someone else is calling me. Is it going to be like this every night?"
+    label secondDaySchoolPath3:
+    
+        #*Dining room noises*
 
-#        mc "I had probably better pick up the call..."
+        mw "That was really good! I always enjoy eating here. Are you done?"
 
+        mc "Yeah, I think I’m finished. Let’s go."
 
-#        mc 1. Pick up 2. Don’t
+        mw "Sweet. I'll see you tomorrow."
 
-#        mc Oh. Look. It’s my sister.
+        #*Scene Change Home*
 
-#        sis  "Hey little bro! How was your first few days of school?"
+        #RING RING RING RING RING
 
-#        mc "Oh! Hey, Jackie! It’s been a while."
+        mc "Wow! As soon as I get home, someone else is calling me. Is it going to be like this every night?"
 
-#        sis  "Yeah, well, you know, college and all that. How’s my socially awkward padawan learner?"
+        mc "I had probably better pick up the call..."
 
-#        mc "Urgh, I’m doing fine… Why do you always reference that movie?"
+        mc "Oh. Look. It’s my sister."
 
-#        sis  "Because it’s *our* favorite, and don’t you forget that."
+        sis "Hey little bro! How was your first few days of school?"
 
-#        mc "But you know I don’t..."
+        mc "Oh! Hey, Jackie! It’s been a while."
 
-#        sis  "Shush, yes you do. Anyways, do you have a girlfriend yet?"
+        sis "Yeah, well, you know, college and all that. How’s my socially awkward padawan learner?"
 
-#        mc "What?!?! I literally just got here and..."
+        mc "Urgh, I’m doing fine... Why do you always reference that movie?"
 
-#        sis  "No excuses! Get moving, casanova!"
+        sis "Because it’s *our* favorite, and don’t you forget that."
 
-#        mc "Argh! I don’t even know anyone yet!"
+        mc "But you know I don’t..."
 
-#        sis  "Sure you don’t, Romeo." 
+        sis "Shush, yes you do. Anyways, do you have a girlfriend yet?"
 
-#        mc "Okay, fine, I’ve met a grand total of 4 people. None of whom I know very well."
+        mc "What?!?! I literally just got here and..."
 
-#        sis "Any girls?
+        sis "No excuses! Get moving, casanova!"
 
-#        mc "...Two. But..."
+        mc "Argh! I don’t even know anyone yet!"
 
-#        sis  "Are they pretty?"
+        sis "Sure you don’t, Romeo." 
 
-#        mc "...What? Wait… No, that doesn’t… leave me alone!"
+        mc "Okay, fine, I’ve met a grand total of 4 people. None of whom I know very well."
 
-#        sis  "Alright, Valentine. I’ll keep cupid off your back... for now. Don’t be surprised if you find an arrow in your butt later in the year."
+        sis "Any girls?"
 
-#        mc "An arrow?"
+        mc "...Two. But..."
 
-#        sis  "You know, the arrow of love? Nevermind, loverboy. I’ll talk to you later. Don’t forget to give mom and dad a call every now and then!"
+        sis "Are they pretty?"
 
-#        mc "Ok, I’ll do that. Don’t you have college things to do?"
+        mc "...What? Wait... No, that doesn’t... leave me alone!"
 
-#        sis  "Yeah probably. Oh, and by the way, I looked at your school’s website and it looks like homecoming is coming up soon. So, like I said, get a date. Cupid will watch over you."
+        sis "Alright, Valentine. I’ll keep cupid off your back... for now. Don’t be surprised if you find an arrow in your butt later in the year."
 
-#        mc "...Uh, Ok... Sure..."
+        mc "An arrow?"
 
-#        sis  "See ya round! *hangs up*"
+        sis "You know, the arrow of love? Nevermind, loverboy. I’ll talk to you later. Don’t forget to give mom and dad a call every now and then!"
 
-#        mc "Jeez... That was really something... I’d better get some sleep..."
+        mc "Ok, I’ll do that. Don’t you have college things to do?"
 
-#       *End Day* 
+        sis "Yeah probably. Oh, and by the way, I looked at your school’s website and it looks like homecoming is coming up soon. So, like I said, get a date. Cupid will watch over you."
 
-#       2) mc "Egh... It’s probably not important. You know, today was really long. I’m glad I met all these people, though. I hope they will be my friends... *Yawn* Wow, I’m tired. I should really get some sleep. I hope that call wasn’t important..."
+        mc "...Uh, Ok... Sure..."
 
+        sis "See ya round! *hangs up*"
 
+        mc "Jeez... That was really something... I’d better get some sleep..."
+
+       #*End Day* 
 
 ###########################Homecoming#############################################################################
 
+    label homecomingarc:
+        
+        #*Cynthia gives Danny relationship advice, telling him to just *ask that girl* out, thinking that that girl is herself. She is shocked when it is in fact not.*
 
-#*Cynthia gives Danny relationship advice, telling him to just *ask that girl* out, thinking that that girl is herself. She is shocked when it is in fact not.*
+        cl "Heyy Dannyyy, what’s hangin, bangin?"
 
+        dr "O-oh, hey Cynthia. It’s hangin."
 
-#cl "Heyy Dannyyy, what’s hangin, bangin?"
+        cl "That’s pretty sweet, sugar. You know, Homecoming is coming up soon. If there’s a girl you like, don’t you think that it’s about time for you to ask her out? *leans in too close*"
 
-#dr "O-oh, hey Cynthia. It’s hangin."
+        dr "O-oh yeah, probably. I should do that."
 
-#cl "That’s pretty sweet, sugar. You know, Homecoming is coming up soon. If there’s a girl you like, don’t you think that it’s about time for you to ask her out? *leans in too close*"
+        cl "Yeah, you should! I’ll see you around, darling."
 
-#dr "O-oh yeah, probably. I should do that."
+        dr "A-alright. See you around!"
 
-#cl "Yeah, you should! I’ll see you around, darling."
+        #*CL leaves*
 
-#dr "A-alright. See you around!"
+        mc "Oh, homecoming is coming up soon.... I wonder if Marc and Sarah are going to go..."
 
-#*CL leaves*
+        #*bumps into DR*
 
-#mc "Oh, homecoming is coming up soon…. I wonder if Marc and Sarah are going to go..."
+        mc "Oh! Sorry. That was my fault."
 
-#*bumps into DR*
+        dr "No, it’s fine. Don’t worry about it."
 
-#mc "Oh! Sorry. That was my fault."
+        mc "Oh, alright. What is your name?"
 
-#dr "No, it’s fine. Don’t worry about it."
+        dr "My name is Danny. How about you?"
 
-#mc "Oh, alright. What is your name?"
+        mc "Oh, my name is __________. Who was that with you?"
 
-#dr "My name is Danny. How about you?"
+        dr "Oh, her? That was Cynthia. She’s a cheerleader."
 
-#mc "Oh, my name is __________. Who was that with you?"
+        mc "That’s cool. She seemed like she wanted something."
 
-#dr "Oh, her? That was Cynthia. She’s a cheerleader."
+        dr "Huh? Nah, we’re just friends."
 
-#mc "That’s cool. She seemed like she wanted something."
+        mc "Ah, ok. Well, see you around."
 
-#dr "Huh? Nah, we’re just friends."
+        dr "Yep, see you."
 
-#mc "Ah, ok. Well, see you around."
+        #*Danny Leaves*
 
-#dr "Yep, see you."
+        mc "He’s totally clueless... Whatever. It’s not my business. Hmm... Looks like I have an A day today. That means... English and History. I should find Marc, and see what he’s up to. Where could he be? If I don’t find him soon, we could be late!"
 
-#*Danny Leaves*
+        label homecomingChoice1:
+            
+            menu:
+                
+                "I should probably check the field. Maybe he’s there!":
+                    $ marcprogression = marcprogression + 1
+                    jump homecomingC1O1
+                "I think I would rather do it on my own.":
+                    jump homecomingC1O2
 
-#mc "He’s totally clueless… Whatever. It’s not my business. Hmm… Looks like I have an A day today. That means… English and History. I should find Marc, and see what he’s up to. Where could he be? If I don’t find him soon, we could be late!"
+        label homecomingC1O1:
 
-#Check the field(+add stress, +affection w/marc)
-#Go to class
+            mc "I should probably check the field. Maybe he’s there!"
 
+            #*switch background to a sports-y field*
 
+            #*MC and Marc both appear on the screen*
 
-#OPTION 1:
+            mw "Oh, hey MC. What’s up?"
 
-#mc "I should probably check the field. Maybe he’s there!"
+            mc "Well, class is about to start... I didn’t see you on the way to school, so I thought I’d find you."
 
-#*switch background to a sports-y field*
+            mw "What, are you following me?"
 
-#*MC and Marc both appear on the screen*
+            mc "Y-you’re one to talk!"
 
-#mw "Oh, hey MC. What’s up?"
+            mw "Touché. Well, let’s get to class. I wouldn’t want to be too late."
 
-#mc "Well, class is about to start… I didn’t see you on the way to school, so I thought I’d find you."
+            #----
 
-#mw "What, are you following me?"
+            #*MC and Marc walk into class*
 
-#mc "Y-you’re one to talk!"
+            mh "Hey! You two, why are you both coming into class late?"
 
-#mw "Touché. Well, let’s get to class. I wouldn’t want to be too late."
+            mc "Uhh..."
 
-#----
+            mw "There was an accident on the freeway."
 
-#*MC and Marc walk into class*
+            mh "There isn’t a freeway nearby!"
 
-#mh "Hey! You two, why are you both coming into class late?"
+            mw "Oh, right, I mean the, uh, the intersection on uh 3rd and 5th."
 
-#mc "Uhh..."
+            mh "There isn’t even an intersection there!"
 
-#mw "There was an accident on the freeway."
+            mw "6th. I meant 6th."
 
-#mh "There isn’t a freeway nearby!"
+            mh "Whatever! I’ll hold you to your word. If you are lying, I suppose it doesn’t matter. Just get to your seats."
 
-#mw "Oh, right, I mean the, uh, the intersection on uh 3rd and 5th."
+            mw "*under breath* .... next time I’ll remember to not come at all."
 
-#mh "There isn’t even an intersection there!"
+            mc "*also under the breath* Jeez, Marc, chill."
 
-#mw "6th. I meant 6th."
+            mw "Nah."
 
-#mh "Whatever! I’ll hold you to your word. If you are lying, I suppose it doesn’t matter. Just get to your seats."
+            mh "Now, class, before we begin, I want you to listen very carefully..."
+            
+            #jump homecomingPath1
+            
+            #______________
 
-#mw "*under breath* …. next time I’ll remember to not come at all."
 
-#mc "*also under the breath* Jeez, Marc, chill."
+        label homecomingC1O2:
 
-#mw "Nah."
+            #*gets to class*
 
-#mh "Now, class, before we begin, I want you to listen very carefully..."
-#______________
+            mc "*searches the room* Huh... I guess Marc hasn’t gotten to class yet..."
 
+            mh "Everyone! Please take your seats. I will take attendance quickly so we can get right to work. MC?"
 
-#Option 2
+            mc "Here."
 
-#*gets to class*
+            mh "Felicia? Aaron? Thomas? Quade? Emmalie? Gregory? Selina? Hm... Marc? He’s not here. MC, do you know where he is?"
 
-#mc "*searches the room* Huh… I guess Marc hasn’t gotten to class yet..."
+            mc "N-no, I don’t. Sorry."
 
-#mh "Everyone! Please take your seats. I will take attendance quickly so we can get right to work. MC?"
+            mh "It’s fine. Well, let's begin."
 
-#mc "Here."
+            #*DOOR OPENS LOUDLY* 
 
-#mh "Felicia? Aaron? Thomas? Quade? Emmalie? Gregory? Selina? Hm… Marc? He’s not here. MC, do you know where he is?"
+            mw "... And that’s why turtles are cooler than tortoises. I’ll catch you later."
 
-#mc "N-no, I don’t. Sorry."
+            s1 "Peace."
 
-#mh "It’s fine. Well, let's begin."
+            mh "Marc Waller, who was that?"
 
-#*DOOR OPENS LOUDLY* 
+            mw "Nobody important."
 
-#mw "... And that’s why turtles are cooler than tortoises. I’ll catch you later."
+            mh "Well, I dare say it is! What were you doing?"
 
-#Voice "Peace."
+            mw "Talkin’."
 
-#mh "Marc Waller, who was that?"
+            mh "Yes, I know that. About what?"
 
-#mw "Nobody important."
+            mw "Stuff."
 
-#mh "Well, I dare say it is! What were you doing?"
+            mh "*Sigh* Fine, go sit down."
 
-#mw "Talkin’."
+            mw "Sir, yes sir."
 
-#mh "Yes, I know that. About what?"
+            mh "Now, before we begin, I want you to listen very carefully..."
+            
+            jump homecomingPath1
 
-#mw "Stuff."
+            #-------------------------------------------------------
+        
+    label homecomingPath1:
+    
+        mh "Good work today, class. We will continue our reading of A Midsummer Night’s Dream  when we meet next. Class dismissed!"
 
-#mh "*Sigh* Fine, go sit down."
+        mw "Sooooooooooooooooooooooooooooooo, MCCCCCCCCCCCCCCCCC. Are you going to ask anyone out to homecoming?"
 
-#mw "Sir, yes sir."
+        mc "Well, I mean, I wasn’t thinking about it..."
 
-#mh "Now, before we begin, I want you to listen very carefully..."
+        mw "But everyone is going!"
 
-#-------------------------------------------------------
+        mw "C’meon dude, ask someone out."
 
-#mh "Good work today, class. We will continue our reading of A Midsummer Night’s Dream  when we meet next. Class dismissed!"
+        mc "Well, who are you going with?"
 
-#mw "Sooooooooooooooooooooooooooooooo, MCCCCCCCCCCCCCCCCC. Are you going to ask anyone out to homecoming?"
+        mw "Well, since couples tickets are cheaper, Sarah and I are going together. As friends."
 
-#mc "Well, I mean, I wasn’t thinking about it..."
+        mc "*makes finger air quotes* "Friends". Right. Ok."
 
-#mw "But everyone is going!"
+        mw "Are you trying to tell me something?"
 
-#mw "C’meon dude, ask someone out."
+        mc "No, I’m not saying anything. "Friends". Uh-huh."
 
-#mc "Well, who are you going with?"
+        mw "Pft, what do you know. You don’t even have a date."
 
-#mw "Well, since couples tickets are cheaper, Sarah and I are going together. As friends."
+        mc "You should be my date, then."
 
-#mc "*makes finger air quotes* “Friends”. Right. Ok."
+        mw "*blushes* No, it’s just cheaper to go together... As friends."
 
-#mw "Are you trying to tell me something?"
+        mc "I’m not doing the whole "friends" conversation again. You’re dating me."
 
-#mc "No, I’m not saying anything. “Friends”. Uh-huh."
+        mw "I AM NOT"
 
-#mw "Pft, what do you know. You don’t even have a date."
+        mc "You are too"
 
-#mc "You should be my date, then."
+        mw "STOP"
 
-#mw "*blushes* No, it’s just cheaper to go together... As friends."
+        mc "Ok, ok, calm down a bit"
 
-#mc "I’m not doing the whole “friends” conversation again. You’re dating me."
+        mw "It’s not my fault, you kept egging me on"
 
-#mw "I AM NOT"
+        mc "Yeah I know. I’ll see you around. Maybe I’ll even see you at homecoming *wink wink*"
 
-#mc "You are too"
+        mw "GAH"
 
-#mw "STOP"
+        #_______________________________________________
 
-#mc "Ok, ok, calm down a bit"
+        #*HALLWAY*
 
-#mw "It’s not my fault, you kept egging me on"
+        mc "You know, maybe going to homecoming would be fun..." 
 
-#mc "Yeah I know. I’ll see you around. Maybe I’ll even see you at homecoming *wink wink*"
+        dr "H-hey, u-uh Agnes?"
 
-#mw "GAH"
+        ar "Novahawk. Yes?"
 
-#_______________________________________________
+        dr "W-would you, you know, maybe like to..."
 
-#*HALLWAY*
+        ar "Well, spit it out already!"
 
-#mc "You know, maybe going to homecoming would be fun..." 
+        dr "Uh, maybe, you would want to, er, go to, uh, homecoming with me?"
 
-#dr "H-hey, u-uh Agnes?"
+        ar "Sure."
 
-#ar "Novahawk. Yes?"
+        dr "O-oh really? Fantastic! I-I’ll call you... wait, but I need your number first... Can I have your phone number?"
 
-#dr "W-would you, you know, maybe like to..."
+        ar "Yeah... Give me your phone."
 
-#ar "Well, spit it out already!"
+        dr "O-ok... Here."
 
-#dr "Uh, maybe, you would want to, er, go to, uh, homecoming with me?"
+        ar "There you go. I’ll see you around." 
 
-#ar "Sure."
+        dr "S-sounds good. I’ll talk to you later."
 
-#dr "O-oh really? Fantastic! I-I’ll call you… wait, but I need your number first… Can I have your phone number?"
+        #*THEY LEAVE*
 
-#ar "Yeah… Give me your phone."
+        mc "That... that was awkward."
 
-#dr "O-ok… Here."
+        cl "W-WHAT! HE WAS SUPPOSED TO ASK MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE! W-what a jerk!"
 
-#ar "There you go. I’ll see you around." 
+        mc "I’m sure he has good intentions... do you even know if he likes you?"
 
-#dr "S-sounds good. I’ll talk to you later."
+        cl "Yes, he does! He just likes to play hard-to-get. There is no doubt in my mind that he loves me!"
 
-#*THEY LEAVE*
+        mc "... Right... Hard-to-get..."
 
-#mc "That… that was awkward."
+        cl "S-shush! He does, I’m telling you! Maybe he doesn’t know it yet, but he does! I need to go and think!"
 
-#cl "W-WHAT! HE WAS SUPPOSED TO ASK MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE! W-what a jerk!"
+        mc "Great, I’ll talk to you later." 
 
-#mc "I’m sure he has good intentions… do you even know if he likes you?"
+        #______________________________________________
 
-#cl "Yes, he does! He just likes to play hard-to-get. There is no doubt in my mind that he loves me!"
+        #*Lunch*
 
-#mc "... Right… Hard-to-get..."
+        mw "Hey who you are going to homecoming with?"
 
-#cl "S-shush! He does, I’m telling you! Maybe he doesn’t know it yet, but he does! I need to go and think!"
+        mc "I.. uh... I’m not even sure if I’m going yet."
 
-#mc "Great, I’ll talk to you later." 
+        mw "Well, you better figure out who you are going with because I got you a ticket."
 
-#______________________________________________
+        #*MC Obtains Homecoming Ticket*
 
-#*Lunch*
+        mc "Wait... Uh... but..." 
 
-#mw "Hey who you are going to homecoming with?"
+        mw "Don’t worry you won’t have to pay me back. This is all on me."
 
-#mc "I.. uh… I’m not even sure if I’m going yet."
+        mc "Oh... but..."
 
-#mw "Well, you better figure out who you are going with because I got you a ticket."
+        mw "Don’t worry about it! Homecoming will be fun, you won’t want to miss it!"
 
-#*MC Obtains Homecoming Ticket*
+        sg "Wait... Mark, I thought we were going together?"
 
-#mc "Wait... Uh... but..." 
+        mw "We ARE going together! But now we are bringing MC with us!"
 
-#mw "Don’t worry you won’t have to pay me back. This is all on me."
+        sg "Oh... Uh, awesome... It’ll be fun!"
 
-#mc "Oh... but..."
+        mw "I know right! Hey, I gotta go take care of something at my locker before lunch ends. I’ll cya later!"
 
-#mw "Don’t worry about it! Homecoming will be fun, you won’t want to miss it!"
+        coname "...See ya..."
 
-#sg "Wait... Mark, I thought we were going together?"
+        sg "Did you know he was going to do that?"
 
-#mw "We ARE going together! But now we are bringing MC with us!"
+        mc "What? No! I wasn’t even sure yet, but I guess I’m going now..."
 
-#sg "Oh... Uh, awesome... It’ll be fun!"
+        sg "Ha, yeah, I guess so. I really thought... Nevermind. Whatever. I have to go." 
 
-#mw "I know right! Hey, I gotta go take care of something at my locker before lunch ends. I’ll cya later!"
+        mc "Um, alright. Bye."
 
-#coname "...See ya..."
+        sg "..........."
 
-#sg "Did you know he was going to do that?"
+        #*end scene*
 
-#mc "What? No! I wasn’t even sure yet, but I guess I’m going now..."
+        #*Next day*
 
-#sg "Ha, yeah, I guess so. I really thought… Nevermind. Whatever. I have to go." 
+        #*in his house*
 
-#mc "Um, alright. Bye."
+        mc "Well, tonight is homecoming I guess. I suppose I had better get ready..."
 
-#sg "..........."
+        #*Phone rings*
 
-#*end scene*
+        mc "Hello?"
 
-#*Next day*
+        sis "Heyy, bro! Are you going to Homecoming?"
 
-#*in his house*
+        mc "Oh, uh, y-"
 
-#mc "Well, tonight is homecoming I guess. I suppose I had better get ready..."
+        sis "Well, you had better be! Otherwise I would have gotten you that expensive tuxedo for nothing."
 
-#*Phone rings*
+        mc "Wait, what Tuxedo?"
 
-#mc "Hello?"
+        sis "Haven’t you gotten it yet? *Authors’ note: Jackie and Marc are in cahoots* You should have gotten it a few days ago!"
 
-#sis "Heyy, bro! Are you going to Homecoming?"
+        mc "Well, I-"
 
-#mc "Oh, uh, y-"
+        sis "Go outside and check right now! It should be in a nice, tall package!"
 
-#sis "Well, you had better be! Otherwise I would have gotten you that expensive tuxedo for nothing.
+        mc "Um, alright..."
 
-#mc "Wait, what Tuxedo?"
+        sis "Is it there?"
 
-#sis "Haven’t you gotten it yet? *Authors’ note: Jackie and Marc are in cahoots* You should have gotten it a few days ago!
+        #*Giant package on the front door step*
 
-#mc "Well, I-"
+        mc "Oh, wow, there it is."
 
-#sis "Go outside and check right now! It should be in a nice, tall package!
+        sis "Wonderful! Try it on! It should fit you perfectly." 
 
-#mc "Um, alright..."
+        mc "Uh, okay then. I’ll do that. Any other secret packages I should be looking for?"
 
-#sis "Is it there?
+        sis "Not right now! Don’t worry, though, the future holds great things."
 
-#*Giant package on the front door step*
+        mc "...Thanks." 
 
-#mc "Oh, wow, there it is."
+        sis "No problem! Remember, have fun!"
 
-#sis "Wonderful! Try it on! It should fit you perfectly. 
+        mc "...Yeah, Thanks..."
 
-#mc "Uh, okay then. I’ll do that. Any other secret packages I should be looking for?"
+        sis "Bye Bye, now!"
 
-#sis "Not right now! Don’t worry, though, the future holds great things.
+        mc "...Bye..."
 
-#mc "...Thanks." 
+        #*jackie hangs up*
 
-#sis "No problem! Remember, have fun!
+        mc "Ugh. It’s like this was planned, or something..."
 
-#mc "...Yeah, Thanks..."
+        #*Knocking on door*
 
-#sis "Bye Bye, now!
+        mw "Hey! MC! Are you ready yet?"
 
-#mc "...Bye..."
+        mc "...Marc? Hold on, I just got my tuxedo..."
 
-#*jackie hangs up*
+        mw "Tuxedo!? Wow, Mr. Fancy. Dressin’ in a tux."
 
-#mc "Ugh. It’s like this was planned, or something..."
+        mc "Please don’t. My sister got it for me."
 
-#*Knocking on door*
+        mw "Oh, ok. Sounds like your sister expected you to have a date."
 
-#mw "Hey! MC! Are you ready yet?"
+        mc "Maybe she does. She’ll be awfully disappointed then."
 
-#mc "...Marc? Hold on, I just got my tuxedo..."
+        mw "Haha I bet. Well, hurry up and get dressed, we need to leave soon."
 
-#mw "Tuxedo!? Wow, Mr. Fancy. Dressin’ in a tux."
+        mc "Don’t you need to go get Sarah or something?"
 
-#mc "Please don’t. My sister got it for me."
+        mw "OH! Yeah. I’ll be back in a few."
 
-#mw "Oh, ok. Sounds like your sister expected you to have a date."
+        mc "...Bye."
 
-#mc "Maybe she does. She’ll be awfully disappointed then."
+        mc "...."
 
-#mw "Haha I bet. Well, hurry up and get dressed, we need to leave soon."
+        mc "I can’t believe he forgot his date..."
 
-#mc "Don’t you need to go get Sarah or something?"
+        #*Scene shift to outside the house*
 
-#mw "OH! Yeah. I’ll be back in a few."
+        mc "Where are they? I’d better just go."
 
-#mc "...Bye."
+        mw "Hey! Wait Up!"
 
-#mc "...."
+        sg "Wait, Marc, not so fast..."
 
-#mc "I can’t believe he forgot his date..."
+        mw "Huh?" 
 
-#*Scene shift to outside the house*
+        sg "..."
 
-#mc "Where are they? I’d better just go."
+        mw "Ookay. Well, the gang’s all here. Now lets go to homecoming!"
 
-#mw "Hey! Wait Up!"
+        sg "You look very nice today, MC."
 
-#sg "Wait, Marc, not so fast..."
+        mc "Oh, uh, thanks Sarah."
 
-#mw "Huh?" 
+        sg "*Nods*"
 
-#sg "..."
+        mw "You DO look spiffy. Hopefully walking there won’t dirty it up any." 
 
-#mw "Ookay. Well, the gang’s all here. Now lets go to homecoming!"
+        mc "Haha, yeah, that would suck."
 
-#sg "You look very nice today, MC."
+        #*A limo pulls up beside them, and the chauffeur gets out and opens the door for the three to get in.*
 
-#mc "Oh, uh, thanks Sarah."
+        ch "Sirs, Madam. I will take you to homecoming."
 
-#sg "*Nods*"
+        mc "I think you have the wrong address..."
 
-#mw "You DO look spiffy. Hopefully walking there won’t dirty it up any." 
+        ch "I assure you, I do not have the wrong address. I was hired by one Jackie (Whatever the mc’s last name is)."
 
-#mc "Haha, yeah, that would suck."
+        mc "Oh. I see. Well, alright then... I guess we won’t have to walk after all." 
 
-#*A limo pulls up beside them, and the chauffeur gets out and opens the door for the three to get in.*
+        mw "Nice! Now your tux won’t get dirty."
 
-#Chauffeur: Sirs, Madam. I will take you to homecoming.
+        mc "...Yeah. It won’t."
 
-#mc "I think you have the wrong address..."
+        sg "Well, quit sitting around and get in the car. Homecoming won’t wait for your sarcasm."
 
-#Chauffeur: I assure you, I do not have the wrong address. I was hired by one Jackie (Whatever the mc’s last name is).
+        mc "Sorry, sorry. After you two."
 
-#mc "Oh. I see. Well, alright then… I guess we won’t have to walk after all." 
+        #*End Scene*
 
-#mw "Nice! Now your tux won’t get dirty."
+        #*New Scene* 
 
-#mc "...Yeah. It won’t."
+        #*At homecoming*
 
-#sg "Well, quit sitting around and get in the car. Homecoming won’t wait for your sarcasm."
+        mw "... And that’s why a bow tie is more useful than a long tie."
 
-#mc "Sorry, sorry. After you two."
+        sg "Mark, please. Not everyone thinks"
 
-#*End Scene*
+        de "Welcome, everyone! Congratulations on surviving school so far. We haven’t done you in yet!" 
 
-#*New Scene* 
+        #*Nervous murmuring from the crowd*
 
-#*At homecoming*
+        de "Aww, don’t be like that! We are here to have fun! Before we begin, I have one important announcement to make..."
 
-#mw "... And that’s why a bow tie is more useful than a long tie."
+        mw "Hey! Dude! Over here!"
 
-#sg "Mark, please. Not everyone thinks"
+        mc "Wha...?"
 
-#de "Welcome, everyone! Congratulations on surviving school so far. We haven’t done you in yet!" 
+        mw "There you are! When we walked in here, you got lost in the crowd! It’s all good though, I found you."
 
-#*Nervous murmuring from the crowd*
+        mc "Um, yeah, thanks haha."
 
-#de "Aww, don’t be like that! We are here to have fun! Before we begin, I have one important announcement to make..."
+        mw "Anyways, now that you are here, maybe you could find a date after all. I’ve seen a bunch of girls who don’t have dates!"
 
-#mw "Hey! Dude! Over here!"
+        mc "How would you even know? Just looking doesn’t seem like enough to judge."
 
-#mc "Wha…?"
+        mw "Oh, trust me, I know about these sort of things."
 
-#mw "There you are! When we walked in here, you got lost in the crowd! It’s all good though, I found you."
+        sg "*HUff* Yeah, sure."
 
-#mc "Um, yeah, thanks haha."
+        mw "What? What’s wrong?"
 
-#mw "Anyways, now that you are here, maybe you could find a date after all. I’ve seen a bunch of girls who don’t have dates!"
+        sg "Oh, nothing, don’t worry about it."
 
-#mc "How would you even know? Just looking doesn’t seem like enough to judge."
+        mw "Well, all right then. Anyways, go and have fun. That’s what we are here for."
 
-#mw "Oh, trust me, I know about these sort of things."
+        mc "Sounds good. I’ll let you two get to dancing, then."
 
-#sg "*HUff* Yeah, sure."
+        mw "Ha! I don’t dance. But I appreciate the gesture."
 
-#mw "What? What’s wrong?"
+        sg "You aren’t going to dance with me?"
 
-#sg "Oh, nothing, don’t worry about it."
+        mw "Oh, uh, sure I am..."
 
-#mw "Well, all right then. Anyways, go and have fun. That’s what we are here for."
 
-#mc "Sounds good. I’ll let you two get to dancing, then."
 
-#mw "Ha! I don’t dance. But I appreciate the gesture."
 
-#sg "You aren’t going to dance with me?"
 
-#mw "Oh, uh, sure I am..."
 
+
+
+
+
+
+
+
+        #First Encounter with Christina
+
+        mw "...and that’s what I heard happened at homecoming."
+
+        sg "Wow, that sounds pretty crazy, but I don’t want to cast stones before I know the hard facts."
+
+        mw "Me though, I wanna find out what’s going on. Though I don’t like getting involved in drama directly, I still like to be in the know, ya know?"
+
+        mc "Hey guys."
+
+        #Sarah/mw "Oh hey _____."
+
+        mw "What’s going on with you?"
+
+        mc "Oh, not much, I was just..."
+
+        cs "Excuse me?"
+
+        sg "Christina?"
+
+        mw "Oh hey, it’s the girl who’s getting cheated on by the star basketball player."
+
+        sg "Marc! *smacks him*"
+
+        cs "Hmph... you. *points at MC*"
+
+        mc "me?"
+
+        cs "Yes you. I want to speak to you, privately."
+
+        mw "Oh dang, the violinist wants a revenge relationship!"
+
+        sg "Marc! Stop! *smacks him*"
+
+        mw "Ouch..."
+
+        cs "Well freshie?"
+
+        mc "Uhhhh, ok..."
+
+        #*scene change to different room, only Christina and MC present*
+
+        mc "*thinking to himself* What could Christina possibly want with me"
+
+        cs "Tell me _____, what do you know about me and Kolby."
+
+        mc "Um, all I know is that you two are together-"
+
+        cs "And what do you know of what happened at homecoming?"
+
+        mc "Uh, I think I heard some rumors, but I didn’t really pay any attention to them-"
+
+        cs "Alright, here’s what’s going on. At homecoming, when I was up on stage performing for the school, I noticed that Kolby, who was supposed to be watching and supporting me, was sneaking off with somebody, I couldn’t see who."
+
+        mc "Well if you couldn’t see who the person was, how do you know he was sneaking off with somebody?"
+
+        cs "Because, I saw someone holding his hand leading him away."
+
+        mc "Oh..."
+
+        cs "What I want you to do is get to know Kolby and see if you can find out from him what he was doing at homecoming while I was performing.Can you do that for me?"
+
+        mc "Uh... um..."
+
+        cs "And I’m sure I don’t need to tell you this, but keep this to yourself. I don’t want it getting around that I recruited somebody to investigate my own boyfriend."
+
+        #Choice: Find out more details
+        #        Agree to Christina’s proposition
+
+        #Find out more details
+        
+        mc "Wait wait, back up a second. Why do you want me of all people to help you? Can’t you get someone else?"
+
+        cs "I could, but you’re more likely to succeed because you’re new and we don’t know each other very well, which means Kolby won’t know I asked you to investigate him."
+
+        mc "And why should I investigate him for you? It sounds really backhanded..."
+
+        cs "Because I’m trying to clear him of doing anything outside our relationship that he shouldn’t, but at the same time I don’t want him to think that I’m doubting his loyalty in the case that he wasn’t doing anything he shouldn’t."
+
+        mc "Well… I mean I just don’t know if I want to get involved in this stuff..."
+
+        cs "What if I could give you some incentive on the side? I can get you and your friends passes to the Spring Festival later this year and front row seats for the stage."
+
+        mc "Really? I’m still not sure though..."
+
+        mw "____ you gotta do it!"
+
+        #MC, Christina "Huh?"
+
+        mw "C’mon ____, it’s not that hard! Just simply get to know Kolby, find out if he’s been cheating on Christina or not, and either way we’ll be getting passes to the Spring Festival!"
+
+        cs "Were you listening to our private conversation??"
+
+        mw "Well I mean it’s not like I can not eavesdrop when a girl pulls away my friend to talk privately, especially when it involves earning passes to the Spring Festival."
+
+        sg "I admit, I wanted to know what you were going to talk to _____ about Christina."
+
+        cs "Well what do you think Sarah?"
+
+        sg "I think it’s none of my business, so I’m going to stay out of it and not have an opinion. As for the Spring Festival, I don’t really care about getting free passes because I can pay for myself easily enough."
+
+        mw "I care though! _____, you gotta find out what Kolby may or may not be doing and get us those passes!"
+
+        mc "But… uh… well I mean..."
+
+        mw "Awesome! _______ will take the offer!"
+
+        mc "Wait what?"
+
+        cs "Great. Remember that it’s simple. Get to know Kolby, find out what he was doing at homecoming while I was performing, and report that back to me. Meanwhile, I’ll start working on securing those passes for you three."
+        
+        mw "Yes! Thanks Christina, you won’t regret this!"
+
+        #*Christina walks away, exits scene*
+
+        mc "Oh man, what have you gotten me into Marc?"
+
+        mw "Psssh, don’t be a worry wart. In fact, you are welcome cause I basically just got you a free pass to the Spring Festival."
+
+        mc "But that’s only really because you wanted to get a free pass yourself..."
+
+        mw "Details, details. Now, tomorrow I know Kolby will be in the gym practicing shooting baskets cause that’s what he usually does. You can go introduce yourself to him then. *big grin*"
+
+        mc "Aw man..."
+
+        #*end scene*
+
+        #Agree to Christina’s proposition
+
+        mc "Well I guess I can do it..."
+
+        cs "*looks happy* Great! And I was about to say, no matter what happens your reward for helping me out is that I’ll get you and your friends passes to the Spring Festival later this year."
+
+        mw "All right!"
+
+        #MC, Christina: "Huh?"
+
+        cs "Were you listening to our private conversation??"
+
+        mw "Well I mean it’s not like I can not eavesdrop when a girl pulls away my friend to talk privately, especially when it involves earning passes to the Spring Festival."
+
+        sg "I admit, I wanted to know what you were going to talk to _____ about Christina."
+
+        cs "Well what do you think Sarah?"
+
+        sg "I think it’s none of my business, so I’m going to stay out of it and not have an opinion. As for the Spring Festival, I don’t really care about getting free passes because I can pay for myself easily enough."
+
+        mw "I care though! We’re gonna be getting free passes! Good going _____!"
+                                                                                   
+        mc "You’re too fixated on the passes Marc..."
+
+        #*end scene*
+
+        #First Encounter with Kolby
+        
+        mw "Alright, it’s time to get to work!"
+
+        mc "What do you mean Marc?"
+
+        mw "I know that Kolby is going to be in the gym practicing during lunch like he usually does. So, you should go meet him and introduce yourself, you know, start to get to know him."
+
+        mc "Oh... uh well I guess I can go do that..."
+
+        mw "Don’t worry, you’ll be just fine. And your hard work will be paid off very well, you’ll see!"
+
+        mc "There you go with being fixated on the passes again..."
+
+        #(later on looking for the gym)
+        
+        mc "Finally I found it. And by the looks of it there’s only a one person in here using the court. He must be Kolby. (approach Kolby)"
+
+        #Choice: Poke Kolby
+        #Tap Kolby on the shoulder.
+
+        mc "Excuse me?"
+
+        kf "*turns around* Oh hi! Sorry I didn’t see you at first, I can really lose focus on everything around me when I get into practicing my three-pointers. I’m Kolby, what’s your name? ...Oh, well nice to meet you _____. So did you come here looking for me?"
+
+        #Choice: Actually I just wanted to shoot some hoops myself!                                   S
+        #        Yes I was; what happened between you and Christina at homecoming?   F
+        #        Well I just wanted to introduce myself because I’m new to the area.          S
+
+        #Success
+        #(shoot hoops)
+        kf "Hey awesome! Let’s see who can make the most shots in the time we have left."
+
+        #It’s very obvious that Kolby is a very good player. He easily beat me in our little competition. It’s also apparent that he is quite competitive.
+
+        kf "Aw man, we’ve just about run out of time. Well it’s been great shooting hoops with you, hope to see you around _____."
+
+        Choice: See you around!     End scene
+                Hey can I quickly ask you something?
+
+        kf "Sure, what do you want to know?"
+
+        Choice: I heard people talking about you and your girlfriend, is everything ok between you two?
+                What happened between you and your girlfriend at homecoming?
+
+        kf "Well I don’t know where we are right now, I mean I thought that nothing could get between Christina and me, but ever since homecoming things have become rocky."
+
+        mc "But what happened at homecoming?"
+
+        kf "Looks uncomfortable. It’s nothing I really want to talk about right now especially with someone I just met. I gotta get back to practic-"
+
+        #*bell rings*
+
+        kf "Aw man, I always forget the time. Well it’s time to go! See ya!"
+
+        #Success
+        #(introduce yourself)
+
+        kf "Oh, my name is Kolby Fredrickson, and I’m a member of the basketball team for the school."
+
+        mc "My name is _______, and my family recently moved into the area."
+
+        kf "Oh I see, well welcome to the school, I really hope you enjoy it here!"
+
+        #Choice: Thanks very much, I appreciate it.    End scene
+        #        Hey can I ask you a question?
+
+
+        #Failure
+        #(cut to the chase)
+
+        #Kolby’s face fell, and he looks like he might be a little bit angry.
+
+        kf "Oh, that’s the reason why you’re here. Well don’t worry about it, I’m pretty sure it doesn’t have anything to do with you. Anyway, I have to get back to practice."
+
+        #He turned away from me and resumed practicing. It looks like he’s just going to ignore me.
+
+
+        #Another Encounter with Kolby
+
+        #**NOTE: Player will be running a little late for school as part of the story**
+
+        mc "Oh man, I hope I’m not late today. It’s a good thing I woke up despite my alarm not going off. There’s the front gate..."
+
+        #Player enters into the school.
+
+        Hall Monitor: Hey! What are you doing coming into school late? Don’t you know better than that? Why back in my day, if students were late….
+
+        mc "(Kolby walks into scene behind the hall monitor who doesn’t notice.) Huh? It seems like Kolby is late to school too."
+
+        #Choice: Point out Kolby.
+        #        Let Kolby sneak by.
+
+        #Sell out Kolby
+        mc "Hey who’s that? (pointing behind the hall monitor)"
+
+        Hall Monitor: "Huh? Hey! What are you doing coming into school late? Don’t you know better than that? Why back in my day..."
+
+        #Player makes his/her escape while the hall monitor is distracted with Kolby.       -cut out of scene-
+
+        #*LATER THAT DAY*
+
+        mw "...and that’s why I don’t bother with combing my hair very often, there’s just little meaningful purpose behind it..."
+
+        kf "HEY YOU."
+
+        mw "Uh, I think Kolby is really angry, and it looks like he’s heading straight for..."
+
+        kf "Oi, (player), why did you sell me out to the hall monitor earlier this morning? All ya had to do was just let me sneak by, why’d you have to go and get me in trouble with you?"
+
+        #Choice: Tell Kolby the truth.
+        #        Lie to Kolby.
+
+        #Truth
+
+        mc "Sorry Kolby, I just didn’t want to get in trouble with the hall monitor."
+
+        kf "I nearly got detention because of you, and if that happens then my position on the basketball team could be thrown into jeopardy. That wasn’t cool at all. He walks away angrily."
+
+        mw "Dang, the dude needs to take a chill pill. Like seriously, no one can really blame you for wanting to avoid trouble, and he was late just like you. Anyway, don’t sweat it."
+
+        #End Scene
+
+        #Lie/Distract
+
+        mc "Sorry Kolby, it’s just that I had to meet up with Christina today and I didn’t want----"
+
+        kf "Oh, wait Christina? You were going to meet with Christina? Why, what were you two meeting for?"
+
+        mc "Oh, uh, I was going to ask her for help… on, uh, some homework."
+
+        kf "Alright then, well then forget about earlier. How’s Christina doing?"
+
+        mc "Um, well I last saw her yesterday in school and she seemed to be doing ok."
+
+        kf "Alright then, that’s good."
+
+        #Choice: Pursue asking about homecoming.
+        #        Run away from Kolby.
+
+        #Ask about homecoming
+        mc "Um, hey Kolby. I know you don’t really want to talk about it, but I do also know that whatever happened at homecoming has been troubling you, and want you to know that I’m here if you want to talk to somebody."
+
+        kf "Oh… well I really appreciate that ____. Well you see, the thing that’s really bothering me is that at homecoming, when I wasn’t with Christina, (someone) kissed me, and I guess Christina heard about it later. I’ve been trying to find the time to sit and talk with her, but we’ve both been busy with school and I’ve had basketball practice. That and all this stress has me even thinking second thoughts..."
+
+        mc "Wow that sounds terrible… Well I don’t think you and Christina should break up, you two are great people, and together you’re happy! You just have to work past the problem and it’ll make your relationship all the stronger."
+
+        kf "...wow, I didn’t think of things that way. Thanks _____, you’ve given me much to think about. But I’ll definitely try to make the time to speak with Christina soon."
+
+        #Run away
+        mc "Well Marc, we better get going, we need to get to class so we’re not late and all hahaha..."
+
+        mw "Huh? But we still have a couple more minutes to-----"
+
+        mc "C’mon let’s go!"
+
+        mw "Um, ok..."
+
+        #End Scene
+
+        #Help out Kolby
+        mc "I’m really sorry (hall monitor), I didn’t mean to be late today. My alarm didn’t go off on time."
+
+        Hall Monitor: Well you should have made sure the night before that your alarm was all set to go, there aren’t any excuses acceptable for being….
+
+        #Looks like Kolby slipped past (hall monitor).    -cut out of scene-
+
+
+        #*LATER THAT DAY*
+
+        mw "...and that’s why I don’t bother with combing my hair very often, there’s just little meaningful purpose behind it..."
+
+        kf "Hey (player), I just wanted to thank you for helping me out this morning. I felt a little guilty leaving you to take the heat by yourself, but I honestly didn’t want to get into trouble I could avoid."
+
+        mc "It’s ok Kolby, don’t worry about it."
+
+        #Choice: Ask about homecoming
+        #        Don’t ask   (end scene)
+
+        #Ask about homecoming
+        mc "Um, hey Kolby. I know you don’t really want to talk about it, but I do also know that whatever happened at homecoming has been troubling you, and want you to know that I’m here if you want to talk to somebody."
+
+        kf "Oh… well I really appreciate that ____. Well you see, the thing that’s really bothering me is that at homecoming, when I wasn’t with Christina, (someone) kissed me, and I guess Christina heard about it later. I’ve been trying to find the time to sit and talk with her, but we’ve both been busy with school and I’ve had basketball practice. That and all this stress has me even thinking second thoughts..."
+
+        mc "Wow that sounds terrible… Well I don’t think you and Christina should break up, you two are great people, and together you’re happy! You just have to work past the problem and it’ll make your relationship all the stronger."
+
+        kf "...wow, I didn’t think of things that way. Thanks _____, you’ve given me much to think about. But I’ll definitely try to make the time to speak with Christina soon."
+
+        #Encounter with Cynthia
+
+        mw "...and that’s why computers are better than consoles, ya see?"
+
+        mc "Well I mean if that’s your opinion..."
+
+        mw "It’s not just my opinion, it’s proven fact! Anyway, how have things been going with Kolby?"
+
+        mc "Oh, not very well actually. I don’t think I’m really close to finding out what he was doing from him."
+
+        mw "Hmmm... Well what if we try something different."
+
+        mc "What do you mean?"
+
+        mw "Well we can try finding out a different way. Let’s go talk to Cynthia."
+
+        sg "Oh, that’s a good idea Marc."
+
+        mw "Aw, thanks hahah (embarrassed)"
+
+        mc "Who’s Cynthia, and why talk to her?"
+
+        sg "She’s the rumor mill of the school, and she’s the one who got the rumors started in the first place."
+
+        mw "And she’s a sophomore so you can introduce us to her Sarah!"
+
+        mc "huh, well ok then."
+
+        sg "Alright then, sounds good."
+
+        #*later*
+        sg "Hey Cynthia!"
+
+        cl "Oh hi Sarah, what’s going on with you?"
+
+        sg "Actually I’m not the one that has to talk to you. Meet my friends Marc and _____."
+
+        cl "Hiyah guys! What can I do for you two?"
+
+        mc "We wanted to ask you about Kolby, more specifically what he was doing while Christina was performing."
+
+        cl "Oh, so you’ve heard about Kolby sneaking off with someone then."
+
+        mw "Yeah, I think just about the whole school has heard of it at least once."
+
+        cl "So let me guess, you all want to find out who that person was for whatever reason right?"
+
+        mc "uh, yeah, how did you know?"
+
+        cl "Why else would you come to me? Well I’m sorry to say I don’t know who it is, but if it was known, then the rumor wouldn’t have been as exciting as it is now."
+
+        mw "Riiiiiight..."
+
+        cl "So Sarah, while I have you here, I want to complain to you about Danny-"
+
+        sg "Oh brother..."
+
+        cl "At homecoming, I wanted to hang out with him and dance with him and all that great stuff but because of his silly interest in Agnes he didn’t pay much attention to me, even though I managed to get some alone time with him."
+
+        sg "I see..."
+
+        cl And Agnes is so obviously not into him, she apparently left him sometime in the evening.
+
+        mw "Wait a sec, Agnes disappeared during prom? Something about that seems a little fishy. I’d say it’s worth investigating. Wanna go talk to Danny, see what he has to say about it?"
+
+        mc "Sure, sounds like a plan since Cynthia didn’t have much information to offer."
+
+        mw "Hey Sarah, we’re going to the cafe to check something out, meet us there when you’re done?"
+
+        sg "Yeah go on ahead, I’ll stay and talk with Cynthia a bit."
+
+        #Encounter with Danny
+
+        #*at cafe
+        #*step through entrance*
+
+        mw "Look, there he is over there. Do you want to go talk to him alone or do you want me to come with you?"
+
+        #Choice: I’ll go alone.
+        #        Come with me.
+        #        Can’t you go alone?
+
+        #I’ll go alone
+        mc "I think I’ll go alone."
+
+        mw "Yeah, he might be more willing to open up with less people confronting him."
+
+        mc "huh?"
+
+        mw "Nothing, I’ll be sitting nearby listening in."
+
+        #*include Danny into scene*
+
+        dr "huh? Oh, it’s you, hey Derrick."
+
+        mc "Ummmm, no. My name is __________."
+
+        dr "Right, sure, whatever. What did you want to talk to me about?"
+
+        #Choice: Ask about homecoming
+        #        Ask about the rumors
+
+        #Ask about homecoming
+        mc "I was wondering how homecoming went for you."
+
+        dr "Oh, well I guess it was ok. I had a good time while my date was with me, but it fell flat after she left."
+
+        mc "Where did she go?"
+
+        dr "Oh I don’t know, she just upped and left in the middle of the evening, which really sucked for me cause she didn’t even bother to tell me and I’m really into her and just don’t know what to do-"
+
+        mc "Right right, that does suck, sorry to hear it."
+
+        dr "..."
+
+        mc "...soooooo, about Agnes-"
+
+        dr "Oh what about her? *irritated*"
+
+        mc "Do you know what she was doing after she left you, maybe she said something?"
+
+        dr "Nah, she wasn’t even kind enough to tell me that much. She just left saying she had to go do something or other. Man..."
+
+        mc "Huh, ok then. Sorry your night didn’t go so well man. But hey..."
+
+        #Choice: there’s someone in school who likes you.
+        #        You’ll find someone else.
+
+         #               There’s someone who likes you
+        mc "I’m pretty sure there’s someone in school who likes you a lot."
+
+        dr "You think so? I don’t know, I just can’t really see that being true. But thanks anyway Derrick."
+
+        mc "...My name is- nevermind"
+        #*leaves*
+
+         #               You’ll find someone else
+        mc "there are plenty of other cute girls here at school."
+
+        dr "Yeah but… I don’t know… Well I’ll see what happens, thanks anyway Derrick."
+
+        mc "...My name is- nevermind"
+        #*leaves*
+
+         #       Ask about rumors
+        mc "Just wondering, have you heard the rumors floating around school?"
+
+        dr "Which one? Oh wait, do you mean the one about Kolby sneaking off with some girl while his girlfriend was busy performing on stage? Yeah I’ve heard that one."
+
+        mc "Do you have some idea of who that mystery girl is?"
+
+        dr "Mmm not really, I don’t really concern myself with rumors generally."
+
+        mc "Oh ok then."
+
+        #Choice: ask about homecoming
+
+        mc "Well in any case, did you go to homecoming?"
+
+        dr "Oh, yeah i did."
+
+        mc "How was it for you?"
+
+        dr "Well I guess it was ok. I had a good time while my date was with me, but it fell flat after she left."
+
+        mc "Where did she go?"
+
+        dr "Oh I don’t know, she just upped and left in the middle of the evening, which really sucked for me cause she didn’t even bother to tell me and I’m really into her and just don’t know what to do-"
+
+        mc "Right right, that does suck, sorry to hear it."
+
+        dr "..."
+
+        mc "...soooooo, about Agnes-"
+
+        dr "Oh what about her? *irritated*"
+
+        mc "Do you know what she was doing after she left you, maybe she said something?"
+
+        dr "Nah, she wasn’t even kind enough to tell me that much. She just left saying she had to go so something or other. Man..."
+
+        mc "Huh, ok then. Sorry your night didn’t go so well man. But hey..."
+
+        #Choice: there’s someone in school who likes you.
+        #        You’ll find someone else.
+        #*player exits cafe and Marc follows*
+        mw "So how did it go with Danny?"
+
+        mc "Well he didn’t know anything directly about who it was Kolby sneaked off with, but he did confirm that Agnes ditched him earlier in the evening, and he didn’t know where she went or what she was doing."
+
+        mw "Hmmm… That seems pretty fishy to me. I think we should go talk to Agnes directly then, see if she’s hiding anything about homecoming."
+
+        mc "Alright then, sounds good to me."
+
+        mw "Oh man, those passes are so close I can almost feel them!"
+
+        mc "..."
+        #*end scene*
+
+        #Come with me
+        mc "I’d rather you come with me."
+
+        mw "Sounds good, since we usually stick together around school, it’ll appear more natural that we stay together."
+
+        mc "Huh?"
+
+        mw "Nothing, let’s get going."
+
+        #*include Danny into scene*
+
+        dr "huh? Oh, it’s you, hey Derrick, hey Marc."
+
+        mc "Ummmm, no. My name is __________."
+
+        dr "Right, sure, whatever. What did you two want to talk to me about?"
+
+        mw "ALRIGHT YOU MAGGOT, WHO WAS IT?!"
+
+        dr "Um, what?"
+
+        mc "Marc, I don’t think you should yell at him, remember we came to talk."
+
+        mw "Oh… Right. Sorry, I got carried away for a sec. Let me retry that. Danny, we want to ask you about homecoming and how your night went."
+
+        dr "...Riiiiight.... (disappointed/upset face) Well I guess it was ok. I had a good time while my date was with me, but it fell flat after she left."
+
+        mc "Where did she go?"
+
+        dr "Oh I don’t know, she just upped and left in the middle of the evening, which really sucked for me cause she didn’t even bother to tell me and I’m really into her and just don’t know what to do-"
+
+        mw "Yeah yeah, that’s enough of that. Focus kid."
+
+        dr "Kid? I’m older than you ya punk!"
+
+        mw "Who ya callin’ a punk you twerp?"
+
+        #Choice: Move the conversation along
+        #        Get Marc to focus
+
+        #        Move the conversation along
+        mc "Soooooo, about Agnes-"
+
+        dr "*irritated* Oh what about her?"
+
+        mc "Do you know what she was doing after she left you, maybe she said something?"
+
+        dr "Nah, she wasn’t even kind enough to tell me that much. She just left saying she had to go do something or other. Man..."
+
+        mc "Huh, ok then. Sorry your night didn’t go so well man."
+
+        mw "*under his breath* Scrub."
+
+        dr "What was that you little-"
+
+        bk "Hey you two! I’ve had about enough of you both disrupting the peace around here, and if you don’t stop then I’ll have you two kicked out, permanently."
+
+        mc "Sighhh..."
+
+        mw "Well we’re pretty much done here anyway, I don’t think Danny-boy has any more significant information to dish out. Let's get outta here _____."
+                                                                                                                                         
+        #*leave*
+
+        #Get Marc to focus
+                                                                                                                                         
+        mc "Marc, focus. Remember the passes."
+
+        mw "*takes a breath* Right right. Sorry, I promise I’ll stay calm."
+
+        mc "Soooooo, about Agnes-"
+
+        dr "*irritated* Oh what about her?"
+
+        mc "Do you know what she was doing after she left you, maybe she said something?"
+
+        dr "Nah, she wasn’t even kind enough to tell me that much. She just left saying she had to go do something or other. Man..."
+
+        mc "Huh, ok then. Sorry your night didn’t go so well man."
+
+        mw "Yeah, that sucks dude."
+
+        mc "But hey..."
+
+        #Choice: there’s someone in school who likes you.
+        #        You’ll find someone else.
+
+        #Can’t you go alone?
+        mc "Why can’t you go talk to him alone? You wanted to go meet him in the first place."
+
+        mw "Because Christina hired you, duh. Now c’mon, do you want to go alone or with me?"
+
+        #Encounter with Agnes
+
+        #*in chemistry class*
+
+        mg "And when we combine potassium chlorate with sulfur..."
+
+        #I wonder if I should talk to Agnes right now about homecoming. She looks like she isn’t paying much attention to the lesson anyway, on top of the fact that she looks really bored too."
+
+        ar "Hey, is it just me or is this class soooo dull?"
+
+        mc "Huh? Oh, yeah, I’d have to agree."
+
+        ar "Man, I wish my laptop hadn’t been confiscated last period..."
+
+        #Choice: Ask about homecoming
+        #        Ask about rumors
+
+        #Ask about homecoming
+        mc Hey I was wondering Agnes, how was homecoming for you?
+
+        ar What? Why do you ask?
+
+        mc Oh just wondering, like I said.
+
+        ar ...It was fine.
+
+        #Choice: Just fine?
+        #Did something go wrong?
+
+        
+        mc "It was only fine?"
+
+        ar "Well I did have a good evening after I ditched my date. He was kinda lame."
+
+        mc "I think I heard that Danny’s date left him during homecoming. You were his date right?"
+
+        ar "...Yeah..."
+
+        mc "What did you do after you left him?"
+
+        ar "I went and had fun. Besides, I don’t think it’s really your business dude."
+
+        mc "Alright then, sorry, just curious."
+
+        ar "Oh it’s ok… If you really want to know I just snuck off to my locker to play games on my laptop."
+
+        mc "Oh… ok then, sorry to bother you."
+        #*end scene*
+
+        #Ask about rumors
+        mc "Hey have you been hearing any of the rumors going around the school lately?"
+
+        ar "What? Uh, no, I don’t really pay attention to gossip."
+
+        mc "Oh, well lately people have been talking about something that happened at homecoming. Apparently, Kolby the basketball player snuck off with someone while his girlfriend Christina was performing on stage for the school."
+
+        ar "Is that so?..."
+
+        mc "Yeah, it’s been a problem between Kolby and Christina since then."
+
+        ar "I guess that could happen..."
+
+        mc "By the way, where did you say you went after you left Danny at homecoming?"
+
+        ar "Uh, huh? What? Hey listen, it’s really none of your business, I went and had some fun ok? Besides, if you really want to know I went to my locker to play games on my laptop."
+
+        mc "Oh… ok then, sorry to bother you."
+        #*end scene*
+
+        #Encounter with Natalie
+
+        #(Natalie sees you texting with Marc about the situation, because of that she draws pictures leading up to revealing that Agnes did it.)
+
+        #*Texting Marc later on after encounter with Agnes*
+
+        mw "U able 2 get anything out of Agnes? Wut was she doin after dtching Danny-boy?"
+
+        mc "She told me that she snuck off to her locker to play games on her laptop, but she seemed really anxious to end the conversation and even seemed nervous."
+
+        mw "Prtty sure she lied bout goin 2 her lcker to play her laptop. She always has laptop with her, nvr leaves it at school. Super spicious of Agnes."
+
+        mc "Yeah, but how can we find out conclusively that she was the one Kolby snuck off with?"
+
+        mw "Dunno..."
+
+        mc "Huh? Who’s tapping my shoulder?..."
+
+        nm "Hi..."
+
+        mc "Oh, Natalie. Hi, what’s up?"
+
+        nm "Can I talk to you? About Agnes?"
+
+        mc "Uh sure, I’m not really paying attention to the class anyway."
+
+        nm "I know, I’ve been watching you text Marc."
+
+        mc "Really? Why? O.o"
+
+        nm "I didn’t mean to at first, I just simply glanced at your screen, but then I saw that you and Marc were talking about Agnes..."
+
+        mc "Oh, uhhh, we were just... that is..."
+
+        nm "You two are trying to figure out if she was the one who Kolby snuck off with during homecoming right?"
+
+        mc "Well..."
+
+        #Choice: Lie
+        #Tell the truth
+
+        #Lie
+        mc "Well actually we were.. Uh.. talking about a group project we were working on, it’s a game on Agnes’ laptop..."
+
+        nm "...I already said that I’ve been watching you text Marc. I know what you two are doing."
+
+        mc "Uh..."
+
+        #Tell the truth
+        mc "Yeah, that’s what we’re doing. I’m sorry if you don’t like that considering that Agnes is your friend-"
+
+        nm "No that isn’t a problem, but I need to tell you-"
+
+        mc "Really though I’m sorry-"
+
+        ----------------------------------------------------------------------------------------------------------------------------
+        nm "Listen, Agnes was the one."
+
+        mc "...What?!"
+
+        mk "Hey ______! Quiet down back there when I’m trying to teach!"
+
+        mc "*whisper* Agnes was the one?"
+
+        nm "Yes."
+
+        mc "Wait, why would you tell me this?"
+
+        nm "Because what Agnes did was wrong. She shouldn’t have done what she did with someone who already had a girlfriend. That and I want her to go back to being the quirky gamer girl I became friends with, without any guilt or anything tying her down."
+
+        mc "I see… Well thanks for letting me know, this helps a lot."
+
+        nm "Hey listen, please don’t tell anyone, especially Agnes that I gave up her secret. I want her to know from me that I did it."
+
+        mc "Alright then, I’ll keep it secret."
+
+        nm "Thanks, I appreciate it."
+
+        mk "Alright you two, I’ve had about enough of you two ignoring me when I teach. Both of you pay attention now or you two will have detention for a week."
+        #*end scene*
+
+        #Last Encounter with Kolby
+
+        #*passing in the hallway in the morning*
+        kf "Hey ________, can I talk to you after school today? Alone."
+
+        mc "Uh sure..."
+
+        #Choice: But why?
+        #        No problem
+
+        #Why?
+        mc "but why do you want to meet with me?"
+
+        kf "I want to talk to you about something you recently discovered, something Natalie told you."
+
+        mc "Huh? How do you know?"
+
+        kf "I’ll tell you after school. Let’s meet in the library."
+
+        mc "Ok then..."
+
+        #No problem
+        mc "No problem. Where do you want to meet?"
+
+        kf "Let’s meet in the library."
+
+        mc "Alright then, see ya."
+
+
+        #*after school in the library*
+        kf "So I want to talk to you about homecoming, about Agnes."
+
+        mc "Wait wait, how did you find out that I was looking into it?"
+
+        kf "Well first of all there was your questions about homecoming. Second, Natalie told Agnes who told me."
+
+        mc "Oh..."
+
+        kf "But what I really want to do is ask you to not tell Christina."
+
+        mc "What? Why would I not?"
+
+        kf "Because I promise you, myself, and to Christina even if she doesn’t know that I’ll drop Agnes completely and focus myself back on Christina and no one else. I made a mistake, and I’m going to fix it."
+
+        mc "How can I believe you?"
+
+        kf "I guess you really can’t, but all I have is my word. I won’t betray Christina again."
+
+        mc "..."
+
+        kf "Well it’s up to you, I deserve it if you do. But hopefully you’ll give me a second chance."
+        #*end scene*
+
+        #Last Encounter with Christina
+
+        mw "Well now that we’ve confirmed that Kolby went off with Agnes, it’s time that we told Christina to let her know, and earn us those passes!"
+
+        mc "Sighhhhh..."
+
+        sg "Is something wrong _______?"
+
+        #Choice: Nothing
+        #        Tell them about what Kolby said.
+
+        #Nothing
+        mc "It’s fine, let’s go talk to Christina."
+
+        #Tell them about Kolby.
+        mc "Kolby talked to me earlier. He asked me not to tell Christina about Agnes."
+
+        Marc, sg "What?! Why would he do that?"
+
+        mc "He said that he made a mistake, and that he wants to fix his relationship with Christina. He didn’t elaborate beyond that, but he left the choice to me."
+
+        mw "Obviously you’ll tell Christina! Kolby screwed up for betraying Christina like that, she deserves to know, and most important of all, we’ll be getting passes to the Spring Festival for free."
+
+        sg "Marc seriously, stop it with the passes. CONTINUE HERE"
+
+
+        #*later*
+        mc "Hey Christina, can we talk for a minute?"
+
+        cs "Oh hey, did you guys find out who it was?"
+
+        mw "Oh yeah we did! Did you bring us the passes you promised us?"
+
+        sg "Marc! Calm down and let ______ talk first!"
 
 
