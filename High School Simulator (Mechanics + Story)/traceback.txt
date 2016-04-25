@@ -1,20 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 352, in script
-    jump secondschooldaypath
-ScriptError: could not find label 'secondschooldaypath'.
+  File "game/storyscript.rpy", line 282, in script
+    if toldonMarc == False:
+  File "game/storyscript.rpy", line 282, in <module>
+    if toldonMarc == False:
+NameError: name 'toldonMarc' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 352, in script
-    jump secondschooldaypath
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 1519, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\script.py", line 843, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'secondschooldaypath'.
+  File "game/storyscript.rpy", line 282, in script
+    if toldonMarc == False:
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 1647, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\python.py", line 1490, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\python.py", line 1485, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/storyscript.rpy", line 282, in <module>
+    if toldonMarc == False:
+NameError: name 'toldonMarc' is not defined
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.8.959

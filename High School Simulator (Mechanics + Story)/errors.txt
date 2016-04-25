@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/storyscript.rpy", line 840: if statement expects a non-empty block.
-    if marcprogression >= 5:
-                            ^
+File "game/storyscript.rpy", line 2311: expected statement.
+    Marc, sg "What?! Why would he do that?"
+        ^
 
 Ren'Py Version: Ren'Py 6.99.8.959

@@ -347,6 +347,7 @@ label start:
         label period:
             if thephase == 5:
                 if issecondschoolday:
+                    "*Bell rings*"
                     jump secondSchoolDayPath1
             if thephase == 6:
                 jump lunchSchool
@@ -356,7 +357,7 @@ label start:
                 else:
                     jump afterSchool
             else:
-                mc "*Bell rings*"
+                "*Bell rings*"
                 scene img_1832 with Dissolve(1.0)
                 jump periodChoice
             
