@@ -14,30 +14,39 @@
             interactions. {w} This year, I thought that maybe, {w} just maybe, {w} I could find someone who would actually be my friend."
 
         #Desk Slams Forward
+        show img_class with hpunch
 
-        show marcw
+        show marcw with moveinright:
+            xalign 0.0 yalign 1.0
         mw "Watch yourself! {w} Keep talking and maybe, {w} someday you'll say something intelligent!"
-        hide marcw
 
         s1 "If you weren’t so easy to make fun of, {w} I wouldn’t! {w} You’re just a little baby."
 
-        show marcw
+        show marcw with moveinleft:
+            xalign 0.5 yalign 1.0
         mw "Says the brat who's about to cry like one!"
 
         #Punches other student
+        show img_class with hpunch
         
         #Fight Ensues
+        show img_class with hpunch
+        show img_class with hpunch
+        show img_class with vpunch
+        show img_class with vpunch
         
         #Wipes Chin
 
         mw "I told you not to insult me. {w} Idiot."
-        hide marcw
 
         #Teacher comes in
         
         mh "Hey! {w} What’s going on? {w} How dare you engage in classroom violence! {w} Don’t you know that fights are against school rules? {w} Both of you, {w} to the dean’s office!"
 
         #Marc and other student leave
+        show marcw with moveinleft:
+            xalign 1.0 yalign 1.0
+        hide marcw
 
         mh "You! {w} New student! {w} You were the closest and probably saw what happened the best. {w} Go to the deans office with them to fill out an incident report!"
 
@@ -154,9 +163,11 @@
             
             show marcw
             mw "Ugh, {w} finally. {w} I wish this would just be over... {w} I can’t stand it when people insult me and get away with it."
-            hide marcw
             
             #Marc goes to office
+            show marcw with moveinleft:
+                xalign 1.0 yalign 1.0
+            hide macw
 
             #Goes to class
             jump firstSchoolPath
@@ -187,9 +198,11 @@
 
             show marcw
             mw "Ugh, {w} finally. {w} I wish this would just be over... {w} I can’t stand it when people insult me and get away with it."
-            hide marcw
 
             #Marc goes to office
+            show marcw with moveinleft:
+                xalign 1.0 yalign 1.0
+            hide macw
 
             #Goes to class
             jump firstSchoolPath
@@ -253,13 +266,16 @@
         mc "I can’t believe I got homework on the first day of school. {w} What kind of sick place is this?"
         
         #Shoulder bumps into MC
+        show img_hall with hpunch
 
-        show frederickh:
+        show frederickh with moveinright:
             xalign 0.5 yalign 0.0
         fh "Hey, freshie, {w} if you can’t take the heat get out of the kitchen."
-        hide frederickh
         
         #Hurries off"
+        show frederickh with moveinright:
+            xalign 0.0 yalign 0.0
+        hide frederickh
 
         mc "What? {w} Whatever..."
         $ thephase = 5
@@ -272,7 +288,9 @@
         
             mc ">Walking Home"
 
-            show marcw
+            show marcw with moveinright:
+                xalign 0.5 yalign 1.0
+                
             mw "Hey, {w} wait up!"
 
             mc "!?"
@@ -294,6 +312,10 @@
             mw "Cya round."
 
             mc "Um, Ok. See ya."
+            
+            show marcw with moveinright:
+                xalign 0.0 yalign 1.0
+            hide marcw
             
             $ hasmetmarc = True
             
@@ -370,6 +392,8 @@
         mc "Fine, {w} I’ll get up. {w} Where’s my toothbrush?"
 
         #*Screen shakes because he's looking for stuff*
+        show img_black with hpunch
+        show img_black with vpunch
 
         #OBTAINED TOOTHBRUSH
 
@@ -379,10 +403,32 @@
 
         mc "What? {w} Who’s here? {w} Who even knows I live here?"
         
-        show marcw
+        show marcw with moveinright:
+                xalign 0.5 yalign 1.0
         mw "OI! {w} YOU READY FOR SCHOOL?"
 
-        mc "Marc?!?!?!?!?!?! {w} Wha-"
+        mc "Marc?!?!?!?!?!?!"
+        
+        show img_black with hpunch
+        show img_black with vpunch
+        show img_black with hpunch
+        show img_black with vpunch
+        show img_black with hpunch
+        show img_black with vpunch
+        show img_black with hpunch
+        show img_black with vpunch
+        show img_black with hpunch
+        show img_black with vpunch
+        show img_black with hpunch
+        show img_black with vpunch
+        show img_black with hpunch
+        show img_black with vpunch
+        show img_black with hpunch
+        show img_black with vpunch
+        show img_black with hpunch
+        show img_black with vpunch
+        show img_black with hpunch
+        show img_black with vpunch
 
         mw "YOU’RE GUNNA BE LATE BRO!"
         hide marcw
@@ -399,7 +445,8 @@
 
         mc "Alright, Marc, {w} I’m here. {w} How did you figure out where I live?"
 
-        show marcw
+        show marcw with moveinright:
+                xalign 0.5 yalign 1.0
         mw "You dropped your wallet. {w} Your address was inside."
 
         mc "......Oh......"
@@ -427,13 +474,18 @@
         mw "Sooo... Shall we? {w} If we stand here any longer, we’ll be late for school."
 
         mc "Oh! {w} Let’s go."
+        
+        show marcw with moveinright:
+                xalign 0.0 yalign 1.0
+        hide marcw
 
         #Arrives at school
         scene img_hall with Dissolve(1.0)
         $ thephase = 2
         $ location = 1
         
-        show marcw
+        show marcw with moveinleft:
+                xalign 0.5 yalign 1.0
         mw "Hey, {w} [mcname]. {w} Can I talk to you for a sec?"
         
         mc "Uh, {w} sure Marc. {w} What’s up?"
@@ -456,12 +508,21 @@
                     
         label seconddayC1O1:
             mw "Alright, {w} meet me after school in the courtyard, ok? {w} See you in class!"
+            show marcw with moveinleft:
+                xalign 1.0 yalign 1.0
+            hide marcw
             jump period
         label seconddayC1O2:
             mw "Oh, {w} ok. {w} Well, {w} let me know if you need anything then. {w} See you in class."
+            show marcw with moveinleft:
+                xalign 1.0 yalign 1.0
+            hide marcw
             jump period
         label seconddayC1O3:
             mw "‘Kay. {w} Cya Round."
+            show marcw with moveinleft:
+                xalign 1.0 yalign 1.0
+            hide marcw
             jump period
             
     label secondDayPath1:
@@ -536,15 +597,16 @@
                 "Ignore Natalie":
                     jump seconddayC2O3
                     
-                    
         label seconddayC2O1:
             mc "Hey, {w} are you ok? {w} I couldn’t help but notice that you seemed upset."
             nm "*Blushes*"
+            mc "Huh. {w} That was strange...."
             $ thephase = thephase + 1
             jump lunchSchool
         label seconddayC2O2:
             mc "Why didn’t you pay any attention in class? {w} Are you mute?"
             nm "*Makes an angry face*"
+            mc "Huh. {w} That was strange...."
             $ thephase = thephase + 1
             jump lunchSchool
         label seconddayC2O3:
@@ -552,8 +614,6 @@
             jump lunchSchool
             
     label secondDayPath2:
-    
-        mc "Huh. {w} That was strange...."
 
         mc "My next class is science, {w} it looks like. {w} I’d better get there fast."
 
@@ -588,7 +648,7 @@
         mc "Uhm... {w} Oh." 
 
         #Looks at agnes 
-        show agnesr
+        show agnesr with moveinbottom
 
         mc "Uh, {w} alright. {w} Hi..."
 
@@ -616,11 +676,13 @@
         ar "Mhm. {w} Now get outta here."
         
         $ hasmetagnes = True
-        
-        ">You can now view Agnes's profile."
 
         #Agnes leaves
+        show agnesr with moveinleft:
+                xalign 1.0
         hide agnesr
+        
+        ">You can now view Agnes's profile."
         
         scene img_hall with Dissolve(1.0)
 
@@ -638,6 +700,8 @@
         mc "Oh, {w} cool... {w} What would I use that for?"
 
         mw "Probably nothing, {w} but hey, {w} the more you know."
+        show marcw with moveinright:
+                xalign 1.0 yalign 1.0
         hide marcw
         
         scene img_hall with Dissolve(1.0)
@@ -649,10 +713,13 @@
         
         if marcprogression >= 5:
             
-            show marcw
+            show marcw with moveinright:
+                xalign 0.5 yalign 1.0
             mw "Hey! {w} Ready for me to show you around town?"
         
             mc "Oh, {w} uh, {w} sure."
+            show marcw with moveinright:
+                xalign 0.0 yalign 1.0
             hide marcw
             
             scene img_town with Dissolve(1.0)
@@ -660,7 +727,8 @@
             
             ">You spend after school letting Marc show you around town."
 
-            show marcw
+            show marcw with moveinright:
+                xalign 0.5 yalign 1.0
             mw ".... And that’s why Marcy’s is cheaper than Jenny’s. {w} Good way to save your money on clothes."
 
             mc "Oh ok, {w} thanks for letting me know."
@@ -672,12 +740,15 @@
             mw "Oh ya know, {w} things like fighting games, racing games, shooters. {w} All kinds. {w} It’s right over here, let’s get going."
 
             mc "Uh yeah, {w} let’s go..."
+            show marcw with moveinright:
+                xalign 0.0 yalign 1.0
             hide marcw
 
             #*In Arcade*
             scene img_mall with Dissolve(1.0)
 
-            show marcw
+            show marcw with moveinright:
+                xalign 0.5 yalign 1.0
             mw "Check out this game, dude!"
 
             mc "Erm, {w} alright... {w} What game is this?"
@@ -687,6 +758,22 @@
             mc "Oh, {w} okay cool... {w} What do I do?"
 
             mw "Well, first, {w} you start by..."
+            show marcw with slideright:
+                xalign 0.0 yalign 1.0
+            show marcw with slideleft:
+                xalign 0.5 yalign 1.0
+            show marcw with slidedown:
+                xalign 1.0 yalign 1.0
+            show marcw with slideup:
+                xalign 0.5 yalign 1.0
+            show marcw with slideright:
+                xalign 0.0 yalign 1.0
+            show marcw with slideleft:
+                xalign 0.5 yalign 1.0
+            show marcw with slidedown:
+                xalign 1.0 yalign 1.0
+            show marcw with slideup:
+                xalign 0.5 yalign 1.0
 
             mw "... And that’s how you can use the combos to get higher scores."
 
@@ -696,13 +783,15 @@
 
             mw "Hey are you feeling hungry? {w} My stomach just started to growl."
             
-            show img_1890 with vpunch
+            show img_mall with vpunch
 
             mc "Oh! {w} I’m feeling hungry too. {w} Do you know any good places to eat?"
             
-            mw "Actually I do, {w} there’s a place not too far from here that’s super popular with the students at our school. {w} A senior named Fredrick runs the place, and a friend of mine works there."
+            mw "Actually I do, {w} there’s a place not too far from here that’s super popular with the students at our school. {w} A senior named Frederick runs the place, and a friend of mine works there."
 
             mc "Ok cool, {w} let’s go."
+            show marcw with moveinright:
+                xalign 0.0 yalign 1.0
             hide marcw
 
             #*Outside Cafe*
@@ -719,13 +808,21 @@
             #*Inside Cafe*
             scene img_cafe with Dissolve(1.0)
 
-            mc "There’s a lot of people here." 
+            mc "There’s a lot of people here."
+            
+            show marcw with moveinright
+            mw "Yea, {w} almost everyone comes here after school to hang out and unwind."
+            show marcw with moveinright:
+                xalign 0.0
 
-            mw "Yea, almost everyone comes here after school to hang out and unwind."
-
-            s1 "Well, if it isn’t the freshie who can’t take a bit of homework."
-
+            show frederickh:
+                xalign 0.5 yalign 0.0
+            fh "Well, if it isn’t the freshie who can’t take a bit of homework."
+            hide frederickh
+            
+            show marcw
             mw "Excuse me Fredrick!?!?!?!"
+            hide marcw
 
             fh "No, not you, your friend here."
 

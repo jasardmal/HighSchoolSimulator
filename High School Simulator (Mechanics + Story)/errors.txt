@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/storyscript.rpy", line 2311: expected statement.
-    Marc, sg "What?! Why would he do that?"
-        ^
+File "game/storyscript.rpy", line 48: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    xalign 0.0 yalign 1.0
+    ^
 
 Ren'Py Version: Ren'Py 6.99.8.959
