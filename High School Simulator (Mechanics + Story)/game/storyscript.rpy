@@ -322,7 +322,7 @@
             ">You can now view Marc's profile."
 
             #*At home*
-            scene img_black with Dissolve(1.0)
+            scene img_home with Dissolve(1.0)
             $ location = 2
             $ thephase = 11
             
@@ -381,7 +381,7 @@
             
     label secondSchoolDay:
         
-        scene img_black with Dissolve(1.0)
+        scene img_home with Dissolve(1.0)
             
         #*Alarm rings*
 
@@ -392,8 +392,8 @@
         mc "Fine, {w} I’ll get up. {w} Where’s my toothbrush?"
 
         #*Screen shakes because he's looking for stuff*
-        show img_black with hpunch
-        show img_black with vpunch
+        show img_home with hpunch
+        show img_home with vpunch
 
         #OBTAINED TOOTHBRUSH
 
@@ -409,26 +409,26 @@
 
         mc "Marc?!?!?!?!?!?!"
         
-        show img_black with hpunch
-        show img_black with vpunch
-        show img_black with hpunch
-        show img_black with vpunch
-        show img_black with hpunch
-        show img_black with vpunch
-        show img_black with hpunch
-        show img_black with vpunch
-        show img_black with hpunch
-        show img_black with vpunch
-        show img_black with hpunch
-        show img_black with vpunch
-        show img_black with hpunch
-        show img_black with vpunch
-        show img_black with hpunch
-        show img_black with vpunch
-        show img_black with hpunch
-        show img_black with vpunch
-        show img_black with hpunch
-        show img_black with vpunch
+        show img_home with hpunch
+        show img_home with vpunch
+        show img_home with hpunch
+        show img_home with vpunch
+        show img_home with hpunch
+        show img_home with vpunch
+        show img_home with hpunch
+        show img_home with vpunch
+        show img_home with hpunch
+        show img_home with vpunch
+        show img_home with hpunch
+        show img_home with vpunch
+        show img_home with hpunch
+        show img_home with vpunch
+        show img_home with hpunch
+        show img_home with vpunch
+        show img_home with hpunch
+        show img_home with vpunch
+        show img_home with hpunch
+        show img_home with vpunch
 
         mw "YOU’RE GUNNA BE LATE BRO!"
         hide marcw
@@ -481,7 +481,7 @@
 
         #Arrives at school
         scene img_hall with Dissolve(1.0)
-        $ thephase = 2
+        $ thephase = thephase + 1
         $ location = 1
         
         show marcw with moveinleft:
@@ -668,6 +668,8 @@
         mc "Oh, {w} I was just wondering..."
 
         ar "Agnes. {w} But don’t call me that. {w} I prefer..."
+        
+        $ arname = "Agnes Rocco"
 
         ar ".... {w} Novahawk."
 
@@ -758,22 +760,6 @@
             mc "Oh, {w} okay cool... {w} What do I do?"
 
             mw "Well, first, {w} you start by..."
-            show marcw with slideright:
-                xalign 0.0 yalign 1.0
-            show marcw with slideleft:
-                xalign 0.5 yalign 1.0
-            show marcw with slidedown:
-                xalign 1.0 yalign 1.0
-            show marcw with slideup:
-                xalign 0.5 yalign 1.0
-            show marcw with slideright:
-                xalign 0.0 yalign 1.0
-            show marcw with slideleft:
-                xalign 0.5 yalign 1.0
-            show marcw with slidedown:
-                xalign 1.0 yalign 1.0
-            show marcw with slideup:
-                xalign 0.5 yalign 1.0
 
             mw "... And that’s how you can use the combos to get higher scores."
 
@@ -813,134 +799,191 @@
             show marcw with moveinright
             mw "Yea, {w} almost everyone comes here after school to hang out and unwind."
             show marcw with moveinright:
-                xalign 0.0
+                xalign 0.0 yalign 1.0
 
-            show frederickh:
+            show frederickh with moveinbottom:
                 xalign 0.5 yalign 0.0
             fh "Well, if it isn’t the freshie who can’t take a bit of homework."
-            hide frederickh
             
-            show marcw
-            mw "Excuse me Fredrick!?!?!?!"
-            hide marcw
+            mw "Excuse me Frederick!?!?!?!"
+            
+            $ fhname = "Frederick Hobson"
 
-            fh "No, not you, your friend here."
+            fh "No, not you, {w} your friend here."
 
-            mc "W-w-what? W-what do you mean?"
+            mc "W-w-what? {w} W-what do you mean?"
 
-            fh "Forgetful, are we? Just yesterday I caught you complaining about homework on the first day. I told you to grow a pair."
+            fh "Forgetful, are we? {w} Just yesterday I caught you complaining about homework on the first day. {w} I told you to grow a pair."
 
-            mw "*Snickers*"
+            #*Snickers*
 
             mc "Marc!"
 
-            mw "Sorry, it is a little funny. You probably shouldn’t complain too much."
+            mw "Sorry, it is a little funny. {w} You probably shouldn’t complain too much."
 
             mc "Y-you’re one to talk!"
 
-            mw "Yeah, probably. But still, that was FUNNY."
+            mw "Yeah, probably. {w} But still, {w} that was FUNNY."
+            
+            show beckak with moveinright:
+                xalign 1.0 yalign 1.0
 
-            bk "Frederick, that’s no way to treat new customers. You know better."
+            bk "Frederick, {w} that’s no way to treat new customers. {w} You know better."
 
-            fh "Becka!! My apologies. You’re right. It was just that... he was being whiny yesterday and it bothered me, I mean, he hasn’t even been to any higher level classes..."
+            fh "Becka!! {w} My apologies. You’re right. {w} It was just that... {w} he was being whiny yesterday and it bothered me, {w} I mean, he hasn’t even been to any higher level classes..."
 
-            bk "Shush. You were exactly the same way. As were most of the members of our class, if I recall correctly."
+            bk "Shush. {w} You were exactly the same way. {w} As were most of the members of our class, if I recall correctly."
 
             fh "Well I Ne-..."
 
             bk "Now apologize to your customer."
+            
+            #*BLUSHING*
 
-            fh "*BLUSHING* You do not own this cafe! I do! Argh!" 
+            fh "You do not own this cafe! {w} I do! Argh!" 
 
-            fh "But, you are right. I must be more... professional. *turns to MC and Marc* As a consolation, your drinks are on the house. You are welcome."
+            fh "But, you are right. {w} I must be more... professional."
+            
+            #*Turns to MC and Marc*
+            hide frederickh
+            show frederickhprofile:
+                xalign 0.5 yalign 0.0
+            
+            fh "As a consolation, your drinks are on the house. {w} You are welcome."
 
             bk "Now, that wasn’t so hard was it?"
 
-            fh "Oh for heaven’s sake!" 
+            fh "Oh for heaven’s sake!"
 
-            #*frederick and becka leave*
+            #*Frederick and Becka leave*
+            hide beckak
+            hide frederickhprofile
+            show frederickh:
+                xalign 0.5 yalign 0.0
+            show frederickh with moveinright:
+                xalign 1.0 yalign 0.0
+            hide frederickh
+            
+            $ hasmetfrederick = True
+            $ hasmetbecka = True
+            
+            ">You can now view Frederick's and Becka's profiles."
+            
+            show marcw with moveinright:
+                xalign 0.5 yalign 1.0
+            
+            mw "Huh. Anyway, {w} let’s go sit somewhere."
 
-            mw "Huh. Anyway, let’s go sit somewhere."
+            mc "Uh... okay, {w} that sounds good to me."
+            
+            show marcw with moveinright:
+                xalign 0.0 yalign 1.0
+            show sarahg with moveinright:
+                xalign 0.5 yalign 1.0
 
-            mc "Uh... okay, that sounds good to me."
+            sg "Hey Marc! {w} How’s it goin?"
 
-            s1 "Hey Marc! How’s it goin?"
+            mw "Sarah! {w} How’s business today?"
+            
+            $ sgname = "Sarah Granger"
 
-            mw "Sarah! How’s business today?"
+            sg "Oh, you know, {w} it’s been pretty busy, being the first few days in the school year and all... {w} What can I get for you guys?"
 
-            sg "Oh, you know, it’s been pretty busy, being the first few days in the school year and all... What can I get for you guys?"
+            mw "I’ll have the usual. {w} Frederick said we get free drinks today."
 
-            mw "I’ll have the usual. Frederick said we get free drinks today."
+            sg "Did he now? {w} Well, alright, I trust you. {w} And who’s this?"
 
-            sg "Did he now? Well, alright, I trust you. And who’s this?"
+            mw "This is [mcname]! {w} He just moved into town. He’s a freshman, like me. {w} In fact, he lives in our neighborhood!"
 
-            mw "This is (MC)! He just moved into town. He’s a freshman, like me. In fact, he lives in our neighborhood!"
-
-            sg "Oh? And how would you know? Did you follow him home?"
+            sg "Oh? And how would you know? {w} Did you follow him home?"
 
             mw "... Something like that."
 
             mc "Uhh..."
 
-            mw "Don’t worry about it. What are you gonna order?"
+            mw "Don’t worry about it. {w} What are you gonna order?"
 
             mc "Err, what does the chef recommend?"
 
-            sg "Today we have a special on Caesar Salads. Comes with grilled chicken and garlic bread."
+            sg "Today we have a special on Caesar Salads. {w} Comes with grilled chicken and garlic bread."
 
             mc "Sounds good, I’ll have that."
 
             sg "Then I’ll be back in a jiffy."
-
+            
+            show sarahg with moveinright:
+                xalign 1.0 yalign 1.0
+            hide sarahg
+            
+            show marcw with moveinright:
+                xalign 0.5 yalign 1.0
+            
             mw "Thanks!"
 
-            mc "So... How do you and Sarah know each other...?"
+            mc "So... {w} How do you and Sarah know each other...?"
 
-            mw "Oh, me and Sarah? We go way back. Grew up together, almost."
+            mw "Oh, me and Sarah? {w} We go way back. Grew up together, almost."
 
-            mc "Really? That’s cool..."
+            mc "Really? {w} That’s cool..."
+            
+            show marcw with moveinright:
+                xalign 0.0 yalign 1.0
+            
+            show sarahg with moveinright:
+                xalign 0.5 yalign 1.0
 
-            sg "Hey guys! Here are your drinks. I’ll be back in a sec with your food."
+            sg "Hey guys! Here are your drinks. {w} I’ll be back in a sec with your food."
 
-            mw "Thanks! Do you have a minute to sit with us after that?"
+            mw "Thanks! {w} Do you have a minute to sit with us after that?"
 
-            sg "Oh, no, sorry. Not today. We are up to our elbows in customers, haha."
+            sg "Oh, no, sorry. {w} Not today. We are up to our elbows in customers, haha."
 
             mw "Alright, maybe next time then."
 
             sg "See you later!"
+            
+            show sarahg with moveinright:
+                xalign 1.0 yalign 1.0
+                
+            show marcw with moveinright:
+                xalign 0.5 yalign 1.0
 
-            mw "Hey wait! How is your leg doing?"
+            mw "Hey wait! {w} How is your leg doing?"
 
-            sg "Oh, well, I’ve been doing better... Healing a broken bone doesn’t happen overnight, you know?"
+            sg "Oh, well, {w} I’ve been doing better... {w} Healing a broken bone doesn’t happen overnight, you know?"
 
-            mw "True, true. Well, get better soon! The team needs you."
+            mw "True, true. {w} Well, get better soon! The team needs you."
 
             sg "Haha, thanks. I’ll see you around."
+            
+            hide sarahg
+            
+            $ hasmetsarah = True
+            
+            ">You can now view Sarah's profile."
+            
+            mc "...I didn’t notice her cast. {w} What happened?"
 
-            mc "...I didn’t notice her cast. What happened?"
+            mw "It’s a bit of a nasty story. {w} Let’s just say there was a really, really bad accident." 
 
-            mw "It’s a bit of a nasty story. Let’s just say there was a really, really bad accident." 
+            mc "Oh... {w} Uh, how long has she had the cast?"
 
-            mc "Oh... Uh, how long has she had the cast?"
+            mw "Too long. The whole summer, and then some. {w} It was really bad." 
 
-            mw "Too long. The whole summer, and then some. It was really bad." 
+            mw "Thinking about this is depressing. {w} Let’s finish up and get out of here."
 
-            mw "Thinking about this is depressing. Let’s finish up and get out of here."
-
-            mc "Uhhh, sure." 
+            mc "Uhhh, sure."
 
             #*Dining room noises*
 
-            mw "That was really good! I always enjoy eating here. Are you done?"
+            mw "That was really good! {w} I always enjoy eating here. Are you done?"
 
-            mc "Yeah, I think I’m finished. Let’s go."
+            mc "Yeah, I think I’m finished. {w} Let’s go."
 
             mw "Sweet. I'll see you tomorrow."
 
             #*scene transition*
-
-            jump secondDayPath3
+            jump secondDayPath4
 
         else:
 
@@ -1067,72 +1110,69 @@
             jump secondDayPath3
 
     label secondDayPath4:
-    
-        #*Dining room noises*
-
-        mw "That was really good! I always enjoy eating here. Are you done?"
-
-        mc "Yeah, I think I’m finished. Let’s go."
-
-        mw "Sweet. I'll see you tomorrow."
 
         #*Scene Change Home*
+        scene img_home with Dissolve(1.0)
+        $ location = 2
+        $ thephase = thephase + 1
 
         #RING RING RING RING RING
 
-        mc "Wow! As soon as I get home, someone else is calling me. Is it going to be like this every night?"
+        mc "Wow! {w} As soon as I get home, someone else is calling me. {w} Is it going to be like this every night?"
 
         mc "I had probably better pick up the call..."
 
-        mc "Oh. Look. It’s my sister."
+        mc "Oh. Look. {w} It’s my sister."
 
-        sis "Hey little bro! How was your first few days of school?"
+        sis "Hey little bro! {w} How was your first few days of school?"
 
-        mc "Oh! Hey, Jackie! It’s been a while."
+        mc "Oh! Hey, Jackie! {w} It’s been a while."
 
-        sis "Yeah, well, you know, college and all that. How’s my socially awkward padawan learner?"
+        sis "Yeah, well, you know, {w} college and all that. {w} How’s my socially awkward padawan learner?"
 
-        mc "Urgh, I’m doing fine... Why do you always reference that movie?"
+        mc "Urgh, I’m doing fine... {w} Why do you always reference that movie?"
 
         sis "Because it’s *our* favorite, and don’t you forget that."
 
         mc "But you know I don’t..."
 
-        sis "Shush, yes you do. Anyways, do you have a girlfriend yet?"
+        sis "Shush, yes you do. {w} Anyways, do you have a girlfriend yet?"
 
-        mc "What?!?! I literally just got here and..."
+        mc "What?!?! {w} I literally just got here and..."
 
-        sis "No excuses! Get moving, casanova!"
+        sis "No excuses! {w} Get moving, casanova!"
 
-        mc "Argh! I don’t even know anyone yet!"
+        mc "Argh! {w} I don’t even know anyone yet!"
 
         sis "Sure you don’t, Romeo." 
 
-        mc "Okay, fine, I’ve met a grand total of 4 people. None of whom I know very well."
+        mc "Okay, fine, I’ve met a grand total of 6 people. None of whom I know very well."
 
         sis "Any girls?"
 
-        mc "...Two. But..."
+        mc "...Three. But..."
 
         sis "Are they pretty?"
 
-        mc "...What? Wait... No, that doesn’t... leave me alone!"
+        mc "...What? Wait... {w} No, that doesn’t... {w} leave me alone!"
 
-        sis "Alright, Valentine. I’ll keep cupid off your back... for now. Don’t be surprised if you find an arrow in your butt later in the year."
+        sis "Alright, Valentine. {w} I’ll keep cupid off your back... for now. {w} Don’t be surprised if you find an arrow in your butt later in the year."
 
         mc "An arrow?"
 
-        sis "You know, the arrow of love? Nevermind, loverboy. I’ll talk to you later. Don’t forget to give mom and dad a call every now and then!"
+        sis "You know, the arrow of love? {w} Nevermind, loverboy. I’ll talk to you later. {w} Don’t forget to give mom and dad a call every now and then!"
 
-        mc "Ok, I’ll do that. Don’t you have college things to do?"
+        mc "Ok, I’ll do that. {w} Don’t you have college things to do?"
 
-        sis "Yeah probably. Oh, and by the way, I looked at your school’s website and it looks like homecoming is coming up soon. So, like I said, get a date. Cupid will watch over you."
+        sis "Yeah probably. Oh, and by the way, {w} I looked at your school’s website and it looks like homecoming is coming up soon. {w} So, like I said, get a date. Cupid will watch over you."
 
-        mc "...Uh, Ok... Sure..."
+        mc "...Uh, Ok... {w} Sure..."
 
-        sis "See ya round! *hangs up*"
+        sis "See ya round!"
+        
+        #*Hangs up*
 
-        mc "Jeez... That was really something... I’d better get some sleep..."
+        mc "Jeez... That was really something... {w} I’d better get some sleep..."
 
        #*End Day* 
 

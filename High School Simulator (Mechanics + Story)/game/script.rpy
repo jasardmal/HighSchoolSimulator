@@ -10,13 +10,14 @@ define kf = Character('Kolby Frederickson', color="#c8ffc8")
 define fh = DynamicCharacter("fhname", color="#c8ffc8")
 define ik = Character('Ivor Kovosad', color="#c8ffc8")
 define dr = Character('Danny Reuter', color="#c8ffc8")
-define sg = Character('Sarah Granger', color="#c8ffc8")
+define sg = DynamicCharacter("sgname", color="#c8ffc8")
 define cs = Character('Christina Shulz', color="#c8ffc8")
-define ar = Character('Agnes Rocco', color="#c8ffc8")
+define ar = DynamicCharacter("arname", color="#c8ffc8")
 define cl = Character('Cynthia Lucas', color="#c8ffc8")
 define nm = DynamicCharacter("nmname", color="#c8ffc8")
 define bk = Character('Becka Krakowski', color="#c8ffc8")
 define mom = Character('Mom', color="#c8ffc8")
+define sis = Character('Jackie', color="#c8ffc8")
 
 #School Staff
 define de = Character('Dean', color="#c8ffc8")
@@ -42,6 +43,8 @@ label start:
     $ mwname = "Delinquet Student"
     $ fhname = "Refined Student"
     $ nmname = "Silent Student"
+    $ arname = "Smart Student"
+    $ sgname = "Plain Student"
     $ coname = "Delinquet Student and Other Student"
     
     
@@ -185,7 +188,7 @@ label start:
             
     #CHARACTER CREATION ******************************************************************************************
     label nameCreation:
-        scene img_black
+        scene img_home
         mc "Who am I?"
         call screen input_charactersoftkeyboard
     
@@ -247,7 +250,7 @@ label start:
             $ stamina = 3
             $ stress = 3
             $ isendofweekend = False
-        scene img_black with Dissolve(1.0)
+        scene img_home with Dissolve(1.0)
         mc "It's time for school."
         scene img_nearschool with Dissolve(1.0)
         jump beforeSchool
@@ -600,7 +603,7 @@ label start:
                 mc "I'm REALLY tired. I should head home and sleep."
                 $ thephase = 11
                 $ location = 2
-                scene img_black with Dissolve(1.0)
+                scene img_home with Dissolve(1.0)
                 jump homeSchoolLongSleep
             elif stamina == 2 or stamina == 3:
                 jump afterSchoolChoice
@@ -647,7 +650,7 @@ label start:
                         mc "I'm really tired. I should head home and sleep."
                         $ thephase = 11
                         $ location = 2
-                        scene img_black with Dissolve(1.0)
+                        scene img_home with Dissolve(1.0)
                         jump homeSchoolRegularSleep
                     $ isafterschool = False
                     jump afterSchool
@@ -662,7 +665,7 @@ label start:
                             mc "I'm really tired. I should head home and sleep."
                             $ thephase = 11
                             $ location = 2
-                            scene img_black with Dissolve(1.0)
+                            scene img_home with Dissolve(1.0)
                             jump homeSchoolRegularSleep
                         $ isafterschool = False
                         jump afterSchool
@@ -675,7 +678,7 @@ label start:
                             mc "I'm really tired. I should head home and sleep."
                             $ thephase = 11
                             $ location = 2
-                            scene img_black with Dissolve(1.0)
+                            scene img_home with Dissolve(1.0)
                             jump homeSchoolRegularSleep
                         $ isafterschool = False
                         jump afterSchool
@@ -688,7 +691,7 @@ label start:
                         mc "I'm really tired. I should head home and sleep."
                         $ thephase = 11
                         $ location = 2
-                        scene img_black with Dissolve(1.0)
+                        scene img_home with Dissolve(1.0)
                         jump homeSchoolRegularSleep
                     $ isafterschool = False
                     jump afterSchool
@@ -703,7 +706,7 @@ label start:
                         mc "I'm really tired. I should head home and sleep."
                         $ thephase = 11
                         $ location = 2
-                        scene img_black with Dissolve(1.0)
+                        scene img_home with Dissolve(1.0)
                         jump homeSchoolRegularSleep
                     $ isafterschool = False
                     jump afterSchool
@@ -718,7 +721,7 @@ label start:
                             mc "I'm really tired. I should head home and sleep."
                             $ thephase = 11
                             $ location = 2
-                            scene img_black with Dissolve(1.0)
+                            scene img_home with Dissolve(1.0)
                             jump homeSchoolRegularSleep
                         $ isafterschool = False
                         jump afterSchool
@@ -730,7 +733,7 @@ label start:
                             mc "I'm really tired. I should head home and sleep."
                             $ thephase = 11
                             $ location = 2
-                            scene img_black with Dissolve(1.0)
+                            scene img_home with Dissolve(1.0)
                             jump homeSchoolRegularSleep
                         $ isafterschool = False
                         jump afterSchool
@@ -742,7 +745,7 @@ label start:
                         mc "I'm really tired. I should head home and sleep."
                         $ thephase = 11
                         $ location = 2
-                        scene img_black with Dissolve(1.0)
+                        scene img_home with Dissolve(1.0)
                         jump homeSchoolRegularSleep
                     $ isafterschool = False
                     jump afterSchool
@@ -772,7 +775,7 @@ label start:
             mc ">Going home."
             scene img_nearschool with Dissolve(1.0)
             $location = 2
-            scene img_black with Dissolve(1.0)
+            scene img_home with Dissolve(1.0)
             jump homeSchoolChoice
             
         label homeSchoolChoice:
@@ -862,7 +865,7 @@ label start:
                 elif staminasubfuturelim % 1 == 0:
                     $ staminasub = staminasubfuturelim
                 $ thephase = 11 + 1
-                scene img_black with Dissolve(1.0)
+                scene img_home with Dissolve(1.0)
                 jump startDecider
             
             label homeSchoolRegularSleep:
@@ -872,7 +875,7 @@ label start:
                 elif staminasubfuturelim % 1 == 0:
                     $ staminasub = staminasubfuturelim
                 $ thephase = 11 + 1
-                scene img_black with Dissolve(1.0)
+                scene img_home with Dissolve(1.0)
                 jump startDecider
                 
         #TOWNSCHOOL **************************************************************************************************
@@ -1017,7 +1020,7 @@ label start:
     #REGULAR WEEKEND START (VARIANTS)*********************************************************************************************
     label regularWeekend:
         $ location = 2
-        scene img_black with Dissolve(1.0)
+        scene img_home with Dissolve(1.0)
         if stamina == 0 or stamina == 1:
             $ thephase = 5
             mc "...! {w} Oh no! I slept the entire day away. It's almost evening."
@@ -1351,5 +1354,5 @@ label start:
             $ thephase = 8 + 1
             if theweekday == 2:
                 $ isendofweekend = True
-            scene img_black
+            scene img_home
             jump startDecider
