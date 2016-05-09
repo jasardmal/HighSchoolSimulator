@@ -1647,13 +1647,13 @@
 
         kf "Aw man, we’ve just about run out of time. Well it’s been great shooting hoops with you, hope to see you around _____."
 
-        Choice: See you around!     End scene
-                Hey can I quickly ask you something?
+        #Choice: See you around!     End scene
+        #        Hey can I quickly ask you something?
 
         kf "Sure, what do you want to know?"
 
-        Choice: I heard people talking about you and your girlfriend, is everything ok between you two?
-                What happened between you and your girlfriend at homecoming?
+        #Choice: I heard people talking about you and your girlfriend, is everything ok between you two?
+        #        What happened between you and your girlfriend at homecoming?
 
         kf "Well I don’t know where we are right now, I mean I thought that nothing could get between Christina and me, but ever since homecoming things have become rocky."
 
@@ -1696,7 +1696,7 @@
 
         #Player enters into the school.
 
-        Hall Monitor: Hey! What are you doing coming into school late? Don’t you know better than that? Why back in my day, if students were late….
+        #Hall Monitor: Hey! What are you doing coming into school late? Don’t you know better than that? Why back in my day, if students were late….
 
         mc "(Kolby walks into scene behind the hall monitor who doesn’t notice.) Huh? It seems like Kolby is late to school too."
 
@@ -1706,7 +1706,7 @@
         #Sell out Kolby
         mc "Hey who’s that? (pointing behind the hall monitor)"
 
-        Hall Monitor: "Huh? Hey! What are you doing coming into school late? Don’t you know better than that? Why back in my day..."
+        #Hall Monitor: "Huh? Hey! What are you doing coming into school late? Don’t you know better than that? Why back in my day..."
 
         #Player makes his/her escape while the hall monitor is distracted with Kolby.       -cut out of scene-
 
@@ -1859,7 +1859,7 @@
 
         sg "I see..."
 
-        cl And Agnes is so obviously not into him, she apparently left him sometime in the evening.
+        cl "And Agnes is so obviously not into him, she apparently left him sometime in the evening."
 
         mw "Wait a sec, Agnes disappeared during prom? Something about that seems a little fishy. I’d say it’s worth investigating. Wanna go talk to Danny, see what he has to say about it?"
 
@@ -2106,13 +2106,13 @@
         #        Ask about rumors
 
         #Ask about homecoming
-        mc Hey I was wondering Agnes, how was homecoming for you?
+        mc "Hey I was wondering Agnes, how was homecoming for you?"
 
-        ar What? Why do you ask?
+        ar "What? Why do you ask?"
 
-        mc Oh just wondering, like I said.
+        mc "Oh just wondering, like I said."
 
-        ar ...It was fine.
+        ar "...It was fine."
 
         #Choice: Just fine?
         #Did something go wrong?
