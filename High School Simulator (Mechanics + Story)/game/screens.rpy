@@ -1238,7 +1238,7 @@ screen frederick:
     # The background of the game menu.
     window:
         style "gm_root"
-        add "frederickhprofile" xalign 0.8 yalign 1.0
+        add "frederickhprofile" xalign 0.8 yalign 0.0
         
     frame:
         xalign 0.5
@@ -1882,6 +1882,7 @@ screen becka:
     # The background of the game menu.
     window:
         style "gm_root"
+        add "beckakprofile" xalign 0.8 yalign 1.0
         
     frame:
         xalign 0.5
