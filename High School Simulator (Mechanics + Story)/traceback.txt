@@ -1,27 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/storyscript.rpy", line 884, in script
-    sg "Hey Marc! {w} How’s it goin?"
-NameError: name 'sgname' is not defined
+  File "game/script.rpy", line 227, in script
+    if isfirstschoolday == True:
+  File "game/script.rpy", line 227, in <module>
+    if isfirstschoolday == True:
+NameError: name 'isfirstschoolday' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/storyscript.rpy", line 884, in script
-    sg "Hey Marc! {w} How’s it goin?"
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 603, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\exports.py", line 1121, in say
-    who(what, interact=interact)
-  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\character.py", line 798, in __call__
-    who = renpy.python.py_eval(who)
+  File "game/script.rpy", line 227, in script
+    if isfirstschoolday == True:
+  File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\ast.py", line 1647, in execute
+    if renpy.python.py_eval(condition):
   File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\python.py", line 1490, in py_eval
     return py_eval_bytecode(code, globals, locals)
   File "C:\Users\501508\Desktop\renpy-6.99.8-sdk\renpy-6.99.8-sdk\renpy\python.py", line 1485, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "<none>", line 1, in <module>
-NameError: name 'sgname' is not defined
+  File "game/script.rpy", line 227, in <module>
+    if isfirstschoolday == True:
+NameError: name 'isfirstschoolday' is not defined
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.8.959

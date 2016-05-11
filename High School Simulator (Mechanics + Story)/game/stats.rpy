@@ -64,25 +64,17 @@ init python:
                 store.intelligencesub = 0
                 store.intelligence = store.intelligence + 1
                 
-        if (hasattr(store, 'stamina')):#manages stamina.
-            if store.stamina > 5:
-                store.stamina = 5
-            elif store.stamina < 0:
-                store.stamina = 0
-                
-        if (hasattr(store, 'staminasub')):#manages stamina sublevels.
-            if store.staminasub < 0:
-                store.staminasub = 0
-                store.stamina = store.stamina - 1
-            elif store.staminasub > store.staminasubcurrentlim:
-                store.staminasub = 0
-                store.stamina = store.stamina + 1
-                
         if (hasattr(store, 'stress')):#manages stress.
             if store.stress > 5:
                 store.stress = 5
             elif store.stress < 0:
                 store.stress = 0
+        
+        if (hasattr(store, 'stamina')):#manages stamina.
+            if store.stamina > 5:
+                store.stamina = 5
+            elif store.stamina < 0:
+                store.stamina = 0
                 
         if (hasattr(store, 'stresssub')):#manages stress sublevels.
             if store.stresssub > 5:
@@ -91,6 +83,14 @@ init python:
             if store.stresssub < 0:
                 store.stressub = 5
                 store.stress = store.stress - 1
+                
+        if (hasattr(store, 'staminasub')):#manages stamina sublevels.
+            if store.staminasub < 0:
+                store.staminasub = 0
+                store.stamina = store.stamina - 1
+            elif store.staminasub > store.staminasubcurrentlim:
+                store.staminasub = 0
+                store.stamina = store.stamina + 1
                 
     config.python_callbacks.append(time_callback)
     

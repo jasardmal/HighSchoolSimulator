@@ -2061,7 +2061,7 @@ screen stats:
         has hbox
     
         hbox:
-            bar range 5 value staminasub xmaximum 400
+            bar range staminasubcurrentlim value staminasub xmaximum 400
             
     # Stamina displayed as a number.
     frame:

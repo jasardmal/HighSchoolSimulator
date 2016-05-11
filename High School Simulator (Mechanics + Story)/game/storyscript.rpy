@@ -63,7 +63,6 @@
         mh "Back in my day, {w} when we had to fight over things, {w} we waited until after school...."
 
         #CHANGE SCENES WOO DEAN'S OFFICE TIME
-
         #MC Standing outside door about to walk in
         scene img_hall with Dissolve(1.0)
 
@@ -107,7 +106,7 @@
         hide marcw
         
         #Walks in
-
+        
         show dean
         de "Who are you?"
         
@@ -136,6 +135,7 @@
 
 
         label firstSchoolC1O1:
+            
             #MARC STARTED IT
             mc "It looked to me like that student (Marc) was antagonizing the other student. {w} I’m not sure what was said, {w} but one minute I was waiting for class to start, {w} 
                 and the next those two were duking it out by my desk."
@@ -362,7 +362,6 @@
                 mc "It’d be nice if Mom or Dad was home for once..."
                 
                 #*End scene*
-                
                 $ thephase = 11 + 1
                 $ isfirstschoolday = False
                 $ issecondschoolday = True
@@ -373,7 +372,6 @@
                 mc "Ugh! {w} I wonder who it is. {w} Well, {w} they can wait. {w} I need to sleep... {w} Today was busy..."
 
                 #*End scene*
-                
                 $ thephase = 11 + 1
                 $ isfirstschoolday = False
                 $ issecondschoolday = True
@@ -436,12 +434,11 @@
         mc "Ok, ok! {w} I just got out of bed! {w} Let me put on some clothes first, jeez!"
         
         #*Puts on clothes*
-
+        
         #*Runs out of door*
+        scene img_nearhome with Dissolve(1.0)
 
         #*Out of breath*
-        
-        scene img_nearhome with Dissolve(1.0)
 
         mc "Alright, Marc, {w} I’m here. {w} How did you figure out where I live?"
 
@@ -1146,7 +1143,7 @@
 
         sis "Sure you don’t, Romeo." 
 
-        mc "Okay, fine, I’ve met a grand total of 6 people. None of whom I know very well."
+        mc "Okay, fine, I’ve met a grand total of 6 people. {w} None of whom I know very well."
 
         sis "Any girls?"
 
@@ -1174,7 +1171,11 @@
 
         mc "Jeez... That was really something... {w} I’d better get some sleep..."
 
-       #*End Day* 
+        #*End Day*
+        $ thephase = 11 + 1
+        $ issecondschoolday = False
+        jump startDecider
+       
 
 ###########################Homecoming#############################################################################
 

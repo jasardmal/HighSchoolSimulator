@@ -70,8 +70,8 @@ label start:
     
     #Initialize Special Day/Event Flags.
     $ ischaractercreation = True
-    $ isfirstschoolday = True
-    $ issecondschoolday = False
+    $ isfirstday = True
+    $ issecondday = False
     $ isafterschool = True
     $ isendofweekend = False
     
