@@ -22,6 +22,7 @@ define sis = Character('Jackie', color="#c8ffc8")
 #School Staff
 define de = Character('Dean', color="#c8ffc8")
 define pa = Character('PA', color="#c8ffc8")
+define hm = Character('Hall Monitor', color="#c8ffc8")
 
 #Teachers
 define mk = Character('Mr. Kelly', color="#c8ffc8")
