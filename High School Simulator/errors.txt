@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/socialscript.rpy", line 188: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump timePass
+    ^
+
+Ren'Py Version: Ren'Py 6.99.8.959
