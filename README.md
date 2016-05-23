@@ -18,3 +18,14 @@ Ren'py Forums:
 https://lemmasoft.renai.us/forums/viewforum.php?f=8
 
 4.)
+inventory.rpy - is a menu with four item categories that contains info on the items currently held
+inventorysub.rpy - is the backend to handling individual items within the inventory
+options.rpy - is a menu which controls the settings of the game
+screens.rpy - is the frontend to a majority of the game's menus/interfaces
+script.rpy - handle the general gameplay of generic (main character development) days
+skills.rpy - is the backend to handling calculations with skill (elective) points
+social.rpy - is the backend to handling calculations with social (character relationship) points
+socialscript.rpy - handles the results of the "Socialize" action
+stats.rpy - is the backend to handling calculations with stat (charisma, courage, intelligence, stamina, stress) points
+storyscript.rpy - handles the main story gameplay
+time.rpy - handles the backend of the time system
